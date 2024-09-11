@@ -95,3 +95,10 @@ img {
 .slider-nav button:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+.circle-image {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: contain;
+  }
