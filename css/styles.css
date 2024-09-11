@@ -26,6 +26,14 @@ html {
 }
 
 
+
+.astroBannerDiv{
+    margin-left: 0;
+}
+
+
+
+
 .login-hover {
     display: none;
     position: absolute;
