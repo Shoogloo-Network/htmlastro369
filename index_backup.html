@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" id="main-stylesheet" />
+    <!-- <link rel="stylesheet" href="css/styles1.css" /> -->
+    <!-- <link rel="stylesheet" href="css/mobileview.css"/> -->
+    <script
+      src="https://kit.fontawesome.com/c521e77e5d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <script src="../practo/js/redirect.js"></script> -->
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+  </head>
+  <body>
+    <section class="desktop">
+      <header>
+        <nav class="navbar">
+          <div class="hamburger">&#9776;</div>
+          <div class="logo-container">
+            <a href="index.html"
+              ><img src="assets/images/practoLogo.svg" alt="procto logo"
+            /></a>
+            <ul>
+              <li><a href="#">Find Doctors</a></li>
+              <li><a href="consult.html">Video Consult</a></li>
+              <li class="mega-hover"><a href="#">Surgeries</a></li>
+            </ul>
+          </div>
+          <div class="menu-container">
+            <div class="menu-container-parent">
+              <div class="corporates-container">
+                <span class="New">New</span>
+                <div class="corporates-dropdown">
+                  <!-- <label for="Corporates">For Corporates</label> -->
+                  <select name="Corporates" id="Corporates">
+                    <option value="" disabled selected hidden>
+                      For Corporates
+                    </option>
+                    <option value="Health">Health & Wellness Plans</option>
+                    <option value="Insurance">Group Insurance</option>
+                  </select>
+                </div>
+              </div>
+              <div class="providers-container">
+                <!-- <label for="Providers">For Providers</label> -->
+                <select name="Providers" id="Providers">
+                  <option value="" disabled selected hidden>
+                    For Providers
+                  </option>
+                  <option value="Prime">Practo Prime</option>
+                  <option value="Software">Software For Providers</option>
+                  <option value="Practice">List Your Practice For Free</option>
+                  <option value="ABDM">ABDM</option>
+                </select>
+              </div>
+              <div class="security-container">
+                <!-- <label for="Security">Security & Help</label> -->
+                <select name="Security" id="Security">
+                  <option value="" disabled selected hidden>ENG</option>
+                  <option value="DataSecurity" selected>ENG</option>
+                  <option value="Help">HINDI</option>
+                </select>
+              </div>
+              <!-- <button class="login-signup-button">Login/Signup</button> -->
+              <div>
+                <div class="user-profile">
+                  <i class="fa-solid fa-user user-profile"></i>
+                </div>
+                <div class="login-hover">
+                  <ul>
+                    <li id="login"><a href="loginSignup.html">Login/Signup</a></li>
+                    <hr />
+                    <li>Profile</li>
+                    <hr />
+                    <li>Signout</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <hr />
+        <div class="pop-up-register" id="pop-up">
+          <div class="pop-up-register-form-div">
+            <h2>Enter Your Details</h2>
+            <div>
+              <label for="email">Email Id</label>
+              <input
+                type="email"
+                id="email"
+                value="email"
+                placeholder="Enter Your Email Id"
+              />
+              <label for="phone"> Phone Number</label>
+              <input
+                type="phone"
+                id="phone"
+                value="phone"
+                placeholder="+91 6399889123"
+              />
+              <div class="otp-container">
+                <h4>Enter OTP</h4>
+                <input type="text" maxlength="1" class="otp-input" />
+                <input type="text" maxlength="1" class="otp-input" />
+                <input type="text" maxlength="1" class="otp-input" />
+                <input type="text" maxlength="1" class="otp-input" />
+                <input type="text" maxlength="1" class="otp-input" />
+                <input type="text" maxlength="1" class="otp-input" />
+              </div>
+            </div>
+            <button id="continue-sign-up-btn">Continue</button>
+            <form class="terms-and-resend">
+              <div class="terms-container">
+                <input type="checkbox" id="terms" name="terms" checked />
+                <label for="terms"
+                  >I agree to the <a href="#">terms and conditions</a></label
+                >
+              </div>
+              <div class="resend-otp"><a>Resend OTP ?</a></div>
+            </form>
+          </div>
+        </div>
+      </header>
+
+      <section class="menu-section">
+        <div class="container">
+          <div class="mega-menu">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Main Category</h3>
+                  <hr />
+                  <ul>
+                    <li id="submenu1"><a href="#">Item 1</a></li>
+                    <li id="submenu2"><a href="#">Item 2</a></li>
+                    <li id="submenu3"><a href="#">Item 3</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Category 2</h3>
+                  <hr />
+                  <ul>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                    <li><a href="#">Item 6</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Category 3</h3>
+                  <hr />
+                  <ul>
+                    <li><a href="#">Item 7</a></li>
+                    <li><a href="#">Item 8</a></li>
+                    <li><a href="#">Item 9</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Category 4</h3>
+                  <hr />
+                  <ul>
+                    <li><a href="#">Item 10</a></li>
+                    <li><a href="#">Item 11</a></li>
+                    <li><a href="#">Item 12</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Category 5</h3>
+                  <hr />
+                  <ul>
+                    <li><a href="#">Item 13</a></li>
+                    <li><a href="#">Item 14</a></li>
+                    <li><a href="#">Item 15</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item1-submenu">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Category 1</h3>
+                  <hr />
+                  <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Category 2</h3>
+                  <hr />
+                  <ul>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                    <li><a href="#">Item 6</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Category 3</h3>
+                  <hr />
+                  <ul>
+                    <li><a href="#">Item 7</a></li>
+                    <li><a href="#">Item 8</a></li>
+                    <li><a href="#">Item 9</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Category 4</h3>
+                  <hr />
+                  <ul>
+                    <li><a href="#">Item 10</a></li>
+                    <li><a href="#">Item 11</a></li>
+                    <li><a href="#">Item 12</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item2-submenu">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Category 6</h3>
+                  <hr />
+                  <ul>
+                    <li><a href="#">Item 13</a></li>
+                    <li><a href="#">Item 14</a></li>
+                    <li><a href="#">Item 15</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Category 7</h3>
+                  <hr />
+                  <ul>
+                    <li><a href="#">Item 16</a></li>
+                    <li><a href="#">Item 17</a></li>
+                    <li><a href="#">Item 18</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Category 8</h3>
+                  <hr />
+                  <ul>
+                    <li><a href="#">Item 19</a></li>
+                    <li><a href="#">Item 20</a></li>
+                    <li><a href="#">Item 21</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Category 9</h3>
+                  <hr />
+                  <ul>
+                    <li><a href="#">Item 22</a></li>
+                    <li><a href="#">Item 23</a></li>
+                    <li><a href="#">Item 24</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item3-submenu">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Category 10</h3>
+                  <hr />
+                  <ul>
+                    <li><a href="#">Item 25</a></li>
+                    <li><a href="#">Item 26</a></li>
+                    <li><a href="#">Item 27</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Category 11</h3>
+                  <hr />
+                  <ul>
+                    <li><a href="#">Item 28</a></li>
+                    <li><a href="#">Item 29</a></li>
+                    <li><a href="#">Item 30</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Category 12</h3>
+                  <hr />
+                  <ul>
+                    <li><a href="#">Item 31</a></li>
+                    <li><a href="#">Item 32</a></li>
+                    <li><a href="#">Item 33</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Category 13</h3>
+                  <hr />
+                  <ul>
+                    <li><a href="#">Item 34</a></li>
+                    <li><a href="#">Item 35</a></li>
+                    <li><a href="#">Item 36</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-container-top">
+        <div class="input-container">
+          <div class="location-container">
+            <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+            <!-- Location icon -->
+            <input type="text" placeholder="Faridabad" class="location-input" />
+          </div>
+          <div class="search-container">
+            <span class="icon"><i class="fas fa-search"></i></span>
+            <!-- Search icon -->
+            <input
+              type="search"
+              placeholder="Search doctors, clinics, hospitals, etc"
+              class="search-input"
+            />
+          </div>
+        </div>
+        <div class="cards-container">
+          <div class="card1">
+            <div class="card-image-container">
+              <img
+                src="assets/images/instant_video_consulation.png"
+                alt="Video Consultant"
+                class="card-image"
+              />
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">Instant Video Consultation</h2>
+              <p class="card-description">Connect within 60 secs</p>
+            </div>
+          </div>
+          <div class="card1">
+            <div class="card-image-container">
+              <img
+                src="assets/images/find_doctors.webp"
+                alt="Video Consultant"
+                class="card-image"
+              />
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">Find Doctors Near You</h2>
+              <p class="card-description">Confirmed appointments</p>
+            </div>
+          </div>
+          <div class="card1">
+            <div class="card-image-container">
+              <img
+                src="assets/images/surgeries.png"
+                alt="Video Consultant"
+                class="card-image"
+              />
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">Surgeries</h2>
+              <p class="card-description">Safe and trusted surgery centers</p>
+            </div>
+          </div>
+
+          <div class="google-card">
+            <div class="google-banner-div">
+              <div class="google-banner"></div>
+            </div>
+            <div class="card-content">
+              <p class="card-description-google">
+                Safe and trusted surgery centers
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="consultation-section">
+        <div class="consultation-container">
+          <div class="consultation-header">
+            <div class="header-content">
+              <h1 class="header-title">
+                Consult top doctors online for any health concern
+              </h1>
+              <p class="header-description">
+                Private online consultations with verified doctors in all
+                specialists
+              </p>
+            </div>
+            <button class="view-specialists-button">
+              View All specialists
+            </button>
+          </div>
+          <div class="consultation-cards">
+            <div class="consultation-card">
+              <img
+                src="assets/images/irregular-painful+period.webp"
+                alt="pregnancy doubts"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation">
+                Period doubts or pregnancy
+              </h2>
+              <p class="card-action-consultation">CONSULT NOW</p>
+            </div>
+            <div class="consultation-card">
+              <img
+                src="assets/images/Acne.webp"
+                alt="skin issues"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation">
+                Acne, Pimple or skin issues
+              </h2>
+              <p class="card-action-consultation">CONSULT NOW</p>
+            </div>
+            <div class="consultation-card">
+              <img
+                src="assets/images/top-speciality-sexology.svg"
+                alt="performance issues"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation">Performance issue in bed</h2>
+              <p class="card-action-consultation">CONSULT NOW</p>
+            </div>
+            <div class="consultation-card">
+              <img
+                src="assets/images/coughing.webp"
+                alt="cold and cough"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation">Cold, cough or fever</h2>
+              <p class="card-action-consultation">CONSULT NOW</p>
+            </div>
+            <div class="consultation-card">
+              <img
+                src="assets/images/top-speciality-pediatric.svg"
+                alt="child health"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation">Child not feeling well</h2>
+              <p class="card-action-consultation">CONSULT NOW</p>
+            </div>
+            <div class="consultation-card">
+              <img
+                src="assets/images/12-mental-wellness.webp"
+                alt="mental health"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation">Depression or anxiety</h2>
+              <p class="card-action-consultation">CONSULT NOW</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="appointment-section">
+        <h1>Book an appointment for an in-clinic consultation</h1>
+        <p>Find experienced doctors across all specialties</p>
+        <div class="card-carousel">
+          <button class="prev" onclick="prevSlide()">&#10094;</button>
+          <div class="card-container">
+            <div class="card">
+              <img src="assets/images/sp-dentist@2x.jpg" alt="Image 1" />
+              <h1>Dentist</h1>
+              <p>Teething troubles? Schedule a dental checkup</p>
+            </div>
+            <div class="card">
+              <img src="assets/images/sp-gynecologist@2x.jpg" alt="Image 1" />
+              <h1>Gynecologist/Obstetrician</h1>
+              <p>
+                Explore for women’s health, pregnancy and infertility treatments
+              </p>
+            </div>
+            <div class="card">
+              <img src="assets/images/sp-dietitian@2x.jpg" alt="Image 1" />
+              <h1>Dietitian/Nutrition</h1>
+              <p>
+                Get guidance on eating right, weight management and sports
+                nutrition
+              </p>
+            </div>
+            <div class="card">
+              <img
+                src="assets/images/sp-physiotherapist@2x.jpg"
+                alt="Image 1"
+              />
+              <h1>Physiotherapist</h1>
+              <p>
+                Pulled a muscle? Get it treated by a trained physiotherapist
+              </p>
+            </div>
+            <div class="card">
+              <img
+                src="assets/images/sp-general-surgeon@2x.jpg"
+                alt="Image 1"
+              />
+              <h1>General surgeon</h1>
+              <p>Need to get operated? Find the right surgeon</p>
+            </div>
+            <div class="card">
+              <img src="assets/images/sp-orthopedist@2x.jpg" alt="Image 1" />
+              <h1>Orthopedist</h1>
+              <p>For Bone and Joints issues, spinal injuries and more</p>
+            </div>
+            <div class="card">
+              <img src="assets/images/sp-general-doctor@2x.jpg" alt="Image 1" />
+              <h1>General physician</h1>
+              <p>Find the right family doctor in your neighborhood</p>
+            </div>
+            <div class="card">
+              <img src="assets/images/sp-general-doctor@2x.jpg" alt="Image 1" />
+              <h1>Pediatrician</h1>
+              <p>Child Specialists and Doctors for Infant</p>
+            </div>
+            <div class="card">
+              <img
+                src="assets/images/sp-gastroenterologist@2x.jpg"
+                alt="Image 1"
+              />
+              <h1>Gastroenterologist</h1>
+              <p>
+                Explore for issues related to digestive system, liver and
+                pancreas
+              </p>
+            </div>
+          </div>
+          <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+      </section>
+      <hr />
+      <section class="articles-section">
+        <div class="intro-container">
+          <h1 class="intro-title">Read top articles from health experts</h1>
+          <p class="intro-description">
+            Health articles that keep you informed about good health practices
+            and achieve your goals.
+          </p>
+          <button class="intro-button">See all articles</button>
+        </div>
+        <div class="articles-container">
+          <div class="article-card">
+            <img
+              src="assets/images/coronavirus.jpg"
+              alt="coronavirus"
+              class="article-image"
+            />
+            <h3 class="article-category">CORONAVIRUS</h3>
+            <h1 class="article-title">
+              12 Coronavirus Myths and Facts That You Should Be Aware Of
+            </h1>
+            <p class="article-author">Dr. Diana Borgio</p>
+          </div>
+          <div class="article-card">
+            <img
+              src="assets/images/vitamins.jpg"
+              alt="vitamins"
+              class="article-image"
+            />
+            <h3 class="article-category">VITAMINS AND SUPPLEMENTS</h3>
+            <h1 class="article-title">
+              Eating Right to Build Immunity Against Cold and Viral Infections
+            </h1>
+            <p class="article-author">Dr. Diana Borgio</p>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="testimonial-section">
+        <h1>What our users have to say</h1>
+        <button class="testimonial-prev" onclick="prevTestimonial()">
+          <!-- ❮ -->
+        </button>
+        <div class="testimonial-container">
+          <div class="testimonial-card">
+            <p>
+              "Very good app. Well thought out about
+              booking/rescheduling/canceling an appointment. Also, Doctor's
+              feedback mechanism is good and describes all the basics in a good
+              way"
+            </p>
+            <div class="testimonial-user">
+              <img
+                src="assets/images/user.png"
+                alt="User 1"
+                class="testimonial-image"
+              />
+              <h3>Avinash Kumar</h3>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p>
+              "Very helpful. Far easier than doing same things on computer.
+              Allows quick and easy search with speedy booking. Even maintains
+              history of doctors visited."
+            </p>
+            <div class="testimonial-user">
+              <img
+                src="assets/images/user.png"
+                alt="User 1"
+                class="testimonial-image"
+              />
+              <h3>Amit Sharma</h3>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p>
+              "Very easy to book,maintain history. Hassle free from older
+              versions of booking appointment via telephone.. Thanks Practo for
+              making it simple."
+            </p>
+            <div class="testimonial-user">
+              <img
+                src="assets/images/user.png"
+                alt="User 1"
+                class="testimonial-image"
+              />
+              <h3>Jyothi Bhatia</h3>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p>
+              "Very good app. Well thought out about
+              booking/rescheduling/canceling an appointment. Also, Doctor's
+              feedback mechanism is good and describes all the basics in a good
+              way."
+            </p>
+            <div class="testimonial-user">
+              <img
+                src="assets/images/user.png"
+                alt="User 1"
+                class="testimonial-image"
+              />
+              <h3>Avinash Kumar</h3>
+            </div>
+          </div>
+          <!-- Add more testimonial cards as needed -->
+        </div>
+        <div class="testimonial-dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <!-- Add more dots as needed -->
+        </div>
+        <button class="testimonial-next" onclick="nextTestimonial()">
+          <!-- ❯ -->
+        </button>
+      </section>
+
+      <section class="download-section">
+        <div class="image-container">
+          <img
+            src="assets/images/footer-img.webp"
+            alt="download"
+            class="download-image"
+          />
+        </div>
+        <div class="content-container">
+          <div class="app-info">
+            <h1 class="app-title">Download the Practo app</h1>
+            <p class="app-description">
+              Access video consultation with India’s top doctors on the Practo
+              app. Connect with doctors online, available 24/7, from the comfort
+              of your home.
+            </p>
+          </div>
+          <div class="download-link">
+            <h4 class="link-title">Get the link to download the app</h4>
+            <div class="phone-input-wrapper">
+              <div class="phone-input-container">
+                <div class="phone-input">
+                  <span class="country-code">+91</span>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    pattern="[0-9]{10}"
+                    required
+                    class="phone-number-input"
+                  />
+                </div>
+              </div>
+              <button class="send-sms-button">Send SMS</button>
+            </div>
+          </div>
+          <div class="store-buttons">
+            <button class="google-play-button">Google Play</button>
+            <button class="app-store-button">App Store</button>
+          </div>
+        </div>
+      </section>
+      <footer class="footer-section">
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3 class="footer-title">Practo</h3>
+            <ul class="footer-list">
+              <li class="footer-item">About</li>
+              <li class="footer-item">Blog</li>
+              <li class="footer-item">Careers</li>
+              <li class="footer-item">Press</li>
+              <li class="footer-item">Contact Us</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-title">For patients</h3>
+            <ul class="footer-list">
+              <li class="footer-item">Search for doctors</li>
+              <li class="footer-item">Search for clinics</li>
+              <li class="footer-item">Search for hospitals</li>
+              <li class="footer-item">Practo Plus</li>
+              <li class="footer-item">Covid Hospital listing</li>
+              <li class="footer-item">Practo Care Clinics</li>
+              <li class="footer-item">Read health articles</li>
+              <li class="footer-item">Read about medicines</li>
+              <li class="footer-item">Practo drive</li>
+              <li class="footer-item">Health app</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <div class="footer-subcolumn">
+              <h3 class="footer-title">For doctors</h3>
+              <ul class="footer-list">
+                <li class="footer-item">Practo Profile</li>
+              </ul>
+            </div>
+            <div class="footer-subcolumn">
+              <h3 class="footer-title">For Clinics</h3>
+              <ul class="footer-list">
+                <li class="footer-item">Ray by Practo</li>
+                <li class="footer-item">Practo Reach</li>
+                <li class="footer-item">Ray Tab</li>
+                <li class="footer-item">Practo Pro</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-column">
+            <div class="footer-subcolumn">
+              <h3 class="footer-title">For hospitals</h3>
+              <ul class="footer-list">
+                <li class="footer-item">Insta by Practo</li>
+                <li class="footer-item">Qikwell by Practo</li>
+                <li class="footer-item">Practo Profile</li>
+                <li class="footer-item">Practo Reach</li>
+                <li class="footer-item">Practo Drive</li>
+              </ul>
+            </div>
+            <div class="footer-subcolumn">
+              <h3 class="footer-title">For Corporates</h3>
+              <ul class="footer-list">
+                <li class="footer-item">Wellness Plan</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-title">More</h3>
+            <ul class="footer-list">
+              <li class="footer-item">Help</li>
+              <li class="footer-item">Developers</li>
+              <li class="footer-item">Privacy Policy</li>
+              <li class="footer-item">Terms & Conditions</li>
+              <li class="footer-item">PCS T&C</li>
+              <li class="footer-item">Healthcare Directory</li>
+              <li class="footer-item">Practo Health Wiki</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-title">Social</h3>
+            <ul class="footer-list">
+              <li class="footer-item">Facebook</li>
+              <li class="footer-item">Twitter</li>
+              <li class="footer-item">LinkedIn</li>
+              <li class="footer-item">YouTube</li>
+              <li class="footer-item">GitHub</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <img
+            src="assets/images/white_practo_logo.svg"
+            alt="footerLogo"
+            class="footer-logo"
+          />
+          <p class="footer-copyright">
+            Copyright © 2017, Practo. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </section>
+    <section class="mobile-content">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <a class="navbar-brand" href="index.html">
+             <img src="assets/images/practoLogo.svg" alt="practo logo" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    >Find Doctors</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="consult.html"
+                    >Video Consult</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"
+                    >Surgeries</a
+                  >
+                </li>
+              </ul>
+              <div class="menu-container d-flex flex-column">
+                <div class="corporates-container">
+                  <span class="New">New</span>
+                  <select
+                    name="Corporates"
+                    id="Corporates"
+                    class="form-control"
+                  >
+                    <option value="" disabled selected hidden>
+                      For Corporates
+                    </option>
+                    <option value="Health">Health & Wellness Plans</option>
+                    <option value="Insurance">Group Insurance</option>
+                  </select>
+                </div>
+                <div class="providers-container">
+                  <select name="Providers" id="Providers" class="form-control">
+                    <option value="" disabled selected hidden>
+                      For Providers
+                    </option>
+                    <option value="Prime">Practo Prime</option>
+                    <option value="Software">Software For Providers</option>
+                    <option value="Practice">
+                      List Your Practice For Free
+                    </option>
+                    <option value="ABDM">ABDM</option>
+                  </select>
+                </div>
+                <div class="security-container">
+                  <select name="Security" id="Security" class="form-control">
+                    <option value="" disabled selected hidden>
+                      Security & Help
+                    </option>
+                    <option value="DataSecurity">Data Security</option>
+                    <option value="Help">Help</option>
+                  </select>
+                </div>
+                <button class="btn login-signup-button"><a href="loginSignup.html">Login/Signup</a></button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section class="section-container-top">
+        <div class="input-container">
+          <div class="location-container">
+            <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+            <input type="text" placeholder="Faridabad" class="location-input" />
+          </div>
+          <div class="search-container">
+            <span class="icon"><i class="fas fa-search"></i></span>
+            <input
+              type="search"
+              placeholder="Search doctors, clinics, hospitals, etc"
+              class="search-input"
+            />
+          </div>
+        </div>
+        <div class="container">
+          <div class="cards-container">
+            <div class="card1 card">
+              <div class="card-image-container">
+                <img
+                  src="assets/images/instant_video_consulation.png"
+                  alt="Video Consultant"
+                  class="card-image"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Instant Video Consultation</h5>
+                <p class="card-text">Connect within 60 secs</p>
+              </div>
+            </div>
+            <div class="card1 card">
+              <div class="card-image-container">
+                <img
+                  src="assets/images/find_doctors.webp"
+                  alt="Find Doctors"
+                  class="card-image"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Find Doctors Near You</h5>
+                <p class="card-text">Confirmed appointments</p>
+              </div>
+            </div>
+            <div class="card1 card">
+              <div class="card-image-container">
+                <img
+                  src="assets/images/surgeries.png"
+                  alt="Surgeries"
+                  class="card-image"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Surgeries</h5>
+                <p class="card-text">Safe and trusted surgery centers</p>
+              </div>
+            </div>
+            <div class="google-card card">
+              <div class="card-body">
+                <p class="card-text">Safe and trusted surgery centers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="consultation-section">
+        <div class="consultation-container">
+          <div class="consultation-header">
+            <div class="header-content">
+              <h1 class="header-title">
+                Consult top doctors online for any health concern
+              </h1>
+              <p class="header-description">
+                Private online consultations with verified doctors in all
+                specialists
+              </p>
+            </div>
+            <button class="view-specialists-button">
+              View All specialists
+            </button>
+          </div>
+          <div class="consultation-cards">
+            <div class="consultation-card">
+              <img
+                src="assets/images/irregular-painful+period.webp"
+                alt="pregnancy doubts"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation">
+                Period doubts or pregnancy
+              </h2>
+              <p class="card-action-consultation">CONSULT NOW</p>
+            </div>
+            <div class="consultation-card">
+              <img
+                src="assets/images/Acne.webp"
+                alt="skin issues"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation">
+                Acne, Pimple or skin issues
+              </h2>
+              <p class="card-action-consultation">CONSULT NOW</p>
+            </div>
+            <div class="consultation-card">
+              <img
+                src="assets/images/top-speciality-sexology.svg"
+                alt="performance issues"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation">Performance issue in bed</h2>
+              <p class="card-action-consultation">CONSULT NOW</p>
+            </div>
+            <div class="consultation-card">
+              <img
+                src="assets/images/coughing.webp"
+                alt="cold and cough"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation">Cold, cough or fever</h2>
+              <p class="card-action-consultation">CONSULT NOW</p>
+            </div>
+            <div class="consultation-card">
+              <img
+                src="assets/images/top-speciality-pediatric.svg"
+                alt="child health"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation">Child not feeling well</h2>
+              <p class="card-action-consultation">CONSULT NOW</p>
+            </div>
+            <div class="consultation-card">
+              <img
+                src="assets/images/12-mental-wellness.webp"
+                alt="mental health"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation">Depression or anxiety</h2>
+              <p class="card-action-consultation">CONSULT NOW</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="appointment-section">
+        <h1>Book an appointment for an in-clinic consultation</h1>
+        <p>Find experienced doctors across all specialties</p>
+        <div class="card-carousel">
+          <button class="prev" onclick="prevSlideMobile()">&#10094;</button>
+          <div class="card-container-mobile">
+            <div class="card">
+              <img src="assets/images/sp-dentist@2x.jpg" alt="Image 1" />
+              <h1>Dentist</h1>
+              <p>Teething troubles? Schedule a dental checkup</p>
+            </div>
+            <div class="card">
+              <img src="assets/images/sp-gynecologist@2x.jpg" alt="Image 1" />
+              <h1>Gynecologist/Obstetrician</h1>
+              <p>
+                Explore for women’s health, pregnancy and infertility treatments
+              </p>
+            </div>
+            <div class="card">
+              <img src="assets/images/sp-dietitian@2x.jpg" alt="Image 1" />
+              <h1>Dietitian/Nutrition</h1>
+              <p>
+                Get guidance on eating right, weight management and sports
+                nutrition
+              </p>
+            </div>
+            <div class="card">
+              <img
+                src="assets/images/sp-physiotherapist@2x.jpg"
+                alt="Image 1"
+              />
+              <h1>Physiotherapist</h1>
+              <p>
+                Pulled a muscle? Get it treated by a trained physiotherapist
+              </p>
+            </div>
+            <div class="card">
+              <img
+                src="assets/images/sp-general-surgeon@2x.jpg"
+                alt="Image 1"
+              />
+              <h1>General surgeon</h1>
+              <p>Need to get operated? Find the right surgeon</p>
+            </div>
+            <div class="card">
+              <img src="assets/images/sp-orthopedist@2x.jpg" alt="Image 1" />
+              <h1>Orthopedist</h1>
+              <p>For Bone and Joints issues, spinal injuries and more</p>
+            </div>
+            <div class="card">
+              <img src="assets/images/sp-general-doctor@2x.jpg" alt="Image 1" />
+              <h1>General physician</h1>
+              <p>Find the right family doctor in your neighborhood</p>
+            </div>
+            <div class="card">
+              <img src="assets/images/sp-general-doctor@2x.jpg" alt="Image 1" />
+              <h1>Pediatrician</h1>
+              <p>Child Specialists and Doctors for Infant</p>
+            </div>
+            <div class="card">
+              <img
+                src="assets/images/sp-gastroenterologist@2x.jpg"
+                alt="Image 1"
+              />
+              <h1>Gastroenterologist</h1>
+              <p>
+                Explore for issues related to digestive system, liver and
+                pancreas
+              </p>
+            </div>
+          </div>
+          <button class="next" onclick="nextSlideMobile()">&#10095;</button>
+        </div>
+      </section>
+
+      <section class="articles-section">
+        <div class="intro-container">
+          <h1 class="intro-title">Read top articles from health experts</h1>
+          <p class="intro-description">
+            Health articles that keep you informed about good health practices
+            and achieve your goals.
+          </p>
+          <button class="intro-button">See all articles</button>
+        </div>
+        <div class="articles-container">
+          <div class="article-card">
+            <img
+              src="assets/images/coronavirus.jpg"
+              alt="coronavirus"
+              class="article-image"
+            />
+            <h3 class="article-category">CORONAVIRUS</h3>
+            <h1 class="article-title">
+              12 Coronavirus Myths and Facts That You Should Be Aware Of
+            </h1>
+            <p class="article-author">Dr. Diana Borgio</p>
+          </div>
+          <div class="article-card">
+            <img
+              src="assets/images/vitamins.jpg"
+              alt="vitamins"
+              class="article-image"
+            />
+            <h3 class="article-category">VITAMINS AND SUPPLEMENTS</h3>
+            <h1 class="article-title">
+              Eating Right to Build Immunity Against Cold and Viral Infections
+            </h1>
+            <p class="article-author">Dr. Diana Borgio</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-section">
+        <h1>What our users have to say</h1>
+        <button class="testimonial-prev" onclick="prevTestimonialMobile()">
+          &#10094;
+        </button>
+        <div class="testimonial-container-mobile">
+          <div class="testimonial-card-mobile">
+            <p>
+              "Very good app. Well thought out about
+              booking/rescheduling/canceling an appointment. Also, Doctor's
+              feedback mechanism is good and describes all the basics in a good
+              way"
+            </p>
+            <div class="testimonial-user">
+              <img
+                src="assets/images/user.png"
+                alt="User 1"
+                class="testimonial-image"
+              />
+              <h3>Avinash Kumar</h3>
+            </div>
+          </div>
+          <div class="testimonial-card-mobile">
+            <p>
+              "Very helpful. Far easier than doing same things on computer.
+              Allows quick and easy search with speedy booking. Even maintains
+              history of doctors visited."
+            </p>
+            <div class="testimonial-user">
+              <img
+                src="assets/images/user.png"
+                alt="User 1"
+                class="testimonial-image"
+              />
+              <h3>Amit Sharma</h3>
+            </div>
+          </div>
+          <div class="testimonial-card-mobile">
+            <p>
+              "Very easy to book,maintain history. Hassle free from older
+              versions of booking appointment via telephone.. Thanks Practo for
+              making it simple."
+            </p>
+            <div class="testimonial-user">
+              <img
+                src="assets/images/user.png"
+                alt="User 1"
+                class="testimonial-image"
+              />
+              <h3>Jyothi Bhatia</h3>
+            </div>
+          </div>
+          <div class="testimonial-card-mobile">
+            <p>
+              "Very good app. Well thought out about
+              booking/rescheduling/canceling an appointment. Also, Doctor's
+              feedback mechanism is good and describes all the basics in a good
+              way."
+            </p>
+            <div class="testimonial-user">
+              <img
+                src="assets/images/user.png"
+                alt="User 1"
+                class="testimonial-image"
+              />
+              <h3>Avinash Kumar</h3>
+            </div>
+          </div>
+          <!-- Add more testimonial cards as needed -->
+        </div>
+        <div class="testimonial-dots">
+          <span class="dot" onclick="currentSlideMobile(1)"></span>
+          <span class="dot" onclick="currentSlideMobile(2)"></span>
+          <span class="dot" onclick="currentSlideMobile(3)"></span>
+          <!-- Add more dots as needed -->
+        </div>
+        <button class="testimonial-next" onclick="nextTestimonialMobile()">
+          &#10095;
+        </button>
+      </section>
+
+      <section class="download-section">
+        <div class="image-container">
+          <img
+            src="assets/images/footer-img.webp"
+            alt="download"
+            class="download-image"
+          />
+        </div>
+        <div class="content-container">
+          <div class="app-info">
+            <h1 class="app-title">Download the Practo app</h1>
+            <p class="app-description">
+              Access video consultation with India’s top doctors on the Practo
+              app. Connect with doctors online, available 24/7, from the comfort
+              of your home.
+            </p>
+          </div>
+          <div class="download-link">
+            <h4 class="link-title">Get the link to download the app</h4>
+            <div class="phone-input-wrapper">
+              <div class="phone-input-container">
+                <div class="phone-input">
+                  <span class="country-code">+91</span>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    pattern="[0-9]{10}"
+                    required
+                    class="phone-number-input"
+                  />
+                </div>
+              </div>
+              <button class="send-sms-button">Send SMS</button>
+            </div>
+          </div>
+          <div class="store-buttons">
+            <button class="google-play-button">Google Play</button>
+            <button class="app-store-button">App Store</button>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer-section">
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3 class="footer-title">Practo</h3>
+            <ul class="footer-list">
+              <li class="footer-item"><a href="#">About</a></li>
+              <li class="footer-item"><a href="#">Blog</a></li>
+              <li class="footer-item"><a href="#">Careers</a></li>
+              <li class="footer-item"><a href="#">Press</a></li>
+              <li class="footer-item"><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-title">For patients</h3>
+            <ul class="footer-list">
+              <li class="footer-item"><a href="#">Search for doctors</a></li>
+              <li class="footer-item"><a href="#">Search for clinics</a></li>
+              <li class="footer-item"><a href="#">Search for hospitals</a></li>
+              <li class="footer-item"><a href="#">Practo Plus</a></li>
+              <li class="footer-item">
+                <a href="#">Covid Hospital listing</a>
+              </li>
+              <li class="footer-item"><a href="#">Practo Care Clinics</a></li>
+              <li class="footer-item"><a href="#">Read health articles</a></li>
+              <li class="footer-item"><a href="#">Read about medicines</a></li>
+              <li class="footer-item"><a href="#">Practo drive</a></li>
+              <li class="footer-item"><a href="#">Health app</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <div class="footer-subcolumn">
+              <h3 class="footer-title">For doctors</h3>
+              <ul class="footer-list">
+                <li class="footer-item"><a href="#">Practo Profile</a></li>
+              </ul>
+            </div>
+            <div class="footer-subcolumn">
+              <h3 class="footer-title">For Clinics</h3>
+              <ul class="footer-list">
+                <li class="footer-item"><a href="#">Ray by Practo</a></li>
+                <li class="footer-item"><a href="#">Practo Reach</a></li>
+                <li class="footer-item"><a href="#">Ray Tab</a></li>
+                <li class="footer-item"><a href="#">Practo Pro</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-column">
+            <div class="footer-subcolumn">
+              <h3 class="footer-title">For hospitals</h3>
+              <ul class="footer-list">
+                <li class="footer-item"><a href="#">Insta by Practo</a></li>
+                <li class="footer-item"><a href="#">Qikwell by Practo</a></li>
+                <li class="footer-item"><a href="#">Practo Profile</a></li>
+                <li class="footer-item"><a href="#">Practo Reach</a></li>
+                <li class="footer-item"><a href="#">Practo Drive</a></li>
+              </ul>
+            </div>
+            <div class="footer-subcolumn">
+              <h3 class="footer-title">For Corporates</h3>
+              <ul class="footer-list">
+                <li class="footer-item"><a href="#">Wellness Plan</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-title">More</h3>
+            <ul class="footer-list">
+              <li class="footer-item"><a href="#">Help</a></li>
+              <li class="footer-item"><a href="#">Developers</a></li>
+              <li class="footer-item"><a href="#">Privacy Policy</a></li>
+              <li class="footer-item"><a href="#">Terms & Conditions</a></li>
+              <li class="footer-item"><a href="#">PCS T&C</a></li>
+              <li class="footer-item"><a href="#">Healthcare Directory</a></li>
+              <li class="footer-item"><a href="#">Practo Health Wiki</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-title">Social</h3>
+            <ul class="footer-list">
+              <li class="footer-item"><a href="#">Facebook</a></li>
+              <li class="footer-item"><a href="#">Twitter</a></li>
+              <li class="footer-item"><a href="#">LinkedIn</a></li>
+              <li class="footer-item"><a href="#">YouTube</a></li>
+              <li class="footer-item"><a href="#">GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <img
+            src="assets/images/white_practo_logo.svg"
+            alt="footerLogo"
+            class="footer-logo"
+          />
+          <p class="footer-copyright">
+            Copyright © 2017, Practo. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </section>
+    <script src="js/index.js"></script>
+    <script src="js/index1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
