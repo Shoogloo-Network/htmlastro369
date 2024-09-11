@@ -7,10 +7,12 @@
     color: inherit;
 
 }
-a{
-    margin: 0;
+a {
     padding: 0;
+    border: none;
+    margin: 0;
 }
+
 html {
     box-sizing: border-box;
 
@@ -34,12 +36,20 @@ html {
     margin-left: 0;
     margin-bottom: 10px;
     height: 380px;
+    /* background: rgb(10,19,48);
+    background: linear-gradient(90deg, rgba(10,19,48,1) 9%, rgba(14,54,199,1) 89%);
+    background-blend-mode: lighten; */
+
 }
 
 .astroBannerDiv>img{
     width: 100%;
 height: 380px;
 object-fit: stretch;
+/* border-left: transparent; */
+/* box-shadow: 12px 29px 81px 0px rgba(10,19,48,1); */
+/* mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);  */
+/* box-shadow: 0 0 20px rgba(0, 0, 0, 0);  */
 }
 
 
@@ -342,10 +352,13 @@ hr {
 } */
 
 .logoImage{
-    padding: auto;
-    
+    /* align-self: baseline; */
     height: 44px;
     width: 100px;
+    margin-bottom: -3px;
+}
+.anchorLogo{
+    align-self: center;
 }
 
 /* .anchorLogo{
