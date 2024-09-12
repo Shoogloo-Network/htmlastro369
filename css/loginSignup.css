@@ -134,6 +134,7 @@ cursor: pointer;
     border-radius: 4px;
     cursor: pointer;
     font-size: 20px;
+    margin-bottom: 20px;
     /* color: #30343e; */
     /* font-weight: 500; */
   }
@@ -178,7 +179,7 @@ cursor: pointer;
 
   .terms-container {
     display: flex;
-    justify-content: center;
+    /* justify-content: space-between; */
     align-items: center;
     /* margin-top: 10px;
     margin-bottom: 20px; */
@@ -199,7 +200,8 @@ cursor: pointer;
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 22px;
-    margin-left: 72px;
+    margin-left: auto;
+    /* float: right; */
     cursor: pointer;
     color: #30343e;
     font-weight: 500;
@@ -219,6 +221,8 @@ cursor: pointer;
     /* gap: 30px; */
 
     /* visibility: hidden; */
+    padding-left: 0;
+    padding-right: 0;
     display: none;
   }
 
@@ -677,7 +681,7 @@ color: #a2adbd;
 font-size: 14px;
 text-align: center;
 line-height: 1.4;
-margin-top: 20px;
+/* margin-top: 20px; */
 }
 
 .alternateLogin>hr{
