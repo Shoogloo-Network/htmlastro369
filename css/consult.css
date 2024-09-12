@@ -7,13 +7,19 @@
     color: inherit;
 
 }
-.circle-image {
+
+a{
+  padding: 0;
+  border: none;
+  margin: 0;
+}
+/* .circle-image {
   height: 40px;
   width: 40px;
   border-radius: 50%;
   overflow: hidden;
   object-fit: contain;
-}
+} */
 
 html {
     box-sizing: border-box;
@@ -208,7 +214,7 @@ padding-right: 40px;
     position: sticky;
     top: 0;
     background-color: #fff;
-    padding-top: 20px;
+    /* padding-top: 20px; */
 
     z-index: 3000;
     padding-left: 40px;
@@ -220,7 +226,9 @@ padding-right: 40px;
 
     justify-content: space-between;
 
-    padding-bottom: 20px;
+align-content: center;
+
+    /* padding-bottom: 20px; */
   }
 
   .login-signup-button {
@@ -245,11 +253,23 @@ padding-right: 40px;
     border-radius: 0px;
   }
 
+.logoImage{
+  height: 44px;
+  width: 100px;
+  margin-bottom: -3px;
+}
+.anchorLogo{
+  align-self: center;
+}
+
   .logo-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+
   }
 
   .logo-container > ul {
@@ -264,8 +284,8 @@ padding-right: 40px;
 
   .logo-container > ul > li > a {
     font-size: 16px;
-    line-height: 20px;
-    font-weight: bold;
+    line-height: 18px;
+    font-weight: 500;
     color: #2d2d32;
     letter-spacing: -0.3px;
   }
@@ -277,6 +297,8 @@ padding-right: 40px;
 
   .menu-container {
     display: flex;
+    padding-bottom: 13.5px;
+    padding-top: 13.5px;
   }
 
   .menu-container-parent {
