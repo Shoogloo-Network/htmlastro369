@@ -90,7 +90,7 @@ cursor: pointer;
     transform: translate(-50%, -50%);
     border: 1px solid #b8bbd9;
     border-radius: 10px;
-    box-shadow: 10px 10px 5px rgba(184, 173, 173, 0.5);
+    box-shadow: 10px 10px 5px rgba(184, 173, 173, 0.2);
     /* Horizontal offset, Vertical offset, Blur radius, Color */
     opacity: 1;
   }

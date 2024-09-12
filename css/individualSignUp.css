@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -19,23 +12,11 @@ html {
   box-sizing: border-box;
 }
 
-
-.anchorLogo{
-  align-self: center;
-}
-
-.logoImage{
-  height: 44px;
-  width: 100px;
-  margin-bottom: -3px;
-}
-
 .login-hover {
   display: none;
   position: absolute;
-  top: 52px;
+  top: 62px;
   right: 40px;
-  font-weight: 700;
   background-color: #e6e6e6;
   border: 2px solid #f0f0f5;
   border-bottom: 3px solid black;
@@ -90,7 +71,7 @@ cursor: pointer;
 #pop-up .pop-up-register-form-div {
   position: absolute;
   width: 500px;
-  height: 565px;
+  height: 412px;
   background-color: #fff;
   z-index: 2000;
   left: 50%;
@@ -108,6 +89,8 @@ cursor: pointer;
 #pop-up .pop-up-register-form-div > h2 {
   text-align: center;
   margin-bottom: 30px;
+  color: #30343e;
+  font-weight: 500;
 }
 
 form {
@@ -121,7 +104,7 @@ label {
 }
 
 input[type="email"],
-input[type="phone"],input[type="password"] {
+input[type="phone"] ,input[type="password"]{
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
@@ -130,6 +113,14 @@ input[type="phone"],input[type="password"] {
   box-sizing: border-box;
 }
 
+ #fname{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 button {
   width: 100%;
   padding: 10px;
@@ -146,29 +137,36 @@ button:hover {
 }
 
 .otp-container {
-  display: flex;
-  visibility: hidden;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
+    display: flex;
+    /* visibility: hidden; */
+    display: none;
+   margin-left: auto; 
+   margin-right: auto;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
 
-.otp-input {
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  font-size: 18px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
+  .otp-container>h4{
+    text-align: left;
+    margin-bottom: 10px;
+  }
 
-.otp-input:focus {
-  border-color: #007bff;
-  outline: none;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
+  .otp-input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .otp-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
 
 .terms-container {
   display: flex;
@@ -176,6 +174,7 @@ button:hover {
   align-items: center;
   /* margin-top: 10px;
   margin-bottom: 20px; */
+ 
 }
 
 .terms-container input[type="checkbox"] {
@@ -192,7 +191,8 @@ button:hover {
 .resend-otp {
   font-size: 14px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  margin-left: 72px;
   cursor: pointer;
 }
 
@@ -203,13 +203,14 @@ button:hover {
 
 .terms-and-resend {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   /* margin-top: 10px;
   margin-bottom: 20px; */
-  gap: 30px;
+  /* gap: 30px; */
 
   /* visibility: hidden; */
+  display: none;
 }
 
 /* body{
@@ -222,7 +223,7 @@ header {
   position: sticky;
   top: 0;
   background-color: #fff;
-  /* padding-top: 20px; */
+  padding-top: 20px;
 
   z-index: 3000;
   padding-left: 40px;
@@ -233,8 +234,8 @@ header {
   display: flex;
 
   justify-content: space-between;
-align-items: center;
-  /* padding-bottom: 20px; */
+
+  padding-bottom: 20px;
 }
 
 .login-signup-button {
@@ -264,8 +265,6 @@ hr {
   justify-content: space-between;
   align-items: center;
   gap: 40px;
-  padding-bottom: 16px;
-  padding-top: 16px;
 }
 
 .logo-container > ul {
@@ -276,13 +275,12 @@ hr {
 
 .logo-container > ul > li {
   padding-left: 20px;
-
 }
 
 .logo-container > ul > li > a {
   font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
+  line-height: 20px;
+  font-weight: bold;
   color: #2d2d32;
   letter-spacing: -0.3px;
 }
@@ -298,7 +296,6 @@ hr {
 
 .menu-container-parent {
   display: flex;
-  align-items: center;
 }
 
 .corporates-dropdown {
@@ -394,7 +391,7 @@ hr {
   display: none;
   /* position: absolute; */
   position: fixed;
-  top: 52px;
+  top: 66px;
   width: 1278px;
   height: 300px;
   background-color: #ffffff;
@@ -760,7 +757,7 @@ hr {
     transform: translate(-50%, -50%);
     border: 1px solid #b8bbd9;
     border-radius: 10px;
-    box-shadow: 10px 10px 5px rgba(184, 173, 173, 0.2);
+    box-shadow: 10px 10px 5px rgba(184, 173, 173, 0.5);
     /* Horizontal offset, Vertical offset, Blur radius, Color */
     opacity: 1;
   }
@@ -871,6 +868,8 @@ hr {
     visibility: hidden;
   }
 }
+
+
 .loginOptions {
 display: flex;
 justify-content: space-around;
@@ -879,13 +878,9 @@ margin-top: 20px;
 
 .loginOption {
 text-align: center;
-color: #67717e;
-font-weight: 400;
-font-size: 14px;
-padding-bottom: 12px;
 }
 
-.mobileLogin img {
+.emailLogin img {
 /* Specific styles for email login */
 height: 30px;
 width: 30px;
@@ -906,39 +901,25 @@ width: 30px;
 object-fit: cover;
 }
 
-.accounts{
-margin-top: 20px;
+.individualSignupDetails{
 display: flex;
-justify-content: center;
-/* flex-wrap: wrap-reverse */
-/* align-content: center; */
-gap: 80px;
-font-size: 14px;
+gap: 30px;
+}
+
+
+
+.existing-user{
+/* padding-top: 20px; */
+/* text-align: center; */
+margin-left: auto;
+margin-right: auto;
+font-size: 1rem;
 color: #3ba5e0;
-line-height: 1.2;
 }
 
-.dealerAccount{
-align-self: flex-end;
+#continue-sign-up-btn{
+margin-bottom: 20px;
 }
-
-
-.alternateLogin{
-color: #a2adbd;
-font-size: 14px;
-text-align: center;
-line-height: 1.4;
-}
-
-.alternateLogin>hr{
-border: none;
-      border-top: 2px dashed #a2adbd; /* Adjust color and thickness as needed */
-      margin: 0px 5px; 
-      width: 120px;
-      align-self: center;
-      
-}
-
 
 .mobile-content {
   display: none;
@@ -999,9 +980,3 @@ border: none;
     margin: 10px 0;
   }
 }
-
-
-
-
-
-
