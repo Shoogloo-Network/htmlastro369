@@ -663,7 +663,7 @@ object-fit: cover;
 .accounts{
 margin-top: 20px;
 display: flex;
-justify-content: center;
+justify-content: space-between;
 /* flex-wrap: wrap-reverse */
 /* align-content: center; */
 gap: 80px;
