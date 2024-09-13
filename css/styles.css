@@ -57,6 +57,9 @@ object-fit: stretch;
 background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 81%, rgba(148,187,233,1) 100%);
     height: 420px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .cardBannerDiv{
@@ -64,7 +67,8 @@ background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 8
     flex-direction: column;
     gap: 20px;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+    margin-left: 40px;
     width: 50%;
     height: 100%;
 }
@@ -77,6 +81,55 @@ background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 8
     display: flex;
     gap: 20px;
 }
+
+
+.hero-image-slider-container {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    /* height: 280px; */
+    background-color: transparent;
+}
+
+.image-slider-slides {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+}
+
+.image-slider-hero-image {
+    min-width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+   
+}
+
+.image-slider-dots {
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.image-slider-dot {
+    height: 8px;
+    width: 8px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.image-slider-dot.active {
+    background-color: #717171;
+}
+
+.hero-image-container>img {
+
+    height: 318px;
+}
+
 
 .login-hover {
     display: none;

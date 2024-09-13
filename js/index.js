@@ -91,6 +91,51 @@ function prevSlide() {
   }
 }
 
+
+
+//for header image slider
+let imageSliderCurrentIndex = 0;
+const imageSliderSlides = document.querySelector('.image-slider-slides');
+const imageSliderDots = document.querySelectorAll('.image-slider-dot');
+
+function imageSliderShowSlide(index) {
+    const totalSlides = document.querySelectorAll('.image-slider-hero-image').length;
+    if (index >= totalSlides) {
+        imageSliderCurrentIndex = 0;
+    } else if (index < 0) {
+        imageSliderCurrentIndex = totalSlides - 1;
+    } else {
+        imageSliderCurrentIndex = index;
+    }
+    imageSliderSlides.style.transform = `translateX(-${imageSliderCurrentIndex * 100}%)`;
+    imageSliderUpdateDots();
+}
+
+function imageSliderUpdateDots() {
+    imageSliderDots.forEach((dot, index) => {
+        dot.classList.remove('active');
+        if (index === imageSliderCurrentIndex) {
+            dot.classList.add('active');
+        }
+    });
+}
+
+function imageSliderNextSlide() {
+    imageSliderShowSlide(imageSliderCurrentIndex + 1);
+}
+
+function imageSliderCurrentSlide(index) {
+    imageSliderShowSlide(index);
+}
+
+// Automatic slide change
+setInterval(imageSliderNextSlide, 3000);
+
+// Initialize the slider
+imageSliderShowSlide(imageSliderCurrentIndex);
+
+
+
 //Testimonial
 let currentTestimonial = 0;
 const totalTestimonials = document.querySelectorAll(".testimonial-card").length;
