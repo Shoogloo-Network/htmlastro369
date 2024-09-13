@@ -67,19 +67,19 @@ background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 8
     flex-direction: column;
     gap: 20px;
     justify-content: center;
-    align-items: center;
-    /* margin-left: 40px; */
+    /* align-items: center; */
+    margin-left: 60px;
     width: 50%;
     height: 100%;
 }
 
 .cardBannerDiv1{
     display: flex;
-    gap: 20px;
+    gap: 50px;
 }
 .cardBannerDiv2{
     display: flex;
-    gap: 20px;
+    gap: 50px;
 }
 
 
@@ -708,7 +708,7 @@ hr {
 }
 
 .card1 {
-    width: 160px;
+    width: 220px;
     height: 180px;
     background-color: white;
     /* border: 1px solid #f0f0f5; */
