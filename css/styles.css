@@ -1496,7 +1496,13 @@ input[type="tel"]:focus {
 
 /* Desktop Astrologer details */
 
-
+.astrologer-details{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    /* overflow-x: scroll; */
+    margin: 20px;
+}
 .astrologer-image-section{
     display: flex;
     /* gap: 20px; */
@@ -1513,11 +1519,12 @@ input[type="tel"]:focus {
 
 
 .availability-dot{
-    height: 10px;
-    width: 10px;
+    height: 12px;
+    width: 12px;
     background-color: green;
     border-radius: 50%;
-
+    border: 2px solid white;
+    box-shadow: #2d2d32;
 }
 
 
@@ -1527,6 +1534,8 @@ input[type="tel"]:focus {
     align-items: center;
     height: 20px;
     gap: 5px;
+    margin-left: -16.5px;
+   
 }
 
 
@@ -1545,6 +1554,7 @@ input[type="tel"]:focus {
     line-height: 24px;
     letter-spacing: .15px;
     text-transform: capitalize;
+    
 }
 
 
