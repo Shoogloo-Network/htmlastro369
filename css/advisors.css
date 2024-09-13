@@ -940,3 +940,112 @@ font-weight: 700;
     border-radius: 5px;
     padding: 5px;
 } */
+
+
+
+
+/* Banner Section  */
+
+.advisorsBanner{
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 8px 5px rgba(184, 173, 173, 0.2);
+}
+
+.advisorsBannerImage{
+max-width: 1280px;
+
+}
+
+
+/* Phone number */
+
+.phone-input-wrapper {
+    display: flex;
+    /* margin-top: 10px; */
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.phone-input-container-div{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.send-sms-button {
+
+    background-color: #14bef0;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    border: 0;
+    border-radius: 4px;
+    outline: none;
+    font-weight: 700;
+    text-transform: none;
+    flex-grow: 0;
+    /* Prevents the button from growing */
+    width: 130px;
+    height: 50px;
+}
+
+
+
+/* Telephone input */
+.phone-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 20px;
+    padding-left: 0;
+
+
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+
+}
+
+.country-code {
+    background-color: transparent;
+    padding: 15.5px;
+    border: 1px solid #ccc;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+}
+
+input[type="tel"] {
+    padding: 17px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+    background-color: transparent;
+}
+
+input[type="tel"]:focus {
+    border-color: #007BFF;
+}
+
+
+.phone-input-wrapper>h1{
+    text-align: center;
+    padding-top: 13px;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000;
+    width: 300px;
+}
