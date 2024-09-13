@@ -964,7 +964,7 @@ max-width: 1280px;
 .phone-input-wrapper {
     display: flex;
     /* margin-top: 10px; */
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
     padding-left: 40px;
     padding-right: 40px;
