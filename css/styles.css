@@ -67,8 +67,8 @@ background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 8
     flex-direction: column;
     gap: 20px;
     justify-content: center;
-    /* align-items: center; */
-    margin-left: 40px;
+    align-items: center;
+    /* margin-left: 40px; */
     width: 50%;
     height: 100%;
 }
