@@ -573,14 +573,15 @@ align-content: center;
 
 .astrologer-list{
     width: 1282px;
-    height: 90vh;
+    /* height: 90vh; */
     display: flex;
     margin-left:auto;
     margin-right: auto;
 }
 .astrologer-filter-div{
     width: 20%;
-    background-color: #0056b3;
+    /* background-color: #0056b3; */
+    margin-top: 20px;
 }
 
 
@@ -814,3 +815,128 @@ font-weight: 700;
     padding: 12px 20px;
     border-radius: 6px;
 }
+
+
+/* Filter  */
+.expertise-section{
+    cursor: pointer;
+}
+.filter-checkbox1{
+    /* display: none; */
+}
+
+.expertise-section1{
+    cursor: pointer;
+}
+.filter-checkbox2{
+    display: none;
+}
+
+
+.expertise-down-arrow{
+    display: block;
+}
+
+.expertise-right-arrow{
+    display: none;
+}
+
+
+
+.expertise-section{
+    margin-top: 20px;
+    display: flex;
+    gap: 60px;
+    /* justify-content: center; */
+    align-items:center;
+    margin-bottom: 15px;
+}
+
+.expertise-down-arrow1{
+    display: none;
+}
+
+.expertise-right-arrow1{
+    display: block;
+}
+.expertise-section1{
+    margin-top: 20px;
+    display: flex;
+    gap: 60px;
+    /* justify-content: center; */
+    align-items:center;
+    margin-bottom: 15px;
+}
+
+
+/* filter check box */
+
+.filter-checkbox1 {
+    /* display: flex;
+    flex-direction: column;
+    gap: 10px; */
+    padding: 10px;
+    margin-bottom: 40px;
+    /* padding-bottom: 40px; */
+    /* background-color: #f9f9f9; */
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    width: 200px;
+}
+
+.filter-checkbox1 label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+    margin-bottom:26px;
+}
+
+.filter-checkbox1 input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* .filter-checkbox1 label:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 5px;
+} */
+
+
+
+.filter-checkbox2 {
+    /* display: flex;
+    flex-direction: column;
+    gap: 10px; */
+    padding: 10px;
+    margin-bottom: 40px;
+    /* padding-bottom: 40px; */
+    /* background-color: #f9f9f9; */
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    width: 200px;
+}
+
+.filter-checkbox2 label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+    margin-bottom:26px;
+}
+
+.filter-checkbox2 input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* .filter-checkbox1 label:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 5px;
+} */

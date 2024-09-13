@@ -1,3 +1,40 @@
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector(".expertise-section").addEventListener("click", function() {
+        console.log("clicked");
+        const checkbox = document.querySelector(".filter-checkbox1");
+        if (checkbox.style.display === "block") {
+            checkbox.style.display = "none";
+            document.querySelector(".expertise-down-arrow").style.display="none";
+            document.querySelector(".expertise-right-arrow").style.display="block";
+        } else {
+            checkbox.style.display = "block";
+            document.querySelector(".expertise-right-arrow").style.display="none";
+            document.querySelector(".expertise-down-arrow").style.display="block";
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector(".expertise-section1").addEventListener("click", function() {
+        console.log("clicked");
+        const checkbox = document.querySelector(".filter-checkbox2");
+        if (checkbox.style.display === "block") {
+            checkbox.style.display = "none";
+            document.querySelector(".expertise-down-arrow1").style.display="none";
+            document.querySelector(".expertise-right-arrow1").style.display="block";
+        } else {
+            checkbox.style.display = "block";
+            document.querySelector(".expertise-right-arrow1").style.display="none";
+            document.querySelector(".expertise-down-arrow1").style.display="block";
+        }
+    });
+});
+
+
+
+
 //for clicking on user icon
 
 document
@@ -6,6 +43,7 @@ document
    const loginHover = document.querySelector(".login-hover");
    if (loginHover.style.display === "block") {
      loginHover.style.display = "none";
+
    } else {
      loginHover.style.display = "block";
    }
@@ -143,3 +181,4 @@ document
  });
 
 
+ 
