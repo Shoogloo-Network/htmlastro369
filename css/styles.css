@@ -701,7 +701,7 @@ hr {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     /* height: 188px; */
-    height: 100px;
+    height: 113px;
     object-fit: cover;
     border: none;
 
@@ -731,7 +731,7 @@ hr {
 
 .header-title {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 22px;
     color: #414146;
 
 }
