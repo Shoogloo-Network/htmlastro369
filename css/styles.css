@@ -1498,10 +1498,11 @@ input[type="tel"]:focus {
 
 .astrologer-details{
     display: flex;
-    gap: 30px;
+    gap: 20px;
     justify-content: center;
     /* overflow-x: scroll; */
-    margin: 20px;
+    margin: 20px auto;
+    max-width: 1260px;
 }
 .astrologer-image-section{
     display: flex;
@@ -1573,8 +1574,8 @@ input[type="tel"]:focus {
     flex-direction: column;
     gap: 15px;
     /* align-items: center; */
-    height: 380px;
-    width: 370px;
+    height: 360px;
+    width: 300px;
     /* background-color: #e7e6e6; */
     padding: 20px;
     border-radius: 4px;
@@ -1685,7 +1686,7 @@ font-weight: 700;
     line-height: 1;
     letter-spacing: 1.5px;
     text-transform: capitalize;
-    padding: 12px 30px;
+    padding: 12px 20px;
     border-radius: 6px;
 }
 
@@ -1709,6 +1710,6 @@ font-weight: 700;
     line-height: 1;
     letter-spacing: 1.5px;
     text-transform: capitalize;
-    padding: 12px 45px;
+    padding: 12px 20px;
     border-radius: 6px;
 }
