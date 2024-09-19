@@ -396,7 +396,7 @@
             placeholder="+91 6399889123"
           />
           <div class="otp-container">
-            <h4>Enter OTP</h4>
+            <h4>OTP</h4>
             <input type="text" maxlength="1" class="otp-input" />
             <input type="text" maxlength="1" class="otp-input" />
             <input type="text" maxlength="1" class="otp-input" />
@@ -404,6 +404,9 @@
             <input type="text" maxlength="1" class="otp-input" />
             <input type="text" maxlength="1" class="otp-input" />
           </div>
+        </div>
+        <div class="sEmail">
+          <p class="sEmailPara">Signed in with <span class="linkEmail"><a>Email</a></span></p>
         </div>
         <button id="continue-sign-up-btn">Continue</button>
         <form class="terms-and-resend">
@@ -417,7 +420,9 @@
           
         </form>
         
-       
+       <h4 class="dAccount">
+        Don't have a account ?
+       </h4>
         <div class="accounts">
           <a href="individualSignup.html" class="individualAccount"
             >Create Individual Account</a
@@ -580,7 +585,7 @@
         document.querySelector("#continue-sign-up-btn").addEventListener("click",function(){
           document.querySelector(".terms-and-resend").style.display="block";
           document.querySelector(".otp-container").style.display="block";
-          document.querySelector(".pop-up-register-form-div").style.height="540px";
+          document.querySelector(".pop-up-register-form-div").style.height="564px";
         })
     </script>
 

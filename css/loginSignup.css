@@ -83,7 +83,7 @@ cursor: pointer;
   #pop-up .pop-up-register-form-div {
     position: absolute;
     width: 500px;
-    height: 400px;
+    height: 428px;
     background-color: #fff;
     z-index: 2000;
     left: 50%;
@@ -149,8 +149,8 @@ cursor: pointer;
     display: flex;
     /* visibility: hidden; */
     display: none;
-   margin-left: auto; 
-   margin-right: auto;
+   /* margin-left: auto; 
+   margin-right: auto; */
     gap: 10px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -663,7 +663,7 @@ object-fit: cover;
 }
 
 .accounts{
-margin-top: 20px;
+margin-top: 10px;
 display: flex;
 justify-content: space-between;
 /* flex-wrap: wrap-reverse */
@@ -696,7 +696,39 @@ border: none;
         
 }
 
-  .mobile-content {
+.dAccount{
+color: #67717e;
+font-size: 14px;
+text-align: center;
+line-height: 1.4;
+margin-top: 0;
+}
+
+
+.sEmailPara{
+  text-align: center;
+  color: #67717e;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  padding-bottom: 12px;
+}
+
+
+
+.linkEmail {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  margin-left: auto;
+  /* float: right; */
+  cursor: pointer;
+  text-decoration: underline;
+  color: #14bef0;
+  font-weight: 500;
+}
+
+.mobile-content {
     display: none;
   }
 
