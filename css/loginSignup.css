@@ -208,11 +208,12 @@ cursor: pointer;
     cursor: pointer;
     color: #30343e;
     font-weight: 500;
+    color: #007bff;
   }
 
   .resend-otp > a:hover {
     text-decoration: underline;
-    color: #14bef0;
+   
   }
 
   .terms-and-resend {
@@ -670,7 +671,7 @@ justify-content: space-between;
 /* align-content: center; */
 gap: 80px;
 font-size: 14px;
-color: #3ba5e0;
+color: #007bff;
 line-height: 1.2;
 }
 
@@ -699,7 +700,7 @@ border: none;
 .dAccount{
 color: #67717e;
 font-size: 14px;
-text-align: center;
+/* text-align: center; */
 line-height: 1.4;
 margin-top: 0;
 }
@@ -720,12 +721,17 @@ margin-top: 0;
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 22px;
-  margin-left: auto;
+  margin-left: 6px;
   /* float: right; */
   cursor: pointer;
-  text-decoration: underline;
-  color: #14bef0;
+  /* text-decoration: underline; */
+  color: #007bff;
   font-weight: 500;
+
+}
+
+.linkEmail:hover{
+  text-decoration: underline;
 }
 
 .mobile-content {
