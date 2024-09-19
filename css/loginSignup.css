@@ -154,7 +154,7 @@ cursor: pointer;
     gap: 10px;
     /* margin-top: 10px; */
     margin-bottom: 20px;
-    /* text-align: center; */
+    text-align: center;
   }
 
   .otp-container>h4{
