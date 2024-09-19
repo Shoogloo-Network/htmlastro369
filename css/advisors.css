@@ -599,7 +599,7 @@ align-content: center;
 
 .astrologer-details{
     display: flex;
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
     /* overflow-x: scroll; */
     margin: 20px auto;
@@ -674,9 +674,9 @@ align-content: center;
 .astrologer-container{
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    /* gap: 8px; */
     align-items: flex-start;
-    height: 350px;
+    height: 312px;
     width: 300px;
     /* background-color: #e7e6e6; */
     padding: 20px;
@@ -690,16 +690,17 @@ align-content: center;
 
 
 .greeting{
-    margin-top: 8px;
+    margin-top: 4px;
     color: #424242;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+    font-size: 14px;
 }
 
 .astrologer-rating{
     display: flex;
     gap: 5px;
     /* font-family: Outfit, sans-serif; */
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 550;
     color: #424242;
     line-height: 24px;
@@ -714,7 +715,7 @@ align-content: center;
 }
 
 .star {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: rgb(250, 175, 0);
     /* margin: 0 -1px; */
     cursor: pointer;
@@ -756,7 +757,7 @@ font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 18px;
     letter-spacing: .5px;
@@ -767,7 +768,9 @@ font-weight: 700;
 
 .astrologer-actions{
     display: flex;
-    gap: 15px;
+    gap: 70px;
+    margin-top: 8px;
+    /* justify-content: space-between; */
 }
 
 
@@ -783,7 +786,7 @@ font-weight: 700;
     cursor: pointer;
     pointer-events: inherit;
     font-family: Outfit, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1;
     letter-spacing: 1.5px;
@@ -807,7 +810,7 @@ font-weight: 700;
     cursor: pointer;
     pointer-events: inherit;
     font-family: Outfit, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1;
     letter-spacing: 1.5px;
