@@ -674,7 +674,7 @@ align-content: center;
 .astrologer-container{
     display: flex;
     flex-direction: column;
-    /* gap: 8px; */
+    gap: 2px;
     align-items: flex-start;
     height: 312px;
     width: 300px;
