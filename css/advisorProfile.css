@@ -761,3 +761,17 @@ align-content: center;
     flex-direction: column;
     gap: 16px;
 }
+
+
+
+.voice_active {
+    display: none; /* Hide by default */
+}
+
+.action-2:hover .chat_active {
+    display: none; /* Hide chat_active on hover */
+}
+
+.action-2:hover .voice_active {
+    display: block; /* Show voice_active on hover */
+}
