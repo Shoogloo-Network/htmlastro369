@@ -1,18 +1,4 @@
-// Appointment section
-document.getElementById("action-2-appointment").addEventListener("click", function() {
-    const appointmentSection = document.getElementById("appointment-page-id");
-    const isOpen = appointmentSection.style.maxHeight === "680px"; // Adjust this to your expanded height
 
-    if (!isOpen) {
-        appointmentSection.style.maxHeight = "680px"; // Expanded height
-        appointmentSection.style.padding = "20px"; // Set padding to show content
-        const targetPosition = appointmentSection.getBoundingClientRect().top + window.scrollY - 54; // Adjust for navbar height
-        window.scrollTo({ top: targetPosition, behavior: 'smooth' }); // Scroll to the section
-    } else {
-        appointmentSection.style.padding = "0"; // No padding when collapsed
-        appointmentSection.style.maxHeight = "0"; // Collapse the section
-    }
-});
 // Default date and time to current date and time
 window.onload = function() {
     const currentDate = new Date();
@@ -61,7 +47,26 @@ document.querySelector('.book-appointment-btn').addEventListener('click', functi
 });
 
 
+// Appointment section
+document.getElementById("action-2-appointment").addEventListener("click", function() {
+    const appointmentSection = document.getElementById("appointment-page-id");
+    const isOpen = appointmentSection.style.maxHeight === "680px"; // Adjust this to your expanded height
 
+    if (!isOpen) {
+        appointmentSection.style.maxHeight = "680px"; // Expanded height
+        appointmentSection.style.padding = "20px"; // Set padding to show content
+        // Redirect to the section immediately without smooth scrolling
+       // Calculate the position for scrolling
+       const navbarHeight = 540; // Height of the navbar
+       const targetPosition = appointmentSection.getBoundingClientRect().top + window.scrollY - navbarHeight; // Adjust for navbar height
+
+       // Scroll to the section
+       window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+    } else {
+        appointmentSection.style.padding = "0"; // No padding when collapsed
+        appointmentSection.style.maxHeight = "0"; // Collapse the section
+    }
+});
 
 //  bell Dot
 
