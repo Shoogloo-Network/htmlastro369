@@ -571,6 +571,8 @@ align-content: center;
    
 }
 
+/* Header Ends */
+
 /* Astrologer list */
 
 .astrologer-list{
@@ -618,6 +620,7 @@ align-content: center;
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
+    cursor: pointer;
 }
 
 
@@ -1164,6 +1167,7 @@ input:checked + .slider:before {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
   /* opacity: 0.4; */
+  display: none;
 }
 
 
@@ -1368,3 +1372,12 @@ input:checked + .slider:before {
     margin-bottom: 10px;
   }
 }
+
+
+
+
+#partnerDetails{
+  display: none;
+}
+
+

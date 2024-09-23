@@ -740,13 +740,13 @@
     </section>
     <section class="advisorsPopUp">
      
-      <div class="chatPopUp">
+      <div class="chatPopUp" id="myDetails">
         <h1 class="shareDetails">Share Details  <span class="closePopUp">X</span></h1>
         <p class="sharePara">to share it with your astrologer, for saving time on consultation</p>
         <div class="details_tab">
           <ul style="display: flex; justify-content: center; gap: 10px;">
-            <li><button style="background-color: #286851; color: #fff; ">My Details</button></li>
-            <li><button>Partner Details</button></li>
+            <li><button style="background-color: #286851; color: #fff; " >My Details</button></li>
+            <li><button id="partnerBtn">Partner Details</button></li>
           </ul>
         </div>
         <input type="text" placeholder="Name" class="dob_input" />
@@ -814,6 +814,80 @@
         <label for="partner" class="partnerLable">Add Partner Details For Matching</label>
         <button>Submit</button>
       </div>
+      <div class="chatPopUp" id="partnerDetails">
+        <h1 class="shareDetails">Share Details  <span class="closePopUp">X</span></h1>
+        <p class="sharePara">to share it with your astrologer, for saving time on consultation</p>
+        <div class="details_tab">
+          <ul style="display: flex; justify-content: center; gap: 10px;">
+            <li><button  id="myDetailsBtn">My Details</button></li>
+            <li><button style="background-color: #286851; color: #fff; ">Partner Details</button></li>
+          </ul>
+        </div>
+        <input type="text" placeholder="Partner's Name" class="dob_input" />
+        <div class="gender_selection">
+          <input type="radio" name="gender" id="male" value="male">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" value="female">
+          <label for="female">Female</label>
+        </div>
+        <h2 class="dob">Date of Birth</h2>
+        <div class="dob_selection">
+          <select name="date" id="date" class="dob_input">
+            <option value="" selected hidden>Date</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+          <select name="month" id="month" class="dob_input">
+            <option value="" selected hidden>Month</option>
+            <option value="jan">Jan</option>
+            <option value="feb">Feb</option>
+            <option value="mar">Mar</option>
+            <option value="april">April</option>
+          </select>
+          <select name="year" id="year" class="dob_input">
+            <option value="" selected hidden>Year</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+          </select>
+        </div>
+        <h2 class="tBirth">Time of Birth</h2>
+        <div class="time_selection">
+          <select name="hour" id="hour" class="dob_input">
+            <option value="" selected hidden>Hour</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+          </select>
+          <select name="min" id="min" class="dob_input">
+            <option value="" selected hidden>Min</option>
+            <option value="00">00</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+          </select>
+          <select name="am" id="am" class="dob_input">
+            <option value="am" selected>AM</option>
+            <option value="pm">PM</option>
+          </select>
+        </div>
+        <div class="time_unsure">
+          <p>Not Sure Of Time</p>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
+        </div>
+        <input type="text" placeholder="search" class="dob_input" />
+       
+        <!-- <input type="checkbox" placeholder="Add Partner Details For Matching" id="partner"/>
+        <label for="partner" class="partnerLable">Add Partner Details For Matching</label> -->
+        <button>Submit</button>
+      </div>
     </section>
     <script>
       // Select all elements with the class 'call-button'
@@ -827,6 +901,7 @@
           });
       });
   </script>
+
       <script src="js/advisors.js"></script>
 </body>
 </html>
