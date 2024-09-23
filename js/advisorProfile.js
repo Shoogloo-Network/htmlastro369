@@ -1,3 +1,61 @@
+// Appointment section
+document.getElementById("action-2-appointment").addEventListener("click", function() {
+    const appointmentSection = document.getElementById("appointment-page-id");
+    if (appointmentSection.style.maxHeight === "0px" || appointmentSection.style.maxHeight === "") {
+        appointmentSection.style.maxHeight = "680px"; // Set to a value larger than the section's height
+        appointmentSection.scrollIntoView({ behavior: 'smooth' }); // Scroll to the section
+    } else {
+        appointmentSection.style.maxHeight = "0px";
+    }
+});
+// Default date and time to current date and time
+window.onload = function() {
+    const currentDate = new Date();
+    const dateInput = document.getElementById('appointment-date');
+
+    // Set the date to today's date
+    const formattedDate = currentDate.toISOString().split('T')[0];
+    dateInput.value = formattedDate;
+
+    // Generate times based on working hours (e.g., 9 AM to 5 PM)
+    const timeSlotsContainer = document.querySelector('.time-slots');
+    timeSlotsContainer.innerHTML = ''; // Clear previous slots
+
+    const startHour = 9; // 9 AM
+    const endHour = 17;  // 5 PM
+
+    for (let hour = startHour; hour < endHour; hour++) {
+        const amPm = hour >= 12 ? 'PM' : 'AM';
+        const displayHour = hour > 12 ? hour - 12 : hour;
+        const timeSlot = document.createElement('button');
+        timeSlot.classList.add('time-slot');
+        timeSlot.textContent = `${displayHour}:00 ${amPm}`;
+        timeSlotsContainer.appendChild(timeSlot);
+    }
+};
+
+// Handle selecting time slots
+document.querySelectorAll('.time-slot').forEach(button => {
+    button.addEventListener('click', function () {
+        document.querySelectorAll('.time-slot').forEach(slot => slot.classList.remove('selected'));
+        button.classList.add('selected');
+    });
+});
+
+// Confirm Appointment
+document.querySelector('.book-appointment-btn').addEventListener('click', function () {
+    const selectedDuration = document.getElementById('session-duration-dropdown').value;
+    const selectedDate = document.getElementById('appointment-date').value;
+    const selectedTime = document.querySelector('.time-slot.selected')?.textContent;
+
+    if (selectedDuration && selectedDate && selectedTime) {
+        alert(`Appointment booked for ${selectedDuration} minutes on ${selectedDate} at ${selectedTime}`);
+    } else {
+        alert('Please select a session duration, date, and time.');
+    }
+});
+
+
 
 
 //  bell Dot

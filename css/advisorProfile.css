@@ -600,7 +600,7 @@ align-content: center;
 .profile-status {
     width: 20%;
     border-radius: 20px;
-    background-color: #73c940;
+    background-color: #286851;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -649,10 +649,10 @@ align-content: center;
     display: flex;
     background-color: #fff;
     border-radius: 10px;
-    border: 1px solid #7BD137;
+    border: 1px solid #286851;
     padding: 4px 2px;
     position: relative;
-    color: #7BD137;
+    color: #286851;
     gap: 5px;
     display: flex;
     align-items: center;
@@ -671,7 +671,7 @@ align-content: center;
     font-size: small;
  }
 .action-2{
-    background-color: rgb(121, 207, 55) !important;
+    background-color: #286851 !important;
     box-shadow: rgba(0, 0, 0, 0.25) 0px -2px 0px inset;
     outline: none;
     border: none;
@@ -820,7 +820,7 @@ font-weight: 700;
 .bellSection{
 display: flex;
 justify-content: space-between;
-max-width: 1260px;
+max-width: 1080px;
 margin-left: auto;
 margin-right: auto;
 }
@@ -859,4 +859,172 @@ margin-right: auto;
     /* justify-content: center; */
     align-items: center;
     text-decoration: underline;
+    color: #9d9d9d;
+}
+
+
+
+
+
+/* Appointment section */
+/* Main Page Layout */
+.appointment-page {
+    max-width: 1080px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Header Section */
+.header-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.header-info h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating span {
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.rating i {
+    color: #ffcc00;
+}
+
+.rating p {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #777;
+}
+.session-duration-section,
+        .session-type-section {
+            margin-bottom: 20px;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        
+        .session-type-section>h2{
+            font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+        }
+        
+        
+        
+        
+        
+/* Session Duration Dropdown */
+.session-duration-section {
+    margin-bottom: 30px;
+}
+
+.session-duration-section h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#session-duration-dropdown {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Date and Time Picker Layout (Side by Side) */
+.date-time-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.date-picker-container, .time-picker-container {
+    flex: 1;
+}
+
+.date-picker-container h2, .time-picker-container h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.date-picker input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.time-slots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.time-slot {
+    background-color: #286851;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100px;
+    text-align: center;
+}
+
+.time-slot:hover {
+    background-color: #0d271e;
+}
+
+/* Booking Confirmation */
+.booking-confirmation {
+    text-align: center;
+}
+
+.book-appointment-btn {
+    background-color: #286851;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.book-appointment-btn:hover {
+    background-color: #0d271e;
 }

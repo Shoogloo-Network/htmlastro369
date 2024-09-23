@@ -304,6 +304,7 @@
               </div>
               <div
                 class="action-2"
+                id="action-2-appointment"
                 style="background-color: #c24ae7 !important"
               >
                 <img
@@ -360,15 +361,75 @@
         </div>
         <div class="contactDetails">
             <div class="contactEmail">
-                <i class="fa-solid fa-envelope"></i>
+                <i class="fa-solid fa-envelope" style="color: #9d9d9d;"></i>
                 <a href="#" >Send Email</a>
             </div>
-        <div class="conatctTel"><i class="fa-solid fa-tty"></i><a href="#">1-800-ASK-KEEN Ext.05269696</a></div>
+        <div class="conatctTel"><i class="fa-solid fa-tty" style="color: #9d9d9d;"></i><a href="#">1-800-ASK-KEEN Ext.05269696</a></div>
         </div>
         
     </div>
       </div>
     </section>
+    <div class="appointment-page" id="appointment-page-id" style="max-height: 0; overflow: hidden; transition: max-height 0.5s ease;">
+        <!-- Header Section -->
+        <div class="header-section">
+            <img src="./assets/images/advisorProfile.jfif" alt="Profile" class="profile-img">
+            <div class="header-info">
+                <h1>Psychic Reading with  Spark Devi</h1>
+                <div class="rating">
+                    <span>4.8</span>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half"></i>
+                    <p>125 Reviews</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Session Type Dropdown -->
+        <div class="session-type-section">
+            <h2>Choose Session Type</h2>
+            <select id="session-type-dropdown">
+                <option value="chat">Chat</option>
+                <option value="call">Call</option>
+            </select>
+        </div>
+    
+        <!-- Session Duration Dropdown -->
+        <div class="session-duration-section">
+            <h2>Choose Session Duration</h2>
+            <select id="session-duration-dropdown">
+                <option value="15">15 Minutes - $45</option>
+                <option value="30">30 Minutes - $80</option>
+                <option value="60">60 Minutes - $150</option>
+            </select>
+        </div>
+    
+        <!-- Date and Time Selection (Side by Side) -->
+        <div class="date-time-section">
+            <div class="date-picker-container">
+                <h2>Select Date</h2>
+                <div class="date-picker">
+                    <input type="date" id="appointment-date">
+                </div>
+            </div>
+    
+            <div class="time-picker-container">
+                <h2>Select Time</h2>
+                <div class="time-slots">
+                    <button class="time-slot">10:00 AM</button>
+                    <button class="time-slot">11:00 AM</button>
+                    <button class="time-slot">12:00 PM</button>
+                    <button class="time-slot">01:00 PM</button>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Booking Confirmation -->
+        <div class="booking-confirmation">
+            <button class="book-appointment-btn">Confirm Appointment</button>
+        </div>
+    </div>
+    
+    
     <script src="js/advisorProfile.js"></script>
   </body>
 </html>
