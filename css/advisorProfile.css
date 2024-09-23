@@ -582,7 +582,7 @@ align-content: center;
     gap: 148px;
     /* margin-left: 40px;
     margin-right: 40px; */
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
     margin-bottom: 20px;
     max-width: 1080px;
     margin-left: auto;
@@ -807,12 +807,13 @@ align-content: center;
 .contactDetails {
     display: none;
     position: absolute;
-    right: 40px;
+    right: 30px;
     flex-direction: column;
     margin-top: 5px; /* Reduced */
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 20px;
-    padding-top: 0px;
+    /* padding-top: 0px; */
+    text-decoration: underline;
 }
 
 /* Appointment section */
