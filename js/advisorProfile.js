@@ -1,3 +1,17 @@
+
+
+//  bell Dot
+
+
+document.querySelector(".bellDot").addEventListener("click", function() {
+    var contactDetails = document.querySelector(".contactDetails");
+    if (contactDetails.style.display === "block") {
+        contactDetails.style.display = "none";
+    } else {
+        contactDetails.style.display = "block";
+    }
+});
+
 //for clicking on user icon
 
 document
@@ -144,4 +158,3 @@ document
  });
 
 
- 

@@ -775,3 +775,88 @@ align-content: center;
 .action-2:hover .voice_active {
     display: block; /* Show voice_active on hover */
 }
+
+
+
+
+
+/* 5 min section bell section */
+
+.astrologer-details-section{
+    display: flex;
+    /* gap: 0; */
+}
+
+.detail-item{
+    background-color: #ebe2ef;
+    font-weight: 500;
+    color: #7c3a99;
+    line-height: 1;
+    font-size: 14px;
+    letter-spacing: .5px;
+    font-weight: 400;
+    line-height: 18px;
+    font-family: Outfit, sans-serif;
+    padding: 10px 15px;
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 90% 50%, 100% 80%, 100% 100%, 0 100%);
+font-weight: 700;
+}
+
+
+
+.detail-item2{
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: .5px;
+    color: #212121;
+    text-decoration: line-through;
+}
+
+.bellSection{
+display: flex;
+justify-content: space-between;
+max-width: 1260px;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+
+
+.bell{
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.contactDetails{
+    display: none;
+    position: absolute;
+    right: 40px;
+    left: 1100px;
+    flex-direction: column;
+    /* gap: 40px; */
+    /* width: 70%; */
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+
+    padding-top: 0px;
+}
+
+
+
+.contactEmail , .conatctTel{
+    padding-top: 20px;
+    display: flex;
+    gap: 10px;
+    /* justify-content: center; */
+    align-items: center;
+    text-decoration: underline;
+}
