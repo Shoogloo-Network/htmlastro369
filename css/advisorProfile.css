@@ -578,8 +578,8 @@ align-content: center;
 .profileSection {
     display: flex;
     padding: 20px; /* Reduced */
-    justify-content: center;
-    gap: 148px;
+    /* justify-content: center; */
+    gap: 40px;
     /* margin-left: 40px;
     margin-right: 40px; */
     /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
@@ -647,7 +647,7 @@ align-content: center;
 .profile-header {
     display: flex;
     margin-bottom: 5px;
-    gap: 160px;
+    /* gap: 160px; */
 }
 
 .profile-rating-icons {
