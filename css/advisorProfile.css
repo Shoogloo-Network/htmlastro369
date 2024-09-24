@@ -577,7 +577,7 @@ align-content: center;
 
 .profileSection {
     display: flex;
-    padding: 20px; /* Reduced */
+    padding: 2px; /* Reduced */
     /* justify-content: center; */
     gap: 40px;
     /* margin-left: 40px;
@@ -687,7 +687,7 @@ align-content: center;
     align-items: center;
     width: 100%;
     max-width: 148px;
-    height: 153px;
+    height: 142px;
     padding-top: 20px; /* Reduced */
     padding-bottom: 10px; /* Reduced */
 }
@@ -993,6 +993,7 @@ select {
 }
 
 .myAttributes>h1{
+  font-size: 20px;
 margin-bottom: 20px;
 }
 .attributes-card {
@@ -1023,6 +1024,8 @@ margin-bottom: 20px;
 
 .column span {
   margin: 5px 0; /* Space between items */
+  font-size: 14px;
+  
 }
 
 
@@ -1060,11 +1063,15 @@ margin-bottom: 20px;
   flex-direction: column; /* Stack items vertically */
 }
 .about-content>h1{
+  font-size: 20px;
   margin-bottom: 10px;
+  text-align: left;
 }
 .about-text {
   margin-bottom: 0px; /* Space below text */
   line-height: 1.6; /* Improved readability */
+  font-size: 14px;
+  text-align: justify;
 }
 
 .hidden-text {
@@ -1072,9 +1079,14 @@ margin-bottom: 20px;
 }
 
 .read-more {
+  position: relative;
   background-color: transparent; 
-  color: #0d271e;
-  font-size: larger;
+  color: #6f8de1;
+  font-size: 14px;
+  align-self: flex-end;
+ 
+  width: 100px;
+  text-decoration: wavy;
   font-weight: 600; /* Button text color */
   border: none; /* No border */
   border-radius: 5px; /* Rounded corners */
@@ -1098,7 +1110,9 @@ margin-bottom: 20px;
   max-width: 1080px; /* Max width for the section */
   margin: 20px auto; /* Center align section */
 }
-
+.ratings-reviews>h1{
+  font-size: 20px;
+}
 h1 {
   text-align: center; /* Center the title */
   margin-bottom: 20px; /* Space below the title */
@@ -1111,7 +1125,7 @@ h1 {
 }
 
 .average-rating {
-  font-size: 2rem; /* Larger font size for rating */
+  font-size: 16px; /* Larger font size for rating */
   display: flex;
   align-items: center;
   gap: 5px;
@@ -1245,4 +1259,20 @@ h1 {
   display: flex;
   margin-bottom: 10px;
   flex-direction: column;
+}
+
+
+
+
+.profile-attr-col{
+  font-size: 16px;
+  text-align: left;
+}
+
+
+
+.bellDiv{
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 7px;
 }
