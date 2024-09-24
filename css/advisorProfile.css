@@ -729,14 +729,14 @@ align-content: center;
 
 .readings-count {
     font-weight: 400;
-    font-size: 16px; /* Reduced */
+    font-size: 14px; /* Reduced */
     line-height: 30px;
     color: rgba(0, 0, 0, 0.85);
 }
 
 .readings-count-span {
     font-weight: 600;
-    font-size: 16px; /* Reduced */
+    font-size: 14px; /* Reduced */
     line-height: 30px;
 }
 
@@ -774,7 +774,7 @@ align-content: center;
     font-weight: 500;
     color: #7c3a99;
     line-height: 1;
-    font-size: 12px; /* Reduced */
+    font-size: 14px; /* Reduced */
     letter-spacing: .5px;
     padding: 8px 15px; /* Reduced */
     clip-path: polygon(0 0, 100% 0, 100% 20%, 90% 50%, 100% 80%, 100% 100%, 0 100%);
@@ -785,7 +785,7 @@ align-content: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px; /* Reduced */
+    font-size: 14px; /* Reduced */
     font-weight: 500;
     line-height: 18px;
     letter-spacing: .5px;
@@ -793,6 +793,9 @@ align-content: center;
     text-decoration: line-through;
 }
 
+.profile-item-price{
+  font-size: 16px;
+}
 .bellSection {
     display: flex;
     justify-content: space-between;
@@ -1230,6 +1233,7 @@ h1 {
   color: #424242;
   line-height: 24px;
   letter-spacing: .5px;
+  align-items: flex-end;
 }
 
 
