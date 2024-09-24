@@ -711,7 +711,7 @@ align-content: center;
 .action-2-chat > p {
     color: rgb(255, 255, 255);
     font-size: 14px; /* Reduced */
-    font-weight: 400;
+    font-weight: 600;
     line-height: 20px;
     cursor: pointer;
     text-align: center;

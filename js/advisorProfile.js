@@ -63,8 +63,13 @@ document.getElementById("action-2-appointment").addEventListener("click", functi
        // Scroll to the section
        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
     } else {
-        appointmentSection.style.padding = "0"; // No padding when collapsed
+        // No padding when collapsed
         appointmentSection.style.maxHeight = "0"; // Collapse the section
+        setTimeout(()=>{
+          appointmentSection.style.padding = "0"; 
+        },340)
+      
+
     }
 });
 
