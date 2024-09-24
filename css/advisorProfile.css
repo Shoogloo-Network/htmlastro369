@@ -631,11 +631,12 @@ align-content: center;
 }
 
 .profile-name {
-    font-size: 24px; /* Reduced */
+    font-size: 20px; /* Reduced */
     font-weight: 600;
     line-height: 30px; /* Reduced */
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     color: rgba(0, 0, 0, 0.85);
+    text-align: left;
 }
 
 .profile-alias {
@@ -1203,7 +1204,7 @@ h1 {
   margin-top: 4px;
   color: #424242;
   /* margin-bottom: 10px; */
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .astrologer-rating{
