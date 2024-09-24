@@ -181,6 +181,26 @@ document.querySelector("#pop-up").addEventListener("click", function () {
   document.querySelector("#pop-up").classList.remove("pop-up-register-show");
 });
 
+
+// For advisor profile
+
+document.querySelectorAll(".astrologer-image").forEach(function(element) {
+  element.addEventListener("click", function() {
+    window.location.href = "./advisorProfile.html";
+  });
+});
+
+ // Select all elements with the class 'call-button'
+ const buttons = document.querySelectorAll('.call-button');
+
+ // Add a click event listener to each button
+ buttons.forEach(button => {
+     button.addEventListener('click', () => {
+         // Redirect to index.html
+         window.location.href = './loginSignup.html';
+     });
+ });
+
 //for clicking on user icon
 
 document.querySelector(".user-profile").addEventListener("click", function () {
@@ -308,3 +328,7 @@ document
       document.querySelector(".item3-submenu").style.display = "none";
     }, 200);
   });
+
+
+
+

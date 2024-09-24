@@ -1118,6 +1118,7 @@ button.testimonial-next {
     height: 376px;
     margin-left: auto;
     margin-right: auto;
+    clip-path: inset(12% 0 0 0);
 }
 
 
@@ -1581,11 +1582,12 @@ input[type="tel"]:focus {
 
 .astrologer-details{
     display: flex;
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
     /* overflow-x: scroll; */
     margin: 20px auto;
-    max-width: 1260px;
+    /* max-width: 1260px; */
+
 }
 .astrologer-image-section{
     display: flex;
@@ -1597,6 +1599,7 @@ input[type="tel"]:focus {
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
+    cursor: pointer;
 }
 
 
@@ -1655,12 +1658,12 @@ input[type="tel"]:focus {
 .astrologer-container{
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    /* align-items: center; */
-    height: 360px;
+    gap: 2px;
+    align-items: flex-start;
+    height: 300px;
     width: 300px;
     /* background-color: #e7e6e6; */
-    padding: 20px;
+    padding: 10px;
     border-radius: 4px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .14), 0 2px 1px rgba(0, 0, 0, .12), 0 1px 3px rgba(0, 0, 0, .2);
 }
@@ -1671,16 +1674,17 @@ input[type="tel"]:focus {
 
 
 .greeting{
-    margin-top: 8px;
+    margin-top: 4px;
     color: #424242;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+    font-size: 14px;
 }
 
 .astrologer-rating{
     display: flex;
     gap: 5px;
     /* font-family: Outfit, sans-serif; */
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 550;
     color: #424242;
     line-height: 24px;
@@ -1695,7 +1699,7 @@ input[type="tel"]:focus {
 }
 
 .star {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: rgb(250, 175, 0);
     /* margin: 0 -1px; */
     cursor: pointer;
@@ -1737,7 +1741,7 @@ font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 18px;
     letter-spacing: .5px;
@@ -1748,7 +1752,9 @@ font-weight: 700;
 
 .astrologer-actions{
     display: flex;
-    gap: 15px;
+    gap: 48px;
+    margin-top: 8px;
+    /* justify-content: space-between; */
 }
 
 
@@ -1761,15 +1767,15 @@ font-weight: 700;
     background-color: #bdbdbd;
     border-color: #bdbdbd;
     color: #757575;
-    cursor: not-allowed;
+    cursor: pointer;
     pointer-events: inherit;
     font-family: Outfit, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1;
     letter-spacing: 1.5px;
     text-transform: capitalize;
-    padding: 12px 20px;
+    padding: 12px 30px;
     border-radius: 6px;
 }
 
@@ -1785,14 +1791,14 @@ font-weight: 700;
     background-color: #286851;
     border-color: #286851;
     color: #fff;
-    cursor: not-allowed;
+    cursor: pointer;
     pointer-events: inherit;
     font-family: Outfit, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 1;
     letter-spacing: 1.5px;
     text-transform: capitalize;
-    padding: 12px 20px;
+    padding: 12px 30px;
     border-radius: 6px;
 }
