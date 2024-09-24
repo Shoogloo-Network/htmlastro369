@@ -582,11 +582,31 @@ align-content: center;
     margin-left:auto;
     margin-right: auto;
 }
-.astrologer-filter-div{
-    width: 20%;
-    /* background-color: #0056b3; */
-    margin-top: 20px;
+.astrologer-filter-div {
+  max-width: 400px; /* Set a maximum width */
+  margin: 20px auto; /* Center it horizontally with auto margins */
+  padding: 20px; /* Add some padding inside the div */
+  background-color: white; /* Set background color */
+  border-radius: 8px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light box shadow */
+  text-align: center; /* Center text inside the div */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Light border around the entire div */
+  color: #616161;
 }
+
+.expertise-section, .expertise-section1 {
+  cursor: pointer; /* Change cursor to pointer to indicate clickable */
+  margin: 0px 0; /* Add spacing around sections */
+  padding: 10px; /* Add padding for better spacing */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Light border for each expertise section */
+  border-radius: 5px; /* Optional: Rounded corners for sections */
+  transition: background-color 0.3s; /* Smooth transition for background on hover */
+}
+
+.expertise-section:hover, .expertise-section1:hover {
+  background-color: rgba(0, 0, 0, 0.05); /* Light background change on hover */
+}
+
 
 
 
@@ -868,7 +888,7 @@ font-weight: 700;
     display: block;
 }
 .expertise-section1{
-    margin-top: 20px;
+    /* margin-top: 20px; */
     display: flex;
     gap: 60px;
     /* justify-content: center; */
@@ -884,7 +904,7 @@ font-weight: 700;
     flex-direction: column;
     gap: 10px; */
     padding: 10px;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     /* padding-bottom: 40px; */
     /* background-color: #f9f9f9; */
     /* border: 1px solid #ddd; */
@@ -987,7 +1007,7 @@ max-width: 1280px;
 
 .send-sms-button {
 
-    background-color: #14bef0;
+    background-color: #286851;
     cursor: pointer;
     font-size: 16px;
     text-decoration: none;
@@ -1005,6 +1025,9 @@ max-width: 1280px;
     height: 50px;
 }
 
+.send-sms-button:hover{
+  background-color: #286851;
+}
 
 
 /* Telephone input */

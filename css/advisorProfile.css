@@ -807,7 +807,7 @@ align-content: center;
 .contactDetails {
     display: none;
     position: absolute;
-    right: 35px;
+    right: 134px;
     flex-direction: column;
     margin-top: 5px; /* Reduced */
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;

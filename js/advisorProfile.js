@@ -80,6 +80,19 @@ document.querySelector(".bellDot").addEventListener("click", function() {
     }
 });
 
+//Link to login/Signup
+// Select all elements with the class "action-2"
+const actionElements = document.querySelectorAll(".action-2");
+
+// Loop through the first two elements and add the event listener
+actionElements.forEach(function(element, index) {
+  if (index < 2) { // Check if the index is less than 2
+    element.addEventListener("click", () => {
+      window.location.href = "./loginSignup.html";
+    });
+  }
+});
+
 //for clicking on user icon
 
 document
@@ -93,6 +106,7 @@ document
      loginHover.style.display = "block";
    }
  });
+
 
 // for mega menu
 let hideMenuTimeout;
@@ -226,3 +240,5 @@ document
  });
 
 
+
+ 
