@@ -1,4 +1,11 @@
+// Select the button
+const buyNowButton = document.querySelector('.btn-buy');
 
+// Add an event listener for the click event
+buyNowButton.addEventListener('click', function() {
+    // Change the window location to the checkout page
+    window.location.href = './checkout.html';
+});
 // JavaScript to toggle accordion and icon
 const accordionHeader = document.querySelector('.accordion-header');
 const productDescription = document.querySelector('.product-description');
