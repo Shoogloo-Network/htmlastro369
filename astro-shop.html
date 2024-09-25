@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astro Shop</title>
+    <link rel="stylesheet" href="css/astro-shop.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- <link rel="stylesheet" href="css/mobileview.css"/> -->
+    <script
+      src="https://kit.fontawesome.com/c521e77e5d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="hamburger">&#9776;</div>
+        <a href="index.html" class="anchorLogo"
+          ><img
+            src="assets/images/astro369logo1.png"
+            alt="Astro369 Logo"
+            class="logoImage"
+        /></a>
+        <div class="logo-container">
+          <ul>
+            <li><a href="advisors.html">All Advisors</a></li>
+            <li><a href="consult.html">Video Consult</a></li>
+            <li class="mega-hover"><a href="#">Predictions</a></li>
+          </ul>
+        </div>
+        <div class="menu-container">
+          <div class="menu-container-parent">
+            <div class="corporates-container">
+              <span class="New">New</span>
+              <div class="corporates-dropdown">
+                <!-- <label for="Corporates">For Corporates</label> -->
+                <select name="Corporates" id="Corporates">
+                  <option value="" disabled selected hidden>
+                    For Corporates
+                  </option>
+                  <option value="Health">Health & Wellness Plans</option>
+                  <option value="Insurance">Group Insurance</option>
+                </select>
+              </div>
+            </div>
+            <div class="providers-container">
+              <!-- <label for="Providers">For Providers</label> -->
+              <select name="Providers" id="Providers">
+                <option value="" disabled selected hidden>For Providers</option>
+                <option value="Prime">Practo Prime</option>
+                <option value="Software">Software For Providers</option>
+                <option value="Practice">List Your Practice For Free</option>
+                <option value="ABDM">ABDM</option>
+              </select>
+            </div>
+            <div class="security-container">
+              <!-- <label for="Security">Security & Help</label> -->
+              <select name="Security" id="Security">
+                <option value="" disabled selected hidden>ENG</option>
+                <option value="DataSecurity" selected>ENG</option>
+                <option value="Help">HINDI</option>
+              </select>
+            </div>
+            <!-- <button class="login-signup-button">Login/Signup</button> -->
+            <div>
+              <div class="user-profile">
+                <i class="fa-solid fa-user user-profile"></i>
+              </div>
+              <div class="login-hover">
+                <ul>
+                  <li id="login">
+                    <a href="loginSignup.html">Login/Signup</a>
+                  </li>
+                  <hr />
+                  <li>Profile</li>
+                  <hr />
+                  <li>Signout</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <hr />
+    </header>
+    <section class="menu-section">
+      <div class="container">
+        <div class="mega-menu">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="mega-menu-column">
+                <h3>Category 1</h3>
+                <!-- <hr /> -->
+                <!-- <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                  </ul> -->
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="mega-menu-column">
+                <h3>Category 2</h3>
+                <!-- <hr /> -->
+                <!-- <ul>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                    <li><a href="#">Item 6</a></li>
+                  </ul> -->
+
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="mega-menu-column">
+                <h3>Category 3</h3>
+                <!-- <hr /> -->
+                <!-- <ul>
+                    <li><a href="#">Item 7</a></li>
+                    <li><a href="#">Item 8</a></li>
+                    <li><a href="#">Item 9</a></li>
+                  </ul> -->
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="mega-menu-column">
+                <h3>Category 4</h3>
+                <!-- <hr /> -->
+                <!-- <ul>
+                    <li><a href="#">Item 10</a></li>
+                    <li><a href="#">Item 11</a></li>
+                    <li><a href="#">Item 12</a></li>
+                  </ul> -->
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Menu Section Ends Here -->
+
+    <!-- 3 Level Drop Down -->
+     <section class="astro-shop-product">
+        <div class="astro-shop-product-list">
+            <img src="./assets/images/jewel_7031284.png" alt="Jewellery" class="productImage" />
+            <p>Jewellery <span><i class="fa-solid fa-angle-down"></i></span></p>
+            <div class="astro-shop-main-menu">
+                <ul>
+                    <li>
+                        Artificial
+                    </li>
+                    <li class="astro-shop-menu-2">Natural</li>
+                </ul>
+             </div>
+             <div class="astro-shop-sub-menu">
+                <ul>
+                    <li>Bracelet</li>
+                    <li>Pendant</li>
+                    <li>Necklace</li>
+                </ul>
+             </div>
+             <div class="astro-shop-sub-menu2">
+                <ul>
+                    <li>Bracelet 1</li>
+                    <li>Pendant 2</li>
+                    <li>Necklace 3</li>
+                </ul>
+             </div>
+        </div>
+        <div class="astro-shop-product-list">
+
+       
+            <img src="./assets/images/jewel_7031284.png" alt="Jewellery" class="productImage" />
+            <p>Gemstone <span><i class="fa-solid fa-angle-down"></i></span></p>
+            <div class="astro-shop-main-menu">
+                <ul>
+                    <li class="astro-shop-main-menu">
+                        Artificial
+                    </li>
+                    <li class="astro-shop-main-menu">Natural</li>
+                </ul>
+             </div>
+             <div class="astro-shop-sub-menu">
+                <ul>
+                    <li>Bracelet</li>
+                    <li>Pendant</li>
+                    <li>Necklace</li>
+                </ul>
+             </div>
+             
+        </div>
+     </section>
+    
+     <section class="appointment-section">
+        <div class="mart-filter">
+<div>
+    <div><span>Bracelet</span><span style="margin-left: 6px;">(Showing 1 – 40 products of 15,083 products)</span></div>
+    <div>
+        <li>Sort By</li>
+        <li>Popularity</li>
+        <li>Price--Low to High</li>
+        <li>Price--High to Low</li>
+        <li>Newest First</li>
+    </div>
+</div>
+        </div>
+        <h1>
+          Book an appointment for horoscope and astrology analysis consultation
+        </h1>
+        <p>Find experienced astrologers across all categories</p>
+        <div class="card-carousel">
+          <button class="prev" onclick="prevSlide()">&#10094;</button>
+          <div class="card-container">
+            <div class="card">
+              <img src="assets/images/sp-dentist@2x.jpg" alt="Image 1" />
+              <h1>Money Magnet Bracelet</h1>
+              <p><span class="price">512</span><span  class="underline-price">Rs. 1,999</span></p>
+            </div>
+            <div class="card">
+              <img src="assets/images/sp-gynecologist@2x.jpg" alt="Image 1" />
+              <h1>Love Attraction Bracelet</h1>
+              <p><span class="price">512</span><span class="underline-price">Rs. 1,999</span></p>
+            </div>
+            <div class="card">
+              <img src="assets/images/sp-dietitian@2x.jpg" alt="Image 1" />
+              <h1>Evil Eye Bracelet</h1>
+              <p><span class="price">512</span><span class="underline-price">Rs. 1,999</span></p>
+            </div>
+            <div class="card">
+              <img
+                src="assets/images/sp-physiotherapist@2x.jpg"
+                alt="Image 1"
+              />
+              <h1>Evil Eye Bracelet</h1>
+              <p><span class="price">512</span><span class="underline-price">Rs. 1,999</span></p>
+            </div>
+            <div class="card">
+              <img
+                src="assets/images/sp-general-surgeon@2x.jpg"
+                alt="Image 1"
+              />
+              <h1>Evil Eye Bracelet</h1>
+              <p><span class="price">512</span><span class="underline-price">Rs. 1,999</span></p>
+            </div>
+            <div class="card">
+              <img src="assets/images/sp-orthopedist@2x.jpg" alt="Image 1" />
+              <h1>Evil Eye Bracelet</h1>
+              <p><span class="price">512</span><span class="underline-price">Rs. 1,999</span></p>
+            </div>
+            <div class="card">
+              <img src="assets/images/sp-general-doctor@2x.jpg" alt="Image 1" />
+              <h1>Evil Eye Bracelet</h1>
+              <p><span class="price">512</span><span class="underline-price">Rs. 1,999</span></p>
+            </div>
+            <div class="card">
+              <img src="assets/images/sp-general-doctor@2x.jpg" alt="Image 1" />
+              <h1>Evil Eye Bracelet</h1>
+              <p><span class="price">512</span><span class="underline-price">Rs. 1,999</span></p>
+            </div>
+            <div class="card">
+              <img
+                src="assets/images/sp-gastroenterologist@2x.jpg"
+                alt="Image 1"
+              />
+              <h1>Evil Eye Bracelet</h1>
+              <p><span class="price">512</span><span class="underline-price">Rs. 1,999</span></p>
+            </div>
+          </div>
+          <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+      </section>
+    <script src="js/astro-shop.js"></script>
+  </body>
+</html>
