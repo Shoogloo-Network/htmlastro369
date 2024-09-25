@@ -813,6 +813,7 @@ align-content: center;
     display: none;
     position: absolute;
     right: 134px;
+    top: 432px;
     flex-direction: column;
     margin-top: 5px; /* Reduced */
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -1137,7 +1138,7 @@ h1 {
 }
 
 .review-count {
-  font-size: 1.2rem; /* Smaller font size for review count */
+  font-size: 14px; /* Smaller font size for review count */
   color: #555; /* Gray color for count */
 }
 
@@ -1160,6 +1161,7 @@ h1 {
 }
 
 .comment {
+  font-size: 14px;
   margin-top: 10px; /* Space above comment */
   line-height: 1.5; /* Improved readability */
 }
@@ -1167,7 +1169,7 @@ h1 {
 .stars {
   color: gold; /* Color for the stars */
   margin-top: 5px; /* Space above stars */
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .review {
@@ -1192,9 +1194,10 @@ h1 {
 }
 
 .pagination a {
+  font-size: 14px;
   text-decoration: none; /* Remove underline from links */
   color: #0d271e; /* Link color */
-  padding: 10px 15px; /* Padding around links */
+  padding: 6px 12px; /* Padding around links */
   border: 1px solid #0d271e; /* Border around links */
   border-radius: 5px; /* Rounded corners */
   margin: 0 5px; /* Spacing between links */
