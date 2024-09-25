@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-
+<link rel="stylesheet" href="./css/checkout.css"/>
     <!-- <link rel="stylesheet" href="css/mobileview.css"/> -->
     <script
       src="https://kit.fontawesome.com/c521e77e5d.js"
@@ -238,107 +238,141 @@
     </section>
     <!-- Menu Section Ends Here -->
 
-    <section>
-      <!-- Product Container -->
-      <!-- Product Container -->
-      <!-- Product Container -->
-      <div class="product-container">
-        <!-- Product Image Gallery -->
-        <div class="product-gallery">
-          <!-- Thumbnails -->
-          <div class="thumbnail-container">
-            <img
-              src="./assets/images/bracelate.jpg"
-              alt="Thumbnail 1"
-              class="active"
-              onclick="changeImage(this)"
-            />
-            <img
-              src="./assets/images/braceleate-tumbnail1.jpg"
-              alt="Thumbnail 2"
-              onclick="changeImage(this)"
-            />
-            <img
-              src="./assets/images/bracelate-tumbnail2.jpg"
-              alt="Thumbnail 3"
-              onclick="changeImage(this)"
-            />
-          </div>
-          <!-- Main Image -->
-          <img
-            src="./assets/images/bracelate.jpg"
-            alt="Main Product Image"
-            class="main-image"
-            id="mainProductImage"
-          />
-        </div>
-
-        <!-- Product Details -->
-        <div class="product-details">
-          <div class="product-title">Crystal Beads Bracelets Dainty Charm</div>
-
-          <div class="product-rating">
-            <div>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-              <i class="far fa-star"></i>
-            </div>
-            <span class="rating-count">1,234 ratings</span>
-          </div>
-
-          <div class="product-price">$49.99 <span>$99.99</span></div>
-          <div class="product-discount">50% Off</div>
-
-          <!-- Offers Section -->
-          <div class="product-offers">
-            <h4>Available Offers</h4>
-            <div class="offer-item">
-              <i class="fas fa-tag"></i> Bank Offer: 10% off on credit cards
-            </div>
-            <div class="offer-item">
-              <i class="fas fa-tag"></i> Cashback: Get 5% cashback on your next
-              order
-            </div>
-            <div class="offer-item">
-              <i class="fas fa-tag"></i> Special Price: Extra 15% off on orders
-              above $100
-            </div>
-          </div>
-
-          <!-- Size Selection -->
-          <div class="size-selection">
-            <h4>Select Size</h4>
-            <div class="size-options">
-              <span>S</span>
-              <span>M</span>
-              <span>L</span>
-              <span>XL</span>
-              <span>XXL</span>
-            </div>
-          </div>
-
-          <!-- Add to Cart & Buy Now Buttons -->
-          <div class="product-actions">
-            <button class="btn btn-cart">Add to Cart</button>
-            <button class="btn btn-buy">Buy Now</button>
-          </div>
-
-          <!-- Product Description (Accordion) -->
-<div class="product-description">
-    <h3 class="accordion-header">Product Details 
-        <span class="accordion-icon">
-            <i class="fa-solid fa-plus"></i>
-        </span>
-    </h3>
-    <div class="accordion-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut efficitur sapien. Proin condimentum enim quis quam viverra, nec cursus arcu aliquet. Nulla facilisi. Donec vulputate urna non nisi pretium, vel suscipit ipsum convallis.</p>
+   <section>
+   
+    <div class="header">
+        <img src="https://via.placeholder.com/150x50?text=Brand+Logo" alt="Brand Logo">
     </div>
-</div>
+
+    <div class="container">
+        <div class="checkout-container">
+            <!-- Checkout Form -->
+            <div class="checkout-form">
+                <!-- Contact Section -->
+                <div class="contact-section">
+                    <h3>Contact Information</h3>
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" placeholder="Enter your email address">
+                    </div>
+                    <div class="form-group">
+                        <label for="subscribe-offers">Email me with news and offers</label>
+                        <input type="checkbox" id="subscribe-offers">
+                    </div>
+                </div>
+
+                <!-- Delivery Section -->
+                <div class="delivery-section">
+                    <h3>Delivery Address</h3>
+                    <div class="two-col">
+                        <div class="form-group">
+                            <label for="first-name">First Name (Optional)</label>
+                            <input type="text" id="first-name" placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" placeholder="Last Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" placeholder="Enter your address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apartment">Apartment, suite, etc.</label>
+                        <input type="text" id="apartment" placeholder="Apartment, suite, etc.">
+                    </div>
+                    <div class="two-col">
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" placeholder="Enter your city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State</label>
+                            <input type="text" id="state" value="Haryana" readonly>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pin-code">PIN Code</label>
+                        <input type="text" id="pin-code" placeholder="Enter your PIN code" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="save-info">
+                            <input type="checkbox" id="save-info">
+                            Save this information for next time
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="text-offers">
+                            <input type="checkbox" id="text-offers">
+                            Text me with news and offers
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="order-summary">
+                <h3>Your Order</h3>
+                <div class="order-item">
+                    <img src="https://via.placeholder.com/50" alt="Product Image">
+                    <span>OliveShine Rectangular Aluminium Serving Tray</span>
+                    <span>₹1,699.00</span>
+                </div>
+                <div class="discount">
+                    <span>(SHOOGLOO5 + PREPAID5) - 10% DISCOUNT AUTO APPLIED. (-₹169.90)</span>
+                </div>
+                <div class="order-item">
+                    <span>Subtotal</span>
+                    <span>₹1,529.10</span>
+                </div>
+                <div class="order-item">
+                    <span>Shipping</span>
+                    <span>Enter shipping address</span>
+                </div>
+                <div class="order-item total-price">
+                    <span>Total</span>
+                    <span>₹1,529.10</span>
+                </div>
+                <div class="order-item savings">
+                    <span>TOTAL SAVINGS</span>
+                    <span>₹169.90</span>
+                </div>
+
+                <!-- Payment Section -->
+                <div class="payment-section">
+                    <h3>Payment</h3>
+                    <p>All transactions are secure and encrypted.</p>
+                    <div class="payment-method">
+                        <input type="radio" name="payment" value="razorpay" id="razorpay" checked>
+                        <label for="razorpay">Razorpay Secure (UPI, Cards, Wallets, NetBanking)</label>
+                    </div>
+                    <div class="payment-method">
+                        <input type="radio" name="payment" value="cash" id="cash">
+                        <label for="cash">Cash on Delivery (+5%)</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="billing-address">
+                            <input type="checkbox" id="billing-address">
+                            Same as shipping address
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="different-billing">
+                            <input type="checkbox" id="different-billing">
+                            Use a different billing address
+                        </label>
+                    </div>
+                </div>
+                <button type="submit">Submit</button>
+            </div>
         </div>
-      </div>
-    </section>
+    </div>
+   </section>
 
     <script src="js/product-detail.js"></script>
   </body>

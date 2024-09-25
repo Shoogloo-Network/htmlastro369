@@ -1,4 +1,22 @@
 
+// JavaScript to toggle accordion and icon
+const accordionHeader = document.querySelector('.accordion-header');
+const productDescription = document.querySelector('.product-description');
+const accordionIcon = document.querySelector('.accordion-icon i');
+
+accordionHeader.addEventListener('click', function() {
+    // Toggle the 'accordion-active' class to show or hide the content
+    productDescription.classList.toggle('accordion-active');
+
+    // Change the icon between plus and minus
+    if (productDescription.classList.contains('accordion-active')) {
+        accordionIcon.classList.remove('fa-plus');
+        accordionIcon.classList.add('fa-minus');
+    } else {
+        accordionIcon.classList.remove('fa-minus');
+        accordionIcon.classList.add('fa-plus');
+    }
+});
 
     function changeImage(element) {
         const mainImage = document.getElementById('mainProductImage');

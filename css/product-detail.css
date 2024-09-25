@@ -37,6 +37,51 @@
     border: 1px solid #007bff;
 }
 
+/* Accordion Styling */
+.accordion-header {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: #e2e2e2;
+}
+
+.accordion-icon {
+    font-size: 18px;
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+.accordion-content p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Show accordion content when active */
+.accordion-active .accordion-content {
+    display: block;
+}
+
+/* Change icon when accordion is open */
+.accordion-active .accordion-icon i {
+    content: "\f068"; /* Minus icon */
+    font-family: FontAwesome;
+}
+
 /* Main product image */
 .main-image {
     width: 80%;
