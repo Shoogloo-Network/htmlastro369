@@ -1,70 +1,18 @@
 
-// 
-// Astro-Product-List
-document.querySelectorAll(".astro-shop-product-list").forEach(function(element,index){
-    if(index===0){
-      element.addEventListener("mouseenter",()=>{
-      document.querySelector(".astro-shop-main-menu").style.display="block";
-      console.log("hover")
-    });
-  
-    element.addEventListener("mouseleave",()=>{
-      document.querySelector(".astro-shop-main-menu").style.display="none";
-      console.log("hover");
-    });
+
+    function changeImage(element) {
+        const mainImage = document.getElementById('mainProductImage');
+        mainImage.src = element.src;
+
+        // Remove active class from all thumbnails
+        document.querySelectorAll('.thumbnail-container img').forEach(img => {
+            img.classList.remove('active');
+        });
+
+        // Add active class to the clicked thumbnail
+        element.classList.add('active');
     }
-  });
-  
-  
-  document.querySelectorAll(".astro-shop-main-menu").forEach(function(element){
-    element.addEventListener("mouseenter",()=>{
-      document.querySelector(".astro-shop-sub-menu").style.display="block";
-      console.log("hover")
-    });
-  
-    element.addEventListener("mouseleave",()=>{
-      document.querySelector(".astro-shop-sub-menu").style.display="none";
-      console.log("hover");
-    });
-  });
-  
-  document.querySelectorAll(".astro-shop-menu-2").forEach(function(element){
-    element.addEventListener("mouseenter",()=>{
-      document.querySelector(".astro-shop-sub-menu2").style.display="block";
-      console.log("hover")
-    });
-  
-    element.addEventListener("mouseleave",()=>{
-      document.querySelector(".astro-shop-sub-menu2").style.display="none";
-      console.log("hover");
-    });
-  });
-  
-  // product slider
-  let currentSlide = 0;
-  const totalSlides = 9; // Total number of cards
-  const cardsToShow = 4; // Number of cards to show at a time
-  const cardContainer = document.querySelector(".card-container");
-  
-  function updateSlide() {
-    const offset = -currentSlide * (100 / cardsToShow);
-    cardContainer.style.transform = `translateX(${offset}%)`;
-  }
-  
-  function nextSlide() {
-    if (currentSlide < totalSlides - cardsToShow) {
-      currentSlide++;
-      updateSlide();
-    }
-  }
-  
-  function prevSlide() {
-    if (currentSlide > 0) {
-      currentSlide--;
-      updateSlide();
-    }
-  }
-  
+
   
   
   //for clicking on user icon

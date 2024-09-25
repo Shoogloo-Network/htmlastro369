@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Astro Shop</title>
     <link rel="stylesheet" href="css/astro-shop.css" />
+    <link rel="stylesheet" href="css/product-detail.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -35,6 +36,7 @@
             <li><a href="advisors.html">All Advisors</a></li>
             <li><a href="consult.html">Video Consult</a></li>
             <li class="mega-hover"><a href="#">Predictions</a></li>
+            <li><a href="astro-shop.html">Mart</a></li>
           </ul>
         </div>
         <div class="menu-container">
@@ -236,7 +238,79 @@
     </section>
     <!-- Menu Section Ends Here -->
 
-    
+    <section>
+        <!-- Product Container -->
+<!-- Product Container -->
+<!-- Product Container -->
+<div class="product-container">
+    <!-- Product Image Gallery -->
+    <div class="product-gallery">
+        <!-- Thumbnails -->
+        <div class="thumbnail-container">
+            <img src="./assets/images/bracelate.jpg" alt="Thumbnail 1" class="active" onclick="changeImage(this)">
+            <img src="./assets/images/braceleate-tumbnail1.jpg" alt="Thumbnail 2" onclick="changeImage(this)">
+            <img src="./assets/images/bracelate-tumbnail2.jpg" alt="Thumbnail 3" onclick="changeImage(this)">
+        </div>
+        <!-- Main Image -->
+        <img src="./assets/images/bracelate.jpg" alt="Main Product Image" class="main-image" id="mainProductImage">
+    </div>
+
+    <!-- Product Details -->
+    <div class="product-details">
+        <div class="product-title">Crystal Beads Bracelets Dainty Charm</div>
+
+        <div class="product-rating">
+            <div>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <span class="rating-count">1,234 ratings</span>
+        </div>
+
+        <div class="product-price">
+            $49.99 <span>$99.99</span>
+        </div>
+        <div class="product-discount">50% Off</div>
+
+        <!-- Offers Section -->
+        <div class="product-offers">
+            <h4>Available Offers</h4>
+            <div class="offer-item"><i class="fas fa-tag"></i> Bank Offer: 10% off on credit cards</div>
+            <div class="offer-item"><i class="fas fa-tag"></i> Cashback: Get 5% cashback on your next order</div>
+            <div class="offer-item"><i class="fas fa-tag"></i> Special Price: Extra 15% off on orders above $100</div>
+        </div>
+
+        <!-- Size Selection -->
+        <div class="size-selection">
+            <h4>Select Size</h4>
+            <div class="size-options">
+                <span>S</span>
+                <span>M</span>
+                <span>L</span>
+                <span>XL</span>
+                <span>XXL</span>
+            </div>
+        </div>
+
+        <!-- Add to Cart & Buy Now Buttons -->
+        <div class="product-actions">
+            <button class="btn btn-cart">Add to Cart</button>
+            <button class="btn btn-buy">Buy Now</button>
+        </div>
+
+        <!-- Product Description -->
+        <div class="product-description">
+            <h3>Product Details</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut efficitur sapien. Proin condimentum enim quis quam viverra, nec cursus arcu aliquet. Nulla facilisi. Donec vulputate urna non nisi pretium, vel suscipit ipsum convallis.</p>
+        </div>
+    </div>
+</div>
+
+
+    </section>
    
     <script src="js/product-detail.js"></script>
   </body>
