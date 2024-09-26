@@ -720,7 +720,7 @@ align-content: center;
 
 /* Payment Section */
 .payment-section {
-    margin-top: 156px;
+    margin-top: 144px;
     font-size: 14px;
 }
 
@@ -755,7 +755,7 @@ button {
     padding: 12px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     transition: background-color 0.3s, transform 0.2s;
 }
 
@@ -852,3 +852,8 @@ button:hover {
 
 
 
+.price-span{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
