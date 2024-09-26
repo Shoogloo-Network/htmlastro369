@@ -264,7 +264,7 @@
                     <h3>Delivery Address</h3>
                     <div class="two-col">
                         <div class="form-group">
-                            <label for="first-name">First Name (Optional)</label>
+                            <label for="first-name">First Name</label>
                             <input type="text" id="first-name" placeholder="First Name">
                         </div>
                         <div class="form-group">
@@ -310,7 +310,33 @@
                             Text me with news and offers
                         </label>
                     </div>
+                    
                 </div>
+                <div class="payment-section">
+                  <h3>Payment</h3>
+                  <p>All transactions are secure and encrypted.</p>
+                  <div class="payment-method">
+                      <input type="radio" name="payment" value="razorpay" id="razorpay" checked>
+                      <label for="razorpay">Razorpay Secure (UPI, Cards, Wallets, NetBanking)</label>
+                  </div>
+                  <div class="payment-method">
+                      <input type="radio" name="payment" value="cash" id="cash">
+                      <label for="cash">Cash on Delivery (+5%)</label>
+                  </div>
+                  <div class="form-group">
+                      <label for="billing-address">
+                          <input type="checkbox" id="billing-address">
+                          Same as shipping address
+                      </label>
+                  </div>
+                  <div class="form-group">
+                      <label for="different-billing">
+                          <input type="checkbox" id="different-billing">
+                          Use a different billing address
+                      </label>
+                  </div>
+              </div>
+              <button type="submit">Submit</button>
             </div>
 
             <!-- Order Summary -->
@@ -341,32 +367,7 @@
                     <span>₹169.90</span>
                 </div>
 
-                <!-- Payment Section -->
-                <div class="payment-section">
-                    <h3>Payment</h3>
-                    <p>All transactions are secure and encrypted.</p>
-                    <div class="payment-method">
-                        <input type="radio" name="payment" value="razorpay" id="razorpay" checked>
-                        <label for="razorpay">Razorpay Secure (UPI, Cards, Wallets, NetBanking)</label>
-                    </div>
-                    <div class="payment-method">
-                        <input type="radio" name="payment" value="cash" id="cash">
-                        <label for="cash">Cash on Delivery (+5%)</label>
-                    </div>
-                    <div class="form-group">
-                        <label for="billing-address">
-                            <input type="checkbox" id="billing-address">
-                            Same as shipping address
-                        </label>
-                    </div>
-                    <div class="form-group">
-                        <label for="different-billing">
-                            <input type="checkbox" id="different-billing">
-                            Use a different billing address
-                        </label>
-                    </div>
-                </div>
-                <button type="submit">Submit</button>
+            
             </div>
         </div>
     </div>
