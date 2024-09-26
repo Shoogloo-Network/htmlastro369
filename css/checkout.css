@@ -143,6 +143,7 @@ cursor: pointer;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    margin-bottom: 6px;
   }
 
   button:hover {
@@ -856,4 +857,37 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+
+
+.checkbox-margin{
+    margin-bottom: 0 !important;
+    font-weight: 400 !important;
+    font-size: 12px;
+   
+}
+
+
+#login-email{
+    margin-bottom: 3px;
+}
+
+
+
+.two-col {
+    display: flex !important; /* Use flexbox to allow items to be flexible */
+    justify-content: space-between !important; /* Space between the two columns */
+}
+
+.two-col .form-group {
+    width: 50% !important; /* Set each form group inside .two-col to 50% width */
+}
+
+.delivery-section .form-group:not(.two-col .form-group) {
+    width: 100% !important; /* Set other form groups to 100% width */
+}
+
+.delivery-section input {
+    width: 100% !important; /* Ensure inputs are full width */
+    box-sizing: border-box !important; /* Include padding/border in width */
 }
