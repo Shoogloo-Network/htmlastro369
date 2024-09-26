@@ -312,6 +312,51 @@
                     </div>
                     
                 </div>
+                
+            </div>
+
+            <!-- Order Summary -->
+            <div class="order-summary">
+                <h3>Your Order</h3>
+                <div class="order-item">
+                    <div class="order-item-image"><img src="assets/images/bracelate-tumbnail2.jpg" alt="Product Image">
+                      <div><span>OliveShine Rectangular Aluminium Serving Tray</span>
+                        <div class="discount">
+                          <span>10% DISCOUNT AUTO APPLIED. (-₹169.90)</span>
+                      </div></div>
+                    </div>
+                    <span>₹1,699.00</span>
+                </div>
+                
+                <div class="order-item-list">
+                  <div class="order-item">
+                    <span>Subtotal</span>
+                    <span>₹1,529.10</span>
+                </div>
+                <div class="order-item">
+                    <span>Shipping</span>
+                    <span>₹00.00</span>
+                </div>
+                <div class="order-item">
+                  <span>SGST(9%)</span>
+                  <span>₹18.00</span>
+              </div>
+              <div class="order-item">
+                  <span>CGST(9%)</span>
+                  <span>₹18.00</span>
+              </div>
+              <hr/>
+                <div class="order-item total-price">
+                    <span>Total</span>
+                    <span>₹1,529.10</span>
+                </div>
+               
+                <!-- <div class="order-item savings">
+                    <span>Total savings</span>
+                    <span>₹169.90</span>
+                </div> -->
+
+                </div>
                 <div class="payment-section">
                   <h3>Payment</h3>
                   <p>All transactions are secure and encrypted.</p>
@@ -320,6 +365,14 @@
                       <label for="razorpay">Razorpay Secure (UPI, Cards, Wallets, NetBanking)</label>
                   </div>
                   <div class="payment-method">
+                    <input type="radio" name="payment" value="razorpay" id="razorpay" checked>
+                    <label for="razorpay">Razorpay Secure (UPI, Cards, Wallets, NetBanking)</label>
+                </div>
+                <div class="payment-method">
+                  <input type="radio" name="payment" value="razorpay" id="razorpay" checked>
+                  <label for="razorpay">Razorpay Secure (UPI, Cards, Wallets, NetBanking)</label>
+              </div>
+                  <!-- <div class="payment-method">
                       <input type="radio" name="payment" value="cash" id="cash">
                       <label for="cash">Cash on Delivery (+5%)</label>
                   </div>
@@ -334,39 +387,9 @@
                           <input type="checkbox" id="different-billing">
                           Use a different billing address
                       </label>
-                  </div>
+                  </div> -->
               </div>
-              <button type="submit">Submit</button>
-            </div>
-
-            <!-- Order Summary -->
-            <div class="order-summary">
-                <h3>Your Order</h3>
-                <div class="order-item">
-                    <img src="assets/images/bracelate-tumbnail2.jpg" alt="Product Image">
-                    <span>OliveShine Rectangular Aluminium Serving Tray</span>
-                    <span>₹1,699.00</span>
-                </div>
-                <div class="discount">
-                    <span>(SHOOGLOO5 + PREPAID5) - 10% DISCOUNT AUTO APPLIED. (-₹169.90)</span>
-                </div>
-                <div class="order-item">
-                    <span>Subtotal</span>
-                    <span>₹1,529.10</span>
-                </div>
-                <div class="order-item">
-                    <span>Shipping</span>
-                    <span>Enter shipping address</span>
-                </div>
-                <div class="order-item total-price">
-                    <span>Total</span>
-                    <span>₹1,529.10</span>
-                </div>
-                <div class="order-item savings">
-                    <span>TOTAL SAVINGS</span>
-                    <span>₹169.90</span>
-                </div>
-
+              <button type="submit">Make Payment</button>
             
             </div>
         </div>

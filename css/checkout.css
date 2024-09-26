@@ -44,6 +44,7 @@ body {
     flex: 1;
     background-color: #ffffff;
     padding: 25px;
+    padding-top: 10px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -92,6 +93,7 @@ body {
     flex: 1;
     background-color: #ffffff;
     padding: 25px;
+    padding-top: 10px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -109,6 +111,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
+    font-size: 14px;
 }
 
 .order-item img {
@@ -127,6 +130,7 @@ body {
     font-weight: bold;
     font-size: 20px;
     color: #e74c3c; /* Red for total price */
+    margin-top: 10px;
 }
 
 .savings {
@@ -135,13 +139,18 @@ body {
 
 /* Payment Section */
 .payment-section {
-    margin-top: 30px;
+    margin-top: 190px;
+    font-size: 14px;
 }
 
 .payment-section h3 {
     font-size: 20px;
     margin-bottom: 15px;
     color: #34495e;
+}
+
+.payment-section p{
+    margin-bottom: 10px;
 }
 
 .payment-method {
@@ -208,4 +217,21 @@ button:hover {
 
 .notFormGroup input{
     width: 100% ;
+}
+
+
+.order-item-image{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.order-item-list{
+    width: 62%;
+    float: right;
+    font-size: 14px;
+}
+
+.discount{
+    font-size: 12px;
 }
