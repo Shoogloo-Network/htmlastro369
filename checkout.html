@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Astro Shop</title>
-    <link rel="stylesheet" href="css/astro-shop.css" />
+    <!-- <link rel="stylesheet" href="css/astro-shop.css" /> -->
     <link rel="stylesheet" href="css/product-detail.css" />
     <link
       rel="stylesheet"
@@ -250,55 +250,65 @@
                 <div class="contact-section">
                     <h3>Contact Information</h3>
                     <div class="form-group notFormGroup">
-                        <label for="login-email">Email</label>
-                        <input type="email" id="login-email" placeholder="Enter your email address">
+                        <label for="login-email" class="txtsize">Email</label>
+                        <input type="email" id="login-email" placeholder="Enter your email address" class="txtsize">
+                        <div class="form-group txtsize">
+                          <input type="checkbox" id="subscribe-offers" class="txtsize" style="width: auto;">
+                            <label for="subscribe-offers" class="txtsize">Email me with news and offers</label>
+                            
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="subscribe-offers">Email me with news and offers</label>
-                        <input type="checkbox" id="subscribe-offers">
-                    </div>
+                    
                 </div>
 
                 <!-- Delivery Section -->
                 <div class="delivery-section">
                     <h3>Delivery Address</h3>
-                    <div class="two-col">
+                    <div class="two-col two-col-name">
                         <div class="form-group notFormGroup" >
-                            <label for="first-name">First Name</label>
-                            <input type="text" id="first-name" placeholder="First Name">
+                            <label for="first-name" class="txtsize">First Name</label>
+                            <input type="text" id="first-name" placeholder="First Name" class="txtsize">
                         </div>
-                        <div class="form-group notFormGroup">
-                            <label for="last-name">Last Name</label>
+                        <div class="form-group notFormGroup txtsize" >
+                            <label for="last-name" class="txtsize">Last Name</label>
                             <input type="text" id="last-name" placeholder="Last Name" required>
                         </div>
                     </div>
                     <div class="form-group notFormGroup">
-                        <label for="address">Address</label>
-                        <input type="text" id="address" placeholder="Enter your address" required>
+                        <label for="address" class="txtsize">Address</label>
+                        <input type="text" id="address" placeholder="Enter your address" class="txtsize" required>
                     </div>
-                    <div class="form-group notFormGroup">
+                    <div class="two-col two-col-name">
+                      <div class="form-group notFormGroup txtsize" >
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                      </div>
+                      <div class="form-group notFormGroup txtsize" >
+                          <label for="gender" class="txtsize">Gender</label>
+                          <input type="text" id="gender" placeholder="Male/Female" required>
+                      </div>
+                  </div>
+                    <!-- <div class="form-group notFormGroup txtsize">
                         <label for="apartment">Apartment, suite, etc.</label>
                         <input type="text" id="apartment" placeholder="Apartment, suite, etc.">
-                    </div>
-                    <div class="two-col">
-                        <div class="form-group notFormGroup">
+                    </div> -->
+                    <div class=" three-col">
+                        <div class="form-group notFormGroup txtsize">
                             <label for="city">City</label>
                             <input type="text" id="city" placeholder="Enter your city" required>
                         </div>
-                        <div class="form-group notFormGroup">
+                        <div class="form-group notFormGroup txtsize">
                             <label for="state">State</label>
                             <input type="text" id="state" value="Haryana" readonly>
                         </div>
+                        <div class="form-group notFormGroup txtsize">
+                          <label for="pin-code">PIN Code</label>
+                          <input type="text" id="pin-code" placeholder="Enter your PIN code" required>
+                      </div>
                     </div>
-                    <div class="form-group notFormGroup">
-                        <label for="pin-code">PIN Code</label>
-                        <input type="text" id="pin-code" placeholder="Enter your PIN code" required>
-                    </div>
-                    <div class="form-group notFormGroup">
-                        <label for="phone">Phone</label>
-                        <input type="tel" id="phone" placeholder="Enter your phone number" required>
-                    </div>
-                    <div class="form-group ">
+                    
+
+                    <!-- <div class="form-group ">
                         <label for="save-info">
                             <input type="checkbox" id="save-info">
                             Save this information for next time
@@ -309,7 +319,7 @@
                             <input type="checkbox" id="text-offers">
                             Text me with news and offers
                         </label>
-                    </div>
+                    </div> -->
                     
                 </div>
                 
@@ -362,15 +372,15 @@
                   <p>All transactions are secure and encrypted.</p>
                   <div class="payment-method">
                       <input type="radio" name="payment" value="razorpay" id="razorpay" checked>
-                      <label for="razorpay">Razorpay Secure (UPI, Cards, Wallets, NetBanking)</label>
+                      <label for="razorpay">Razorpay Secure (UPI, Cards, Wallets, NetBanking)</label><span class="razorpayImg"><img src="./assets/images/upi.svg"/><img src="./assets/images/visa.svg"/><img src="./assets/images/master.svg"/></span>
                   </div>
                   <div class="payment-method">
                     <input type="radio" name="payment" value="razorpay" id="razorpay" checked>
-                    <label for="razorpay">Razorpay Secure (UPI, Cards, Wallets, NetBanking)</label>
+                    <label for="razorpay">Razorpay Secure (UPI, Cards, Wallets, NetBanking)</label><span class="razorpayImg"><img src="./assets/images/upi.svg"/><img src="./assets/images/visa.svg"/><img src="./assets/images/master.svg"/></span>
                 </div>
                 <div class="payment-method">
                   <input type="radio" name="payment" value="razorpay" id="razorpay" checked>
-                  <label for="razorpay">Razorpay Secure (UPI, Cards, Wallets, NetBanking)</label>
+                  <label for="razorpay">Razorpay Secure (UPI, Cards, Wallets, NetBanking)</label><span class="razorpayImg"><img src="./assets/images/upi.svg"/><img src="./assets/images/visa.svg"/><img src="./assets/images/master.svg"/></span>
               </div>
                   <!-- <div class="payment-method">
                       <input type="radio" name="payment" value="cash" id="cash">
