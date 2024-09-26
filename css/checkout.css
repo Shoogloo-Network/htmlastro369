@@ -8,7 +8,15 @@
     color: inherit;
 
 }
-
+.size1{
+    font-size: 20px;
+}
+.size2{
+    font-size: 16px;
+}
+.txtsize{
+    font-size: 14px;
+}
 a{
   padding: 0;
   border: none;
@@ -730,10 +738,12 @@ align-content: center;
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    padding: 5px;
 }
 
 .payment-method input {
     margin-right: 10px;
+    cursor: pointer;
 }
 
 /* Button */
@@ -750,7 +760,7 @@ button {
 
 button:hover {
     background-color: #2980b9;
-    transform: translateY(-2px);
+    /* transform: translateY(-2px); */
 }
 
 /* Footer */
@@ -836,12 +846,8 @@ button:hover {
     gap: 48px;
     justify-content: stretch;
 }
-.size1{
-    font-size: 20px;
-}
-.size2{
-    font-size: 16px;
-}
-.txtsize{
-    font-size: 14px;
-}
+
+
+
+
+
