@@ -833,7 +833,7 @@ button:hover {
 .two-col-name{
     display: flex;
     /* justify-content: space-between; */
-    gap: 150px;
+    gap: 30px;
 }
 
 #first-name,#last-name{
