@@ -289,10 +289,17 @@
                         <label for="pob" class="txtsize">Place of Birth</label>
                         <input type="search" id="pob" placeholder="Delhi , Mumbai etc" class="txtsize">
                     </div>
-                    <div class="form-group notFormGroup txtsizen" >
-                      <label for="gender" class="txtsize">Gender</label>
-                      <input type="text" id="gender" placeholder="Male/Female" required>
-                  </div>
+                    <div class="form-group notFormGroup txtsize">
+    <label for="gender" class="txtsize">Gender</label>
+    <div style="display: flex; align-items: center; margin-top: 15px;">
+        <input type="radio" id="male" name="gender" value="male" checked required style="width: 15% !important;">
+        <label for="male">Male</label>
+        
+        <input type="radio" id="female" name="gender" value="female" style="margin-left: 15px; width: 15% !important;" required>
+        <label for="female" >Female</label>
+    </div>
+</div>
+
                 </div>
                     <div class="form-group notFormGroup">
                         <label for="address" class="txtsize">Address</label>
