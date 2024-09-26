@@ -1,3 +1,28 @@
+
+    // Get the current date
+    const currentDate = new Date();
+    
+    // Calculate the date 50 years ago
+    const maxDate = new Date();
+    maxDate.setFullYear(currentDate.getFullYear() - 18);
+
+    // Set the minimum date to the beginning of 2007
+    const minDate = new Date(2007, 0, 1); // January 1, 2007
+
+    // Format the dates to YYYY-MM-DD
+    const maxYear = maxDate.getFullYear();
+    const maxMonth = String(maxDate.getMonth() + 1).padStart(2, '0');
+    const maxDay = String(maxDate.getDate()).padStart(2, '0');
+    
+    const minYear = minDate.getFullYear();
+    const minMonth = String(minDate.getMonth() + 1).padStart(2, '0');
+    const minDay = String(minDate.getDate()).padStart(2, '0');
+
+    // Set the min and max attributes of the input
+    document.getElementById('dob').setAttribute('min', `${minYear}-${minMonth}-${minDay}`);
+    document.getElementById('dob').setAttribute('max', `${maxYear}-${maxMonth}-${maxDay}`);
+
+
 // Get all payment-method divs
 const paymentMethods = document.querySelectorAll('.payment-method');
 
