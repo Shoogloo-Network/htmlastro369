@@ -1,8 +1,8 @@
 // Get all accordion items
 const allOrders = document.querySelectorAll('.accordion-item');
 
-// Function to filter orders based on status
-function filterOrders(status) {
+// Function to filter orders based on status and change button styles
+function filterOrders(status, clickedButton) {
     const statusLower = status.toLowerCase();
 
     allOrders.forEach(order => {
@@ -13,13 +13,21 @@ function filterOrders(status) {
             const orderStatus = orderStatusElement.textContent.trim().toLowerCase();
 
             // Show or hide the order based on the filter
-            if (statusLower === 'all' || orderStatus === statusLower) {
-                order.style.display = 'block';
-            } else {
-                order.style.display = 'none';
-            }
+            order.style.display = (statusLower === 'all' || orderStatus === statusLower) ? 'block' : 'none';
         }
     });
+
+    // Reset styles of all buttons
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.style.backgroundColor = ''; // Reset background color
+        btn.style.color = ''; // Reset text color
+    });
+
+    // Change the background color of the clicked button
+    if (clickedButton) {
+        clickedButton.style.backgroundColor = '#007bff'; // Set active background color
+        clickedButton.style.color = 'white'; // Change text color to white
+    }
 }
 
 // Function to toggle accordion content
@@ -27,6 +35,7 @@ function toggleAccordion(event) {
     const icon = event.target.querySelector('.icon');
     const content = event.target.nextElementSibling;
 
+    // Toggle display of the content
     if (content.style.display === 'block') {
         content.style.display = 'none';
         icon.textContent = '+'; // Change icon to plus
@@ -42,4 +51,4 @@ document.querySelectorAll('.accordion-header').forEach(header => {
 });
 
 // Default: Show all orders on page load
-filterOrders('all');
+filterOrders('all'); // Show all orders initially
