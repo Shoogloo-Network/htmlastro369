@@ -44,6 +44,17 @@
     border-bottom: 1px solid #ddd;
 }
 
+.accordion-header-fixed{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    gap: 120px;
+}
+
 .accordion-header span {
     margin-right: 10px;
 }
