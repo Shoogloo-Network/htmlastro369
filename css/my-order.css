@@ -1,0 +1,79 @@
+.my-orders-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.my-orders-section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Darker text for better readability */
+}
+
+.order-card {
+    border: 1px solid #e0e0e0; /* Light grey border */
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fafafa; /* Slightly off-white for order cards */
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: #e0ffe0; /* Light green for completed */
+    color: #2d572c; /* Dark green text */
+    font-weight: bold;
+}
+
+.order-details {
+    margin: 10px 0;
+}
+
+.order-items {
+    margin-top: 10px;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0; /* Padding for item separation */
+}
+
+.order-item img {
+    width: 100px; /* Set image width */
+    height: auto; /* Keep aspect ratio */
+    margin-right: 10px; /* Space between image and text */
+}
+
+.item-separator {
+    border: 0; /* Remove default border */
+    border-top: 1px solid #e0e0e0; /* Light grey line for separation */
+    margin: 10px 0; /* Margin for spacing */
+}
+
+.track-order {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Space above button */
+    width: 100%; /* Full-width button */
+    font-weight: bold; /* Bold text */
+}
+
+.track-order:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}

@@ -916,6 +916,10 @@ header , .mega-menu{
   display: none;
 }
 
+
+.addressToggle{
+  display: none;
+}
 label[for="razorpay"]{
   font-size: 18px;
 }
