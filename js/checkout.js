@@ -1,3 +1,26 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const contactSection = document.querySelector('.contact-section');
+    const deliverySection = document.querySelector('.delivery-section');
+    const orderSummary = document.querySelector('.order-summary');
+
+    // Initialize visibility
+    contactSection.classList.remove('hidden');
+    deliverySection.classList.add('hidden');
+    orderSummary.classList.add('hidden');
+
+    // Handle button clicks
+    document.querySelector('.mobileBtnContact').addEventListener('click', function() {
+        contactSection.classList.add('hidden');
+        deliverySection.classList.remove('hidden');
+    });
+
+    document.querySelector('.mobileBtnAddress').addEventListener('click', function() {
+        deliverySection.classList.add('hidden');
+        orderSummary.classList.remove('hidden');
+    });
+});
+
+
 
     // Get the current date
     const currentDate = new Date();
@@ -76,7 +99,6 @@ if (initialChecked) {
 
 
 
-
   //for clicking on user icon
   
   document
@@ -96,8 +118,7 @@ if (initialChecked) {
   let hideMenuTimeout;
   
   document
-   .querySelector(".mega-hover")
-   .addEventListener("mouseover", function () {
+   .querySelector(".mega-hover").addEventListener("mouseover",  () =>{
      clearTimeout(hideMenuTimeout);
      document.querySelector(".menu-section").style.display = "block";
    });

@@ -893,13 +893,20 @@ button:hover {
     width: 100% !important; /* Ensure inputs are full width */
     box-sizing: border-box !important; /* Include padding/border in width */
 }
-
+.hidden {
+  display: none;
+}
 
 .mobileBtnContact{
   display: none;
 }
 .mobileBtnAddress{
   display: none;
+}
+@media (min-width: 769px) { /* Adjust the width as needed */
+  .hidden {
+      display: block; /* Show sections on desktop */
+  }
 }
 
 /* Mobile Styles */
@@ -909,13 +916,14 @@ header , .mega-menu{
   display: none;
 }
 
-.mobileBtn{
-  display: block;
+label[for="razorpay"]{
+  font-size: 18px;
 }
+
 .checkout-form{
   width: 100%;
   padding: 7px;
-  display: none;
+  /* display: none; */
 }
 .container{
   display: flex;
@@ -938,20 +946,20 @@ header , .mega-menu{
 }
 
 .contact-section{
-  display: none;
+  /* display: block; */
 }
 .mobileBtnContact{
-  display: none;
+  display: block;
 }
 .delivery-section{
-  display: none;
+  /* display: none; */
 }
 .mobileBtnAddress{
-  display: none;
+  display: block;
   }
 
   .order-summary{
-    display: block;
+    /* display: block; */
     width: 100%;
     position: static;
     padding: 8px;
