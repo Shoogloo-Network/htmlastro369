@@ -3,6 +3,7 @@ const allOrders = document.querySelectorAll('.accordion-item');
 
 // Function to filter orders based on status and change button styles
 function filterOrders(status, clickedButton) {
+    
     const statusLower = status.toLowerCase();
 
     allOrders.forEach(order => {
@@ -19,6 +20,7 @@ function filterOrders(status, clickedButton) {
 
     // Reset styles of all buttons
     document.querySelectorAll('.filter-btn').forEach(btn => {
+        
         btn.style.backgroundColor = ''; // Reset background color
         btn.style.color = ''; // Reset text color
     });
