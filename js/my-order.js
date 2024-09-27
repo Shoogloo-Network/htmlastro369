@@ -32,16 +32,19 @@ function filterOrders(status, clickedButton) {
 
 // Function to toggle accordion content
 function toggleAccordion(event) {
-    const icon = event.target.querySelector('.icon');
-    const content = event.target.nextElementSibling;
+    const icon = event.currentTarget.querySelector('.icon'); // Use currentTarget
+    const content = event.currentTarget.nextElementSibling;
 
-    // Toggle display of the content
-    if (content.style.display === 'block') {
-        content.style.display = 'none';
-        icon.textContent = '+'; // Change icon to plus
-    } else {
-        content.style.display = 'block';
-        icon.textContent = '-'; // Change icon to minus
+    // Ensure the icon and content exist before manipulating them
+    if (icon && content) {
+        // Toggle display of the content
+        if (content.style.display === 'block') {
+            content.style.display = 'none';
+            icon.textContent = '+'; // Change icon to plus
+        } else {
+            content.style.display = 'block';
+            icon.textContent = '-'; // Change icon to minus
+        }
     }
 }
 

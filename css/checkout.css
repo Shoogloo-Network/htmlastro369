@@ -794,6 +794,12 @@ button:hover {
     }
 }
 
+.payment-section p{
+  margin-top: 2px;
+}
+.payment-section h3{
+  margin-bottom: 5px;
+}
 .form-group:not(.notFormGroup){
 /* width: auto; */
     display: flex;
