@@ -19,6 +19,7 @@
     padding: 15px;
     margin-bottom: 20px;
     background-color: #fafafa; /* Slightly off-white for order cards */
+    position: relative; /* Position for status bubble */
 }
 
 .order-header {
@@ -30,9 +31,23 @@
 .order-status {
     padding: 5px 10px;
     border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.order-status.completed {
     background-color: #e0ffe0; /* Light green for completed */
     color: #2d572c; /* Dark green text */
-    font-weight: bold;
+}
+
+.order-status.pending {
+    background-color: #fff3cd; /* Light yellow for pending */
+    color: #856404; /* Dark yellow text */
+}
+
+.order-status.cancelled {
+    background-color: #f8d7da; /* Light red for cancelled */
+    color: #721c24; /* Dark red text */
 }
 
 .order-details {
@@ -47,33 +62,46 @@
     display: flex;
     align-items: center;
     padding: 10px 0; /* Padding for item separation */
+    border-bottom: 1px solid #e0e0e0; /* Separator line for items */
 }
 
-.order-item img {
+.order-item:last-child {
+    border-bottom: none; /* Remove border for last item */
+}
+
+.order-image {
     width: 100px; /* Set image width */
     height: auto; /* Keep aspect ratio */
     margin-right: 10px; /* Space between image and text */
 }
 
-.item-separator {
-    border: 0; /* Remove default border */
-    border-top: 1px solid #e0e0e0; /* Light grey line for separation */
-    margin: 10px 0; /* Margin for spacing */
+.item-info {
+    flex-grow: 1; /* Allow info to take remaining space */
 }
 
-.track-order {
-    background-color: #007bff; /* Bootstrap primary color */
+.item-price {
+    font-weight: bold;
+    color: #007bff; /* Blue for price */
+}
+
+.order-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; /* Space above buttons */
+    gap: 10px;
+}
+
+.track-order, .reorder {
+    background-color: #007bff; /* Primary button color */
     color: white;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px; /* Space above button */
-    width: 100%; /* Full-width button */
     font-weight: bold; /* Bold text */
+    transition: background-color 0.3s; /* Smooth transition */
 }
 
-.track-order:hover {
+.track-order:hover, .reorder:hover {
     background-color: #0056b3; /* Darker shade on hover */
-    transition: background-color 0.3s; /* Smooth transition */
 }
