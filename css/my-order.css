@@ -47,12 +47,13 @@
 .accordion-header-fixed{
     padding: 15px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     cursor: pointer;
     background-color: #f1f1f1;
     font-weight: bold;
     border-bottom: 1px solid #ddd;
-    gap: 120px;
+    /* gap: 124px; */
+    /* width: 200px; */
 }
 
 .accordion-header span {
