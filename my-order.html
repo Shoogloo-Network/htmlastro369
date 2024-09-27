@@ -239,99 +239,299 @@
     </section>
     <!-- Menu Section Ends Here -->
 
+    
  
-    <div class="my-orders-section">
-        <h3>My Orders</h3>
-        <div class="order-card">
-            <div class="order-header">
-                <h4>Order #12345</h4>
-                <span class="order-status completed">Completed</span>
-            </div>
-            <div class="order-details">
-                <p><strong>Order Date:</strong> September 1, 2024</p>
-                <p><strong>Delivery Date:</strong> September 5, 2024</p>
-                <p><strong>Total Amount:</strong> $49.99</p>
-            </div>
-            <div class="order-items">
-                <h5>Items:</h5>
-                <div class="order-item">
-                    <img src="./assets/images/bracelate-tumbnail2.jpg" alt="Astrology Report" class="order-image">
-                    <div class="item-info">
-                        <p>Astrology Report</p>
-                        <p class="item-price">$19.99</p>
-                    </div>
-                </div>
-                <div class="order-item">
-                    <img src="./assets/images/bracelate-tumbnail2.jpg" alt="Personalized Horoscope" class="order-image">
-                    <div class="item-info">
-                        <p>Personalized Horoscope</p>
-                        <p class="item-price">$29.99</p>
-                    </div>
-                </div>
-            </div>
-            <div class="order-actions">
-                <button class="track-order">Track Order</button>
-                <button class="reorder">Reorder</button>
-            </div>
+<div class="container">
+    <div class="left-section">
+        <h2>My Orders</h2>
+        <div class="filter">
+            <button onclick="filterOrders('all')">All Orders</button>
+            <button onclick="filterOrders('cancelled')">Cancelled Orders</button>
+            <button onclick="filterOrders('completed')">Completed Orders</button>
+            <button onclick="filterOrders('pending')">Pending Orders</button>
         </div>
-    
-        <div class="order-card">
-            <div class="order-header">
-                <h4>Order #12346</h4>
-                <span class="order-status pending">Pending</span>
-            </div>
-            <div class="order-details">
-                <p><strong>Order Date:</strong> September 10, 2024</p>
-                <p><strong>Delivery Date:</strong> September 15, 2024</p>
-                <p><strong>Total Amount:</strong> $39.99</p>
-            </div>
-            <div class="order-items">
-                <h5>Items:</h5>
-                <div class="order-item">
-                    <img src="./assets/images/bracelate-tumbnail2.jpg" alt="Tarot Reading" class="order-image">
-                    <div class="item-info">
-                        <p>Tarot Reading</p>
-                        <p class="item-price">$39.99</p>
+    </div>
+
+    <div class="right-section">
+        <div class="accordion">
+            <!-- Accordion Item 1 -->
+            <div class="accordion-item" data-order-id="1">
+                <div class="accordion-header">
+                    <span>Date: 2024-09-01</span>
+                    <span>Order ID: 12345</span>
+                    <span>Status: Delivered</span>
+                    <span>Price: $99.99</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="order-items">
+                        <h5>Items:</h5>
+                        <div class="order-item">
+                            <img src="./assets/images/bracelate-tumbnail2.jpg" alt="Astrology Consultation" class="order-image">
+                            <div class="item-info">
+                                <p>Astrology Consultation</p>
+                                <p class="item-price">$99.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-actions">
+                        <button class="track-order">Track Order</button>
+                        <button class="reorder">Reorder</button>
                     </div>
                 </div>
             </div>
-            <div class="order-actions">
-                <button class="track-order">Track Order</button>
-                <button class="reorder">Reorder</button>
-            </div>
-        </div>
-    
-        <div class="order-card">
-            <div class="order-header">
-                <h4>Order #12347</h4>
-                <span class="order-status cancelled">Cancelled</span>
-            </div>
-            <div class="order-details">
-                <p><strong>Order Date:</strong> August 20, 2024</p>
-                <p><strong>Delivery Date:</strong> N/A</p>
-                <p><strong>Total Amount:</strong> $59.99</p>
-            </div>
-            <div class="order-items">
-                <h5>Items:</h5>
-                <div class="order-item">
-                    <img src="./assets/images/bracelate-tumbnail2.jpg" alt="Astrology Consultation" class="order-image">
-                    <div class="item-info">
-                        <p>Astrology Consultation</p>
-                        <p class="item-price">$59.99</p>
+
+            <!-- Accordion Item 2 -->
+            <div class="accordion-item" data-order-id="2">
+                <div class="accordion-header">
+                    <span>Date: 2024-09-02</span>
+                    <span>Order ID: 12346</span>
+                    <span>Status: Cancelled</span>
+                    <span>Price: $55.00</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="order-items">
+                        <h5>Items:</h5>
+                        <div class="order-item">
+                            <img src="./assets/images/bracelate-tumbnail2.jpg" alt="Astrology Consultation" class="order-image">
+                            <div class="item-info">
+                                <p>Astrology Consultation</p>
+                                <p class="item-price">$55.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-actions">
+                        <button class="track-order">Track Order</button>
+                        <button class="reorder">Reorder</button>
                     </div>
                 </div>
             </div>
-            <div class="order-actions">
-                <button class="track-order">Track Order</button>
-                <button class="reorder">Reorder</button>
+
+            <!-- Accordion Item 3 -->
+            <div class="accordion-item" data-order-id="3">
+                <div class="accordion-header">
+                    <span>Date: 2024-09-03</span>
+                    <span>Order ID: 12347</span>
+                    <span>Status: Completed</span>
+                    <span>Price: $75.00</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="order-items">
+                        <h5>Items:</h5>
+                        <div class="order-item">
+                            <img src="./assets/images/bracelate-tumbnail2.jpg" alt="Astrology Consultation" class="order-image">
+                            <div class="item-info">
+                                <p>Astrology Consultation</p>
+                                <p class="item-price">$75.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-actions">
+                        <button class="track-order">Track Order</button>
+                        <button class="reorder">Reorder</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 4 -->
+            <div class="accordion-item" data-order-id="4">
+                <div class="accordion-header">
+                    <span>Date: 2024-09-04</span>
+                    <span>Order ID: 12348</span>
+                    <span>Status: Pending</span>
+                    <span>Price: $89.99</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="order-items">
+                        <h5>Items:</h5>
+                        <div class="order-item">
+                            <img src="./assets/images/bracelate-tumbnail2.jpg" alt="Astrology Consultation" class="order-image">
+                            <div class="item-info">
+                                <p>Astrology Consultation</p>
+                                <p class="item-price">$89.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-actions">
+                        <button class="track-order">Track Order</button>
+                        <button class="reorder">Reorder</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 5 -->
+            <div class="accordion-item" data-order-id="5">
+                <div class="accordion-header">
+                    <span>Date: 2024-09-05</span>
+                    <span>Order ID: 12349</span>
+                    <span>Status: Delivered</span>
+                    <span>Price: $65.00</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="order-items">
+                        <h5>Items:</h5>
+                        <div class="order-item">
+                            <img src="./assets/images/bracelate-tumbnail2.jpg" alt="Astrology Consultation" class="order-image">
+                            <div class="item-info">
+                                <p>Astrology Consultation</p>
+                                <p class="item-price">$65.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-actions">
+                        <button class="track-order">Track Order</button>
+                        <button class="reorder">Reorder</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 6 -->
+            <div class="accordion-item" data-order-id="6">
+                <div class="accordion-header">
+                    <span>Date: 2024-09-06</span>
+                    <span>Order ID: 12350</span>
+                    <span>Status: Completed</span>
+                    <span>Price: $44.99</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="order-items">
+                        <h5>Items:</h5>
+                        <div class="order-item">
+                            <img src="./assets/images/bracelate-tumbnail2.jpg" alt="Astrology Consultation" class="order-image">
+                            <div class="item-info">
+                                <p>Astrology Consultation</p>
+                                <p class="item-price">$44.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-actions">
+                        <button class="track-order">Track Order</button>
+                        <button class="reorder">Reorder</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 7 -->
+            <div class="accordion-item" data-order-id="7">
+                <div class="accordion-header">
+                    <span>Date: 2024-09-07</span>
+                    <span>Order ID: 12351</span>
+                    <span>Status: Cancelled</span>
+                    <span>Price: $99.99</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="order-items">
+                        <h5>Items:</h5>
+                        <div class="order-item">
+                            <img src="./assets/images/bracelate-tumbnail2.jpg" alt="Astrology Consultation" class="order-image">
+                            <div class="item-info">
+                                <p>Astrology Consultation</p>
+                                <p class="item-price">$99.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-actions">
+                        <button class="track-order">Track Order</button>
+                        <button class="reorder">Reorder</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 8 -->
+            <div class="accordion-item" data-order-id="8">
+                <div class="accordion-header">
+                    <span>Date: 2024-09-08</span>
+                    <span>Order ID: 12352</span>
+                    <span>Status: Pending</span>
+                    <span>Price: $85.00</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="order-items">
+                        <h5>Items:</h5>
+                        <div class="order-item">
+                            <img src="./assets/images/bracelate-tumbnail2.jpg" alt="Astrology Consultation" class="order-image">
+                            <div class="item-info">
+                                <p>Astrology Consultation</p>
+                                <p class="item-price">$85.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-actions">
+                        <button class="track-order">Track Order</button>
+                        <button class="reorder">Reorder</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 9 -->
+            <div class="accordion-item" data-order-id="9">
+                <div class="accordion-header">
+                    <span>Date: 2024-09-09</span>
+                    <span>Order ID: 12353</span>
+                    <span>Status: Completed</span>
+                    <span>Price: $120.00</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="order-items">
+                        <h5>Items:</h5>
+                        <div class="order-item">
+                            <img src="./assets/images/bracelate-tumbnail2.jpg" alt="Astrology Consultation" class="order-image">
+                            <div class="item-info">
+                                <p>Astrology Consultation</p>
+                                <p class="item-price">$120.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-actions">
+                        <button class="track-order">Track Order</button>
+                        <button class="reorder">Reorder</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion Item 10 -->
+            <div class="accordion-item" data-order-id="10">
+                <div class="accordion-header">
+                    <span>Date: 2024-09-10</span>
+                    <span>Order ID: 12354</span>
+                    <span>Status: Delivered</span>
+                    <span>Price: $49.99</span>
+                    <span class="icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="order-items">
+                        <h5>Items:</h5>
+                        <div class="order-item">
+                            <img src="./assets/images/bracelate-tumbnail2.jpg" alt="Astrology Consultation" class="order-image">
+                            <div class="item-info">
+                                <p>Astrology Consultation</p>
+                                <p class="item-price">$49.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-actions">
+                        <button class="track-order">Track Order</button>
+                        <button class="reorder">Reorder</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+</div>
+
     
-    
+<script src="js/my-order.js"></script>
     
 <script src="js/checkout.js"></script>
-<script src="js/my-order.js"></script>
+
     <!-- <script src="js/product-detail.js"></script> -->
   </body>
 </html>
