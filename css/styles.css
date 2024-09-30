@@ -110,10 +110,11 @@ background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 8
 
 .image-slider-hero-image {
     min-width: 100%;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     height: 100%;
-   background-image: url("../assets/images/homeBanner.png");
-   background-size:contain;
+    background-image: url("../assets/images/homeBanner.png");
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 
 .image-slider-dots {
