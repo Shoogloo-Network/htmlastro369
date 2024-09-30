@@ -14,7 +14,15 @@
   text-decoration: none;
   color: inherit;
 }
-
+.size1{
+  font-size: 20px;
+}
+.size2{
+  font-size: 16px;
+}
+.txtsize{
+  font-size: 14px;
+}
 html {
   box-sizing: border-box;
 }

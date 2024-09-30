@@ -4,7 +4,15 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
-
+.size1{
+    font-size: 20px;
+}
+.size2{
+    font-size: 16px;
+}
+.txtsize{
+    font-size: 14px;
+}
 header, footer {
     background-color: #333;
     color: white;
