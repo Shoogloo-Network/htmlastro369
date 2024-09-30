@@ -58,18 +58,19 @@ background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 8
     height: 420px;
     margin-bottom: 40px;
     display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .cardBannerDiv{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 20px;
     justify-content: center;
-    /* align-items: center; */
-    margin-left: 60px;
-    width: 50%;
+    align-items: center;
+    /* margin-left: 60px; */
+    /* width: 50%; */
     height: 100%;
 }
 
@@ -86,7 +87,7 @@ background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 8
 .hero-image-slider-container {
     position: relative;
     width: 80%;
-    max-width: 600px;
+    max-width: 990px;
     overflow: hidden;
     /* height: 280px; */
     background-color: transparent;
@@ -698,8 +699,8 @@ hr {
 
 .card-image {
     width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     /* height: 188px; */
     height: 113px;
     object-fit: cover;
@@ -713,10 +714,10 @@ hr {
     background-color: white;
     /* border: 1px solid #f0f0f5; */
     box-shadow: 0 4px 8px rgba(0, 0, 0, .12);
-    /* border-radius: 24px; */
+    border-radius: 8px;
     cursor: pointer;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
 }
 
 .google-card {
@@ -1555,23 +1556,7 @@ input[type="tel"]:focus {
 
 
 
-.mobile-content {
-    display: none;
-}
 
-
-/* Mobile and Tablet Styles */
-@media (max-width: 992px) {
-    .desktop {
-        display: none;
-    }
-
-    .mobile-content {
-        display: block;
-    }
-
-
-}
 
 
 
