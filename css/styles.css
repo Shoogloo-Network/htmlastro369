@@ -113,7 +113,7 @@ background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 8
     box-sizing: border-box;
     height: 100%;
    background-image: url("../assets/images/homeBanner.png");
-   object-fit: cover;
+   background-size:contain;
 }
 
 .image-slider-dots {
