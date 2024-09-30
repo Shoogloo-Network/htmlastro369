@@ -1802,3 +1802,76 @@ font-weight: 700;
     padding: 12px 30px;
     border-radius: 6px;
 }
+
+
+/* Top free app section */
+
+
+
+.top-free-apps-section {
+    width: 1272px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.top-free-apps-section h2 {
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.top-free-apps-section h2 a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 24px;
+}
+
+.apps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.app-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+}
+
+.app-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.app-card img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+.app-info h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.rating {
+    font-size: 14px;
+    color: #888;
+}
+
+.free-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #000;
+}

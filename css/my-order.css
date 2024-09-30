@@ -107,3 +107,38 @@
     /* Minus to Plus */
     font-size: 20px;
 }
+
+
+
+@media only screen and (max-width: 768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-section{
+        width: auto;
+        position: static;
+        padding: 4px;
+    }
+
+    .filter{
+        display: flex;
+        /* border-radius: 0; */
+    }
+
+    .filter-btn{
+        border-radius: 0%;
+    }
+    .right-section{
+        margin-left: 0;
+        width: 100%;
+        padding: 2px;
+    }
+
+    .accordion-header{
+        font-size: 13px;
+    }
+    .accordion-header-fixed{
+        font-size: 14px;
+    }
+}

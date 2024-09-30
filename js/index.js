@@ -1,71 +1,4 @@
-// For Mobile Responsivness
-function loadStylesheets() {
-  console.log("Checking screen width:", window.innerWidth);
 
-  if (window.innerWidth <= 992) {
-    console.log(
-      "Screen width is 992px or less. Loading Bootstrap and style1.css"
-    );
-
-    // Add Bootstrap CSS
-    var bootstrapLink = document.createElement("link");
-    bootstrapLink.rel = "stylesheet";
-    bootstrapLink.href =
-      "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css";
-    document.head.appendChild(bootstrapLink);
-
-    // Add custom CSS
-    var customLink = document.createElement("link");
-    customLink.rel = "stylesheet";
-    customLink.href = "css/styles1.css";
-    document.head.appendChild(customLink);
-
-    // Remove main styles.css
-    var mainStylesheet = document.getElementById("main-stylesheet");
-    if (mainStylesheet) {
-      mainStylesheet.parentNode.removeChild(mainStylesheet);
-      console.log("Removed main styles.css");
-    }
-  } else {
-    console.log("Screen width is greater than 992px. Loading styles.css");
-
-    // Ensure main styles.css is added back if screen width is greater than 992px
-    if (!document.getElementById("main-stylesheet")) {
-      var mainLink = document.createElement("link");
-      mainLink.rel = "stylesheet";
-      mainLink.href = "css/styles.css";
-      mainLink.id = "main-stylesheet";
-      document.head.appendChild(mainLink);
-      console.log("Added main styles.css");
-    }
-
-    // Remove Bootstrap and custom CSS if they exist
-    var existingBootstrapLink = document.querySelector(
-      'link[href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"]'
-    );
-    var existingCustomLink = document.querySelector(
-      'link[href="css/style1.css"]'
-    );
-
-    if (existingBootstrapLink) {
-      document.head.removeChild(existingBootstrapLink);
-      console.log("Removed Bootstrap CSS");
-    }
-
-    if (existingCustomLink) {
-      document.head.removeChild(existingCustomLink);
-      console.log("Removed custom styles1.css");
-    }
-  }
-}
-
-// Load stylesheets on initial load
-loadStylesheets();
-
-// Load stylesheets on window resize
-window.addEventListener("resize", function () {
-  loadStylesheets();
-});
 
 let currentSlide = 0;
 const totalSlides = 9; // Total number of cards
@@ -160,10 +93,6 @@ function prevTestimonial() {
 // Automatic slide change
 setInterval(nextTestimonial, 5000); // Change slide every 5 seconds
 
-// For mobile view
-document.querySelector(".hamburger").addEventListener("click", function () {
-  document.querySelector(".navbar").classList.toggle("active");
-});
 
 //for showing popup
 
