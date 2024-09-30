@@ -573,7 +573,7 @@ hr {
 .section-container-top {
     display: flex;
     flex-direction: column;
-    max-width: 1260px;
+    max-width: 1269px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -587,7 +587,8 @@ hr {
 }
 
 .consultation-section {
-    max-width: 1260px;
+    max-width: 1269px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -595,7 +596,7 @@ hr {
 .consultation-header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 
@@ -604,8 +605,8 @@ hr {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    width: 180px;
-    gap: 45px;
+    /* width: 180px; */
+    gap: 30px;
     margin-bottom: 20px;
     cursor: pointer;
 }
@@ -643,7 +644,7 @@ hr {
 
 
 .appointment-section {
-    max-width: 1260px;
+    max-width: 1269px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
@@ -1024,7 +1025,7 @@ button.next {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    max-width: 1260px;
+    max-width: 1269px;
 }
 
 .testimonial-container {
@@ -1300,7 +1301,7 @@ input[type="tel"]:focus {
 }
 
 .footer-section {
-    min-width: 1260px;
+    min-width: 1269px;
     background-color: #28328c;
     padding: 48px 0;
     color: #fff;
@@ -1427,7 +1428,7 @@ input[type="tel"]:focus {
     /* position: absolute; */
     position: fixed;
     top: 52px;
-    width: 1278px;
+    width: 1269px;
     height: 300px;
     background-color: #ffffff;
     z-index: 6000000;
@@ -1826,7 +1827,7 @@ font-weight: 700;
 
 
 .top-free-apps-section {
-    width: 1272px;
+    width: 1269px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
