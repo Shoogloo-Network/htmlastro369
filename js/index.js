@@ -62,7 +62,7 @@ function imageSliderCurrentSlide(index) {
 }
 
 // Automatic slide change
-setInterval(imageSliderNextSlide, 3000);
+setInterval(imageSliderNextSlide, 10000);
 
 // Initialize the slider
 imageSliderShowSlide(imageSliderCurrentIndex);
