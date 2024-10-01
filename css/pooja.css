@@ -64,6 +64,7 @@ a.active-pooja{
     background-color: #0073e6;
     padding: 8px 15px;
     border-radius: 5px;
+    margin-left: -14px;
    
 }
 .sub-menu-pooja {
@@ -154,7 +155,7 @@ a.active-pooja{
 
 .cards-pooja {
     display: flex;
-    gap: 36px;
+    gap: 37.5px;
     flex-wrap: wrap;
 }
 
