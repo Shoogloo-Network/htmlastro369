@@ -119,12 +119,12 @@ a.active-pooja{
 }
 
 .buttons-pooja .btn-pooja:hover {
-    background-color: #005bb5;
+    background-color: #0073e6;
     color: #fff;
 }
 
 .buttons-pooja .btn-pooja.active-pooja {
-    background-color: #005bb5;
+    background-color: #0073e6;
     color: #fff;
 }
 
