@@ -235,3 +235,84 @@ a.active-pooja{
     display: none;
   }
  
+
+
+  @media (max-width: 768px) {
+    /* Adjusting the container layout to stack sidebar and main content vertically */
+    .container-pooja {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    /* Making sidebar full width on mobile */
+    .sidebar-pooja {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+        padding: 15px;
+    }
+
+    /* Making main content full width */
+    .main-content-pooja {
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* Adjust the cards to fit better on smaller screens */
+    .cards-pooja {
+        gap: 20px;
+    }
+
+    /* Ensure the cards take full width on smaller screens */
+    .card-pooja {
+        width: 100%;
+    }
+
+    /* Adjust button width for mobile view */
+    .view-all-pooja {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Adjust submenu spacing for smaller screens */
+    .sub-menu-pooja {
+        margin-left: 0;
+    }
+
+    /* Adjust text size for better readability */
+    .largesize {
+        font-size: 24px;
+    }
+    
+    .size1 {
+        font-size: 18px;
+    }
+    
+    .size2 {
+        font-size: 14px;
+    }
+
+    .txtsize {
+        font-size: 12px;
+    }
+
+    /* Ensure images fit well on mobile */
+    .card-pooja img {
+        height: auto;
+    }
+
+    /* Adjust featured section margins */
+    .featured-pooja {
+        margin-bottom: 20px;
+    }
+
+    /* Submenu styles for smaller screens */
+    .sub-menu-pooja-1 {
+        display: none; /* Hide submenu initially */
+    }
+
+    /* Ensure design submenu stays hidden unless activated */
+    .sub-menu-pooja-design {
+        display: none;
+    }
+}
