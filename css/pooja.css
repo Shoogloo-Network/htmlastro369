@@ -56,12 +56,12 @@ body {
 
 .sidebar-pooja ul li a:hover,
 .sidebar-pooja ul li a.active-pooja {
-    color: #0a66c2;
+    color: #0073e6;
     font-weight: bold;
 }
 a.active-pooja{
     color: #fff !important;
-    background-color: darkblue;
+    background-color: #0073e6;
     padding: 8px 15px;
     border-radius: 5px;
    
@@ -75,6 +75,7 @@ a.active-pooja{
 .main-content-pooja {
     width: 80%;
     padding: 20px 30px;
+    padding-right: 0;
 }
 
 .banner-pooja {
@@ -152,7 +153,7 @@ a.active-pooja{
 
 .cards-pooja {
     display: flex;
-    gap: 25px;
+    gap: 36px;
     flex-wrap: wrap;
 }
 
@@ -201,12 +202,12 @@ a.active-pooja{
 .view-all-pooja {
     background-color: #0073e6;
     color: white;
-    padding: 8px 12px;
+    padding: 8px 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 14px;
-    width: 120px;
+    width: 90px;
 }
 
 
@@ -221,3 +222,14 @@ a.active-pooja{
 .featured-pooja{
     margin-bottom: 30px;
 }
+
+
+
+.sub-menu-pooja-1 {
+    display: show; /* Hide the submenu initially */
+  }
+  
+  .sub-menu-pooja-design{
+    display: none;
+  }
+ 
