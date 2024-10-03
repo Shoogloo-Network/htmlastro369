@@ -114,11 +114,14 @@ a.active-pooja{
 .buttons-pooja .btn-pooja {
     background-color: #ffffff;
     color: black;
-    padding: 10px 15px;
+  
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    padding: 12px 0px;
+    width: 168px;
+    font-size: 16px;
 }
 
 .buttons-pooja .btn-pooja:hover {
