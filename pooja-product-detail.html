@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astro Shop</title>
+    <link rel="stylesheet" href="css/astro-shop.css" />
+    <link rel="stylesheet" href="css/product-detail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/pooja-product-detail.css" />
+
+    <!-- <link rel="stylesheet" href="css/mobileview.css"/> -->
+    <script
+      src="https://kit.fontawesome.com/c521e77e5d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="hamburger">&#9776;</div>
+        <a href="index.html" class="anchorLogo"
+          ><img
+            src="assets/images/astro369logo1.png"
+            alt="Astro369 Logo"
+            class="logoImage"
+        /></a>
+        <div class="logo-container">
+          <ul>
+            <li><a href="advisors.html">All Advisors</a></li>
+            <li><a href="consult.html">Video Consult</a></li>
+            <li class="mega-hover"><a href="#">Predictions</a></li>
+            <li><a href="astro-shop.html">Mart</a></li>
+          </ul>
+        </div>
+        <div class="menu-container">
+          <div class="menu-container-parent">
+            <div class="corporates-container">
+              <span class="New">New</span>
+              <div class="corporates-dropdown">
+                <!-- <label for="Corporates">For Corporates</label> -->
+                <select name="Corporates" id="Corporates">
+                  <option value="" disabled selected hidden>
+                    For Corporates
+                  </option>
+                  <option value="Health">Health & Wellness Plans</option>
+                  <option value="Insurance">Group Insurance</option>
+                </select>
+              </div>
+            </div>
+            <div class="providers-container">
+              <!-- <label for="Providers">For Providers</label> -->
+              <select name="Providers" id="Providers">
+                <option value="" disabled selected hidden>For Providers</option>
+                <option value="Prime">Practo Prime</option>
+                <option value="Software">Software For Providers</option>
+                <option value="Practice">List Your Practice For Free</option>
+                <option value="ABDM">ABDM</option>
+              </select>
+            </div>
+            <div class="security-container">
+              <!-- <label for="Security">Security & Help</label> -->
+              <select name="Security" id="Security">
+                <option value="" disabled selected hidden>ENG</option>
+                <option value="DataSecurity" selected>ENG</option>
+                <option value="Help">HINDI</option>
+              </select>
+            </div>
+            <!-- <button class="login-signup-button">Login/Signup</button> -->
+            <div>
+              <div class="user-profile">
+                <i class="fa-solid fa-user user-profile"></i>
+              </div>
+              <div class="login-hover">
+                <ul>
+                  <li id="login">
+                    <a href="loginSignup.html">Login/Signup</a>
+                  </li>
+                  <hr />
+                  <li>Profile</li>
+                  <hr />
+                  <li>Signout</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <hr />
+    </header>
+    <section class="menu-section">
+      <div class="container">
+        <div class="mega-menu">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="mega-menu-column">
+                <h3>Category 1</h3>
+                <!-- <hr /> -->
+                <!-- <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                  </ul> -->
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="mega-menu-column">
+                <h3>Category 2</h3>
+                <!-- <hr /> -->
+                <!-- <ul>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                    <li><a href="#">Item 6</a></li>
+                  </ul> -->
+
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="mega-menu-column">
+                <h3>Category 3</h3>
+                <!-- <hr /> -->
+                <!-- <ul>
+                    <li><a href="#">Item 7</a></li>
+                    <li><a href="#">Item 8</a></li>
+                    <li><a href="#">Item 9</a></li>
+                  </ul> -->
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="mega-menu-column">
+                <h3>Category 4</h3>
+                <!-- <hr /> -->
+                <!-- <ul>
+                    <li><a href="#">Item 10</a></li>
+                    <li><a href="#">Item 11</a></li>
+                    <li><a href="#">Item 12</a></li>
+                  </ul> -->
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Menu Section Ends Here -->
+
+    <section>
+      <!-- Product Container -->
+      <!-- Product Container -->
+      <!-- Product Container -->
+      <div class="product-container-pooja">
+        <!-- Product Image Gallery -->
+        <div class="product-gallery">
+          <!-- Thumbnails -->
+          <div class="thumbnail-container">
+            <img
+              src="./assets/images/bracelate.jpg"
+              alt="Thumbnail 1"
+              class="active"
+              onclick="changeImage(this)"
+            />
+            <img
+              src="./assets/images/braceleate-tumbnail1.jpg"
+              alt="Thumbnail 2"
+              onclick="changeImage(this)"
+            />
+            <img
+              src="./assets/images/bracelate-tumbnail2.jpg"
+              alt="Thumbnail 3"
+              onclick="changeImage(this)"
+            />
+          </div>
+          <!-- Main Image -->
+          <img
+            src="./assets/images/bracelate.jpg"
+            alt="Main Product Image"
+            class="main-image"
+            id="mainProductImage"
+          />
+        </div>
+
+        <!-- Product Details -->
+        <div class="product-details">
+          <div id="timerContainer">
+            <p>Time Remaining : </p><span id="timer"></span>
+        </div>
+        
+        
+          <div class="product-title">Angarak Yog Shanti Puja</div>
+
+          <div class="product-rating">
+            <div>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <span class="rating-count">1,234 ratings</span>
+          </div>
+<div class="product-pooja-button">
+    <button>Laghu</button>
+    <button>Maha</button>
+</div>
+          <div class="product-price">₹ 21000 <span>₹ 42000</span></div>
+          <div class="product-discount">50% Off</div>
+
+          <!-- Offers Section -->
+          <!-- <div class="product-offers">
+            <h4>Available Offers</h4>
+            <div class="offer-item">
+              <i class="fas fa-tag"></i> Bank Offer: 10% off on credit cards
+            </div>
+            <div class="offer-item">
+              <i class="fas fa-tag"></i> Cashback: Get 5% cashback on your next
+              order
+            </div>
+            <div class="offer-item">
+              <i class="fas fa-tag"></i> Special Price: Extra 15% off on orders
+              above $100
+            </div>
+          </div> -->
+
+          <!-- Size Selection -->
+          <!-- <div class="size-selection">
+            <h4>Select Size</h4>
+            <div class="size-options">
+              <span>S</span>
+              <span>M</span>
+              <span>L</span>
+              <span>XL</span>
+              <span>XXL</span>
+            </div>
+          </div> -->
+
+          <!-- Add to Cart & Buy Now Buttons -->
+          <div class="product-actions">
+            <button class="btn btn-cart">Add to Cart</button>
+            <button class="btn btn-buy" >Book Puja</button>
+          </div>
+          <div class="pandit-section">
+            <div class="pandit-feature">
+                <span class="pandit-icon"><img src="./assets/images/panditji.svg" alt="panditji"/></span>
+                <span class="pandit-text">Experienced Pandits</span>
+            </div>
+            <div class="pandit-feature">
+                <span class="pandit-icon"><img src="./assets/images/solutions.svg" alt="solutions"/></span>
+                <span class="pandit-text">20+ Years of Experience</span>
+            </div>
+            <div class="pandit-feature">
+                <span class="pandit-icon"><img src="./assets/images/yearsof.svg" alt="years of experience"/></span>
+                <span class="pandit-text">Effective Solutions</span>
+            </div>
+            <div class="pandit-feature">
+                <span class="pandit-icon"><img src="./assets/images/kalshs.svg" alt="kalshs"/></span>
+                <span class="pandit-text"> Thousands of Puja</span>
+            </div>
+        </div>
+        
+          <!-- Product Description (Accordion) -->
+
+        </div>
+      </div>
+     <div class="product-description-section">
+        <div class="product-description">
+            <h3 class="accordion-header">Product Details 
+                <span class="accordion-icon">
+                    <i class="fa-solid fa-plus"></i>
+                </span>
+            </h3>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut efficitur sapien. Proin condimentum enim quis quam viverra, nec cursus arcu aliquet. Nulla facilisi. Donec vulputate urna non nisi pretium, vel suscipit ipsum convallis.</p>
+            </div>
+        </div>
+        <div class="product-description">
+            <h3 class="accordion-header">Product Details 
+                <span class="accordion-icon">
+                    <i class="fa-solid fa-plus"></i>
+                </span>
+            </h3>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut efficitur sapien. Proin condimentum enim quis quam viverra, nec cursus arcu aliquet. Nulla facilisi. Donec vulputate urna non nisi pretium, vel suscipit ipsum convallis.</p>
+            </div>
+        </div>
+        <div class="product-description">
+            <h3 class="accordion-header">Product Details 
+                <span class="accordion-icon">
+                    <i class="fa-solid fa-plus"></i>
+                </span>
+            </h3>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut efficitur sapien. Proin condimentum enim quis quam viverra, nec cursus arcu aliquet. Nulla facilisi. Donec vulputate urna non nisi pretium, vel suscipit ipsum convallis.</p>
+            </div>
+        </div>
+        <div class="product-description">
+            <h3 class="accordion-header">Product Details 
+                <span class="accordion-icon">
+                    <i class="fa-solid fa-plus"></i>
+                </span>
+            </h3>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut efficitur sapien. Proin condimentum enim quis quam viverra, nec cursus arcu aliquet. Nulla facilisi. Donec vulputate urna non nisi pretium, vel suscipit ipsum convallis.</p>
+            </div>
+        </div>
+        <div class="product-description">
+            <h3 class="accordion-header">Product Details 
+                <span class="accordion-icon">
+                    <i class="fa-solid fa-plus"></i>
+                </span>
+            </h3>
+            <div class="accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut efficitur sapien. Proin condimentum enim quis quam viverra, nec cursus arcu aliquet. Nulla facilisi. Donec vulputate urna non nisi pretium, vel suscipit ipsum convallis.</p>
+            </div>
+        </div>
+     </div>
+    </section>
+    <div class="guidance-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-left">                
+                    <span class="heading">Need Instant Guidance?</span>
+                    <span class="subheading"><span class="highlight">Talk Or Chat</span>With Our Astrologers Now</span>
+                    <p class="description">Connect with top Astrologers in India for online consultations via call or chat. Discover solutions to your life challenges.</p>
+                </div>
+                <div class="col-right">
+                    <div class="consult-button-section">
+                        <div class="consult-content">
+                            <img src="https://cdn.anytimeastro.com/anytimeastro/puja/prodimg/consult_icon.png" alt="consult_icon" class="consult-icon">
+                            <div>
+                                <p class="consult-heading">Consult With Expert Astrologers!</p>
+                                <p class="consult-description">Seek Personalized Advice from India's Leading, Most Experienced, and Trustworthy Astrologers Online via Call or Message!</p>
+                            </div>
+                        </div>
+                        <div class="consult-btn-wrapper">
+                            <a href="https://www.anytimeastro.com/chat-with-astrologer" target="_blank" class="consult-now-btn">
+                                Consult Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/product-detail.js"></script>
+  </body>
+</html>

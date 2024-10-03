@@ -1,0 +1,204 @@
+.product-pooja-button{
+    display: flex;
+    gap: 20px;
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+.product-container-pooja{
+    max-width: 1269px;
+    margin: 20px auto;
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    background-color: white;
+}
+.product-description-section{
+    max-width: 1269px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Main section styling */
+.guidance-section {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Row layout */
+.row {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left column */
+.col-left {
+    width: 48%;
+    color: #333;
+}
+
+/* Headings and text */
+.heading {
+    font-size: 28px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.subheading {
+    font-size: 28px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.description {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Right column */
+.col-right {
+    width: 48%;
+    margin-top: 20px;
+}
+
+/* Consult button section */
+.consult-button-section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Consult content */
+.consult-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.consult-icon {
+    width: 84px;
+    height: auto;
+}
+
+.consult-heading {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+}
+
+.consult-description {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Button wrapper */
+.consult-btn-wrapper {
+    text-align: right;
+    margin-top: 20px;
+}
+
+/* Button styling */
+.consult-now-btn {
+    background-color: #ffcc00;
+    color: #000;
+    border-radius: 50px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.consult-now-btn:hover {
+    background-color: #f0b400;
+    color: #fff;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .col-left, .col-right {
+        width: 100%;
+    }
+
+    .heading, .subheading {
+        font-size: 24px;
+    }
+
+    .consult-now-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+
+
+/* Container for the entire section */
+.pandit-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for each feature item */
+.pandit-feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 12px;
+    border-radius: 8px;
+    width: 23%; /* Adjust width for four items to fit in one row */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for each feature */
+.pandit-feature:hover {
+    transform: translateY(-5px);
+}
+
+/* Style for the icon */
+.pandit-icon img {
+    width: 40px;
+    height: auto;
+}
+
+/* Text styling */
+.pandit-text {
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .pandit-section {
+        flex-wrap: wrap;
+    }
+    .pandit-feature {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

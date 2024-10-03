@@ -32,4 +32,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
   });
-  
+
+
+  const poojaClick = document.querySelectorAll(".card-pooja");
+
+  poojaClick.forEach((element)=>{
+    element.addEventListener("click",()=>{
+      window.location.href="./pooja-product-detail.html";
+    })
+  })
