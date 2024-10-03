@@ -1,3 +1,29 @@
+// Set the countdown duration to 4 hours (in milliseconds)
+let countdownDuration = 4 * 60 * 60 * 1000;
+
+// Update the countdown timer every second
+let countdownTimer = setInterval(function() {
+    // Calculate the remaining time
+    let hours = Math.floor(countdownDuration / (1000 * 60 * 60));
+    let minutes = Math.floor((countdownDuration % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((countdownDuration % (1000 * 60)) / 1000);
+
+    // Display the result in the timer span
+    document.getElementById("timer").textContent = `${hours}h : ${minutes}m : ${seconds}s`;
+
+    // Decrease the countdown time by 1 second (1000ms)
+    countdownDuration -= 1000;
+
+    // If the countdown is finished, clear the interval and display "Time's up"
+    if (countdownDuration < 0) {
+        clearInterval(countdownTimer);
+        document.getElementById("timer").textContent = "Time's up!";
+    }
+}, 1000);
+
+
+
+
 // Select the button
 const buyNowButton = document.querySelector('.btn-buy');
 
