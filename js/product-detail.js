@@ -33,22 +33,32 @@ buyNowButton.addEventListener('click', function() {
     window.location.href = './checkout.html';
 });
 // JavaScript to toggle accordion and icon
-const accordionHeader = document.querySelector('.accordion-header');
-const productDescription = document.querySelector('.product-description');
-const accordionIcon = document.querySelector('.accordion-icon i');
+const accordionHeaders = document.querySelectorAll('.accordion-header');
 
-accordionHeader.addEventListener('click', function() {
-    // Toggle the 'accordion-active' class to show or hide the content
-    productDescription.classList.toggle('accordion-active');
+accordionHeaders.forEach(header => {
+    header.addEventListener('click', function() {
+        // Toggle the 'accordion-active' class for the corresponding content
+        const productDescription = header.nextElementSibling; // Get the content element (next sibling)
 
-    // Change the icon between plus and minus
-    if (productDescription.classList.contains('accordion-active')) {
-        accordionIcon.classList.remove('fa-plus');
-        accordionIcon.classList.add('fa-minus');
-    } else {
-        accordionIcon.classList.remove('fa-minus');
-        accordionIcon.classList.add('fa-plus');
-    }
+        // Toggle visibility
+        if (productDescription.classList.contains('accordion-active')) {
+            productDescription.classList.remove('accordion-active'); // Hide content
+            productDescription.style.display = 'none'; // Hide content using inline style
+
+            // Change the icon back to plus
+            const accordionIcon = header.querySelector('.accordion-icon i');
+            accordionIcon.classList.remove('fa-minus');
+            accordionIcon.classList.add('fa-plus');
+        } else {
+            productDescription.classList.add('accordion-active'); // Show content
+            productDescription.style.display = 'block'; // Show content using inline style
+
+            // Change the icon to minus
+            const accordionIcon = header.querySelector('.accordion-icon i');
+            accordionIcon.classList.remove('fa-plus');
+            accordionIcon.classList.add('fa-minus');
+        }
+    });
 });
 
     function changeImage(element) {
