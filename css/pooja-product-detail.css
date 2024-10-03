@@ -202,3 +202,71 @@
         margin-bottom: 10px;
     }
 }
+
+
+
+
+.puja-details-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    /* max-width: 800px; */
+    margin: 0 auto;
+}
+
+.puja-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #c0392b;
+}
+
+.puja-description {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.puja-details {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.detail-item {
+    margin-bottom: 10px;
+}
+
+.detail-label {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.detail-value {
+    margin-left: 5px;
+    color: #7f8c8d;
+}
+
+.puja-rules {
+    background-color: #fdf2e9;
+    padding: 15px;
+    border-left: 5px solid #e67e22;
+    border-radius: 5px;
+}
+
+.rules-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d35400;
+    margin-bottom: 10px;
+}
+
+.rules-description {
+    font-size: 16px;
+    color: #2c3e50;
+    line-height: 1.7;
+}
