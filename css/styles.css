@@ -773,8 +773,7 @@ input[type="tel"]:focus {
 
 .astrologer-details {
     display: flex;
-    gap: 10px;
-    justify-content: center;
+    gap: 23px;
     margin: 20px auto;
 }
 
@@ -968,7 +967,7 @@ input[type="tel"]:focus {
 /* Top free app section */
 
 .top-free-apps-section {
-    padding: 20px;
+    padding: 20px 0 !important;
     background-color: #f8f9fa;
 
 }
