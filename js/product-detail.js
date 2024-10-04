@@ -35,6 +35,9 @@ buyNowButton.addEventListener('click', function() {
     // Change the window location to the checkout page
     window.location.href = './checkout.html';
 });
+
+
+
 // JavaScript to toggle accordion and icon
 const accordionHeaders = document.querySelectorAll('.accordion-header');
 
