@@ -97,7 +97,7 @@ button:hover {
 /* 6. Containers */
 .container {
     max-width: 1269px;
-    margin: 0 auto;
+    margin: 0 50px;
     /* padding: 20px; */
 }
 
