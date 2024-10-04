@@ -76,7 +76,12 @@ const testimonialContainer = document.querySelector(".testimonial-container");
 
 function updateTestimonial() {
   const offset = -currentTestimonial * 100;
-  testimonialContainer.style.transform = `translateX(${offset}%)`;
+  // Calculate the width of the scrollbar
+const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+
+// Adjust the offset by subtracting the scrollbar width
+testimonialContainer.style.transform = `translateX(calc(${offset}% - ${scrollBarWidth}px))`;
+
 }
 
 function nextTestimonial() {
