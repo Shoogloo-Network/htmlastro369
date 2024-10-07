@@ -592,7 +592,7 @@ align-content: center;
 }
 .astrologer-filter-div {
   max-width: 400px; /* Set a maximum width */
-  margin: 20px auto; /* Center it horizontally with auto margins */
+  margin: 20px auto 20px 0px; /* Center it horizontally with auto margins */
   padding: 20px; /* Add some padding inside the div */
   background-color: white; /* Set background color */
   border-radius: 8px; /* Optional: Rounded corners */
@@ -631,7 +631,7 @@ align-content: center;
 
 .astrologer-details{
     display: flex;
-    gap: 10px;
+    gap: 36px;
     justify-content: center;
     /* overflow-x: scroll; */
     margin: 20px auto;
@@ -983,15 +983,12 @@ font-weight: 700;
 /* Banner Section  */
 
 .advisorsBanner{
-    width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
+   
     box-shadow: 0px 8px 5px rgba(184, 173, 173, 0.2);
 }
 
 .advisorsBannerImage{
-max-width: 1280px;
-
+  width: 100%;
 }
 
 
@@ -1002,8 +999,8 @@ max-width: 1280px;
     /* margin-top: 10px; */
     /* align-items: center; */
     justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 40px;
+    /* padding-left: 40px;
+    padding-right: 40px; */
 }
 
 .phone-input-container-div{
