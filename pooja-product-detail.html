@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Astro Shop</title>
+    <title>Pooja Product</title>
     <link rel="stylesheet" href="css/astro-shop.css" />
    
     <link
@@ -24,13 +24,16 @@
     />
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <div class="hamburger">&#9776;</div>
+   
+  
+   <section class="desktop">
+     <!-- Menu Section Ends Here -->
+     <header class="container-fullWidth">
+      <nav class="navbar container">
         <a href="index.html" class="anchorLogo"
           ><img
             src="assets/images/astro369logo1.png"
-            alt="Astro369 Logo"
+            alt="Astro369 logo"
             class="logoImage"
         /></a>
         <div class="logo-container">
@@ -39,15 +42,15 @@
             <li><a href="consult.html">Video Consult</a></li>
             <li class="mega-hover"><a href="#">Predictions</a></li>
             <li><a href="astro-shop.html">Mart</a></li>
+            <li><a href="pooja.html">Pooja</a></li>
           </ul>
         </div>
         <div class="menu-container">
           <div class="menu-container-parent">
-            <div class="corporates-container">
+            <!-- <div class="corporates-container">
               <span class="New">New</span>
               <div class="corporates-dropdown">
-                <!-- <label for="Corporates">For Corporates</label> -->
-                <select name="Corporates" id="Corporates">
+                <select name="Corporates" id="Corporates" class="txtsize">
                   <option value="" disabled selected hidden>
                     For Corporates
                   </option>
@@ -55,20 +58,21 @@
                   <option value="Insurance">Group Insurance</option>
                 </select>
               </div>
-            </div>
-            <div class="providers-container">
-              <!-- <label for="Providers">For Providers</label> -->
-              <select name="Providers" id="Providers">
-                <option value="" disabled selected hidden>For Providers</option>
-                <option value="Prime">Practo Prime</option>
+            </div> -->
+            <!-- <div class="providers-container">
+              <select name="Providers" id="Providers" class="txtsize">
+                <option value="" disabled selected hidden>
+                  For Providers
+                </option>
+                <option value="Prime">Astro369 Prime</option>
                 <option value="Software">Software For Providers</option>
                 <option value="Practice">List Your Practice For Free</option>
                 <option value="ABDM">ABDM</option>
               </select>
-            </div>
+            </div> -->
             <div class="security-container">
               <!-- <label for="Security">Security & Help</label> -->
-              <select name="Security" id="Security">
+              <select name="Security" id="Security" class="txtsize">
                 <option value="" disabled selected hidden>ENG</option>
                 <option value="DataSecurity" selected>ENG</option>
                 <option value="Help">HINDI</option>
@@ -86,7 +90,10 @@
                   </li>
                   <hr />
                   <li>Profile</li>
+
                   <hr />
+                  <li><a href="./my-order.html">My Orders</a></li>
+                  <hr/>
                   <li>Signout</li>
                 </ul>
               </div>
@@ -96,8 +103,48 @@
       </nav>
 
       <hr />
+      <div class="pop-up-register" id="pop-up">
+        <div class="pop-up-register-form-div">
+          <h2>Enter Your Details</h2>
+          <div>
+            <label for="email">Email Id</label>
+            <input
+              type="email"
+              id="email"
+              value="email"
+              placeholder="Enter Your Email Id"
+            />
+            <label for="phone"> Phone Number</label>
+            <input
+              type="phone"
+              id="phone"
+              value="phone"
+              placeholder="+91 6399889123"
+            />
+            <div class="otp-container">
+              <h4>Enter OTP</h4>
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+            </div>
+          </div>
+          <button id="continue-sign-up-btn">Continue</button>
+          <form class="terms-and-resend">
+            <div class="terms-container">
+              <input type="checkbox" id="terms" name="terms" checked />
+              <label for="terms" class="txtsize"
+                >I agree to the <a href="#">terms and conditions</a></label
+              >
+            </div>
+            <div class="resend-otp txtsize"><a>Resend OTP ?</a></div>
+          </form>
+        </div>
+      </div>
     </header>
-    <section class="menu-section">
+    <section class="menu-section container">
       <div class="container">
         <div class="mega-menu">
           <div class="row">
@@ -106,10 +153,10 @@
                 <h3>Category 1</h3>
                 <!-- <hr /> -->
                 <!-- <ul>
-                    <li><a href="#">Item 1</a></li>
-                    <li><a href="#">Item 2</a></li>
-                    <li><a href="#">Item 3</a></li>
-                  </ul> -->
+                  <li><a href="#">Item 1</a></li>
+                  <li><a href="#">Item 2</a></li>
+                  <li><a href="#">Item 3</a></li>
+                </ul> -->
                 <div class="submenu-header-div">
                   <img
                     src="assets/images/period-problems-v1.jpg"
@@ -139,10 +186,10 @@
                 <h3>Category 2</h3>
                 <!-- <hr /> -->
                 <!-- <ul>
-                    <li><a href="#">Item 4</a></li>
-                    <li><a href="#">Item 5</a></li>
-                    <li><a href="#">Item 6</a></li>
-                  </ul> -->
+                  <li><a href="#">Item 4</a></li>
+                  <li><a href="#">Item 5</a></li>
+                  <li><a href="#">Item 6</a></li>
+                </ul> -->
 
                 <div class="submenu-header-div">
                   <img
@@ -173,10 +220,10 @@
                 <h3>Category 3</h3>
                 <!-- <hr /> -->
                 <!-- <ul>
-                    <li><a href="#">Item 7</a></li>
-                    <li><a href="#">Item 8</a></li>
-                    <li><a href="#">Item 9</a></li>
-                  </ul> -->
+                  <li><a href="#">Item 7</a></li>
+                  <li><a href="#">Item 8</a></li>
+                  <li><a href="#">Item 9</a></li>
+                </ul> -->
                 <div class="submenu-header-div">
                   <img
                     src="assets/images/period-problems-v1.jpg"
@@ -201,15 +248,15 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <!-- <div class="col-md-3">
               <div class="mega-menu-column">
                 <h3>Category 4</h3>
-                <!-- <hr /> -->
-                <!-- <ul>
-                    <li><a href="#">Item 10</a></li>
-                    <li><a href="#">Item 11</a></li>
-                    <li><a href="#">Item 12</a></li>
-                  </ul> -->
+                <hr />
+                <ul>
+                  <li><a href="#">Item 10</a></li>
+                  <li><a href="#">Item 11</a></li>
+                  <li><a href="#">Item 12</a></li>
+                </ul>
                 <div class="submenu-header-div">
                   <img
                     src="assets/images/period-problems-v1.jpg"
@@ -233,14 +280,13 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
     </section>
-    <!-- Menu Section Ends Here -->
 
-    <section>
+     <section class="container">
       <!-- Product Container -->
       <!-- Product Container -->
       <!-- Product Container -->
@@ -357,7 +403,7 @@
 
         </div>
       </div>
-     <div class="product-description-section" id="div2">
+     <div class="product-description-section container" >
         <div class="product-description accordion-active">
             <h3 class="accordion-header">Product Details 
                 <span class="accordion-icon">
@@ -447,8 +493,8 @@
      </div>
     </section>
     <div class="guidance-section">
-        <div class="container">
-            <div class="row">
+        <div class="container-guidance">
+            <div class="row-guidance">
                 <div class="col-left">                
                     <span class="heading">Need Instant Guidance?</span>
                     <span class="subheading"><span class="highlight">Talk Or Chat</span>With Our Astrologers Now</span>
@@ -473,6 +519,7 @@
             </div>
         </div>
     </div>
+   </section>
     <script src="js/pooja-product-detail.js"></script>
   </body>
 </html>
