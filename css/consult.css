@@ -633,7 +633,7 @@ button.next-health {
     color: #2d2d32;
    font-weight: bold;
     line-height: 1.5;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .offer-item-1{
@@ -756,76 +756,4 @@ button.next-health {
     gap: 8px;
     align-items:center;
     width: 240px;
-}
-/* Footer Setion */
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-}
-
-.footer-section {
-    min-width: 1260px;
-    background-color: #28328c;
-    padding: 48px 0;
-    color: #fff;
-    font-size: 14px;
-    margin-left: 0;
-    padding-left: 30px;
-    padding-right: 30px;
-
-}
-
-.footer-list {
-    list-style: none;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-    text-decoration: none;
-    padding-bottom: 20px;
-}
-
-
-
-.footer-item {
-    padding-bottom: 5px;
-}
-
-
-
-
-
-
-
-.footer-bottom {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-
-
-
-.footer-copyright {
-    font-size: 14px;
-    font-weight: 700;
-    color: #b8bbd9;
-}
-
-.mobile-content{
-    display: none;
-}
-
-/* Mobile and Tablet Styles */
-@media (max-width: 992px) {
-    .desktop {
-        display: none;
-    }
-
-    .mobile-content {
-        display: block;
-    }
-
-
 }
