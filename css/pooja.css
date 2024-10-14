@@ -1,40 +1,19 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-}
-.largesize{
-    font-size: 30px;
-}
-.size1{
-    font-size: 20px;
-}
-.size2{
-    font-size: 16px;
-}
-.txtsize{
-    font-size: 14px;
-}
 .container-pooja {
     display: flex;
-    max-width: 1269px;
-    margin: 30px auto;
+  
 }
 
 .sidebar-pooja {
     width: 20%;
     background-color: #fff;
     padding: 25px;
+    padding-top: 0;
     border-right: 1px solid #e0e0e0;
 }
 
 .sidebar-pooja h3 {
-    /* font-size: 1.25rem; */
+   
     margin-bottom: 25px;
     color: #333;
 }
@@ -70,7 +49,7 @@ a.active-pooja{
 .sub-menu-pooja {
     margin-left: 15px;
     margin-top: 10px;
-    /* font-size: 0.95rem; */
+   
 }
 
 .main-content-pooja {
@@ -87,7 +66,7 @@ a.active-pooja{
     color: white;
     padding: 20px;
     text-align: center;
-    margin-bottom: 30px;
+ 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,12 +75,12 @@ a.active-pooja{
 }
 
 .banner-pooja h2 {
-    /* font-size: 2rem; */
+  
     margin-bottom: 10px;
 }
 
 .banner-pooja p {
-    /* font-size: 1.1rem; */
+  
     margin-bottom: 20px;
 }
 
@@ -187,14 +166,13 @@ a.active-pooja{
 }
 
 .card-pooja h3 {
-    /* font-size: 1.1rem; */
+ 
     margin-bottom: 10px;
     color: #333;
 }
 
 .card-pooja p {
     color: #777;
-    /* font-size: 0.95rem; */
     margin-bottom: 10px;
 }
 
@@ -283,23 +261,7 @@ a.active-pooja{
         margin-left: 0;
     }
 
-    /* Adjust text size for better readability */
-    .largesize {
-        font-size: 24px;
-    }
     
-    .size1 {
-        font-size: 18px;
-    }
-    
-    .size2 {
-        font-size: 14px;
-    }
-
-    .txtsize {
-        font-size: 12px;
-    }
-
     /* Ensure images fit well on mobile */
     .card-pooja img {
         height: auto;
