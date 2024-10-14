@@ -277,7 +277,7 @@
     max-width: 70%;
 }
 .specialities-title {
-    font-size: 24px;
+  
     font-weight: bold;
     margin: 0;
 }
@@ -285,7 +285,7 @@
 
 
 .specialities-title-health{
-    font-size: 24px;
+   
     font-weight: bold;
     margin: 0;
 }
@@ -293,7 +293,7 @@
 
 
 .specialities-description {
-    font-size: 16px;
+   
     color: #666;
 }
 
@@ -629,7 +629,7 @@ button.next-health {
 /* Offer Section */
 
 .offers-title{
-    font-size: 30px;
+   
     color: #2d2d32;
    
     line-height: 1.5;
@@ -732,7 +732,7 @@ button.next-health {
 }
 
 .how-it-works-title{
-    font-size: 30px;
+   
     color: #2d2d32;
    
     line-height: 1.5;

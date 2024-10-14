@@ -21,7 +21,9 @@
 }
 
 /* 3. Typography */
-
+.size3xl{
+    font-size: 34px;
+}
 .size2xl{
     font-size: 30px;
 }
