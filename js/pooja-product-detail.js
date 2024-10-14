@@ -1,6 +1,6 @@
-window.onload = function() {
-    window.location.hash = 'div2';
-  };
+// window.onload = function() {
+//     window.location.hash = 'div2';
+//   };
   // Set the countdown duration to 4 hours (in milliseconds)
   let countdownDuration = 4 * 60 * 60 * 1000;
   
