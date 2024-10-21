@@ -1190,4 +1190,9 @@ input[type="tel"]:focus {
     .card-action-consultation {
         font-size: 12px; /* Reduce action font size */
     }
+
+    /* Appointment Section */
+    .appointment-section{
+        text-align: center;
+    }
 }
