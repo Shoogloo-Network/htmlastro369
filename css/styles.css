@@ -1195,6 +1195,7 @@ input[type="tel"]:focus {
     /* Appointment Section */
     .appointment-section{
         text-align: center;
+        margin-bottom: 10px !important;
     }
 
 
