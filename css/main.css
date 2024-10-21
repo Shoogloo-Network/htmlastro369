@@ -797,4 +797,12 @@ a{
    margin: 0px 0px ;
     padding:0px;
 }
+
+.articles-section{
+    display: block;
+}
+.articles-container{
+    flex-direction: column;
+    align-items: center;
+}
 }
