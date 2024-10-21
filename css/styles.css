@@ -1211,4 +1211,14 @@ input[type="tel"]:focus {
     .astrologer-container{
         width: 100%;
     }
+    .app-section-div{
+        flex-direction: column;
+    }
+    .download-section{
+        padding: 10px;
+        gap: 5px;
+    }
+    .content-container{
+        padding: 10;
+    }
 }
