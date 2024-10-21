@@ -758,3 +758,36 @@ hr {
 
 
 
+/* For small mobile devices (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+   /* 3. Typography */
+.size3xl{
+    font-size: 24px;
+}
+.size2xl{
+    font-size: 20px;
+}
+.sizexl{
+    font-size: 14px;
+}
+.size1 {
+    font-size: 12px;
+}
+
+.size2 {
+    font-size: 10px;
+}
+
+.txtsize {
+    font-size: 8px;
+}
+
+.txtsizesm{
+    font-size: 6px;
+}
+
+a{
+    font-size: 10px;
+}
+
+}

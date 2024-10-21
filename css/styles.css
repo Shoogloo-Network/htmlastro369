@@ -1082,10 +1082,12 @@ input[type="tel"]:focus {
      .cardBannerDiv1, .cardBannerDiv2 {
         flex-direction: row;
         gap: 20px; /* Reduce gap between card divs */
+        width: 100%;
     }
     .cardBannerDiv{
         flex-direction: column;
         gap: 20px; 
+      
     }
 
     /* Hero Image Slider */
@@ -1131,6 +1133,7 @@ input[type="tel"]:focus {
     }
     .cardBannerDiv{
         width: 100%;
+        padding: 10px;
     }
     .card1{
         width: 100%;
@@ -1141,6 +1144,7 @@ input[type="tel"]:focus {
     /* Hero Image Slider */
     .hero-image-slider-container {
         height: 400px; /* Smaller height for very small screens */
+        margin-bottom: 10px;
     }
 
     .hero-image-container > img {
