@@ -1216,9 +1216,9 @@ input[type="tel"]:focus {
     }
     .download-section{
         padding: 10px;
-        gap: 5px;
+        gap: 0px;
     }
     .content-container{
-        padding: 10;
+        padding: 10px;
     }
 }
