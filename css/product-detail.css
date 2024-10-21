@@ -40,7 +40,7 @@
 
 /* Accordion Styling */
 .accordion-header {
-    font-size: 20px;
+   
     font-weight: bold;
     cursor: pointer;
     padding: 10px;
@@ -103,7 +103,7 @@
 
 /* Product Title */
 .product-title {
-    font-size: 20px;
+  
     font-weight: bold;
     color: #212121;
     margin-bottom: 10px;
@@ -127,21 +127,21 @@
 
 /* Product Price */
 .product-price {
-    font-size: 20px;
+   
     font-weight: bold;
     color: #388e3c;
     margin-bottom: 5px;
 }
 
 .product-price span {
-    font-size: 16px;
+ 
     color: #757575;
     text-decoration: line-through;
 }
 
 .product-discount {
     color: #ff5722;
-    font-size: 16px;
+  
     margin-bottom: 20px;
 }
 
@@ -155,11 +155,11 @@
 
 .product-offers h4 {
     margin-bottom: 10px;
-    font-size: 16px;
+   
 }
 
 .offer-item {
-    font-size: 14px;
+   
     margin-bottom: 5px;
     color: #555;
 }
@@ -170,7 +170,7 @@
 }
 
 .size-selection h4 {
-    font-size: 16px;
+  
     margin-bottom: 10px;
 }
 
@@ -201,7 +201,7 @@
     padding: 15px 20px;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+  
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -233,7 +233,7 @@
 
 .product-description h3 {
     margin-bottom: 10px;
-    font-size: 16px;
+  
     color: #212121;
 }
 
@@ -281,7 +281,7 @@
     width: 100%;
     background-color: #00ad31;
     color: #fff !important;
-    font-size: 14px;
+   
     padding: 5px 10px;
     border-radius: 3px;
     font-family: Arial, sans-serif;
