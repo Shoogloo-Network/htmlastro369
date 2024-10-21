@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
-    <!-- <link rel="stylesheet" href="css/main.css" /> -->
+    <link rel="stylesheet" href="css/main.css" />
 <link rel="stylesheet" href="./css/checkout.css"/>
     <!-- <link rel="stylesheet" href="css/mobileview.css"/> -->
     <script
@@ -22,416 +22,458 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <div class="hamburger">&#9776;</div>
-        <a href="index.html" class="anchorLogo"
-          ><img
-            src="assets/images/astro369logo1.png"
-            alt="Astro369 Logo"
-            class="logoImage"
-        /></a>
-        <div class="logo-container">
-          <ul>
-            <li><a href="advisors.html">All Advisors</a></li>
-            <li><a href="consult.html">Video Consult</a></li>
-            <li class="mega-hover"><a href="#">Predictions</a></li>
-            <li><a href="astro-shop.html">Mart</a></li>
-          </ul>
-        </div>
-        <div class="menu-container">
-          <div class="menu-container-parent">
-            <div class="corporates-container">
-              <span class="New">New</span>
-              <div class="corporates-dropdown">
-                <!-- <label for="Corporates">For Corporates</label> -->
-                <select name="Corporates" id="Corporates">
-                  <option value="" disabled selected hidden>
-                    For Corporates
-                  </option>
-                  <option value="Health">Health & Wellness Plans</option>
-                  <option value="Insurance">Group Insurance</option>
-                </select>
-              </div>
-            </div>
-            <div class="providers-container">
-              <!-- <label for="Providers">For Providers</label> -->
-              <select name="Providers" id="Providers">
-                <option value="" disabled selected hidden>For Providers</option>
-                <option value="Prime">Practo Prime</option>
-                <option value="Software">Software For Providers</option>
-                <option value="Practice">List Your Practice For Free</option>
-                <option value="ABDM">ABDM</option>
+  <body >
+   
+ <section class="desktop">
+  <header class="container-fullWidth headerRes">
+    <nav class="navbar container">
+      <a href="index.html" class="anchorLogo"
+        ><img
+          src="assets/images/astro369logo1.png"
+          alt="Astro369 logo"
+          class="logoImage"
+      /></a>
+      <div class="logo-container">
+        <ul>
+          <li><a href="advisors.html">All Advisors</a></li>
+          <li><a href="consult.html">Video Consult</a></li>
+          <li class="mega-hover"><a href="#">Predictions</a></li>
+          <li><a href="astro-shop.html">Mart</a></li>
+          <li><a href="pooja.html">Pooja</a></li>
+        </ul>
+      </div>
+      <div class="menu-container">
+        <div class="menu-container-parent">
+          <!-- <div class="corporates-container">
+            <span class="New">New</span>
+            <div class="corporates-dropdown">
+              <select name="Corporates" id="Corporates" class="txtsize">
+                <option value="" disabled selected hidden>
+                  For Corporates
+                </option>
+                <option value="Health">Health & Wellness Plans</option>
+                <option value="Insurance">Group Insurance</option>
               </select>
             </div>
-            <div class="security-container">
-              <!-- <label for="Security">Security & Help</label> -->
-              <select name="Security" id="Security">
-                <option value="" disabled selected hidden>ENG</option>
-                <option value="DataSecurity" selected>ENG</option>
-                <option value="Help">HINDI</option>
-              </select>
-            </div>
-            <!-- <button class="login-signup-button">Login/Signup</button> -->
-            <div>
-              <div class="user-profile">
-                <i class="fa-solid fa-user user-profile"></i>
-              </div>
-              <div class="login-hover">
-                <ul>
-                  <li id="login">
-                    <a href="loginSignup.html">Login/Signup</a>
-                  </li>
-                  <hr />
-                  <li>Profile</li>
-                  <hr />
-                  <li>Signout</li>
-                </ul>
-              </div>
-            </div>
+          </div> -->
+          <!-- <div class="providers-container">
+            <select name="Providers" id="Providers" class="txtsize">
+              <option value="" disabled selected hidden>
+                For Providers
+              </option>
+              <option value="Prime">Astro369 Prime</option>
+              <option value="Software">Software For Providers</option>
+              <option value="Practice">List Your Practice For Free</option>
+              <option value="ABDM">ABDM</option>
+            </select>
+          </div> -->
+          <div class="security-container">
+            <!-- <label for="Security">Security & Help</label> -->
+            <select name="Security" id="Security" class="txtsize">
+              <option value="" disabled selected hidden>ENG</option>
+              <option value="DataSecurity" selected>ENG</option>
+              <option value="Help">HINDI</option>
+            </select>
           </div>
-        </div>
-      </nav>
+          <!-- <button class="login-signup-button">Login/Signup</button> -->
+          <div>
+            <div class="user-profile">
+              <i class="fa-solid fa-user user-profile"></i>
+            </div>
+            <div class="login-hover">
+              <ul>
+                <li id="login">
+                  <a href="loginSignup.html">Login/Signup</a>
+                </li>
+                <hr />
+                <li>Profile</li>
 
-      <hr />
-    </header>
-    <section class="menu-section">
-      <div class="container">
-        <div class="mega-menu">
-          <div class="row">
-            <div class="col-md-3">
-              <div class="mega-menu-column">
-                <h3>Category 1</h3>
-                <!-- <hr /> -->
-                <!-- <ul>
-                    <li><a href="#">Item 1</a></li>
-                    <li><a href="#">Item 2</a></li>
-                    <li><a href="#">Item 3</a></li>
-                  </ul> -->
-                <div class="submenu-header-div">
-                  <img
-                    src="assets/images/period-problems-v1.jpg"
-                    alt="submenuimage1"
-                    class="submenu-header-image"
-                  />
-                  <div class="submenu-header-right-div">
-                    <h4>Period doubts</h4>
-                    <p>Private online consultations with doctors</p>
-                  </div>
-                </div>
-                <div class="submenu-header-div">
-                  <img
-                    src="assets/images/period-problems-v1.jpg"
-                    alt="submenuimage1"
-                    class="submenu-header-image"
-                  />
-                  <div class="submenu-header-right-div">
-                    <h4>Period doubts</h4>
-                    <p>Private online consultations with doctors</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="mega-menu-column">
-                <h3>Category 2</h3>
-                <!-- <hr /> -->
-                <!-- <ul>
-                    <li><a href="#">Item 4</a></li>
-                    <li><a href="#">Item 5</a></li>
-                    <li><a href="#">Item 6</a></li>
-                  </ul> -->
-
-                <div class="submenu-header-div">
-                  <img
-                    src="assets/images/period-problems-v1.jpg"
-                    alt="submenuimage1"
-                    class="submenu-header-image"
-                  />
-                  <div class="submenu-header-right-div">
-                    <h4>Period doubts</h4>
-                    <p>Private online consultations with doctors</p>
-                  </div>
-                </div>
-                <div class="submenu-header-div">
-                  <img
-                    src="assets/images/period-problems-v1.jpg"
-                    alt="submenuimage1"
-                    class="submenu-header-image"
-                  />
-                  <div class="submenu-header-right-div">
-                    <h4>Period doubts</h4>
-                    <p>Private online consultations with doctors</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="mega-menu-column">
-                <h3>Category 3</h3>
-                <!-- <hr /> -->
-                <!-- <ul>
-                    <li><a href="#">Item 7</a></li>
-                    <li><a href="#">Item 8</a></li>
-                    <li><a href="#">Item 9</a></li>
-                  </ul> -->
-                <div class="submenu-header-div">
-                  <img
-                    src="assets/images/period-problems-v1.jpg"
-                    alt="submenuimage1"
-                    class="submenu-header-image"
-                  />
-                  <div class="submenu-header-right-div">
-                    <h4>Period doubts</h4>
-                    <p>Private online consultations with doctors</p>
-                  </div>
-                </div>
-                <div class="submenu-header-div">
-                  <img
-                    src="assets/images/period-problems-v1.jpg"
-                    alt="submenuimage1"
-                    class="submenu-header-image"
-                  />
-                  <div class="submenu-header-right-div">
-                    <h4>Period doubts</h4>
-                    <p>Private online consultations with doctors</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="mega-menu-column">
-                <h3>Category 4</h3>
-                <!-- <hr /> -->
-                <!-- <ul>
-                    <li><a href="#">Item 10</a></li>
-                    <li><a href="#">Item 11</a></li>
-                    <li><a href="#">Item 12</a></li>
-                  </ul> -->
-                <div class="submenu-header-div">
-                  <img
-                    src="assets/images/period-problems-v1.jpg"
-                    alt="submenuimage1"
-                    class="submenu-header-image"
-                  />
-                  <div class="submenu-header-right-div">
-                    <h4>Period doubts</h4>
-                    <p>Private online consultations with doctors</p>
-                  </div>
-                </div>
-                <div class="submenu-header-div">
-                  <img
-                    src="assets/images/period-problems-v1.jpg"
-                    alt="submenuimage1"
-                    class="submenu-header-image"
-                  />
-                  <div class="submenu-header-right-div">
-                    <h4>Period doubts</h4>
-                    <p>Private online consultations with doctors</p>
-                  </div>
-                </div>
-              </div>
+                <hr />
+                <li><a href="./my-order.html">My Orders</a></li>
+                <hr/>
+                <li>Signout</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Menu Section Ends Here -->
+    </nav>
 
-   <section class="user-details-section">
-   
-    
+    <hr />
+    <div class="pop-up-register" id="pop-up">
+      <div class="pop-up-register-form-div">
+        <h2>Enter Your Details</h2>
+        <div>
+          <label for="email">Email Id</label>
+          <input
+            type="email"
+            id="email"
+            value="email"
+            placeholder="Enter Your Email Id"
+          />
+          <label for="phone"> Phone Number</label>
+          <input
+            type="phone"
+            id="phone"
+            value="phone"
+            placeholder="+91 6399889123"
+          />
+          <div class="otp-container">
+            <h4>Enter OTP</h4>
+            <input type="text" maxlength="1" class="otp-input size2" />
+            <input type="text" maxlength="1" class="otp-input size2" />
+            <input type="text" maxlength="1" class="otp-input size2" />
+            <input type="text" maxlength="1" class="otp-input size2" />
+            <input type="text" maxlength="1" class="otp-input size2" />
+            <input type="text" maxlength="1" class="otp-input size2" />
+          </div>
+        </div>
+        <button id="continue-sign-up-btn">Continue</button>
+        <form class="terms-and-resend">
+          <div class="terms-container">
+            <input type="checkbox" id="terms" name="terms" checked />
+            <label for="terms" class="txtsize"
+              >I agree to the <a href="#">terms and conditions</a></label
+            >
+          </div>
+          <div class="resend-otp txtsize"><a>Resend OTP ?</a></div>
+        </form>
+      </div>
+    </div>
+  </header>
 
+  <section class="menu-section container">
     <div class="container">
-        <div class="checkout-container">
-            <!-- Checkout Form -->
-            <div class="checkout-form">
-                <!-- Contact Section -->
-                <div class="contact-section">
-                    <h3>Contact Information</h3>
-                    <div class="form-group notFormGroup">
-                        <label for="login-email" class="txtsize">Email</label>
-                        <input type="email" id="login-email" placeholder="Enter your email address" class="txtsize">
-                        <div class="form-group txtsize">
-                          <input type="checkbox" id="subscribe-offers" checked class="txtsize" style="width: auto;">
-                            <label for="subscribe-offers" class="txtsize checkbox-margin">Email me with news and offers</label>
-                            
-                        </div>
-                        <button class="mobileBtnContact">Continue
-                        </button>
-                    </div>
-                    
+      <div class="mega-menu">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="mega-menu-column">
+              <h3>Category 1</h3>
+              <!-- <hr /> -->
+              <!-- <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+              </ul> -->
+              <div class="submenu-header-div">
+                <img
+                  src="assets/images/period-problems-v1.jpg"
+                  alt="submenuimage1"
+                  class="submenu-header-image"
+                />
+                <div class="submenu-header-right-div">
+                  <h4>Period doubts</h4>
+                  <p>Private online consultations with doctors</p>
                 </div>
+              </div>
+              <div class="submenu-header-div">
+                <img
+                  src="assets/images/period-problems-v1.jpg"
+                  alt="submenuimage1"
+                  class="submenu-header-image"
+                />
+                <div class="submenu-header-right-div">
+                  <h4>Period doubts</h4>
+                  <p>Private online consultations with doctors</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="mega-menu-column">
+              <h3>Category 2</h3>
+              <!-- <hr /> -->
+              <!-- <ul>
+                <li><a href="#">Item 4</a></li>
+                <li><a href="#">Item 5</a></li>
+                <li><a href="#">Item 6</a></li>
+              </ul> -->
 
-                <!-- Delivery Section -->
-                <div class="delivery-section">
-                    <h3>Address</h3>
-                    <div class="two-col two-col-name">
-                        <div class="form-group notFormGroup" >
-                            <label for="first-name" class="txtsize">First Name</label>
-                            <input type="text" id="first-name" placeholder="First Name" class="txtsize">
-                        </div>
-                        <div class="form-group notFormGroup txtsize" >
-                            <label for="last-name" class="txtsize">Last Name</label>
-                            <input type="text" id="last-name" placeholder="Last Name" required>
-                        </div>
-                    </div>
-                    <div class="two-col two-col-name">
+              <div class="submenu-header-div">
+                <img
+                  src="assets/images/period-problems-v1.jpg"
+                  alt="submenuimage1"
+                  class="submenu-header-image"
+                />
+                <div class="submenu-header-right-div">
+                  <h4>Period doubts</h4>
+                  <p>Private online consultations with doctors</p>
+                </div>
+              </div>
+              <div class="submenu-header-div">
+                <img
+                  src="assets/images/period-problems-v1.jpg"
+                  alt="submenuimage1"
+                  class="submenu-header-image"
+                />
+                <div class="submenu-header-right-div">
+                  <h4>Period doubts</h4>
+                  <p>Private online consultations with doctors</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="mega-menu-column">
+              <h3>Category 3</h3>
+              <!-- <hr /> -->
+              <!-- <ul>
+                <li><a href="#">Item 7</a></li>
+                <li><a href="#">Item 8</a></li>
+                <li><a href="#">Item 9</a></li>
+              </ul> -->
+              <div class="submenu-header-div">
+                <img
+                  src="assets/images/period-problems-v1.jpg"
+                  alt="submenuimage1"
+                  class="submenu-header-image"
+                />
+                <div class="submenu-header-right-div">
+                  <h4>Period doubts</h4>
+                  <p>Private online consultations with doctors</p>
+                </div>
+              </div>
+              <div class="submenu-header-div">
+                <img
+                  src="assets/images/period-problems-v1.jpg"
+                  alt="submenuimage1"
+                  class="submenu-header-image"
+                />
+                <div class="submenu-header-right-div">
+                  <h4>Period doubts</h4>
+                  <p>Private online consultations with doctors</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-md-3">
+            <div class="mega-menu-column">
+              <h3>Category 4</h3>
+              <hr />
+              <ul>
+                <li><a href="#">Item 10</a></li>
+                <li><a href="#">Item 11</a></li>
+                <li><a href="#">Item 12</a></li>
+              </ul>
+              <div class="submenu-header-div">
+                <img
+                  src="assets/images/period-problems-v1.jpg"
+                  alt="submenuimage1"
+                  class="submenu-header-image"
+                />
+                <div class="submenu-header-right-div">
+                  <h4>Period doubts</h4>
+                  <p>Private online consultations with doctors</p>
+                </div>
+              </div>
+              <div class="submenu-header-div">
+                <img
+                  src="assets/images/period-problems-v1.jpg"
+                  alt="submenuimage1"
+                  class="submenu-header-image"
+                />
+                <div class="submenu-header-right-div">
+                  <h4>Period doubts</h4>
+                  <p>Private online consultations with doctors</p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Menu Section Ends Here -->
+
+ <section class="user-details-section ">
+ 
+  
+
+  <div class="container">
+      <div class="checkout-container">
+          <!-- Checkout Form -->
+          <div class="checkout-form">
+              <!-- Contact Section -->
+              <div class="contact-section">
+                  <h3>Contact Information</h3>
+                  <div class="form-group notFormGroup">
+                      <label for="login-email" class="txtsize">Email</label>
+                      <input type="email" id="login-email" placeholder="Enter your email address" class="txtsize">
+                      <div class="form-group txtsize">
+                        <input type="checkbox" id="subscribe-offers" checked class="txtsize" style="width: auto;">
+                          <label for="subscribe-offers" class="txtsize checkbox-margin">Email me with news and offers</label>
+                          
+                      </div>
+                      <button class="mobileBtnContact">Continue
+                      </button>
+                  </div>
+                  
+              </div>
+
+              <!-- Delivery Section -->
+              <div class="delivery-section">
+                  <h3>Address</h3>
+                  <div class="two-col two-col-name">
                       <div class="form-group notFormGroup" >
-                          <label for="dob" class="txtsize">Date of Birth</label>
-                          <input type="date" id="dob" placeholder="05" class="txtsize">
+                          <label for="first-name" class="txtsize">First Name</label>
+                          <input type="text" id="first-name" placeholder="First Name" class="txtsize">
                       </div>
                       <div class="form-group notFormGroup txtsize" >
-                          <label for="tob" class="txtsize">Time of Birth</label>
-                          <input type="time" id="tob" placeholder="10:40" required>
+                          <label for="last-name" class="txtsize">Last Name</label>
+                          <input type="text" id="last-name" placeholder="Last Name" required>
                       </div>
                   </div>
                   <div class="two-col two-col-name">
                     <div class="form-group notFormGroup" >
-                        <label for="pob" class="txtsize">Place of Birth</label>
-                        <input type="search" id="pob" placeholder="Delhi , Mumbai etc" class="txtsize">
+                        <label for="dob" class="txtsize">Date of Birth</label>
+                        <input type="date" id="dob" placeholder="05" class="txtsize">
                     </div>
-                    <div class="form-group notFormGroup txtsize">
-    <label for="gender" class="txtsize">Gender</label>
-    <div style="display: flex;
-    align-items: center;
-    margin-top: 6px;
-    border: 1px solid #ccc;
-    padding: 9px;
-    border-radius: 5px;">
-        <input type="radio" id="male" name="gender" value="male" checked required style="width: 15% !important;">
-        <label for="male">Male</label>
-        
-        <input type="radio" id="female" name="gender" value="female" style="margin-left: 15px; width: 15% !important;" required>
-        <label for="female" >Female</label>
-    </div>
+                    <div class="form-group notFormGroup txtsize" >
+                        <label for="tob" class="txtsize">Time of Birth</label>
+                        <input type="time" id="tob" placeholder="10:40" required>
+                    </div>
+                </div>
+                <div class="two-col two-col-name">
+                  <div class="form-group notFormGroup" >
+                      <label for="pob" class="txtsize">Place of Birth</label>
+                      <input type="search" id="pob" placeholder="Delhi , Mumbai etc" class="txtsize">
+                  </div>
+                  <div class="form-group notFormGroup txtsize">
+  <label for="gender" class="txtsize">Gender</label>
+  <div style="display: flex;
+  align-items: center;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  padding: 9px;
+  border-radius: 5px;">
+      <input type="radio" id="male" name="gender" value="male" checked required style="width: 15% !important;">
+      <label for="male">Male</label>
+      
+      <input type="radio" id="female" name="gender" value="female" style="margin-left: 15px; width: 15% !important;" required>
+      <label for="female" >Female</label>
+  </div>
 </div>
 
-                </div>
-                    
-                    <div class="two-col two-col-name">
-                      <div class="form-group notFormGroup txtsize" >
-                        <label for="phone" >Phone</label>
-                        <div style="display: flex; align-items: center; ">
-                          <span style="
-                            padding: 12px; 
-                            border-right: none; 
-                            background-color: #f1f1f1; 
-                            border: 1px solid #ccc; 
-                            border-right: none;
-                            border-top-left-radius: 4px;
-                            border-bottom-left-radius: 4px;">+91</span>
-                          <input type="tel" id="phone" placeholder="Enter your phone number" style="
-                            
-                            border: 1px solid #ccc; 
-                            border-left: none; 
-                            border-top-left-radius: 0;
-                            border-bottom-left-radius: 0;
-                            " required>
-                        </div>
+              </div>
+                  
+                  <div class="two-col two-col-name">
+                    <div class="form-group notFormGroup txtsize" >
+                      <label for="phone" >Phone</label>
+                      <div style="display: flex; align-items: center; ">
+                        <span style="
+                          padding: 12px; 
+                          border-right: none; 
+                          background-color: #f1f1f1; 
+                          border: 1px solid #ccc; 
+                          border-right: none;
+                          border-top-left-radius: 4px;
+                          border-bottom-left-radius: 4px;">+91</span>
+                        <input type="tel" id="phone" placeholder="Enter your phone number" style="
+                          
+                          border: 1px solid #ccc; 
+                          border-left: none; 
+                          border-top-left-radius: 0;
+                          border-bottom-left-radius: 0;
+                          " required>
                       </div>
+                    </div>
+                    
+                    <div class="form-group notFormGroup txtsize">
+                      <label for="city">City</label>
+                      <input type="text" id="city" placeholder="Enter your city" required>
+                  </div>
+                  
+                </div>
+                <!-- <div class="form-group notFormGroup addressToggle">
+                  <label for="address" class="txtsize">Address</label>
+                  <input type="text" id="address" placeholder="Enter your address" class="txtsize" required>
+              </div> -->
+                  <!-- <div class="form-group notFormGroup txtsize">
+                      <label for="apartment">Apartment, suite, etc.</label>
+                      <input type="text" id="apartment" placeholder="Apartment, suite, etc.">
+                  </div> -->
+                  <!-- <div class=" two-col two-col-name">
                       
                       <div class="form-group notFormGroup txtsize">
-                        <label for="city">City</label>
-                        <input type="text" id="city" placeholder="Enter your city" required>
-                    </div>
-                    
-                  </div>
-                  <!-- <div class="form-group notFormGroup addressToggle">
-                    <label for="address" class="txtsize">Address</label>
-                    <input type="text" id="address" placeholder="Enter your address" class="txtsize" required>
-                </div> -->
-                    <!-- <div class="form-group notFormGroup txtsize">
-                        <label for="apartment">Apartment, suite, etc.</label>
-                        <input type="text" id="apartment" placeholder="Apartment, suite, etc.">
-                    </div> -->
-                    <!-- <div class=" two-col two-col-name">
-                        
-                        <div class="form-group notFormGroup txtsize">
-                            <label for="state">State</label>
-                            <input type="text" id="state" value="Haryana" readonly>
-                        </div>
-                        <div class="form-group notFormGroup txtsize">
-                          <label for="pin-code">PIN Code</label>
-                          <input type="text" id="pin-code" placeholder="Enter your PIN code" required>
+                          <label for="state">State</label>
+                          <input type="text" id="state" value="Haryana" readonly>
                       </div>
-                    </div> -->
-                    
+                      <div class="form-group notFormGroup txtsize">
+                        <label for="pin-code">PIN Code</label>
+                        <input type="text" id="pin-code" placeholder="Enter your PIN code" required>
+                    </div>
+                  </div> -->
+                  
 
-                    <!-- <div class="form-group ">
-                        <label for="save-info">
-                            <input type="checkbox" id="save-info">
-                            Save this information for next time
-                        </label>
-                    </div>
-                    <div class="form-group">
-                        <label for="text-offers">
-                            <input type="checkbox" id="text-offers">
-                            Text me with news and offers
-                        </label>
-                    </div> -->
-                    <button class="mobileBtnAddress">Order Now
-                    </button>
-                </div>
-                
-            </div>
+                  <!-- <div class="form-group ">
+                      <label for="save-info">
+                          <input type="checkbox" id="save-info">
+                          Save this information for next time
+                      </label>
+                  </div>
+                  <div class="form-group">
+                      <label for="text-offers">
+                          <input type="checkbox" id="text-offers">
+                          Text me with news and offers
+                      </label>
+                  </div> -->
+                  <button class="mobileBtnAddress">Order Now
+                  </button>
+              </div>
+              
+          </div>
 
-            <!-- Order Summary -->
-            <div class="order-summary">
-                <h3>Your Order</h3>
+          <!-- Order Summary -->
+          <div class="order-summary">
+              <h3>Your Order</h3>
+              <div class="order-item">
+                  <div class="order-item-image"><img src="assets/images/bracelate-tumbnail2.jpg" alt="Product Image">
+                    <div><span>OliveShine Rectangular Aluminium Serving Tray</span>
+                      <div class="discount">
+                        <span>10% DISCOUNT AUTO APPLIED.</span>
+                    </div></div>
+                  </div>
+                  <div class="price-span">
+                   
+                  <span>₹1,699.00</span>
+                  <span>-₹169.90</span>
+                  </div>
+                  
+              </div>
+              
+              <div class="order-item-list">
                 <div class="order-item">
-                    <div class="order-item-image"><img src="assets/images/bracelate-tumbnail2.jpg" alt="Product Image">
-                      <div><span>OliveShine Rectangular Aluminium Serving Tray</span>
-                        <div class="discount">
-                          <span>10% DISCOUNT AUTO APPLIED.</span>
-                      </div></div>
-                    </div>
-                    <div class="price-span">
-                     
-                    <span>₹1,699.00</span>
-                    <span>-₹169.90</span>
-                    </div>
-                    
-                </div>
-                
-                <div class="order-item-list">
-                  <div class="order-item">
-                    <span>Subtotal</span>
-                    <span>₹1,529.10</span>
-                </div>
-                <div class="order-item">
-                    <span>Shipping</span>
-                    <span>₹00.00</span>
-                </div>
-                <div class="order-item">
-                  <span>SGST(9%)</span>
-                  <span>₹18.00</span>
+                  <span>Subtotal</span>
+                  <span>₹1,529.10</span>
               </div>
               <div class="order-item">
-                  <span>CGST(9%)</span>
-                  <span>₹18.00</span>
+                  <span>Shipping</span>
+                  <span>₹00.00</span>
               </div>
-              <hr/>
-                <div class="order-item total-price">
-                    <span>Total</span>
-                    <span>₹1,529.10</span>
-                </div>
-               
-                <!-- <div class="order-item savings">
-                    <span>Total savings</span>
-                    <span>₹169.90</span>
-                </div> -->
+              <div class="order-item">
+                <span>SGST(9%)</span>
+                <span>₹18.00</span>
+            </div>
+            <div class="order-item">
+                <span>CGST(9%)</span>
+                <span>₹18.00</span>
+            </div>
+            <hr/>
+              <div class="order-item total-price">
+                  <span>Total</span>
+                  <span>₹1,529.10</span>
+              </div>
+             
+              <!-- <div class="order-item savings">
+                  <span>Total savings</span>
+                  <span>₹169.90</span>
+              </div> -->
 
-                </div>
-                <div class="payment-section">
-                  <h3>Payment</h3>
-                  <p>All transactions are secure and encrypted.</p>
-                  <div class="payment-method">
-                      <input type="radio" name="payment" value="razorpay" id="razorpay" checked>
-                      <label for="razorpay">Razorpay Secure (UPI, Cards, Wallets, NetBanking)</label><span class="razorpayImg"><img src="./assets/images/upi.svg"/><img src="./assets/images/visa.svg"/><img src="./assets/images/master.svg"/></span>
-                  </div>
-                  <div class="payment-method">
+              </div>
+              <div class="payment-section">
+                <h3>Payment</h3>
+                <p>All transactions are secure and encrypted.</p>
+                <div class="payment-method">
                     <input type="radio" name="payment" value="razorpay" id="razorpay" checked>
                     <label for="razorpay">Razorpay Secure (UPI, Cards, Wallets, NetBanking)</label><span class="razorpayImg"><img src="./assets/images/upi.svg"/><img src="./assets/images/visa.svg"/><img src="./assets/images/master.svg"/></span>
                 </div>
@@ -439,33 +481,38 @@
                   <input type="radio" name="payment" value="razorpay" id="razorpay" checked>
                   <label for="razorpay">Razorpay Secure (UPI, Cards, Wallets, NetBanking)</label><span class="razorpayImg"><img src="./assets/images/upi.svg"/><img src="./assets/images/visa.svg"/><img src="./assets/images/master.svg"/></span>
               </div>
-                  <!-- <div class="payment-method">
-                      <input type="radio" name="payment" value="cash" id="cash">
-                      <label for="cash">Cash on Delivery (+5%)</label>
-                  </div>
-                  <div class="form-group">
-                      <label for="billing-address">
-                          <input type="checkbox" id="billing-address">
-                          Same as shipping address
-                      </label>
-                  </div>
-                  <div class="form-group">
-                      <label for="different-billing">
-                          <input type="checkbox" id="different-billing">
-                          Use a different billing address
-                      </label>
-                  </div> -->
-              </div>
-              <button type="submit">Make Payment</button>
-              <div class="form-group txtsize">
-                <input type="checkbox" id="subscribe-offers" checked class="txtsize" style="width: auto;">
-                  <label for="subscribe-offers" class="txtsize checkbox-margin">By placing the order, you agree to the Terms of Service.</label>
-                  
-              </div>
+              <div class="payment-method">
+                <input type="radio" name="payment" value="razorpay" id="razorpay" checked>
+                <label for="razorpay">Razorpay Secure (UPI, Cards, Wallets, NetBanking)</label><span class="razorpayImg"><img src="./assets/images/upi.svg"/><img src="./assets/images/visa.svg"/><img src="./assets/images/master.svg"/></span>
             </div>
-        </div>
-    </div>
-   </section>
+                <!-- <div class="payment-method">
+                    <input type="radio" name="payment" value="cash" id="cash">
+                    <label for="cash">Cash on Delivery (+5%)</label>
+                </div>
+                <div class="form-group">
+                    <label for="billing-address">
+                        <input type="checkbox" id="billing-address">
+                        Same as shipping address
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="different-billing">
+                        <input type="checkbox" id="different-billing">
+                        Use a different billing address
+                    </label>
+                </div> -->
+            </div>
+            <button type="submit">Make Payment</button>
+            <div class="form-group txtsize">
+              <input type="checkbox" id="subscribe-offers" checked class="txtsize" style="width: auto;">
+                <label for="subscribe-offers" class="txtsize checkbox-margin">By placing the order, you agree to the Terms of Service.</label>
+                
+            </div>
+          </div>
+      </div>
+  </div>
+ </section>
+ </section>
   
 <script src="js/checkout.js"></script>
     <!-- <script src="js/product-detail.js"></script> -->
