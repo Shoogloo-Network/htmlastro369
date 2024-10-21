@@ -1075,6 +1075,7 @@ input[type="tel"]:focus {
 
 /* For small mobile devices (max-width: 600px) */
 @media only screen and (max-width: 600px) {
+   
     .bannerSection {
         height: 400px; /* Adjusted height for smaller screens */
         margin-bottom: 20px;
@@ -1194,5 +1195,20 @@ input[type="tel"]:focus {
     /* Appointment Section */
     .appointment-section{
         text-align: center;
+    }
+
+
+    .top-free-apps-section {
+        display: flex;
+        justify-content: center;
+    }
+    .astrologer-details{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .astrologer-container{
+        width: 100%;
     }
 }

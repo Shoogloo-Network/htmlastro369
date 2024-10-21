@@ -761,6 +761,7 @@ hr {
 /* For small mobile devices (max-width: 600px) */
 @media only screen and (max-width: 600px) {
    /* 3. Typography */
+
 .size3xl{
     font-size: 24px;
 }
@@ -790,4 +791,10 @@ a{
     font-size: 12px;
 }
 
+
+.container{
+    max-width:max-content;
+   margin: 0px 0px ;
+    padding:0px;
+}
 }
