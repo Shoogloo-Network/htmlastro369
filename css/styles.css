@@ -1079,9 +1079,13 @@ input[type="tel"]:focus {
         margin-bottom: 20px;
     }
 
-    .cardBannerDiv, .cardBannerDiv1, .cardBannerDiv2 {
-        flex-direction: column;
+     .cardBannerDiv1, .cardBannerDiv2 {
+        flex-direction: row;
         gap: 20px; /* Reduce gap between card divs */
+    }
+    .cardBannerDiv{
+        flex-direction: column;
+        gap: 20px; 
     }
 
     /* Hero Image Slider */
@@ -1136,7 +1140,7 @@ input[type="tel"]:focus {
     }
 
     .bannerText {
-        width: 90%; /* Maximize text area width */
+        width: 100%; /* Maximize text area width */
         gap: 2px;
     }
 
@@ -1145,7 +1149,8 @@ input[type="tel"]:focus {
     }
 
     .bannerText button {
-        width: 70%; /* Larger button width for small screens */
+        width: 100%; /* Larger button width for small screens */
         font-size: 12px; /* Smaller button text size */
+        margin-top: 8px;
     }
 }
