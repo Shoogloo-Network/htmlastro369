@@ -1075,7 +1075,7 @@ input[type="tel"]:focus {
 /* Responsive Styles for Mobile and Tablet (max-width: 1024px) */
 @media only screen and (max-width: 1024px) {
     .bannerSection {
-        height: 250px; /* Adjusted height for smaller screens */
+        height: 400px; /* Adjusted height for smaller screens */
         margin-bottom: 20px;
     }
 
@@ -1127,9 +1127,17 @@ input[type="tel"]:focus {
 /* For small mobile devices (max-width: 600px) */
 @media only screen and (max-width: 600px) {
     .bannerSection {
-        height: 400px; /* Further adjust height */
+        height: 554px; /* Further adjust height */
     }
-
+    .cardBannerDiv{
+        width: 100%;
+    }
+    .card1{
+        width: 100%;
+    }
+    .card2{
+        width: 100%;
+    }
     /* Hero Image Slider */
     .hero-image-slider-container {
         height: 400px; /* Smaller height for very small screens */
