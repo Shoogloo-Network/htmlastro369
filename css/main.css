@@ -793,7 +793,7 @@ a{
 
 
 .container{
-    max-width:max-content;
+    /* max-width:max-content; */
    margin: 0px 0px ;
     padding:0px;
 }

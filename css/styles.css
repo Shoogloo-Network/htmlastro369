@@ -1209,7 +1209,7 @@ input[type="tel"]:focus {
         justify-content: center;
     }
     .astrologer-container{
-        width: 100%;
+        width: 68%;
     }
     .app-section-div{
         flex-direction: column;
@@ -1220,5 +1220,8 @@ input[type="tel"]:focus {
     }
     .content-container{
         padding: 10px;
+    }
+    .intro-container{
+        width: 100%;
     }
 }
