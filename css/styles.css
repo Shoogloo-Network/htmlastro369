@@ -1043,3 +1043,109 @@ input[type="tel"]:focus {
     display: flex;
     justify-content: center;
 }
+
+
+
+
+/* Mobile View */
+/* Mobile view (Hide headerRes) */
+@media only screen and (max-width: 767px) {
+    .headerRes {
+        display: none;
+    }
+    .footerRes{
+        display: none;
+    }
+}
+
+/* Desktop view (Show headerRes) */
+@media only screen and (min-width: 768px) {
+    .headerRes {
+        display: block;
+    }
+    .footerRes{
+        display: block;
+    }
+}
+
+
+
+
+/* Banner Section Mobile */
+/* Responsive Styles for Mobile and Tablet (max-width: 1024px) */
+@media only screen and (max-width: 1024px) {
+    .bannerSection {
+        height: 250px; /* Adjusted height for smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .cardBannerDiv, .cardBannerDiv1, .cardBannerDiv2 {
+        flex-direction: column;
+        gap: 20px; /* Reduce gap between card divs */
+    }
+
+    /* Hero Image Slider */
+    .hero-image-slider-container {
+        height: 250px; /* Adjust slider height */
+    }
+
+    .image-slider-hero-image {
+        height: 100%; /* Full height for mobile screens */
+    }
+
+    .image-slider-dots {
+        bottom: 20px; /* Adjust position of dots */
+    }
+
+    /* Image height adjustment */
+    .hero-image-container > img {
+        height: 200px; /* Adjust image height for smaller screens */
+    }
+
+    /* Banner Text */
+    .bannerText {
+        width: 80%; /* Make text container full width */
+        margin-left: 0; /* Center the text */
+        align-items: center;
+        text-align: center; /* Center-align text */
+    }
+
+    .bannerText h1 {
+        font-size: 18px; /* Reduce font size */
+    }
+
+    .bannerText button {
+        width: 50%; /* Adjust button width */
+        font-size: 14px; /* Reduce button text size */
+    }
+}
+
+/* For small mobile devices (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+    .bannerSection {
+        height: 400px; /* Further adjust height */
+    }
+
+    /* Hero Image Slider */
+    .hero-image-slider-container {
+        height: 400px; /* Smaller height for very small screens */
+    }
+
+    .hero-image-container > img {
+        height: 150px; /* Further reduce image size */
+    }
+
+    .bannerText {
+        width: 90%; /* Maximize text area width */
+        gap: 2px;
+    }
+
+    .bannerText h1 {
+        font-size: 16px; /* Smaller font size for smaller screens */
+    }
+
+    .bannerText button {
+        width: 70%; /* Larger button width for small screens */
+        font-size: 12px; /* Smaller button text size */
+    }
+}

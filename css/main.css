@@ -20,6 +20,13 @@
     color: #fff !important;
 }
 
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
 /* 3. Typography */
 .size3xl{
     font-size: 34px;
@@ -746,3 +753,8 @@ hr {
     justify-content: center;
 
 }
+
+
+
+
+
