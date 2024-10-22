@@ -1170,8 +1170,8 @@ input[type="tel"]:focus {
     .consultation-header {
         gap: 10px;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        /* align-items: center; */
+        /* text-align: center; */
         margin-bottom: 15px; /* Adjust margin for smaller screens */
     }
 
@@ -1194,7 +1194,7 @@ input[type="tel"]:focus {
 
     /* Appointment Section */
     .appointment-section{
-        text-align: center;
+        /* text-align: center; */
         margin-bottom: 10px !important;
     }
 
@@ -1208,9 +1208,16 @@ input[type="tel"]:focus {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        
     }
     .astrologer-container{
-        width: 68%;
+        width: 45%;
+    }
+    .call-button{
+        padding: 12px 18px;
+    }
+    .call-button2{
+        padding: 12px 18px;
     }
     .app-section-div{
         flex-direction: column;
@@ -1224,5 +1231,15 @@ input[type="tel"]:focus {
     }
     .intro-container{
         width: 100%;
+    }
+    .free-badge{
+        top: 54%;
+        right: 32%;
+    }
+    .app-card{
+        width: 100%;
+    }
+    .apps-grid{
+        grid-template-columns: repeat(2, 1fr); /* Two items per row */
     }
 }
