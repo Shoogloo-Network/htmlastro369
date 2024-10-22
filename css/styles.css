@@ -1049,26 +1049,6 @@ input[type="tel"]:focus {
 
 
 
-/* Mobile View */
-/* Mobile view (Hide headerRes) */
-@media only screen and (max-width: 767px) {
-    .headerRes {
-        display: none;
-    }
-    .footerRes{
-        display: none;
-    }
-}
-
-/* Desktop view (Show headerRes) */
-@media only screen and (min-width: 768px) {
-    .headerRes {
-        display: block;
-    }
-    .footerRes{
-        display: block;
-    }
-}
 
 
 

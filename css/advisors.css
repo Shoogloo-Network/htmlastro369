@@ -825,3 +825,80 @@ input:checked + .slider:before {
 }
 
 
+
+
+/* Mobile responsiveness */
+/* Mobile view adjustments */
+@media screen and (max-width: 760px) {
+
+  /* Astrologer list */
+  .astrologer-list {
+    width: 100%; /* Full width for mobile */
+   gap: 20px;
+    margin: 0 auto; /* Center content */
+    padding: 10px; /* Add padding for better spacing */
+  }
+
+  .astrologer-actions{
+    gap: 110px;
+  }
+
+  /* Astrologer container */
+  .astrologer-container {
+    width: 96%; /* Full width for the container */
+    height: auto; /* Let height adjust dynamically */
+    padding: 10px; /* Ensure good padding */
+  }
+
+  /* Astrologer details */
+  .astrologer-details {
+    flex-direction: column; /* Stack astrologer details vertically */
+    gap: 20px; /* Reduce the gap between sections */
+    margin: 10px auto;
+  }
+
+  /* Adjust button size */
+  .call-button, .call-button2 {
+    padding: 10px 20px; /* Reduce button size */
+    font-size: 14px; /* Smaller font for mobile */
+  }
+
+  /* Star rating */
+  .star-rating {
+    justify-content: flex-start; /* Align stars to the left */
+  }
+
+  /* Filter section */
+  .astrologer-filter-div {
+    max-width: 35%; /* Full width filter section */
+    margin: 10px 0; /* Reduce top margin */
+  }
+.filter-checkbox1 label{
+  font-size: 13px;
+}
+.expertise-section{
+  gap: 20px;
+}
+  .phone-input-wrapper > h1 {
+    font-size: 18px; /* Adjust heading font size */
+  }
+
+  /* Chat pop-up */
+  .chatPopUp {
+    width: 100%; /* Full width on mobile */
+    bottom: 0;
+    right: 0;
+    border-radius: 0;
+  }
+
+  /* Flex direction for list items */
+  .details_tab ul {
+    flex-direction: column;
+  }
+
+  .phone-input-wrapper{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
