@@ -791,7 +791,9 @@ a{
     font-size: 12px;
 }
 
-
+.hspace{
+    margin-bottom: 10px;
+}
 .container{
     /* max-width:max-content; */
    margin: 0px 10px ;
