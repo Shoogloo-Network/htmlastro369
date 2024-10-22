@@ -1031,6 +1031,14 @@ input[type="tel"]:focus {
     color: #000;
 }
 
+.free-badge1 {
+   display: none;
+    background-color: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #000;
+}
+
 
 .app-card-image-div {
     width: 76px;
@@ -1217,9 +1225,18 @@ input[type="tel"]:focus {
     .free-badge{
         top: 46%;
         right: 32%;
+        display: none;
+    }
+    .free-badge1{
+        display: block;
+       width: max-content;
+       margin-top: 5px;
     }
     .app-card{
         width: 100%;
+    }
+    .app-card-image-div{
+        width: auto;
     }
     .apps-grid{
         grid-template-columns: repeat(2, 1fr); /* Two items per row */
