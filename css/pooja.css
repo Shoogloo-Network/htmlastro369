@@ -220,6 +220,9 @@ a.active-pooja{
 
 
   @media (max-width: 768px) {
+    .buttons-pooja {
+        display: block;
+    }
     /* Adjusting the container layout to stack sidebar and main content vertically */
     .container-pooja {
         flex-direction: column;
@@ -228,6 +231,7 @@ a.active-pooja{
 
     /* Making sidebar full width on mobile */
     .sidebar-pooja {
+        display: none;
         width: 100%;
         border-right: none;
         border-bottom: 1px solid #e0e0e0;
@@ -280,5 +284,8 @@ a.active-pooja{
     /* Ensure design submenu stays hidden unless activated */
     .sub-menu-pooja-design {
         display: none;
+    }
+    .btn-pooja{
+        margin-bottom: 4px;
     }
 }
