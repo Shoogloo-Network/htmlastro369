@@ -799,6 +799,7 @@ input[type="tel"]:focus {
 }
 
 .onlineImage {
+    display: none;
     height: 40px;
     width: 40px;
     background-color: transparent;
@@ -819,6 +820,7 @@ input[type="tel"]:focus {
 
 .availability-text {
     color: #616161;
+    margin-left: 12px;
 }
 
 .astrologer-name {
@@ -1207,11 +1209,11 @@ input[type="tel"]:focus {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        /* justify-content: center; */
         
     }
     .astrologer-container{
-        width: 45%;
+        width: 46%;
     }
     .call-button{
         padding: 12px 18px;
@@ -1233,7 +1235,7 @@ input[type="tel"]:focus {
         width: 100%;
     }
     .free-badge{
-        top: 54%;
+        top: 46%;
         right: 32%;
     }
     .app-card{
@@ -1241,5 +1243,53 @@ input[type="tel"]:focus {
     }
     .apps-grid{
         grid-template-columns: repeat(2, 1fr); /* Two items per row */
+        gap: 10px;
     }
+
+    .astrologer-actions{
+        gap: 4px;
+    }
+    .astrologer-details{
+        gap: 10px;
+    }
+
+    .card{
+        width: 362px;
+    }
+    .app-card{
+        padding: 6px;
+    }
+    .app-card img {
+        max-width: 100%;
+        height: 100%;}
+        button.testimonial-next {
+            right: 5%;}
+            button.testimonial-prev {
+                left: 5%;}
+                .testimonial-dots {
+                display: none;
+                }
+                .send-sms-button{
+                    width: 80px;
+                }
+                .store-buttons{
+                    display: flex;
+                    justify-content: center;
+                }
+                .app-description{
+                    width: 100%;
+                }
+                .download-section {
+                    width: 100%;
+                    height: auto;}
+                    .intro-container{
+                        padding: 0;
+                        margin-bottom: 10px;
+                    }
+                    .article-card{
+                        width: 100%;
+                    }
+                    .article-image{
+                        width: 100%;
+                    }
 }

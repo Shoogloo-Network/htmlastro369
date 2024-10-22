@@ -794,15 +794,22 @@ a{
 
 .container{
     /* max-width:max-content; */
-   margin: 0px 0px ;
-    padding:0px;
+   margin: 0px 10px ;
+    padding:0px ;
 }
-
+.container-fullWidth{
+    max-width: max-content;
+}
 .articles-section{
     display: block;
 }
 .articles-container{
     flex-direction: column;
     align-items: center;
+}
+
+.container-flex {
+    display: flex;
+    gap: 5px;
 }
 }
