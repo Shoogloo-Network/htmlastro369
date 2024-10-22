@@ -497,12 +497,12 @@ input[type="tel"]:focus {
 
 
 .phone-input-wrapper>h1{
-    text-align: center;
+   align-content: center;
     padding-top: 13px;
   
     line-height: 28px;
     color: #000;
-    width: 300px;
+    width: 100%;
 }
 
 
