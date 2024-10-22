@@ -772,12 +772,19 @@ button.next-health {
 
     .hero-image-slider-container {
         width: 100%;
+        max-width: 370px;
     }
 
     .hero-image-container > img {
         height: 200px;
     }
-
+    .features-list{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .how-it-works-para{
+        font-size: 10px;
+    }
     .banner-content {
         align-items: center;
         text-align: center;
@@ -788,8 +795,8 @@ button.next-health {
     }
 
     .doctor-availability {
-        flex-direction: column;
-        gap: 15px;
+        /* flex-direction: column;
+        gap: 15px; */
     }
 
     .consult-button, .specialities-button, .specialities-button-health {
@@ -797,10 +804,10 @@ button.next-health {
     }
 
     .features-list {
-        flex-direction: column;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        gap: 10px;
+      
+        /* margin-top: 20px;
+        margin-bottom: 20px; */
+        justify-content: center;
     }
 
     .card-carousel, .card-carousel-health {
@@ -825,9 +832,14 @@ button.next-health {
     }
 
     .how-it-works-divider {
+       display: none;
+    }
+    .offer-item-1 {
         width: 100%;
     }
-
+    .offer-item-2 {
+        width: 100%;
+    }
     .offers-content {
         flex-direction: column;
         gap: 20px;
