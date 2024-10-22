@@ -757,3 +757,80 @@ button.next-health {
     align-items:center;
     width: 240px;
 }
+
+
+/* Mobile Responsive */
+/* General Adjustments for Mobile */
+@media (max-width: 768px) {
+    .banner-section {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .hero-image-slider-container {
+        width: 100%;
+    }
+
+    .hero-image-container > img {
+        height: 200px;
+    }
+
+    .banner-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-heading, .sub-heading, .consultation-info {
+        font-size: 16px;
+    }
+
+    .doctor-availability {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .consult-button, .specialities-button, .specialities-button-health {
+        width: 100%;
+    }
+
+    .features-list {
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+
+    .card-carousel, .card-carousel-health {
+        overflow-x: scroll;
+        padding-bottom: 10px;
+    }
+
+    .consultation-card, .health-concern-card {
+        min-width: 100%;
+        margin: 0;
+    }
+
+    .how-it-works-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .how-it-works-step-1, .how-it-works-step-2, .how-it-works-step-3 {
+        height: 50px;
+        width: 50px;
+        font-size: 20px;
+    }
+
+    .how-it-works-divider {
+        width: 100%;
+    }
+
+    .offers-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
