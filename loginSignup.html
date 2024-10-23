@@ -17,177 +17,49 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <script>
-      function loadStylesheets() {
-        console.log("Checking screen width:", window.innerWidth);
-
-        if (window.innerWidth <= 992) {
-          console.log(
-            "Screen width is 992px or less. Loading Bootstrap and style1.css"
-          );
-
-          // Add Bootstrap CSS
-          var bootstrapLink = document.createElement("link");
-          bootstrapLink.rel = "stylesheet";
-          bootstrapLink.href =
-            "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css";
-          document.head.appendChild(bootstrapLink);
-
-          // Remove Bootstrap and custom CSS if they exist
-          var existingBootstrapLink = document.querySelector(
-            'link[href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"]'
-          );
-
-          if (existingBootstrapLink) {
-            document.head.removeChild(existingBootstrapLink);
-            console.log("Removed Bootstrap CSS");
-          }
-        }
-      }
-
-      // Load stylesheets on initial load
-      loadStylesheets();
-
-      // Load stylesheets on window resize
-      window.addEventListener("resize", function () {
-        loadStylesheets();
-      });
-    </script>
+  
     <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/loginSignup.css" />
   </head>
   <body>
-    <section class="mobile-content">
-      <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container">
-            <a class="navbar-brand" href="index.html">
-              <img src="assets/images/astro369logo1.png" alt="Astro369 logo" />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Find Astrologers</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="consult.html">Video Consult</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Predictions</a>
-                </li>
-              </ul>
-              <div class="menu-container d-flex flex-column">
-                <div class="corporates-container">
-                  <span class="New">New</span>
-                  <select
-                    name="Corporates"
-                    id="Corporates"
-                    class="form-control"
-                  >
-                    <option value="" disabled selected hidden>
-                      For Corporates
-                    </option>
-                    <option value="Health">Health & Wellness Plans</option>
-                    <option value="Insurance">Group Insurance</option>
-                  </select>
-                </div>
-                <div class="providers-container">
-                  <select name="Providers" id="Providers" class="form-control">
-                    <option value="" disabled selected hidden>
-                      For Providers
-                    </option>
-                    <option value="Prime">Practo Prime</option>
-                    <option value="Software">Software For Providers</option>
-                    <option value="Practice">
-                      List Your Practice For Free
-                    </option>
-                    <option value="ABDM">ABDM</option>
-                  </select>
-                </div>
-                <div class="security-container">
-                  <select name="Security" id="Security" class="form-control">
-                    <option value="" disabled selected hidden>
-                      Security & Help
-                    </option>
-                    <option value="DataSecurity">Data Security</option>
-                    <option value="Help">Help</option>
-                  </select>
-                </div>
-                <button class="btn login-signup-button">
-                  <a href="loginSignup.html">Login/Signup</a>
-                </button>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </header>
-    </section>
-
+    
     <section class="desktop">
-      <header>
-        <nav class="navbar">
-          <div class="hamburger">&#9776;</div>
+      
+      <header class="container-fullWidth headerRes">
+      
+        <nav class="navbar container">
           <a href="index.html" class="anchorLogo"
-              ><img src="assets/images/astro369logo1.png" alt="Astro369 logo" class="logoImage"
-            /></a>
+            ><img
+              src="assets/images/astro369logo1.png"
+              alt="Astro369 logo"
+              class="logoImage"
+          /></a>
+          <!-- Replace the current hamburger icon with this -->
+
           <div class="logo-container">
-            
             <ul>
               <li><a href="advisors.html">All Advisors</a></li>
               <li><a href="consult.html">Video Consult</a></li>
               <li class="mega-hover"><a href="#">Predictions</a></li>
+              <li><a href="astro-shop.html">Mart</a></li>
+              <li><a href="pooja.html">Pooja</a></li>
             </ul>
           </div>
           <div class="menu-container">
             <div class="menu-container-parent">
-              <div class="corporates-container">
-                <span class="New">New</span>
-                <div class="corporates-dropdown">
-                  <!-- <label for="Corporates">For Corporates</label> -->
-                  <select name="Corporates" id="Corporates">
-                    <option value="" disabled selected hidden>
-                      For Corporates
-                    </option>
-                    <option value="Health">Health & Wellness Plans</option>
-                    <option value="Insurance">Group Insurance</option>
-                  </select>
-                </div>
-              </div>
-              <div class="providers-container">
-                <!-- <label for="Providers">For Providers</label> -->
-                <select name="Providers" id="Providers">
-                  <option value="" disabled selected hidden>
-                    For Providers
-                  </option>
-                  <option value="Prime">Practo Prime</option>
-                  <option value="Software">Software For Providers</option>
-                  <option value="Practice">List Your Practice For Free</option>
-                  <option value="ABDM">ABDM</option>
-                </select>
-              </div>
+              
               <div class="security-container">
                 <!-- <label for="Security">Security & Help</label> -->
-                <select name="Security" id="Security">
+                <select name="Security" id="Security" class="txtsize">
                   <option value="" disabled selected hidden>ENG</option>
                   <option value="DataSecurity" selected>ENG</option>
                   <option value="Help">HINDI</option>
                 </select>
               </div>
               <!-- <button class="login-signup-button">Login/Signup</button> -->
-              <div class="userProfileDiv">
+              <div>
                 <div class="user-profile">
-                  <i class="fa-solid fa-user "></i>
+                  <i class="fa-solid fa-user user-profile"></i>
                 </div>
                 <div class="login-hover">
                   <ul>
@@ -196,7 +68,10 @@
                     </li>
                     <hr />
                     <li>Profile</li>
+
                     <hr />
+                    <li><a href="./my-order.html">My Orders</a></li>
+                    <hr/>
                     <li>Signout</li>
                   </ul>
                 </div>
@@ -205,154 +80,189 @@
           </div>
         </nav>
 
+        <hr />
       
       </header>
-      <hr />
-    </section>
+      <header class="container-fullWidth headerResMobile">
+        <div class="logo-container">
+          <div class="menu-container">
+            <div class="menu-container-parent">
+              
+              <div class="security-container">
+               
+                <select name="Security" id="Security" class="txtsize">
+                  <option value="" disabled selected hidden>ENG</option>
+                  <option value="DataSecurity" selected>ENG</option>
+                  <option value="Help">HINDI</option>
+                </select>
+              </div>
+              
+              <div class="user-profile-container">
+                <div class="user-profile" onclick="toggleLoginMenu()">
+                    <i class="fa-solid fa-user user-profile"></i>
+                </div>
+                <div class="login-hover">
+                    <ul>
+                        <li id="login">
+                            <a href="loginSignup.html">Login/Signup</a>
+                        </li>
+                        <hr />
+                        <li ><a href="./advisorProfile.html">Profile</a></li>
+                        <hr />
+                        <li><a href="./my-order.html">My Orders</a></li>
+                        <hr />
+                        <li ><a href="./loginSignup.html">Signout</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="headerMobileCombine">
+            <a href="#" class="anchorLogo">
+              <img src="assets/images/astro369logo1.png" alt="Logo" class="logoImage">
+            </a>
+            <div class="hamburger-icon" onclick="toggleMenu()">
+              &#9776; <!-- Hamburger icon (You can use FontAwesome or an image if preferred) -->
+            </div>
+          </div>
+          
+          
+        </div>
+        <nav class="navbar navbarMobile container">
+         
+          <!-- Replace the current hamburger icon with this -->
 
-    <section class="menu-section">
-      <div class="container">
-        <div class="mega-menu">
-          <div class="row">
-            <div class="col-md-3">
-              <div class="mega-menu-column">
-                <h3>Category 1</h3>
-                <!-- <hr /> -->
-                <!-- <ul>
-                  <li><a href="#">Item 1</a></li>
-                  <li><a href="#">Item 2</a></li>
-                  <li><a href="#">Item 3</a></li>
-                </ul> -->
-                <div class="submenu-header-div">
-                  <img
-                    src="assets/images/period-problems-v1.jpg"
-                    alt="submenuimage1"
-                    class="submenu-header-image"
-                  />
-                  <div class="submenu-header-right-div">
-                    <h4>Period doubts</h4>
-                    <p>Private online consultations with doctors</p>
-                  </div>
-                </div>
-                <div class="submenu-header-div">
-                  <img
-                    src="assets/images/period-problems-v1.jpg"
-                    alt="submenuimage1"
-                    class="submenu-header-image"
-                  />
-                  <div class="submenu-header-right-div">
-                    <h4>Period doubts</h4>
-                    <p>Private online consultations with doctors</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="mega-menu-column">
-                <h3>Category 2</h3>
-                <!-- <hr /> -->
-                <!-- <ul>
-                  <li><a href="#">Item 4</a></li>
-                  <li><a href="#">Item 5</a></li>
-                  <li><a href="#">Item 6</a></li>
-                </ul> -->
+          <div class="logo-container">
+            <ul>
+             
+              <li class="dropdown">
+                <a href="advisors.html" class="dropbtn">All Advisors <span class="icon dropdown-icon" >&#9660;</span></a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Name 1</a></li>
+                    <li><a href="#">Name 2</a></li>
+                    <li><a href="#">Name 3</a></li>
+                    <li style="border-bottom: none !important;"><a href="#" >Name 4</a></li>
+                </ul>
+            </li>
+              <li><a href="consult.html">Video Consult</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Predictions <span class="icon dropdown-icon" >&#9660;</span></a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Daily Prediction</a></li>
+                    <li><a href="#">Weekly Prediction</a></li>
+                    <li><a href="#">Monthly Prediction</a></li>
+                    <li style="border-bottom: none !important;"><a href="#" >Yearly Prediction</a></li>
+                </ul>
+            </li>
+            
+              <li><a href="astro-shop.html">Mart</a></li>
+              <li><a href="pooja.html">Pooja</a></li>
+            </ul>
+          </div>
+         
+        </nav>
 
-                <div class="submenu-header-div">
-                  <img
-                    src="assets/images/period-problems-v1.jpg"
-                    alt="submenuimage1"
-                    class="submenu-header-image"
-                  />
-                  <div class="submenu-header-right-div">
-                    <h4>Period doubts</h4>
-                    <p>Private online consultations with doctors</p>
+        <hr />
+      
+      </header>
+
+      <section class="menu-section container">
+        <div class="container">
+          <div class="mega-menu">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Category 1</h3>
+                 
+                  <div class="submenu-header-div">
+                    <img
+                      src="assets/images/period-problems-v1.jpg"
+                      alt="submenuimage1"
+                      class="submenu-header-image"
+                    />
+                    <div class="submenu-header-right-div">
+                      <h4>Period doubts</h4>
+                      <p>Private online consultations with doctors</p>
+                    </div>
                   </div>
-                </div>
-                <div class="submenu-header-div">
-                  <img
-                    src="assets/images/period-problems-v1.jpg"
-                    alt="submenuimage1"
-                    class="submenu-header-image"
-                  />
-                  <div class="submenu-header-right-div">
-                    <h4>Period doubts</h4>
-                    <p>Private online consultations with doctors</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="mega-menu-column">
-                <h3>Category 3</h3>
-                <!-- <hr /> -->
-                <!-- <ul>
-                  <li><a href="#">Item 7</a></li>
-                  <li><a href="#">Item 8</a></li>
-                  <li><a href="#">Item 9</a></li>
-                </ul> -->
-                <div class="submenu-header-div">
-                  <img
-                    src="assets/images/period-problems-v1.jpg"
-                    alt="submenuimage1"
-                    class="submenu-header-image"
-                  />
-                  <div class="submenu-header-right-div">
-                    <h4>Period doubts</h4>
-                    <p>Private online consultations with doctors</p>
-                  </div>
-                </div>
-                <div class="submenu-header-div">
-                  <img
-                    src="assets/images/period-problems-v1.jpg"
-                    alt="submenuimage1"
-                    class="submenu-header-image"
-                  />
-                  <div class="submenu-header-right-div">
-                    <h4>Period doubts</h4>
-                    <p>Private online consultations with doctors</p>
+                  <div class="submenu-header-div">
+                    <img
+                      src="assets/images/period-problems-v1.jpg"
+                      alt="submenuimage1"
+                      class="submenu-header-image"
+                    />
+                    <div class="submenu-header-right-div">
+                      <h4>Period doubts</h4>
+                      <p>Private online consultations with doctors</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-3">
-              <div class="mega-menu-column">
-                <h3>Category 4</h3>
-                <!-- <hr /> -->
-                <!-- <ul>
-                  <li><a href="#">Item 10</a></li>
-                  <li><a href="#">Item 11</a></li>
-                  <li><a href="#">Item 12</a></li>
-                </ul> -->
-                <div class="submenu-header-div">
-                  <img
-                    src="assets/images/period-problems-v1.jpg"
-                    alt="submenuimage1"
-                    class="submenu-header-image"
-                  />
-                  <div class="submenu-header-right-div">
-                    <h4>Period doubts</h4>
-                    <p>Private online consultations with doctors</p>
+              <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Category 2</h3>
+                  
+                  <div class="submenu-header-div">
+                    <img
+                      src="assets/images/period-problems-v1.jpg"
+                      alt="submenuimage1"
+                      class="submenu-header-image"
+                    />
+                    <div class="submenu-header-right-div">
+                      <h4>Period doubts</h4>
+                      <p>Private online consultations with doctors</p>
+                    </div>
                   </div>
-                </div>
-                <div class="submenu-header-div">
-                  <img
-                    src="assets/images/period-problems-v1.jpg"
-                    alt="submenuimage1"
-                    class="submenu-header-image"
-                  />
-                  <div class="submenu-header-right-div">
-                    <h4>Period doubts</h4>
-                    <p>Private online consultations with doctors</p>
+                  <div class="submenu-header-div">
+                    <img
+                      src="assets/images/period-problems-v1.jpg"
+                      alt="submenuimage1"
+                      class="submenu-header-image"
+                    />
+                    <div class="submenu-header-right-div">
+                      <h4>Period doubts</h4>
+                      <p>Private online consultations with doctors</p>
+                    </div>
                   </div>
                 </div>
               </div>
+              <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Category 3</h3>
+                 
+                  <div class="submenu-header-div">
+                    <img
+                      src="assets/images/period-problems-v1.jpg"
+                      alt="submenuimage1"
+                      class="submenu-header-image"
+                    />
+                    <div class="submenu-header-right-div">
+                      <h4>Period doubts</h4>
+                      <p>Private online consultations with doctors</p>
+                    </div>
+                  </div>
+                  <div class="submenu-header-div">
+                    <img
+                      src="assets/images/period-problems-v1.jpg"
+                      alt="submenuimage1"
+                      class="submenu-header-image"
+                    />
+                    <div class="submenu-header-right-div">
+                      <h4>Period doubts</h4>
+                      <p>Private online consultations with doctors</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <div class="pop-up-register" id="pop-up">
+   
+
+    <div class="pop-up-register container" id="pop-up">
       <div class="pop-up-register-form-div">
         <h2>Enter Your Details</h2>
         <div class="loginOptions">
@@ -434,109 +344,41 @@
       </div>
     </div>
 
-    <footer class="footer-section">
-      <div class="footer-container">
-        <div class="footer-column">
-          <h3 class="footer-title">Practo</h3>
-          <ul class="footer-list">
-            <li class="footer-item">About</li>
-            <li class="footer-item">Blog</li>
-            <li class="footer-item">Careers</li>
-            <li class="footer-item">Press</li>
-            <li class="footer-item">Contact Us</li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3 class="footer-title">For patients</h3>
-          <ul class="footer-list">
-            <li class="footer-item">Search for doctors</li>
-            <li class="footer-item">Search for clinics</li>
-            <li class="footer-item">Search for hospitals</li>
-            <li class="footer-item">Practo Plus</li>
-            <li class="footer-item">Covid Hospital listing</li>
-            <li class="footer-item">Practo Care Clinics</li>
-            <li class="footer-item">Read health articles</li>
-            <li class="footer-item">Read about medicines</li>
-            <li class="footer-item">Practo drive</li>
-            <li class="footer-item">Health app</li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <div class="footer-subcolumn">
-            <h3 class="footer-title">For doctors</h3>
-            <ul class="footer-list">
-              <li class="footer-item">Practo Profile</li>
-            </ul>
-          </div>
-          <div class="footer-subcolumn">
-            <h3 class="footer-title">For Clinics</h3>
-            <ul class="footer-list">
-              <li class="footer-item">Ray by Practo</li>
-              <li class="footer-item">Practo Reach</li>
-              <li class="footer-item">Ray Tab</li>
-              <li class="footer-item">Practo Pro</li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-column">
-          <div class="footer-subcolumn">
-            <h3 class="footer-title">For hospitals</h3>
-            <ul class="footer-list">
-              <li class="footer-item">Insta by Practo</li>
-              <li class="footer-item">Qikwell by Practo</li>
-              <li class="footer-item">Practo Profile</li>
-              <li class="footer-item">Practo Reach</li>
-              <li class="footer-item">Practo Drive</li>
-            </ul>
-          </div>
-          <div class="footer-subcolumn">
-            <h3 class="footer-title">For Corporates</h3>
-            <ul class="footer-list">
-              <li class="footer-item">Wellness Plan</li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-column">
-          <h3 class="footer-title">More</h3>
-          <ul class="footer-list">
-            <li class="footer-item">Help</li>
-            <li class="footer-item">Developers</li>
-            <li class="footer-item">Privacy Policy</li>
-            <li class="footer-item">Terms & Conditions</li>
-            <li class="footer-item">PCS T&C</li>
-            <li class="footer-item">Healthcare Directory</li>
-            <li class="footer-item">Practo Health Wiki</li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3 class="footer-title">Social</h3>
-          <ul class="footer-list">
-            <li class="footer-item">Facebook</li>
-            <li class="footer-item">Twitter</li>
-            <li class="footer-item">LinkedIn</li>
-            <li class="footer-item">YouTube</li>
-            <li class="footer-item">GitHub</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <img
-          src="assets/images/white_practo_logo.svg"
-          alt="footerLogo"
-          class="footer-logo"
-        />
-        <p class="footer-copyright">
-          Copyright © 2017, Practo. All rights reserved.
-        </p>
-      </div>
-    </footer>
+  
+  </section>
     <script>
       // For mobile view
-      document
-        .querySelector(".hamburger")
-        .addEventListener("click", function () {
-          document.querySelector(".navbar").classList.toggle("active");
-        });
+      function toggleLoginMenu() {
+  const userProfileContainer = document.querySelector('.user-profile-container');
+  
+  if (window.innerWidth <= 768) { // Adjust this breakpoint as needed
+      userProfileContainer.classList.toggle('active'); // Toggle active class
+  }
+}
+function toggleMenu() {
+  const navbar = document.querySelector('.navbarMobile');
+  
+  // Check if the screen width is less than or equal to 768px (mobile view)
+  if (window.innerWidth <= 768) {
+    navbar.classList.toggle('active');
+  }
+}
+
+document.querySelectorAll('.dropbtn').forEach((ele) => {
+  ele.addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent default anchor behavior
+    const dropdown = this.parentElement; // Get parent dropdown
+    dropdown.classList.toggle('active'); // Toggle active class
+
+    // Get the icon directly related to the clicked dropdown
+    const icon = dropdown.querySelector('.dropdown-icon'); // Adjust to get the specific icon
+    if (dropdown.classList.contains('active')) {
+      icon.innerHTML = '&#9650;'; // Up arrow
+    } else {
+      icon.innerHTML = '&#9660;'; // Down arrow
+    }
+  });
+});
 
       document
         .querySelector(".user-profile")
@@ -589,11 +431,8 @@
         })
     </script>
 
-    <!-- jQuery and Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <!-- <script src="js/index.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
