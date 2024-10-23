@@ -546,7 +546,7 @@ footer {
     border-radius: 4px;
     cursor: pointer;
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     /* color: #30343e; */
     /* font-weight: 500; */
   }
@@ -595,16 +595,17 @@ footer {
     align-items: center;
     /* margin-top: 10px;
     margin-bottom: 20px; */
+    margin-bottom: 0;
   }
 
   .terms-container input[type="checkbox"] {
     margin-right: 10px;
-    margin-bottom: 20px;
+   
   }
 
   .terms-container label {
     font-size: 14px;
-    margin-bottom: 20px;
+   
     color: #67717e;
     font-weight: 400;
   }
@@ -612,7 +613,7 @@ footer {
   .resend-otp {
     font-size: 14px;
     font-weight: 700;
-    margin-bottom: 22px;
+    margin-bottom: 5px;
     margin-left: auto;
     /* float: right; */
     cursor: pointer;

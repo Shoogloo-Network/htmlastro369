@@ -621,12 +621,12 @@ button:hover {
 
 .terms-container input[type="checkbox"] {
   margin-right: 10px;
-  margin-bottom: 20px;
+margin-bottom: 0;
 }
 
 .terms-container label {
   font-size: 14px;
-  margin-bottom: 20px;
+ 
   color: #67717e;
   font-weight: 400;
 }
@@ -634,7 +634,7 @@ button:hover {
 .resend-otp {
   font-size: 14px;
   /* font-weight: 700; */
-  margin-bottom: 20px;
+  margin-bottom: 11px;
   cursor: pointer;
   margin-left: auto;
   /* color: #30343e; */
