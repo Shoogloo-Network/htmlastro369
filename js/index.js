@@ -1,4 +1,12 @@
 
+function toggleMenu() {
+  const navbar = document.querySelector('.navbarMobile');
+  
+  // Check if the screen width is less than or equal to 768px (mobile view)
+  if (window.innerWidth <= 768) {
+    navbar.classList.toggle('active');
+  }
+}
 
 let currentSlide = 0;
 const totalSlides = 9; // Total number of cards

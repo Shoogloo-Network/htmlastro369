@@ -756,8 +756,74 @@ hr {
 
 
 
+.logo-container{
+    display:block;
+}
 
+/* Hamburger Icon */
+.hamburger-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
 
+/* Styles for Mobile View */
+@media (max-width: 768px) {
+    .navbarMobile  {
+        display: none;
+        flex-direction: column;
+        /* align-items: center; */
+        background-color: #fff;
+        
+        position: absolute;
+        width: 50%;
+        right: 0;
+        margin: 0 !important;
+        padding: 10px 20px;
+        box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        z-index: 3000;
+    }
+
+    .navbarMobile  ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbarMobile  ul li {
+        width: 100%;
+        text-align: left;
+        padding: 10px ;
+    }
+    .headerResMobile{
+        max-width: none !important;
+    }
+
+    .logo-container {
+        display: flex;
+        /* position: static; */
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 5px;
+    }
+    .navbarMobile.active {
+        display: flex; /* Show when the active class is added */
+    }
+    
+    .hamburger-icon {
+        display: block; /* Display the hamburger icon on mobile */
+    }
+}
+/* Desktop view (769px and above) */
+@media (min-width: 769px) {
+    .navbar {
+        display: flex; /* Always visible on desktop */
+    }
+
+    .hamburger-icon {
+        display: none; /* Hide the hamburger icon on desktop */
+    }
+}
 /* For small mobile devices (max-width: 600px) */
 @media only screen and (max-width: 600px) {
    /* 3. Typography */
@@ -819,7 +885,7 @@ a{
 /* Mobile view (Hide headerRes) */
 @media only screen and (max-width: 767px) {
     .headerRes {
-        display: none;
+        display:none;
     }
     .footerRes{
         display: none;
@@ -830,6 +896,9 @@ a{
 @media only screen and (min-width: 768px) {
     .headerRes {
         display: block;
+    }
+    .headerResMobile{
+        display: none;
     }
     .footerRes{
         display: block;
