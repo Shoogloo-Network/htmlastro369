@@ -67,6 +67,17 @@ buyNowButton.addEventListener('click', function() {
     window.location.href = './checkout.html';
 });
 
+const sizeOptions = document.querySelectorAll('.size-options span');
+
+sizeOptions.forEach((span) => {
+  span.addEventListener('click', function() {
+    // Remove the 'active' class from all spans
+    sizeOptions.forEach((s) => s.classList.remove('active'));
+    
+    // Add 'active' class to the clicked span
+    this.classList.add('active');
+  });
+});
 
 
 // JavaScript to toggle accordion and icon

@@ -1,4 +1,12 @@
 
+.size-options span.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  .size-options span.active:hover{
+    background-color: #007bff;
+    color: #fff;
+  }
  /* Product Container */
  .product-container {
  
