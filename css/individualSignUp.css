@@ -77,6 +77,7 @@ a {
 
 a:hover {
   color: #0056b3;
+  text-decoration: underline;
 }
 
 /* 5. Buttons */
@@ -181,6 +182,8 @@ button:hover {
 
 /* 9. Responsive Design */
 @media only screen and (max-width: 768px) {
+  
+  
   /* .container {
       padding: 15px;
   }
@@ -593,6 +596,7 @@ button:hover {
   display: flex;
   /* justify-content: center; */
   align-items: center;
+  margin-top: 10px;
   /* margin-top: 10px;
   margin-bottom: 20px; */
  
@@ -855,6 +859,12 @@ border: none;
       
 }
 
+.existing-user-login{
+  margin-top: 10px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
 
 
   
@@ -869,9 +879,19 @@ border: none;
    cursor: pointer;
   transition: color 0.3s ease; /* Smooth transition */
 }
+.eu-para{
+  color: #67717e;
+    font-size: 14px;
+    /* text-align: center; */
+    line-height: 1.4;
+    margin-top: 0;
+}
 
 /* Styles for Mobile View */
 @media (max-width: 768px) {
+  .eu-para{
+    font-size: 14px;
+  }
   .navbarMobile  {
       display: none;
       flex-direction: column;
@@ -993,6 +1013,11 @@ border: none;
   width: 100%;
   margin-top: 0px;
   border-radius: 0px;
+  padding-top: 0px;
+}
+#pop-up .pop-up-register-form-div > h2{
+  font-size: 20px;
+  margin: 10px;
 }
 }
 /* Desktop view (769px and above) */
@@ -1035,7 +1060,7 @@ border: none;
 }
 
 a{
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .hspace{

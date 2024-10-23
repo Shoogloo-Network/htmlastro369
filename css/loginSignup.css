@@ -1049,6 +1049,11 @@ margin-top: 0;
   width: 100%;
   margin-top: 0px;
   border-radius: 0px;
+  padding-top: 0px;
+}
+#pop-up .pop-up-register-form-div > h2{
+  font-size: 20px;
+  margin: 10px;
 }
 }
 /* Desktop view (769px and above) */
@@ -1091,7 +1096,7 @@ margin-top: 0;
 }
 
 a{
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .hspace{
