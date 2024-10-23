@@ -15,18 +15,20 @@ function toggleMenu() {
   }
 }
 
-document.querySelector('.dropbtn').addEventListener('click', function (event) {
-  event.preventDefault(); // Prevent default anchor behavior
-  const dropdown = this.parentElement; // Get parent dropdown
-  dropdown.classList.toggle('active'); // Toggle active class
-  
-  // Toggle the icon direction
-  const icon = document.getElementById('dropdown-icon');
-  if (dropdown.classList.contains('active')) {
+document.querySelectorAll('.dropbtn').forEach((ele) => {
+  ele.addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent default anchor behavior
+    const dropdown = this.parentElement; // Get parent dropdown
+    dropdown.classList.toggle('active'); // Toggle active class
+
+    // Get the icon directly related to the clicked dropdown
+    const icon = dropdown.querySelector('.dropdown-icon'); // Adjust to get the specific icon
+    if (dropdown.classList.contains('active')) {
       icon.innerHTML = '&#9650;'; // Up arrow
-  } else {
+    } else {
       icon.innerHTML = '&#9660;'; // Down arrow
-  }
+    }
+  });
 });
 
 let currentSlide = 0;

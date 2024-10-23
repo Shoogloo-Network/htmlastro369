@@ -762,9 +762,10 @@ hr {
 
 /* Hamburger Icon */
 .hamburger-icon {
-    font-size: 30px;
-
-    cursor: pointer;
+    font-size: 30px; /* Adjust size as needed */
+     /* Set to a lighter color */
+     cursor: pointer;
+    transition: color 0.3s ease; /* Smooth transition */
 }
 
 /* Styles for Mobile View */
@@ -776,8 +777,8 @@ hr {
         background-color: #fff;
         
         position: absolute;
-        width: 50%;
-        left: 0;
+        width: 60%;
+        left: 5px;
         margin: 0 !important;
         padding: 10px 20px;
         box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
@@ -790,7 +791,9 @@ hr {
         flex-direction: column;
         width: 100%;
     }
-
+    .user-profile-container{
+        padding-right: 10px;
+    }
     .navbarMobile  ul li {
         width: 100%;
         text-align: left;
@@ -844,7 +847,7 @@ hr {
 }
 
 .dropdown-content li a:hover {
-    background-color: #ddd;
+   text-decoration: underline;
 }
 
 /* Show the dropdown menu on click */
