@@ -892,6 +892,12 @@ border: none;
   .eu-para{
     font-size: 14px;
   }
+  .alternateLogin{
+    margin-bottom: 20px;
+  }
+  .existing-user-login{
+    margin-top: 0;
+  }
   .navbarMobile  {
       display: none;
       flex-direction: column;

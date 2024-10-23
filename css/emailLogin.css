@@ -896,6 +896,9 @@ border: none;
 
 /* Styles for Mobile View */
 @media (max-width: 768px) {
+  .alternateLogin{
+    margin-bottom: 20px;
+  }
   .navbarMobile  {
       display: none;
       flex-direction: column;

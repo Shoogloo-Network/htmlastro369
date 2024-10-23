@@ -27,6 +27,37 @@ let countdownTimer = setInterval(function() {
 
 
 
+function toggleLoginMenu() {
+  const userProfileContainer = document.querySelector('.user-profile-container');
+  
+  if (window.innerWidth <= 768) { // Adjust this breakpoint as needed
+      userProfileContainer.classList.toggle('active'); // Toggle active class
+  }
+}
+function toggleMenu() {
+  const navbar = document.querySelector('.navbarMobile');
+  
+  // Check if the screen width is less than or equal to 768px (mobile view)
+  if (window.innerWidth <= 768) {
+    navbar.classList.toggle('active');
+  }
+}
+
+document.querySelectorAll('.dropbtn').forEach((ele) => {
+  ele.addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent default anchor behavior
+    const dropdown = this.parentElement; // Get parent dropdown
+    dropdown.classList.toggle('active'); // Toggle active class
+
+    // Get the icon directly related to the clicked dropdown
+    const icon = dropdown.querySelector('.dropdown-icon'); // Adjust to get the specific icon
+    if (dropdown.classList.contains('active')) {
+      icon.innerHTML = '&#9650;'; // Up arrow
+    } else {
+      icon.innerHTML = '&#9660;'; // Down arrow
+    }
+  });
+});
 // Select the button
 const buyNowButton = document.querySelector('.btn-buy');
 
