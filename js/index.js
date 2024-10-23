@@ -1,4 +1,11 @@
 
+function toggleLoginMenu() {
+  const userProfileContainer = document.querySelector('.user-profile-container');
+  
+  if (window.innerWidth <= 768) { // Adjust this breakpoint as needed
+      userProfileContainer.classList.toggle('active'); // Toggle active class
+  }
+}
 function toggleMenu() {
   const navbar = document.querySelector('.navbarMobile');
   
@@ -7,6 +14,20 @@ function toggleMenu() {
     navbar.classList.toggle('active');
   }
 }
+
+document.querySelector('.dropbtn').addEventListener('click', function (event) {
+  event.preventDefault(); // Prevent default anchor behavior
+  const dropdown = this.parentElement; // Get parent dropdown
+  dropdown.classList.toggle('active'); // Toggle active class
+  
+  // Toggle the icon direction
+  const icon = document.getElementById('dropdown-icon');
+  if (dropdown.classList.contains('active')) {
+      icon.innerHTML = '&#9650;'; // Up arrow
+  } else {
+      icon.innerHTML = '&#9660;'; // Down arrow
+  }
+});
 
 let currentSlide = 0;
 const totalSlides = 9; // Total number of cards

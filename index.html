@@ -145,12 +145,48 @@
       </header>
       <header class="container-fullWidth headerResMobile">
         <div class="logo-container">
-          <a href="#" class="anchorLogo">
-            <img src="assets/images/astro369logo1.png" alt="Logo" class="logoImage">
-          </a>
-          <div class="hamburger-icon" onclick="toggleMenu()">
-            &#9776; <!-- Hamburger icon (You can use FontAwesome or an image if preferred) -->
+          <div class="menu-container">
+            <div class="menu-container-parent">
+              
+              <div class="security-container">
+               
+                <select name="Security" id="Security" class="txtsize">
+                  <option value="" disabled selected hidden>ENG</option>
+                  <option value="DataSecurity" selected>ENG</option>
+                  <option value="Help">HINDI</option>
+                </select>
+              </div>
+              
+              <div class="user-profile-container">
+                <div class="user-profile" onclick="toggleLoginMenu()">
+                    <i class="fa-solid fa-user user-profile"></i>
+                </div>
+                <div class="login-hover">
+                    <ul>
+                        <li id="login">
+                            <a href="loginSignup.html">Login/Signup</a>
+                        </li>
+                        <hr />
+                        <li ><a href="./advisorProfile.html">Profile</a></li>
+                        <hr />
+                        <li><a href="./my-order.html">My Orders</a></li>
+                        <hr />
+                        <li ><a href="./loginSignup.html">Signout</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
           </div>
+          <div class="headerMobileCombine">
+            <a href="#" class="anchorLogo">
+              <img src="assets/images/astro369logo1.png" alt="Logo" class="logoImage">
+            </a>
+            <div class="hamburger-icon" onclick="toggleMenu()">
+              &#9776; <!-- Hamburger icon (You can use FontAwesome or an image if preferred) -->
+            </div>
+          </div>
+          
+          
         </div>
         <nav class="navbar navbarMobile container">
          
@@ -160,66 +196,21 @@
             <ul>
               <li><a href="advisors.html">All Advisors</a></li>
               <li><a href="consult.html">Video Consult</a></li>
-              <li class="mega-hover"><a href="#">Predictions</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Predictions <span class="icon" id="dropdown-icon">&#9660;</span></a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Daily Prediction</a></li>
+                    <li><a href="#">Weekly Prediction</a></li>
+                    <li><a href="#">Monthly Prediction</a></li>
+                    <li style="border-bottom: none !important;"><a href="#" >Yearly Prediction</a></li>
+                </ul>
+            </li>
+            
               <li><a href="astro-shop.html">Mart</a></li>
               <li><a href="pooja.html">Pooja</a></li>
             </ul>
           </div>
-          <div class="menu-container">
-            <div class="menu-container-parent">
-              <!-- <div class="corporates-container">
-                <span class="New">New</span>
-                <div class="corporates-dropdown">
-                  <select name="Corporates" id="Corporates" class="txtsize">
-                    <option value="" disabled selected hidden>
-                      For Corporates
-                    </option>
-                    <option value="Health">Health & Wellness Plans</option>
-                    <option value="Insurance">Group Insurance</option>
-                  </select>
-                </div>
-              </div> -->
-              <!-- <div class="providers-container">
-                <select name="Providers" id="Providers" class="txtsize">
-                  <option value="" disabled selected hidden>
-                    For Providers
-                  </option>
-                  <option value="Prime">Astro369 Prime</option>
-                  <option value="Software">Software For Providers</option>
-                  <option value="Practice">List Your Practice For Free</option>
-                  <option value="ABDM">ABDM</option>
-                </select>
-              </div> -->
-              <div class="security-container">
-                <!-- <label for="Security">Security & Help</label> -->
-                <select name="Security" id="Security" class="txtsize">
-                  <option value="" disabled selected hidden>ENG</option>
-                  <option value="DataSecurity" selected>ENG</option>
-                  <option value="Help">HINDI</option>
-                </select>
-              </div>
-              <!-- <button class="login-signup-button">Login/Signup</button> -->
-              <div>
-                <div class="user-profile">
-                  <i class="fa-solid fa-user user-profile"></i>
-                </div>
-                <div class="login-hover">
-                  <ul>
-                    <li id="login">
-                      <a href="loginSignup.html">Login/Signup</a>
-                    </li>
-                    <hr />
-                    <li>Profile</li>
-
-                    <hr />
-                    <li><a href="./my-order.html">My Orders</a></li>
-                    <hr/>
-                    <li>Signout</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+         
         </nav>
 
         <hr />
