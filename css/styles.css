@@ -1202,6 +1202,8 @@ input[type="tel"]:focus {
     }
     .astrologer-container{
         width: 46%;
+        padding: 2px;
+        align-items: normal;
     }
     .call-button{
         padding: 12px 18px;
@@ -1245,6 +1247,7 @@ input[type="tel"]:focus {
 
     .astrologer-actions{
         gap: 4px;
+        justify-content: space-between;
     }
     .astrologer-details{
         gap: 10px;
