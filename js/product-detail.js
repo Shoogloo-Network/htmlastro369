@@ -1,6 +1,4 @@
-window.onload = function() {
-  window.location.hash = 'div2';
-};
+
 // Set the countdown duration to 4 hours (in milliseconds)
 let countdownDuration = 4 * 60 * 60 * 1000;
 
@@ -13,6 +11,7 @@ let countdownTimer = setInterval(function() {
 
     // Display the result in the timer span
     document.getElementById("timer").textContent = `${hours}h : ${minutes}m : ${seconds}s`;
+    document.getElementById("timermobile").textContent = `${hours}h : ${minutes}m : ${seconds}s`;
 
     // Decrease the countdown time by 1 second (1000ms)
     countdownDuration -= 1000;
@@ -21,6 +20,7 @@ let countdownTimer = setInterval(function() {
     if (countdownDuration < 0) {
         clearInterval(countdownTimer);
         document.getElementById("timer").textContent = "Time's up!";
+         document.getElementById("timermobile").textContent = "Time's up!";
     }
 }, 1000);
 
