@@ -242,6 +242,23 @@
     color: #555;
     line-height: 1.6;
 }
+/* Timmer */
+#timerContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #00ad31;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 2px;
+}
+
+#timer {
+    font-weight: bold;
+}
 #timerContainermobile {
     display: flex;
     justify-content: space-between;
@@ -303,23 +320,7 @@
 
 
 
-/* Timmer */
-#timerContainer {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    background-color: #00ad31;
-    color: #fff;
-    font-size: 14px;
-    padding: 5px 10px;
-    border-radius: 3px;
-    font-family: Arial, sans-serif;
-    margin-bottom: 2px;
-}
 
-#timer {
-    font-weight: bold;
-}
 
 
 
