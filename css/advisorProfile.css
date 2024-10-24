@@ -763,7 +763,8 @@ h1 {
 }
 
 .profile-image-wrapper > img {
-    width: 100%; 
+   margin-left: auto;
+   margin-right: auto; 
     height: auto; 
     border-radius: 8px; /* Smaller rounded corners */
 }
@@ -779,6 +780,7 @@ h1 {
 .profile-status {
     text-align: center;
     margin-bottom: 5px; /* Reduced space */
+    margin-left: auto;
 }
 
 .profile-name, .profile-alias, .readings-count, .readings-count-span {
