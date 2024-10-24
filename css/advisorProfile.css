@@ -860,5 +860,8 @@ flex-direction: row;
 .pagination a {
   margin: 0 2px;
 }
+.about-content{
+  padding-left: 0;
+}
 }
 
