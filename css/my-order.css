@@ -1,25 +1,17 @@
-.size1{
-    font-size: 20px;
-}
-.size2{
-    font-size: 16px;
-}
-.txtsize{
-    font-size: 14px;
-}
-.container {
-    display: flex;
-    width: 100%;
-}
+
 
 .left-section {
     width: 17%;
-    padding: 20px;
+    padding: 20px 0;
+    padding-right: 10px;
+    
     border-right: 1px solid #ddd;
     padding-right: 5px;
     height: 85%;
-    position: fixed;
-    left: 16px;
+    
+}
+.left-section-container{
+    display: flex;
 }
 .left-section>h2{
     /* margin: 20px; */
@@ -28,9 +20,10 @@
     font-size: 18px;
 }
 .right-section {
-    margin-left: 15%;
-    width: 85%;
-    padding: 20px;
+  
+    width: 100%;
+    padding: 20px 0;
+    padding-left: 10px;
 }
 
 .filter button {
@@ -47,6 +40,8 @@
 .filter button:hover{
     background-color: #cddce7;
 }
+
+
 .accordion-item {
     border-bottom: 1px solid #ddd;
     /* margin-bottom: 10px; */
@@ -120,10 +115,9 @@
 
 
 @media only screen and (max-width: 768px) {
-    .container{
-        display: flex;
-        flex-direction: column;
-    }
+  .left-section-container{
+    flex-direction: column;
+  }
     .left-section{
         width: auto;
         position: static;

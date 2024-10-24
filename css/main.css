@@ -674,12 +674,12 @@ hr {
 
 .menu-container {
     display: flex;
-    padding-bottom: 13.5px;
-    padding-top: 13.5px;
+   
 }
 
 .menu-container-parent {
     display: flex;
+    align-items: center;
 
 }
 

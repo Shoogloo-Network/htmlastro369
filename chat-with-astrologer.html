@@ -21,952 +21,1078 @@
     />
 </head>
 <body>
-  <header class="container-fullWidth">
-    <nav class="navbar container">
-      <a href="index.html" class="anchorLogo"
-        ><img
-          src="assets/images/astro369logo1.png"
-          alt="Astro369 logo"
-          class="logoImage"
-      /></a>
-      <div class="logo-container">
-        <ul>
-          <li><a href="advisors.html">All Advisors</a></li>
-          <li><a href="consult.html">Video Consult</a></li>
-          <li class="mega-hover"><a href="#">Predictions</a></li>
-          <li><a href="astro-shop.html">Mart</a></li>
-          <li><a href="pooja.html">Pooja</a></li>
-        </ul>
-      </div>
-      <div class="menu-container">
-        <div class="menu-container-parent">
-          <!-- <div class="corporates-container">
-            <span class="New">New</span>
-            <div class="corporates-dropdown">
-              <select name="Corporates" id="Corporates" class="txtsize">
+  <section class="desktop">
+    <header class="container-fullWidth headerRes">
+      
+      <nav class="navbar container">
+        <a href="index.html" class="anchorLogo"
+          ><img
+            src="assets/images/astro369logo1.png"
+            alt="Astro369 logo"
+            class="logoImage"
+        /></a>
+        <!-- Replace the current hamburger icon with this -->
+  
+        <div class="logo-container">
+          <ul>
+            <li><a href="advisors.html">All Advisors</a></li>
+            <li><a href="consult.html">Video Consult</a></li>
+            <li class="mega-hover"><a href="#">Predictions</a></li>
+            <li><a href="astro-shop.html">Mart</a></li>
+            <li><a href="pooja.html">Pooja</a></li>
+          </ul>
+        </div>
+        <div class="menu-container">
+          <div class="menu-container-parent">
+            <!-- <div class="corporates-container">
+              <span class="New">New</span>
+              <div class="corporates-dropdown">
+                <select name="Corporates" id="Corporates" class="txtsize">
+                  <option value="" disabled selected hidden>
+                    For Corporates
+                  </option>
+                  <option value="Health">Health & Wellness Plans</option>
+                  <option value="Insurance">Group Insurance</option>
+                </select>
+              </div>
+            </div> -->
+            <!-- <div class="providers-container">
+              <select name="Providers" id="Providers" class="txtsize">
                 <option value="" disabled selected hidden>
-                  For Corporates
+                  For Providers
                 </option>
-                <option value="Health">Health & Wellness Plans</option>
-                <option value="Insurance">Group Insurance</option>
+                <option value="Prime">Astro369 Prime</option>
+                <option value="Software">Software For Providers</option>
+                <option value="Practice">List Your Practice For Free</option>
+                <option value="ABDM">ABDM</option>
+              </select>
+            </div> -->
+            <div class="security-container">
+              <!-- <label for="Security">Security & Help</label> -->
+              <select name="Security" id="Security" class="txtsize">
+                <option value="" disabled selected hidden>ENG</option>
+                <option value="DataSecurity" selected>ENG</option>
+                <option value="Help">HINDI</option>
               </select>
             </div>
-          </div> -->
-          <!-- <div class="providers-container">
-            <select name="Providers" id="Providers" class="txtsize">
-              <option value="" disabled selected hidden>
-                For Providers
-              </option>
-              <option value="Prime">Astro369 Prime</option>
-              <option value="Software">Software For Providers</option>
-              <option value="Practice">List Your Practice For Free</option>
-              <option value="ABDM">ABDM</option>
-            </select>
-          </div> -->
-          <div class="security-container">
-            <!-- <label for="Security">Security & Help</label> -->
-            <select name="Security" id="Security" class="txtsize">
-              <option value="" disabled selected hidden>ENG</option>
-              <option value="DataSecurity" selected>ENG</option>
-              <option value="Help">HINDI</option>
-            </select>
+            <!-- <button class="login-signup-button">Login/Signup</button> -->
+            <div>
+              <div class="user-profile">
+                <i class="fa-solid fa-user user-profile"></i>
+              </div>
+              <div class="login-hover">
+                <ul>
+                  <li id="login">
+                    <a href="loginSignup.html">Login/Signup</a>
+                  </li>
+                  <hr />
+                  <li>Profile</li>
+  
+                  <hr />
+                  <li><a href="./my-order.html">My Orders</a></li>
+                  <hr/>
+                  <li>Signout</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <!-- <button class="login-signup-button">Login/Signup</button> -->
+        </div>
+      </nav>
+  
+      <hr />
+      <div class="pop-up-register" id="pop-up">
+        <div class="pop-up-register-form-div">
+          <h2>Enter Your Details</h2>
           <div>
-            <div class="user-profile">
-              <i class="fa-solid fa-user user-profile"></i>
-            </div>
-            <div class="login-hover">
-              <ul>
-                <li id="login">
-                  <a href="loginSignup.html">Login/Signup</a>
-                </li>
-                <hr />
-                <li>Profile</li>
-
-                <hr />
-                <li><a href="./my-order.html">My Orders</a></li>
-                <hr/>
-                <li>Signout</li>
-              </ul>
+            <label for="email">Email Id</label>
+            <input
+              type="email"
+              id="email"
+              value="email"
+              placeholder="Enter Your Email Id"
+            />
+            <label for="phone"> Phone Number</label>
+            <input
+              type="phone"
+              id="phone"
+              value="phone"
+              placeholder="+91 6399889123"
+            />
+            <div class="otp-container">
+              <h4>Enter OTP</h4>
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
             </div>
           </div>
+          <button id="continue-sign-up-btn">Continue</button>
+          <form class="terms-and-resend">
+            <div class="terms-container">
+              <input type="checkbox" id="terms" name="terms" checked />
+              <label for="terms" class="txtsize"
+                >I agree to the <a href="#">terms and conditions</a></label
+              >
+            </div>
+            <div class="resend-otp txtsize"><a>Resend OTP ?</a></div>
+          </form>
         </div>
       </div>
-    </nav>
-
-    <hr />
-    <div class="pop-up-register" id="pop-up">
-      <div class="pop-up-register-form-div">
-        <h2>Enter Your Details</h2>
-        <div>
-          <label for="email">Email Id</label>
-          <input
-            type="email"
-            id="email"
-            value="email"
-            placeholder="Enter Your Email Id"
-          />
-          <label for="phone"> Phone Number</label>
-          <input
-            type="phone"
-            id="phone"
-            value="phone"
-            placeholder="+91 6399889123"
-          />
-          <div class="otp-container">
-            <h4>Enter OTP</h4>
-            <input type="text" maxlength="1" class="otp-input size2" />
-            <input type="text" maxlength="1" class="otp-input size2" />
-            <input type="text" maxlength="1" class="otp-input size2" />
-            <input type="text" maxlength="1" class="otp-input size2" />
-            <input type="text" maxlength="1" class="otp-input size2" />
-            <input type="text" maxlength="1" class="otp-input size2" />
+    </header>
+    <header class="container-fullWidth headerResMobile">
+      <div class="logo-container">
+        <div class="menu-container">
+          <div class="menu-container-parent">
+            
+            <div class="security-container">
+             
+              <select name="Security" id="Security" class="txtsize">
+                <option value="" disabled selected hidden>ENG</option>
+                <option value="DataSecurity" selected>ENG</option>
+                <option value="Help">HINDI</option>
+              </select>
+            </div>
+            
+            <div class="user-profile-container">
+              <div class="user-profile" onclick="toggleLoginMenu()">
+                  <i class="fa-solid fa-user user-profile"></i>
+              </div>
+              <div class="login-hover">
+                  <ul>
+                      <li id="login">
+                          <a href="loginSignup.html">Login/Signup</a>
+                      </li>
+                      <hr />
+                      <li ><a href="./advisorProfile.html">Profile</a></li>
+                      <hr />
+                      <li><a href="./my-order.html">My Orders</a></li>
+                      <hr />
+                      <li ><a href="./loginSignup.html">Signout</a></li>
+                  </ul>
+              </div>
+          </div>
           </div>
         </div>
-        <button id="continue-sign-up-btn">Continue</button>
-        <form class="terms-and-resend">
-          <div class="terms-container">
-            <input type="checkbox" id="terms" name="terms" checked />
-            <label for="terms" class="txtsize"
-              >I agree to the <a href="#">terms and conditions</a></label
-            >
+        <div class="headerMobileCombine">
+          <a href="#" class="anchorLogo">
+            <img src="assets/images/astro369logo1.png" alt="Logo" class="logoImage">
+          </a>
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            &#9776; <!-- Hamburger icon (You can use FontAwesome or an image if preferred) -->
           </div>
-          <div class="resend-otp txtsize"><a>Resend OTP ?</a></div>
-        </form>
-      </div>
-    </div>
-  </header>
-
-  <section class="menu-section container">
-    <div class="container">
-      <div class="mega-menu">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="mega-menu-column">
-              <h3>Category 1</h3>
-              <!-- <hr /> -->
-              <!-- <ul>
-                <li><a href="#">Item 1</a></li>
-                <li><a href="#">Item 2</a></li>
-                <li><a href="#">Item 3</a></li>
-              </ul> -->
-              <div class="submenu-header-div">
-                <img
-                  src="assets/images/period-problems-v1.jpg"
-                  alt="submenuimage1"
-                  class="submenu-header-image"
-                />
-                <div class="submenu-header-right-div">
-                  <h4>Period doubts</h4>
-                  <p>Private online consultations with doctors</p>
-                </div>
-              </div>
-              <div class="submenu-header-div">
-                <img
-                  src="assets/images/period-problems-v1.jpg"
-                  alt="submenuimage1"
-                  class="submenu-header-image"
-                />
-                <div class="submenu-header-right-div">
-                  <h4>Period doubts</h4>
-                  <p>Private online consultations with doctors</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="mega-menu-column">
-              <h3>Category 2</h3>
-              <!-- <hr /> -->
-              <!-- <ul>
-                <li><a href="#">Item 4</a></li>
-                <li><a href="#">Item 5</a></li>
-                <li><a href="#">Item 6</a></li>
-              </ul> -->
-
-              <div class="submenu-header-div">
-                <img
-                  src="assets/images/period-problems-v1.jpg"
-                  alt="submenuimage1"
-                  class="submenu-header-image"
-                />
-                <div class="submenu-header-right-div">
-                  <h4>Period doubts</h4>
-                  <p>Private online consultations with doctors</p>
-                </div>
-              </div>
-              <div class="submenu-header-div">
-                <img
-                  src="assets/images/period-problems-v1.jpg"
-                  alt="submenuimage1"
-                  class="submenu-header-image"
-                />
-                <div class="submenu-header-right-div">
-                  <h4>Period doubts</h4>
-                  <p>Private online consultations with doctors</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="mega-menu-column">
-              <h3>Category 3</h3>
-              <!-- <hr /> -->
-              <!-- <ul>
-                <li><a href="#">Item 7</a></li>
-                <li><a href="#">Item 8</a></li>
-                <li><a href="#">Item 9</a></li>
-              </ul> -->
-              <div class="submenu-header-div">
-                <img
-                  src="assets/images/period-problems-v1.jpg"
-                  alt="submenuimage1"
-                  class="submenu-header-image"
-                />
-                <div class="submenu-header-right-div">
-                  <h4>Period doubts</h4>
-                  <p>Private online consultations with doctors</p>
-                </div>
-              </div>
-              <div class="submenu-header-div">
-                <img
-                  src="assets/images/period-problems-v1.jpg"
-                  alt="submenuimage1"
-                  class="submenu-header-image"
-                />
-                <div class="submenu-header-right-div">
-                  <h4>Period doubts</h4>
-                  <p>Private online consultations with doctors</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col-md-3">
-            <div class="mega-menu-column">
-              <h3>Category 4</h3>
-              <hr />
-              <ul>
-                <li><a href="#">Item 10</a></li>
-                <li><a href="#">Item 11</a></li>
-                <li><a href="#">Item 12</a></li>
-              </ul>
-              <div class="submenu-header-div">
-                <img
-                  src="assets/images/period-problems-v1.jpg"
-                  alt="submenuimage1"
-                  class="submenu-header-image"
-                />
-                <div class="submenu-header-right-div">
-                  <h4>Period doubts</h4>
-                  <p>Private online consultations with doctors</p>
-                </div>
-              </div>
-              <div class="submenu-header-div">
-                <img
-                  src="assets/images/period-problems-v1.jpg"
-                  alt="submenuimage1"
-                  class="submenu-header-image"
-                />
-                <div class="submenu-header-right-div">
-                  <h4>Period doubts</h4>
-                  <p>Private online consultations with doctors</p>
-                </div>
-              </div>
-            </div>
-          </div> -->
         </div>
-      </div>
-    </div>
-  </section>
-
-      <section class="advisorsBanner ">
-<div class="advisorsBannerImageDiv container">
-<img src="assets/images/advisorsBanner.jpg" alt="advisorsBanner"  class="advisorsBannerImage"/>
-</div>
-
-<div class="phone-input-wrapper container">
-    <h1 class="size1"> Sign Up for Free to consult best astrologers in India</h1>
-    <div class="phone-input-container-div">
-        <div class="phone-input-container">
-            <div class="phone-input">
-              <span class="country-code">+91</span>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="Enter your phone number"
-                pattern="[0-9]{10}"
-                required
-                class="phone-number-input"
-              />
-            </div>
-          </div>
-          <button class="send-sms-button size2">Sign Up</button>
-    </div>
-  </div>
-      </section>
-      <div class="hspace"></div>
-      <section class="astrologer-list container">
-        <div class="astrologer-filter-div">
-            <h1>
-                Filter
-            </h1>
-            <div class="expertise-section">
-                <h3 class="expertise-section-heading">Expertise</h3>
-                <i class="fa-solid fa-angle-down expertise-down-arrow" style="display: block;"></i>
-                <i class="fa-solid fa-angle-right expertise-right-arrow " style="display: none;" ></i>
-            </div>
-            <div class="filter-checkbox1">
-                <label>
-                    <input type="checkbox" name="checkbox1"/>
-                    Career
-                </label>
-                <label>
-                    <input type="checkbox" name="checkbox2"/>
-                  Business
-                </label>
-                <label>
-                    <input type="checkbox" name="checkbox3"/>
-                    Job Marriage
-                </label>
-                <label>
-                    <input type="checkbox" name="checkbox4"/>
-                    Love
-                </label>
-                <label>
-                    <input type="checkbox" name="checkbox5"/>
-                    Education
-                </label>
-                <label>
-                    <input type="checkbox" name="checkbox6"/>
-                    Finance
-                </label>
-                <label>
-                    <input type="checkbox" name="checkbox7"/>
-                    Wealth & Property
-                </label>
-            </div>
-            <div class="expertise-section1">
-                <h3 class="expertise-section-heading">Skills</h3>
-                <i class="fa-solid fa-angle-down expertise-down-arrow1" style="display: none;"></i>
-                <i class="fa-solid fa-angle-right expertise-right-arrow1" ></i>
-            </div>
-            <div class="filter-checkbox2">
-                <label>
-                    <input type="checkbox" name="checkbox1"/>
-                    Checkbox 1
-                </label>
-                <label>
-                    <input type="checkbox" name="checkbox2"/>
-                    Checkbox 2
-                </label>
-                <label>
-                    <input type="checkbox" name="checkbox3"/>
-                    Checkbox 3
-                </label>
-                <label>
-                    <input type="checkbox" name="checkbox4"/>
-                    Checkbox 4
-                </label>
-                <label>
-                    <input type="checkbox" name="checkbox5"/>
-                    Checkbox 5
-                </label>
-                <label>
-                    <input type="checkbox" name="checkbox6"/>
-                    Checkbox 6
-                </label>
-                <label>
-                    <input type="checkbox" name="checkbox7"/>
-                    Checkbox 7
-                </label>
-            </div>
-        </div>
-        <div class="astrologer-item-list">
-            <section class="astrologer-details">
         
-                <div class="astrologer-container">
-                  <div class="astrologer-image-section">
-                    <img src="assets/images/astrologer1.jpg" alt="astrologer-image" class="astrologer-image"/>
-                    <div class="availability-section">
-                      <!-- <div class="availability-dot"></div> -->
-                      <img src="assets/images/onlinePhone1.gif" alt="Online" class="onlineImage"/>
-                      <p class="availability-text">Available
+        
+      </div>
+      <nav class="navbar navbarMobile container">
+       
+        <!-- Replace the current hamburger icon with this -->
+  
+        <div class="logo-container">
+          <ul>
+           
+            <li class="dropdown">
+              <a href="advisors.html" class="dropbtn">All Advisors <span class="icon dropdown-icon" >&#9660;</span></a>
+              <ul class="dropdown-content">
+                  <li><a href="#">Name 1</a></li>
+                  <li><a href="#">Name 2</a></li>
+                  <li><a href="#">Name 3</a></li>
+                  <li style="border-bottom: none !important;"><a href="#" >Name 4</a></li>
+              </ul>
+          </li>
+            <li><a href="consult.html">Video Consult</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Predictions <span class="icon dropdown-icon" >&#9660;</span></a>
+              <ul class="dropdown-content">
+                  <li><a href="#">Daily Prediction</a></li>
+                  <li><a href="#">Weekly Prediction</a></li>
+                  <li><a href="#">Monthly Prediction</a></li>
+                  <li style="border-bottom: none !important;"><a href="#" >Yearly Prediction</a></li>
+              </ul>
+          </li>
+          
+            <li><a href="astro-shop.html">Mart</a></li>
+            <li><a href="pooja.html">Pooja</a></li>
+          </ul>
+        </div>
+       
+      </nav>
+  
+      <hr />
+      <div class="pop-up-register" id="pop-up">
+        <div class="pop-up-register-form-div">
+          <h2>Enter Your Details</h2>
+          <div>
+            <label for="email">Email Id</label>
+            <input
+              type="email"
+              id="email"
+              value="email"
+              placeholder="Enter Your Email Id"
+            />
+            <label for="phone"> Phone Number</label>
+            <input
+              type="phone"
+              id="phone"
+              value="phone"
+              placeholder="+91 6399889123"
+            />
+            <div class="otp-container">
+              <h4>Enter OTP</h4>
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+            </div>
+          </div>
+          <button id="continue-sign-up-btn">Continue</button>
+          <form class="terms-and-resend">
+            <div class="terms-container">
+              <input type="checkbox" id="terms" name="terms" checked />
+              <label for="terms" class="txtsize"
+                >I agree to the <a href="#">terms and conditions</a></label
+              >
+            </div>
+            <div class="resend-otp txtsize"><a>Resend OTP ?</a></div>
+          </form>
+        </div>
+      </div>
+    </header>
+  
+    <section class="menu-section container">
+      <div class="container">
+        <div class="mega-menu">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="mega-menu-column">
+                <h3>Category 1</h3>
+                <!-- <hr /> -->
+                <!-- <ul>
+                  <li><a href="#">Item 1</a></li>
+                  <li><a href="#">Item 2</a></li>
+                  <li><a href="#">Item 3</a></li>
+                </ul> -->
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="mega-menu-column">
+                <h3>Category 2</h3>
+                <!-- <hr /> -->
+                <!-- <ul>
+                  <li><a href="#">Item 4</a></li>
+                  <li><a href="#">Item 5</a></li>
+                  <li><a href="#">Item 6</a></li>
+                </ul> -->
+  
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="mega-menu-column">
+                <h3>Category 3</h3>
+                <!-- <hr /> -->
+                <!-- <ul>
+                  <li><a href="#">Item 7</a></li>
+                  <li><a href="#">Item 8</a></li>
+                  <li><a href="#">Item 9</a></li>
+                </ul> -->
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-md-3">
+              <div class="mega-menu-column">
+                <h3>Category 4</h3>
+                <hr />
+                <ul>
+                  <li><a href="#">Item 10</a></li>
+                  <li><a href="#">Item 11</a></li>
+                  <li><a href="#">Item 12</a></li>
+                </ul>
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+  
+        <section class="advisorsBanner ">
+  <div class="advisorsBannerImageDiv ">
+  <img src="assets/images/advisorsBanner.jpg" alt="advisorsBanner"  class="advisorsBannerImage"/>
+  </div>
+  
+  <div class="phone-input-wrapper container">
+      <h1 class="size1"> Sign Up for Free to consult best astrologers in India</h1>
+      <div class="phone-input-container-div">
+          <div class="phone-input-container">
+              <div class="phone-input">
+                <span class="country-code">+91</span>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                  pattern="[0-9]{10}"
+                  required
+                  class="phone-number-input"
+                />
+              </div>
+            </div>
+            <button class="send-sms-button size2">Sign Up</button>
+      </div>
+    </div>
+        </section>
+        <div class="hspace"></div>
+        <section class="astrologer-list container">
+          <div class="astrologer-filter-div">
+              <h1>
+                  Filter
+              </h1>
+              <div class="expertise-section">
+                  <h3 class="expertise-section-heading">Expertise</h3>
+                  <i class="fa-solid fa-angle-down expertise-down-arrow" style="display: block;"></i>
+                  <i class="fa-solid fa-angle-right expertise-right-arrow " style="display: none;" ></i>
+              </div>
+              <div class="filter-checkbox1">
+                  <label>
+                      <input type="checkbox" name="checkbox1"/>
+                      Career
+                  </label>
+                  <label>
+                      <input type="checkbox" name="checkbox2"/>
+                    Business
+                  </label>
+                  <label>
+                      <input type="checkbox" name="checkbox3"/>
+                      Job Marriage
+                  </label>
+                  <label>
+                      <input type="checkbox" name="checkbox4"/>
+                      Love
+                  </label>
+                  <label>
+                      <input type="checkbox" name="checkbox5"/>
+                      Education
+                  </label>
+                  <label>
+                      <input type="checkbox" name="checkbox6"/>
+                      Finance
+                  </label>
+                  <label>
+                      <input type="checkbox" name="checkbox7"/>
+                      Wealth & Property
+                  </label>
+              </div>
+              <div class="expertise-section1">
+                  <h3 class="expertise-section-heading">Skills</h3>
+                  <i class="fa-solid fa-angle-down expertise-down-arrow1" style="display: none;"></i>
+                  <i class="fa-solid fa-angle-right expertise-right-arrow1" ></i>
+              </div>
+              <div class="filter-checkbox2">
+                  <label>
+                      <input type="checkbox" name="checkbox1"/>
+                      Checkbox 1
+                  </label>
+                  <label>
+                      <input type="checkbox" name="checkbox2"/>
+                      Checkbox 2
+                  </label>
+                  <label>
+                      <input type="checkbox" name="checkbox3"/>
+                      Checkbox 3
+                  </label>
+                  <label>
+                      <input type="checkbox" name="checkbox4"/>
+                      Checkbox 4
+                  </label>
+                  <label>
+                      <input type="checkbox" name="checkbox5"/>
+                      Checkbox 5
+                  </label>
+                  <label>
+                      <input type="checkbox" name="checkbox6"/>
+                      Checkbox 6
+                  </label>
+                  <label>
+                      <input type="checkbox" name="checkbox7"/>
+                      Checkbox 7
+                  </label>
+              </div>
+          </div>
+          <div class="astrologer-item-list">
+              <section class="astrologer-details">
+          
+                  <div class="astrologer-container">
+                    <div class="astrologer-image-section">
+                      <img src="assets/images/astrologer1.jpg" alt="astrologer-image" class="astrologer-image"/>
+                      <div class="availability-section">
+                        <!-- <div class="availability-dot"></div> -->
+                        <img src="assets/images/onlinePhone1.gif" alt="Online" class="onlineImage"/>
+                        <p class="availability-text">Available
+                        </p>
+                      </div>
+                    </div>
+                    <div class="astrologer-info">
+                      <h1 class="astrologer-name txtsize">Cosmic Advice</h1>
+                      <p class="greeting  txtsize"><span><i class="fa-solid fa-graduation-cap"></i> 35 Years</span></p>
+                    <p class="greeting txtsize">
+                      Vedic | Career | Empath
+                    </p>
+                    <p class="greeting txtsize">
+                      Hindi , English
+                    </p>
+                    </div>
+                    <div class="astrologer-rating txtsize">
+                      <p class="rating-score">4.7</p>
+                      <div class="rating-stars"><span class="star size2"></span>
+                        <span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span></div>
+                      <p class="rating-count">(1721)</p>
+                    </div>
+                    <div class="astrologer-details-section">
+                      <div class="detail-item txtsize">5 minutes for $1</div>
+                      <div class="detail-item2 txtsize">$2.99/min</div>
+                    </div>
+                    <div class="astrologer-actions">
+                      <!-- <button class="call-button">Call</button> -->
+                       <div class="call-button txtsize">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Call</p>
+                       </div>
+                      <!-- Icon -->
+                      <!-- <button class="chat-button">Chat</button> -->
+                      <div class="call-button2 txtsize ">
+                        <i class="fa-solid fa-message"></i>
+                        <p class="white">Chat</p>
+                       </div>
+                    </div>
+                  </div>
+                  <div class="astrologer-container">
+                    <div class="astrologer-image-section">
+                      <img src="assets/images/astrologer1.jpg" alt="astrologer-image" class="astrologer-image"/>
+                      <div class="availability-section">
+                        <!-- <div class="availability-dot"></div> -->
+                        <img src="assets/images/onlinePhone1.gif" alt="Online" class="onlineImage"/>
+                        <p class="availability-text">Available</p>
+                      </div>
+                    </div>
+                    <div class="astrologer-info">
+                      <h1 class="astrologer-name txtsize">Cosmic Advice</h1>
+                      <p class="greeting txtsize"><span><i class="fa-solid fa-graduation-cap"></i> 35 Years</span></p>
+                      <p class="greeting txtsize">
+                        Vedic | Career | Empath
+                      </p>
+                      <p class="greeting txtsize">
+                        Hindi , English
                       </p>
                     </div>
-                  </div>
-                  <div class="astrologer-info">
-                    <h1 class="astrologer-name txtsize">Cosmic Advice</h1>
-                    <p class="greeting  txtsize"><span><i class="fa-solid fa-graduation-cap"></i> 35 Years</span></p>
-                  <p class="greeting txtsize">
-                    Vedic | Career | Empath
-                  </p>
-                  <p class="greeting txtsize">
-                    Hindi , English
-                  </p>
-                  </div>
-                  <div class="astrologer-rating txtsize">
-                    <p class="rating-score">4.7</p>
-                    <div class="rating-stars"><span class="star size2"></span>
-                      <span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span></div>
-                    <p class="rating-count">(1721)</p>
-                  </div>
-                  <div class="astrologer-details-section">
-                    <div class="detail-item txtsize">5 minutes for $1</div>
-                    <div class="detail-item2 txtsize">$2.99/min</div>
-                  </div>
-                  <div class="astrologer-actions">
-                    <!-- <button class="call-button">Call</button> -->
-                     <div class="call-button txtsize">
-                      <i class="fa-solid fa-phone"></i>
-                      <p>Call</p>
-                     </div>
-                    <!-- Icon -->
-                    <!-- <button class="chat-button">Chat</button> -->
-                    <div class="call-button2 txtsize ">
-                      <i class="fa-solid fa-message"></i>
-                      <p class="white">Chat</p>
-                     </div>
-                  </div>
-                </div>
-                <div class="astrologer-container">
-                  <div class="astrologer-image-section">
-                    <img src="assets/images/astrologer1.jpg" alt="astrologer-image" class="astrologer-image"/>
-                    <div class="availability-section">
-                      <!-- <div class="availability-dot"></div> -->
-                      <img src="assets/images/onlinePhone1.gif" alt="Online" class="onlineImage"/>
-                      <p class="availability-text">Available</p>
+                    <div class="astrologer-rating txtsize">
+                      <p class="rating-score">4.7</p>
+                      <div class="rating-stars"><span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span></div>
+                      <p class="rating-count">(1721)</p>
+                    </div>
+                    <div class="astrologer-details-section">
+                      <div class="detail-item txtsize">5 minutes for $1</div>
+                      <div class="detail-item2 txtsize">$2.99/min</div>
+                    </div>
+                    <div class="astrologer-actions">
+                      <!-- <button class="call-button">Call</button> -->
+                       <div class="call-button txtsize">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Call</p>
+                       </div>
+                      <!-- Icon -->
+                      <!-- <button class="chat-button">Chat</button> -->
+                      <div class="call-button2 txtsize">
+                        <i class="fa-solid fa-message"></i>
+                        <p  class="white">Chat</p>
+                       </div>
                     </div>
                   </div>
-                  <div class="astrologer-info">
-                    <h1 class="astrologer-name txtsize">Cosmic Advice</h1>
-                    <p class="greeting txtsize"><span><i class="fa-solid fa-graduation-cap"></i> 35 Years</span></p>
+                  <div class="astrologer-container">
+                    <div class="astrologer-image-section">
+                      <img src="assets/images/astrologer1.jpg" alt="astrologer-image" class="astrologer-image"/>
+                      <div class="availability-section">
+                        <!-- <div class="availability-dot"></div> -->
+                        <img src="assets/images/onlinePhone1.gif" alt="Online" class="onlineImage"/>
+                        <p class="availability-text">Available</p>
+                      </div>
+                    </div>
+                    <div class="astrologer-info">
+                      <h1 class="astrologer-name txtsize">Cosmic Advice</h1>
+                      <p class="greeting txtsize"><span><i class="fa-solid fa-graduation-cap"></i> 35 Years</span></p>
                     <p class="greeting txtsize">
                       Vedic | Career | Empath
                     </p>
                     <p class="greeting txtsize">
                       Hindi , English
                     </p>
-                  </div>
-                  <div class="astrologer-rating txtsize">
-                    <p class="rating-score">4.7</p>
-                    <div class="rating-stars"><span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span></div>
-                    <p class="rating-count">(1721)</p>
-                  </div>
-                  <div class="astrologer-details-section">
-                    <div class="detail-item txtsize">5 minutes for $1</div>
-                    <div class="detail-item2 txtsize">$2.99/min</div>
-                  </div>
-                  <div class="astrologer-actions">
-                    <!-- <button class="call-button">Call</button> -->
-                     <div class="call-button txtsize">
-                      <i class="fa-solid fa-phone"></i>
-                      <p>Call</p>
-                     </div>
-                    <!-- Icon -->
-                    <!-- <button class="chat-button">Chat</button> -->
-                    <div class="call-button2 txtsize">
-                      <i class="fa-solid fa-message"></i>
-                      <p  class="white">Chat</p>
-                     </div>
-                  </div>
-                </div>
-                <div class="astrologer-container">
-                  <div class="astrologer-image-section">
-                    <img src="assets/images/astrologer1.jpg" alt="astrologer-image" class="astrologer-image"/>
-                    <div class="availability-section">
-                      <!-- <div class="availability-dot"></div> -->
-                      <img src="assets/images/onlinePhone1.gif" alt="Online" class="onlineImage"/>
-                      <p class="availability-text">Available</p>
+                    </div>
+                    <div class="astrologer-rating txtsize">
+                      <p class="rating-score">4.7</p>
+                      <div class="rating-stars"><span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span></div>
+                      <p class="rating-count">(1721)</p>
+                    </div>
+                    <div class="astrologer-details-section">
+                      <div class="detail-item txtsize">5 minutes for $1</div>
+                      <div class="detail-item2 txtsize">$2.99/min</div>
+                    </div>
+                    <div class="astrologer-actions">
+                      <!-- <button class="call-button">Call</button> -->
+                       <div class="call-button txtsize">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Call</p>
+                       </div>
+                      <!-- Icon -->
+                      <!-- <button class="chat-button">Chat</button> -->
+                      <div class="call-button2 txtsize">
+                        <i class="fa-solid fa-message"></i>
+                        <p  class="white">Chat</p>
+                       </div>
                     </div>
                   </div>
-                  <div class="astrologer-info">
-                    <h1 class="astrologer-name txtsize">Cosmic Advice</h1>
-                    <p class="greeting txtsize"><span><i class="fa-solid fa-graduation-cap"></i> 35 Years</span></p>
-                  <p class="greeting txtsize">
-                    Vedic | Career | Empath
-                  </p>
-                  <p class="greeting txtsize">
-                    Hindi , English
-                  </p>
-                  </div>
-                  <div class="astrologer-rating txtsize">
-                    <p class="rating-score">4.7</p>
-                    <div class="rating-stars"><span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span></div>
-                    <p class="rating-count">(1721)</p>
-                  </div>
-                  <div class="astrologer-details-section">
-                    <div class="detail-item txtsize">5 minutes for $1</div>
-                    <div class="detail-item2 txtsize">$2.99/min</div>
-                  </div>
-                  <div class="astrologer-actions">
-                    <!-- <button class="call-button">Call</button> -->
-                     <div class="call-button txtsize">
-                      <i class="fa-solid fa-phone"></i>
-                      <p>Call</p>
-                     </div>
-                    <!-- Icon -->
-                    <!-- <button class="chat-button">Chat</button> -->
-                    <div class="call-button2 txtsize">
-                      <i class="fa-solid fa-message"></i>
-                      <p  class="white">Chat</p>
-                     </div>
-                  </div>
-                </div>
-               
-                
-              </section>
-              <section class="astrologer-details">
-        
-                <div class="astrologer-container">
-                  <div class="astrologer-image-section">
-                    <img src="assets/images/astrologer1.jpg" alt="astrologer-image" class="astrologer-image"/>
-                    <div class="availability-section">
-                      <!-- <div class="availability-dot"></div> -->
-                      <img src="assets/images/onlinePhone1.gif" alt="Online" class="onlineImage"/>
-                      <p class="availability-text">Available</p>
+                 
+                  
+                </section>
+                <section class="astrologer-details">
+          
+                  <div class="astrologer-container">
+                    <div class="astrologer-image-section">
+                      <img src="assets/images/astrologer1.jpg" alt="astrologer-image" class="astrologer-image"/>
+                      <div class="availability-section">
+                        <!-- <div class="availability-dot"></div> -->
+                        <img src="assets/images/onlinePhone1.gif" alt="Online" class="onlineImage"/>
+                        <p class="availability-text">Available</p>
+                      </div>
                     </div>
-                  </div>
-                  <div class="astrologer-info">
-                    <h1 class="astrologer-name txtsize">Cosmic Advice</h1>
-                    <p class="greeting txtsize"><span><i class="fa-solid fa-graduation-cap"></i> 35 Years</span></p>
-                  <p class="greeting txtsize">
-                    Vedic | Career | Empath
-                  </p>
-                  <p class="greeting txtsize">
-                    Hindi , English
-                  </p>
-                  </div>
-                  <div class="astrologer-rating txtsize">
-                    <p class="rating-score">4.7</p>
-                    <div class="rating-stars"><span class="star size2"></span>
-                      <span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span></div>
-                    <p class="rating-count">(1721)</p>
-                  </div>
-                  <div class="astrologer-details-section">
-                    <div class="detail-item txtsize">5 minutes for $1</div>
-                    <div class="detail-item2 txtsize">$2.99/min</div>
-                  </div>
-                  <div class="astrologer-actions">
-                    <!-- <button class="call-button">Call</button> -->
-                     <div class="call-button txtsize">
-                      <i class="fa-solid fa-phone"></i>
-                      <p>Call</p>
-                     </div>
-                    <!-- Icon -->
-                    <!-- <button class="chat-button">Chat</button> -->
-                    <div class="call-button2 txtsize">
-                      <i class="fa-solid fa-message"></i>
-                      <p  class="white">Chat</p>
-                     </div>
-                  </div>
-                </div>
-                <div class="astrologer-container">
-                  <div class="astrologer-image-section">
-                    <img src="assets/images/astrologer1.jpg" alt="astrologer-image" class="astrologer-image"/>
-                    <div class="availability-section">
-                      <!-- <div class="availability-dot"></div> -->
-                      <img src="assets/images/onlinePhone1.gif" alt="Online" class="onlineImage"/>
-                      <p class="availability-text">Available</p>
-                    </div>
-                  </div>
-                  <div class="astrologer-info">
-                    <h1 class="astrologer-name txtsize">Cosmic Advice</h1>
-                    <p class="greeting txtsize"><span><i class="fa-solid fa-graduation-cap"></i> 35 Years</span></p>
+                    <div class="astrologer-info">
+                      <h1 class="astrologer-name txtsize">Cosmic Advice</h1>
+                      <p class="greeting txtsize"><span><i class="fa-solid fa-graduation-cap"></i> 35 Years</span></p>
                     <p class="greeting txtsize">
                       Vedic | Career | Empath
                     </p>
                     <p class="greeting txtsize">
                       Hindi , English
                     </p>
-                  </div>
-                  <div class="astrologer-rating txtsize">
-                    <p class="rating-score">4.7</p>
-                    <div class="rating-stars"><span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span></div>
-                    <p class="rating-count">(1721)</p>
-                  </div>
-                  <div class="astrologer-details-section">
-                    <div class="detail-item txtsize">5 minutes for $1</div>
-                    <div class="detail-item2 txtsize">$2.99/min</div>
-                  </div>
-                  <div class="astrologer-actions">
-                    <!-- <button class="call-button">Call</button> -->
-                     <div class="call-button txtsize">
-                      <i class="fa-solid fa-phone"></i>
-                      <p>Call</p>
-                     </div>
-                    <!-- Icon -->
-                    <!-- <button class="chat-button">Chat</button> -->
-                    <div class="call-button2 txtsize">
-                      <i class="fa-solid fa-message"></i>
-                      <p  class="white">Chat</p>
-                     </div>
-                  </div>
-                </div>
-                <div class="astrologer-container">
-                  <div class="astrologer-image-section">
-                    <img src="assets/images/astrologer1.jpg" alt="astrologer-image" class="astrologer-image"/>
-                    <div class="availability-section">
-                      <!-- <div class="availability-dot"></div> -->
-                      <img src="assets/images/onlinePhone1.gif" alt="Online" class="onlineImage"/>
-                      <p class="availability-text">Available</p>
+                    </div>
+                    <div class="astrologer-rating txtsize">
+                      <p class="rating-score">4.7</p>
+                      <div class="rating-stars"><span class="star size2"></span>
+                        <span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span></div>
+                      <p class="rating-count">(1721)</p>
+                    </div>
+                    <div class="astrologer-details-section">
+                      <div class="detail-item txtsize">5 minutes for $1</div>
+                      <div class="detail-item2 txtsize">$2.99/min</div>
+                    </div>
+                    <div class="astrologer-actions">
+                      <!-- <button class="call-button">Call</button> -->
+                       <div class="call-button txtsize">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Call</p>
+                       </div>
+                      <!-- Icon -->
+                      <!-- <button class="chat-button">Chat</button> -->
+                      <div class="call-button2 txtsize">
+                        <i class="fa-solid fa-message"></i>
+                        <p  class="white">Chat</p>
+                       </div>
                     </div>
                   </div>
-                  <div class="astrologer-info">
-                    <h1 class="astrologer-name txtsize">Cosmic Advice</h1>
-                    <p class="greeting txtsize"><span><i class="fa-solid fa-graduation-cap"></i> 35 Years</span></p>
-                  <p class="greeting txtsize">
-                    Vedic | Career | Empath
-                  </p>
-                  <p class="greeting txtsize">
-                    Hindi , English
-                  </p>
-                  </div>
-                  <div class="astrologer-rating txtsize">
-                    <p class="rating-score">4.7</p>
-                    <div class="rating-stars"><span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span></div>
-                    <p class="rating-count">(1721)</p>
-                  </div>
-                  <div class="astrologer-details-section">
-                    <div class="detail-item txtsize">5 minutes for $1</div>
-                    <div class="detail-item2 txtsize">$2.99/min</div>
-                  </div>
-                  <div class="astrologer-actions">
-                    <!-- <button class="call-button">Call</button> -->
-                     <div class="call-button txtsize">
-                      <i class="fa-solid fa-phone"></i>
-                      <p>Call</p>
-                     </div>
-                    <!-- Icon -->
-                    <!-- <button class="chat-button">Chat</button> -->
-                    <div class="call-button2 txtsize">
-                      <i class="fa-solid fa-message"></i>
-                      <p  class="white">Chat</p>
-                     </div>
-                  </div>
-                </div>
-               
-                
-              </section>
-              <section class="astrologer-details">
-        
-                <div class="astrologer-container">
-                  <div class="astrologer-image-section">
-                    <img src="assets/images/astrologer1.jpg" alt="astrologer-image" class="astrologer-image"/>
-                    <div class="availability-section">
-                      <!-- <div class="availability-dot"></div> -->
-                      <img src="assets/images/onlinePhone1.gif" alt="Online" class="onlineImage"/>
-                      <p class="availability-text">Available</p>
+                  <div class="astrologer-container">
+                    <div class="astrologer-image-section">
+                      <img src="assets/images/astrologer1.jpg" alt="astrologer-image" class="astrologer-image"/>
+                      <div class="availability-section">
+                        <!-- <div class="availability-dot"></div> -->
+                        <img src="assets/images/onlinePhone1.gif" alt="Online" class="onlineImage"/>
+                        <p class="availability-text">Available</p>
+                      </div>
+                    </div>
+                    <div class="astrologer-info">
+                      <h1 class="astrologer-name txtsize">Cosmic Advice</h1>
+                      <p class="greeting txtsize"><span><i class="fa-solid fa-graduation-cap"></i> 35 Years</span></p>
+                      <p class="greeting txtsize">
+                        Vedic | Career | Empath
+                      </p>
+                      <p class="greeting txtsize">
+                        Hindi , English
+                      </p>
+                    </div>
+                    <div class="astrologer-rating txtsize">
+                      <p class="rating-score">4.7</p>
+                      <div class="rating-stars"><span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span></div>
+                      <p class="rating-count">(1721)</p>
+                    </div>
+                    <div class="astrologer-details-section">
+                      <div class="detail-item txtsize">5 minutes for $1</div>
+                      <div class="detail-item2 txtsize">$2.99/min</div>
+                    </div>
+                    <div class="astrologer-actions">
+                      <!-- <button class="call-button">Call</button> -->
+                       <div class="call-button txtsize">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Call</p>
+                       </div>
+                      <!-- Icon -->
+                      <!-- <button class="chat-button">Chat</button> -->
+                      <div class="call-button2 txtsize">
+                        <i class="fa-solid fa-message"></i>
+                        <p  class="white">Chat</p>
+                       </div>
                     </div>
                   </div>
-                  <div class="astrologer-info">
-                    <h1 class="astrologer-name txtsize">Cosmic Advice</h1>
-                    <p class="greeting txtsize"><span><i class="fa-solid fa-graduation-cap"></i> 35 Years</span></p>
+                  <div class="astrologer-container">
+                    <div class="astrologer-image-section">
+                      <img src="assets/images/astrologer1.jpg" alt="astrologer-image" class="astrologer-image"/>
+                      <div class="availability-section">
+                        <!-- <div class="availability-dot"></div> -->
+                        <img src="assets/images/onlinePhone1.gif" alt="Online" class="onlineImage"/>
+                        <p class="availability-text">Available</p>
+                      </div>
+                    </div>
+                    <div class="astrologer-info">
+                      <h1 class="astrologer-name txtsize">Cosmic Advice</h1>
+                      <p class="greeting txtsize"><span><i class="fa-solid fa-graduation-cap"></i> 35 Years</span></p>
                     <p class="greeting txtsize">
                       Vedic | Career | Empath
                     </p>
                     <p class="greeting txtsize">
                       Hindi , English
                     </p>
-                  </div>
-                  <div class="astrologer-rating txtsize">
-                    <p class="rating-score">4.7</p>
-                    <div class="rating-stars"><span class="star size2"></span>
-                      <span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span></div>
-                    <p class="rating-count">(1721)</p>
-                  </div>
-                  <div class="astrologer-details-section">
-                    <div class="detail-item txtsize">5 minutes for $1</div>
-                    <div class="detail-item2 txtsize">$2.99/min</div>
-                  </div>
-                  <div class="astrologer-actions">
-                    <!-- <button class="call-button">Call</button> -->
-                     <div class="call-button txtsize">
-                      <i class="fa-solid fa-phone"></i>
-                      <p>Call</p>
-                     </div>
-                    <!-- Icon -->
-                    <!-- <button class="chat-button">Chat</button> -->
-                    <div class="call-button2 txtsize">
-                      <i class="fa-solid fa-message"></i>
-                      <p  class="white">Chat</p>
-                     </div>
-                  </div>
-                </div>
-                <div class="astrologer-container">
-                  <div class="astrologer-image-section">
-                    <img src="assets/images/astrologer1.jpg" alt="astrologer-image" class="astrologer-image"/>
-                    <div class="availability-section">
-                      <!-- <div class="availability-dot"></div> -->
-                      <img src="assets/images/onlinePhone1.gif" alt="Online" class="onlineImage"/>
-                      <p class="availability-text">Available</p>
+                    </div>
+                    <div class="astrologer-rating txtsize">
+                      <p class="rating-score">4.7</p>
+                      <div class="rating-stars"><span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span></div>
+                      <p class="rating-count">(1721)</p>
+                    </div>
+                    <div class="astrologer-details-section">
+                      <div class="detail-item txtsize">5 minutes for $1</div>
+                      <div class="detail-item2 txtsize">$2.99/min</div>
+                    </div>
+                    <div class="astrologer-actions">
+                      <!-- <button class="call-button">Call</button> -->
+                       <div class="call-button txtsize">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Call</p>
+                       </div>
+                      <!-- Icon -->
+                      <!-- <button class="chat-button">Chat</button> -->
+                      <div class="call-button2 txtsize">
+                        <i class="fa-solid fa-message"></i>
+                        <p  class="white">Chat</p>
+                       </div>
                     </div>
                   </div>
-                  <div class="astrologer-info">
-                    <h1 class="astrologer-name txtsize">Cosmic Advice</h1>
-                    <p class="greeting txtsize"><span><i class="fa-solid fa-graduation-cap"></i> 35 Years</span></p>
-                    <p class="greeting txtsize">
-                      Vedic | Career | Empath
-                    </p>
-                    <p class="greeting txtsize">
-                      Hindi , English
-                    </p>
-                  </div>
-                  <div class="astrologer-rating txtsize">
-                    <p class="rating-score">4.7</p>
-                    <div class="rating-stars"><span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span></div>
-                    <p class="rating-count">(1721)</p>
-                  </div>
-                  <div class="astrologer-details-section">
-                    <div class="detail-item txtsize">5 minutes for $1</div>
-                    <div class="detail-item2 txtsize">$2.99/min</div>
-                  </div>
-                  <div class="astrologer-actions">
-                    <!-- <button class="call-button">Call</button> -->
-                     <div class="call-button txtsize">
-                      <i class="fa-solid fa-phone"></i>
-                      <p>Call</p>
-                     </div>
-                    <!-- Icon -->
-                    <!-- <button class="chat-button">Chat</button> -->
-                    <div class="call-button2 txtsize">
-                      <i class="fa-solid fa-message"></i>
-                      <p  class="white">Chat</p>
-                     </div>
-                  </div>
-                </div>
-                <div class="astrologer-container">
-                  <div class="astrologer-image-section">
-                    <img src="assets/images/astrologer1.jpg" alt="astrologer-image" class="astrologer-image"/>
-                    <div class="availability-section">
-                      <!-- <div class="availability-dot"></div> -->
-                      <img src="assets/images/onlinePhone1.gif" alt="Online" class="onlineImage"/>
-                      <p class="availability-text">Available</p>
+                 
+                  
+                </section>
+                <section class="astrologer-details">
+          
+                  <div class="astrologer-container">
+                    <div class="astrologer-image-section">
+                      <img src="assets/images/astrologer1.jpg" alt="astrologer-image" class="astrologer-image"/>
+                      <div class="availability-section">
+                        <!-- <div class="availability-dot"></div> -->
+                        <img src="assets/images/onlinePhone1.gif" alt="Online" class="onlineImage"/>
+                        <p class="availability-text">Available</p>
+                      </div>
+                    </div>
+                    <div class="astrologer-info">
+                      <h1 class="astrologer-name txtsize">Cosmic Advice</h1>
+                      <p class="greeting txtsize"><span><i class="fa-solid fa-graduation-cap"></i> 35 Years</span></p>
+                      <p class="greeting txtsize">
+                        Vedic | Career | Empath
+                      </p>
+                      <p class="greeting txtsize">
+                        Hindi , English
+                      </p>
+                    </div>
+                    <div class="astrologer-rating txtsize">
+                      <p class="rating-score">4.7</p>
+                      <div class="rating-stars"><span class="star size2"></span>
+                        <span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span></div>
+                      <p class="rating-count">(1721)</p>
+                    </div>
+                    <div class="astrologer-details-section">
+                      <div class="detail-item txtsize">5 minutes for $1</div>
+                      <div class="detail-item2 txtsize">$2.99/min</div>
+                    </div>
+                    <div class="astrologer-actions">
+                      <!-- <button class="call-button">Call</button> -->
+                       <div class="call-button txtsize">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Call</p>
+                       </div>
+                      <!-- Icon -->
+                      <!-- <button class="chat-button">Chat</button> -->
+                      <div class="call-button2 txtsize">
+                        <i class="fa-solid fa-message"></i>
+                        <p  class="white">Chat</p>
+                       </div>
                     </div>
                   </div>
-                  <div class="astrologer-info">
-                    <h1 class="astrologer-name txtsize">Cosmic Advice</h1>
-                    <p class="greeting txtsize"><span><i class="fa-solid fa-graduation-cap"></i> 35 Years</span></p>
-                    <p class="greeting txtsize">
-                      Vedic | Career | Empath
-                    </p>
-                    <p class="greeting txtsize">
-                      Hindi , English
-                    </p>
+                  <div class="astrologer-container">
+                    <div class="astrologer-image-section">
+                      <img src="assets/images/astrologer1.jpg" alt="astrologer-image" class="astrologer-image"/>
+                      <div class="availability-section">
+                        <!-- <div class="availability-dot"></div> -->
+                        <img src="assets/images/onlinePhone1.gif" alt="Online" class="onlineImage"/>
+                        <p class="availability-text">Available</p>
+                      </div>
+                    </div>
+                    <div class="astrologer-info">
+                      <h1 class="astrologer-name txtsize">Cosmic Advice</h1>
+                      <p class="greeting txtsize"><span><i class="fa-solid fa-graduation-cap"></i> 35 Years</span></p>
+                      <p class="greeting txtsize">
+                        Vedic | Career | Empath
+                      </p>
+                      <p class="greeting txtsize">
+                        Hindi , English
+                      </p>
+                    </div>
+                    <div class="astrologer-rating txtsize">
+                      <p class="rating-score">4.7</p>
+                      <div class="rating-stars"><span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span></div>
+                      <p class="rating-count">(1721)</p>
+                    </div>
+                    <div class="astrologer-details-section">
+                      <div class="detail-item txtsize">5 minutes for $1</div>
+                      <div class="detail-item2 txtsize">$2.99/min</div>
+                    </div>
+                    <div class="astrologer-actions">
+                      <!-- <button class="call-button">Call</button> -->
+                       <div class="call-button txtsize">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Call</p>
+                       </div>
+                      <!-- Icon -->
+                      <!-- <button class="chat-button">Chat</button> -->
+                      <div class="call-button2 txtsize">
+                        <i class="fa-solid fa-message"></i>
+                        <p  class="white">Chat</p>
+                       </div>
+                    </div>
                   </div>
-                  <div class="astrologer-rating txtsize">
-                    <p class="rating-score">4.7</p>
-                    <div class="rating-stars"><span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span>
-                      <span class="star size2">&#9733;</span></div>
-                    <p class="rating-count">(1721)</p>
+                  <div class="astrologer-container">
+                    <div class="astrologer-image-section">
+                      <img src="assets/images/astrologer1.jpg" alt="astrologer-image" class="astrologer-image"/>
+                      <div class="availability-section">
+                        <!-- <div class="availability-dot"></div> -->
+                        <img src="assets/images/onlinePhone1.gif" alt="Online" class="onlineImage"/>
+                        <p class="availability-text">Available</p>
+                      </div>
+                    </div>
+                    <div class="astrologer-info">
+                      <h1 class="astrologer-name txtsize">Cosmic Advice</h1>
+                      <p class="greeting txtsize"><span><i class="fa-solid fa-graduation-cap"></i> 35 Years</span></p>
+                      <p class="greeting txtsize">
+                        Vedic | Career | Empath
+                      </p>
+                      <p class="greeting txtsize">
+                        Hindi , English
+                      </p>
+                    </div>
+                    <div class="astrologer-rating txtsize">
+                      <p class="rating-score">4.7</p>
+                      <div class="rating-stars"><span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span>
+                        <span class="star size2">&#9733;</span></div>
+                      <p class="rating-count">(1721)</p>
+                    </div>
+                    <div class="astrologer-details-section">
+                      <div class="detail-item txtsize">5 minutes for $1</div>
+                      <div class="detail-item2 txtsize">$2.99/min</div>
+                    </div>
+                    <div class="astrologer-actions">
+                      <!-- <button class="call-button">Call</button> -->
+                       <div class="call-button txtsize">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Call</p>
+                       </div>
+                      <!-- Icon -->
+                      <!-- <button class="chat-button">Chat</button> -->
+                      <div class="call-button2 txtsize">
+                        <i class="fa-solid fa-message"></i>
+                        <p  class="white">Chat</p>
+                       </div>
+                    </div>
                   </div>
-                  <div class="astrologer-details-section">
-                    <div class="detail-item txtsize">5 minutes for $1</div>
-                    <div class="detail-item2 txtsize">$2.99/min</div>
-                  </div>
-                  <div class="astrologer-actions">
-                    <!-- <button class="call-button">Call</button> -->
-                     <div class="call-button txtsize">
-                      <i class="fa-solid fa-phone"></i>
-                      <p>Call</p>
-                     </div>
-                    <!-- Icon -->
-                    <!-- <button class="chat-button">Chat</button> -->
-                    <div class="call-button2 txtsize">
-                      <i class="fa-solid fa-message"></i>
-                      <p  class="white">Chat</p>
-                     </div>
-                  </div>
-                </div>
-               
-                
-              </section>
-        </div>
-    </section>
-    <section class="advisorsPopUp">
-     
-      <div class="chatPopUp" id="myDetails">
-        <h1 class="shareDetails size1">Share Details  <span class="closePopUp size2">X</span></h1>
-        <p class="sharePara txtsize">to share it with your astrologer, for saving time on consultation</p>
-        <div class="details_tab">
-          <ul style="display: flex; justify-content: center; gap: 10px;">
-            <li><button style="background-color: #286851; color: #fff; " >My Details</button></li>
-            <li><button id="partnerBtn">Partner Details</button></li>
-          </ul>
-        </div>
-        <input type="text" placeholder="Name" class="dob_input size2" />
-        <div class="gender_selection">
-          <input type="radio" name="gender" id="male" value="male">
-          <label for="male">Male</label>
-          <input type="radio" name="gender" id="female" value="female">
-          <label for="female">Female</label>
-        </div>
-        <h2 class="dob size2">Date of Birth</h2>
-        <div class="dob_selection">
-          <select name="date" id="date" class="dob_input size2">
-            <option value="" selected hidden>Date</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-          </select>
-          <select name="month" id="month" class="dob_input size2">
-            <option value="" selected hidden>Month</option>
-            <option value="jan">Jan</option>
-            <option value="feb">Feb</option>
-            <option value="mar">Mar</option>
-            <option value="april">April</option>
-          </select>
-          <select name="year" id="year" class="dob_input size2">
-            <option value="" selected hidden>Year</option>
-            <option value="2024">2024</option>
-            <option value="2023">2023</option>
-            <option value="2022">2022</option>
-            <option value="2021">2021</option>
-          </select>
-        </div>
-        <h2 class="tBirth size2">Time of Birth</h2>
-        <div class="time_selection">
-          <select name="hour" id="hour" class="dob_input size2">
-            <option value="" selected hidden>Hour</option>
-            <option value="01">01</option>
-            <option value="02">02</option>
-            <option value="03">03</option>
-            <option value="04">04</option>
-          </select>
-          <select name="min" id="min" class="dob_input size2">
-            <option value="" selected hidden>Min</option>
-            <option value="00">00</option>
-            <option value="01">01</option>
-            <option value="02">02</option>
-            <option value="03">03</option>
-          </select>
-          <select name="am" id="am" class="dob_input size2">
-            <option value="am" selected>AM</option>
-            <option value="pm">PM</option>
-          </select>
-        </div>
-        <div class="time_unsure">
-          <p>Not Sure Of Time</p>
-          <label class="switch">
-            <input type="checkbox">
-            <span class="slider"></span>
-          </label>
-        </div>
-        <input type="text" placeholder="search" class="dob_input size2" />
+                 
+                  
+                </section>
+          </div>
+      </section>
+      <section class="advisorsPopUp">
        
-        <input type="checkbox" placeholder="Add Partner Details For Matching" id="partner"/>
-        <label for="partner" class="partnerLable">Add Partner Details For Matching</label>
-        <button>Submit</button>
-      </div>
-      <div class="chatPopUp" id="partnerDetails">
-        <h1 class="shareDetails size1">Share Details  <span class="closePopUp size2">X</span></h1>
-        <p class="sharePara txtsize">to share it with your astrologer, for saving time on consultation</p>
-        <div class="details_tab">
-          <ul style="display: flex; justify-content: center; gap: 10px;">
-            <li><button  id="myDetailsBtn">My Details</button></li>
-            <li><button style="background-color: #286851; color: #fff; ">Partner Details</button></li>
-          </ul>
+        <div class="chatPopUp" id="myDetails">
+          <h1 class="shareDetails size1">Share Details  <span class="closePopUp size2">X</span></h1>
+          <p class="sharePara txtsize">to share it with your astrologer, for saving time on consultation</p>
+          <div class="details_tab">
+            <ul style="display: flex; justify-content: center; gap: 10px;">
+              <li><button style="background-color: #286851; color: #fff; " >My Details</button></li>
+              <li><button id="partnerBtn">Partner Details</button></li>
+            </ul>
+          </div>
+          <input type="text" placeholder="Name" class="dob_input size2" />
+          <div class="gender_selection">
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+          </div>
+          <h2 class="dob size2">Date of Birth</h2>
+          <div class="dob_selection">
+            <select name="date" id="date" class="dob_input size2">
+              <option value="" selected hidden>Date</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <select name="month" id="month" class="dob_input size2">
+              <option value="" selected hidden>Month</option>
+              <option value="jan">Jan</option>
+              <option value="feb">Feb</option>
+              <option value="mar">Mar</option>
+              <option value="april">April</option>
+            </select>
+            <select name="year" id="year" class="dob_input size2">
+              <option value="" selected hidden>Year</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+            </select>
+          </div>
+          <h2 class="tBirth size2">Time of Birth</h2>
+          <div class="time_selection">
+            <select name="hour" id="hour" class="dob_input size2">
+              <option value="" selected hidden>Hour</option>
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+            </select>
+            <select name="min" id="min" class="dob_input size2">
+              <option value="" selected hidden>Min</option>
+              <option value="00">00</option>
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+            </select>
+            <select name="am" id="am" class="dob_input size2">
+              <option value="am" selected>AM</option>
+              <option value="pm">PM</option>
+            </select>
+          </div>
+          <div class="time_unsure">
+            <p>Not Sure Of Time</p>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
+          <input type="text" placeholder="search" class="dob_input size2" />
+         
+          <input type="checkbox" placeholder="Add Partner Details For Matching" id="partner"/>
+          <label for="partner" class="partnerLable">Add Partner Details For Matching</label>
+          <button>Submit</button>
         </div>
-        <input type="text" placeholder="Partner's Name" class="dob_input size2" />
-        <div class="gender_selection">
-          <input type="radio" name="gender" id="male" value="male">
-          <label for="male">Male</label>
-          <input type="radio" name="gender" id="female" value="female">
-          <label for="female">Female</label>
+        <div class="chatPopUp" id="partnerDetails">
+          <h1 class="shareDetails size1">Share Details  <span class="closePopUp size2">X</span></h1>
+          <p class="sharePara txtsize">to share it with your astrologer, for saving time on consultation</p>
+          <div class="details_tab">
+            <ul style="display: flex; justify-content: center; gap: 10px;">
+              <li><button  id="myDetailsBtn">My Details</button></li>
+              <li><button style="background-color: #286851; color: #fff; ">Partner Details</button></li>
+            </ul>
+          </div>
+          <input type="text" placeholder="Partner's Name" class="dob_input size2" />
+          <div class="gender_selection">
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+          </div>
+          <h2 class="dob size2">Date of Birth</h2>
+          <div class="dob_selection">
+            <select name="date" id="date" class="dob_input size2">
+              <option value="" selected hidden>Date</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+            <select name="month" id="month" class="dob_input size2">
+              <option value="" selected hidden>Month</option>
+              <option value="jan">Jan</option>
+              <option value="feb">Feb</option>
+              <option value="mar">Mar</option>
+              <option value="april">April</option>
+            </select>
+            <select name="year" id="year" class="dob_input size2">
+              <option value="" selected hidden>Year</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+            </select>
+          </div>
+          <h2 class="tBirth size2">Time of Birth</h2>
+          <div class="time_selection">
+            <select name="hour" id="hour" class="dob_input size2">
+              <option value="" selected hidden>Hour</option>
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+              <option value="04">04</option>
+            </select>
+            <select name="min" id="min" class="dob_input size2">
+              <option value="" selected hidden>Min</option>
+              <option value="00">00</option>
+              <option value="01">01</option>
+              <option value="02">02</option>
+              <option value="03">03</option>
+            </select>
+            <select name="am" id="am" class="dob_input size2">
+              <option value="am" selected>AM</option>
+              <option value="pm">PM</option>
+            </select>
+          </div>
+          <div class="time_unsure">
+            <p>Not Sure Of Time</p>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
+          <input type="text" placeholder="search" class="dob_input size2" />
+         
+          <!-- <input type="checkbox" placeholder="Add Partner Details For Matching" id="partner"/>
+          <label for="partner" class="partnerLable">Add Partner Details For Matching</label> -->
+          <button>Submit</button>
         </div>
-        <h2 class="dob size2">Date of Birth</h2>
-        <div class="dob_selection">
-          <select name="date" id="date" class="dob_input size2">
-            <option value="" selected hidden>Date</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-          </select>
-          <select name="month" id="month" class="dob_input size2">
-            <option value="" selected hidden>Month</option>
-            <option value="jan">Jan</option>
-            <option value="feb">Feb</option>
-            <option value="mar">Mar</option>
-            <option value="april">April</option>
-          </select>
-          <select name="year" id="year" class="dob_input size2">
-            <option value="" selected hidden>Year</option>
-            <option value="2024">2024</option>
-            <option value="2023">2023</option>
-            <option value="2022">2022</option>
-            <option value="2021">2021</option>
-          </select>
-        </div>
-        <h2 class="tBirth size2">Time of Birth</h2>
-        <div class="time_selection">
-          <select name="hour" id="hour" class="dob_input size2">
-            <option value="" selected hidden>Hour</option>
-            <option value="01">01</option>
-            <option value="02">02</option>
-            <option value="03">03</option>
-            <option value="04">04</option>
-          </select>
-          <select name="min" id="min" class="dob_input size2">
-            <option value="" selected hidden>Min</option>
-            <option value="00">00</option>
-            <option value="01">01</option>
-            <option value="02">02</option>
-            <option value="03">03</option>
-          </select>
-          <select name="am" id="am" class="dob_input size2">
-            <option value="am" selected>AM</option>
-            <option value="pm">PM</option>
-          </select>
-        </div>
-        <div class="time_unsure">
-          <p>Not Sure Of Time</p>
-          <label class="switch">
-            <input type="checkbox">
-            <span class="slider"></span>
-          </label>
-        </div>
-        <input type="text" placeholder="search" class="dob_input size2" />
-       
-        <!-- <input type="checkbox" placeholder="Add Partner Details For Matching" id="partner"/>
-        <label for="partner" class="partnerLable">Add Partner Details For Matching</label> -->
-        <button>Submit</button>
-      </div>
-    </section>
+      </section>
+  </section>
     <script>
       // Select all elements with the class 'call-button'
       const buttons = document.querySelectorAll('.call-button');
