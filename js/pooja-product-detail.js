@@ -1,28 +1,67 @@
+
+
+function toggleLoginMenu() {
+  const userProfileContainer = document.querySelector('.user-profile-container');
+  
+  if (window.innerWidth <= 768) { // Adjust this breakpoint as needed
+      userProfileContainer.classList.toggle('active'); // Toggle active class
+  }
+}
+function toggleMenu() {
+  const navbar = document.querySelector('.navbarMobile');
+  
+  // Check if the screen width is less than or equal to 768px (mobile view)
+  if (window.innerWidth <= 768) {
+    navbar.classList.toggle('active');
+  }
+}
+
+document.querySelectorAll('.dropbtn').forEach((ele) => {
+  ele.addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent default anchor behavior
+    const dropdown = this.parentElement; // Get parent dropdown
+    dropdown.classList.toggle('active'); // Toggle active class
+
+    // Get the icon directly related to the clicked dropdown
+    const icon = dropdown.querySelector('.dropdown-icon'); // Adjust to get the specific icon
+    if (dropdown.classList.contains('active')) {
+      icon.innerHTML = '&#9650;'; // Up arrow
+    } else {
+      icon.innerHTML = '&#9660;'; // Down arrow
+    }
+  });
+});
+
+
+
 // window.onload = function() {
 //     window.location.hash = 'div2';
 //   };
   // Set the countdown duration to 4 hours (in milliseconds)
-  let countdownDuration = 4 * 60 * 60 * 1000;
-  
-  // Update the countdown timer every second
-  let countdownTimer = setInterval(function() {
-      // Calculate the remaining time
-      let hours = Math.floor(countdownDuration / (1000 * 60 * 60));
-      let minutes = Math.floor((countdownDuration % (1000 * 60 * 60)) / (1000 * 60));
-      let seconds = Math.floor((countdownDuration % (1000 * 60)) / 1000);
-  
-      // Display the result in the timer span
-      document.getElementById("timer").textContent = `${hours}h : ${minutes}m : ${seconds}s`;
-  
-      // Decrease the countdown time by 1 second (1000ms)
-      countdownDuration -= 1000;
-  
-      // If the countdown is finished, clear the interval and display "Time's up"
-      if (countdownDuration < 0) {
-          clearInterval(countdownTimer);
-          document.getElementById("timer").textContent = "Time's up!";
-      }
-  }, 1000);
+  // Set the countdown duration to 4 hours (in milliseconds)
+let countdownDuration = 4 * 60 * 60 * 1000;
+
+// Update the countdown timer every second
+let countdownTimer = setInterval(function() {
+    // Calculate the remaining time
+    let hours = Math.floor(countdownDuration / (1000 * 60 * 60));
+    let minutes = Math.floor((countdownDuration % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((countdownDuration % (1000 * 60)) / 1000);
+
+    // Display the result in the timer span
+    document.getElementById("timer").textContent = `${hours}h : ${minutes}m : ${seconds}s`;
+    document.getElementById("timermobile").textContent = `${hours}h : ${minutes}m : ${seconds}s`;
+
+    // Decrease the countdown time by 1 second (1000ms)
+    countdownDuration -= 1000;
+
+    // If the countdown is finished, clear the interval and display "Time's up"
+    if (countdownDuration < 0) {
+        clearInterval(countdownTimer);
+        document.getElementById("timer").textContent = "Time's up!";
+         document.getElementById("timermobile").textContent = "Time's up!";
+    }
+}, 1000);
   
   
   
