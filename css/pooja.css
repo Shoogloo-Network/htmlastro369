@@ -251,6 +251,7 @@ a.active-pooja{
     }
     .card-pooja h3{
         font-size: 14px !important;
+        margin-bottom: 5px;
     }
     /* Adjust the cards to fit better on smaller screens */
     .cards-pooja {
@@ -261,6 +262,7 @@ a.active-pooja{
     .card-pooja {
         width: 100%;
         padding: 2px;
+        padding-bottom: 5px;
     }
 
     /* Adjust button width for mobile view */
@@ -278,6 +280,7 @@ a.active-pooja{
     /* Ensure images fit well on mobile */
     .card-pooja img {
         height: auto;
+        margin-bottom: 5px;
     }
 
     /* Adjust featured section margins */
