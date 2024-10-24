@@ -162,32 +162,7 @@ button:hover {
     /* transform: translateY(-2px); */
 }
 
-/* Footer */
-.footer {
-    margin-top: 40px;
-    text-align: center;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-}
 
-.footer a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #3498db;
-    transition: color 0.3s;
-}
-
-.footer a:hover {
-    color: #2980b9;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .checkout-container {
-        flex-direction: column;
-    }
-}
 
 .payment-section p{
   margin-top: 2px;
@@ -294,8 +269,10 @@ button:hover {
     width: 100% !important; /* Ensure inputs are full width */
     box-sizing: border-box !important; /* Include padding/border in width */
 }
+
 .hidden {
-  display: none;
+  display: none ;
+ 
 }
 
 .mobileBtnContact{
@@ -303,6 +280,52 @@ button:hover {
 }
 .mobileBtnAddress{
   display: none;
+}
+.gendercheckout{
+    display: flex;
+                      align-items: center;
+                      margin-top: 6px;
+                      border: 1px solid #ccc;
+                      padding: 9px;
+                      border-radius: 5px;
+}
+.malecheckout{
+    width: 15% !important;
+}
+.femalecheckout{
+    margin-left: 15px; width: 15% !important
+}
+.telephonecheckout{
+    display: flex; align-items: center
+}
+.countrycodecheckout{
+    padding: 12px;
+                        border-right: none;
+                        background-color: #f1f1f1;
+                        border: 1px solid #ccc;
+                        border-right: none;
+                        border-top-left-radius: 4px;
+                        border-bottom-left-radius: 4px;
+                        
+}
+.phcheckout{
+    border: 1px solid #ccc !important;
+ border-left: none !important;
+                        border-top-left-radius: 0 !important;
+                        border-bottom-left-radius: 0 !important;
+
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .countrycodecheckout{
+        font-size: 14px;
+    }
+    .checkout-container {
+        flex-direction: column;
+    }
+    
+   
 }
 @media (min-width: 769px) { /* Adjust the width as needed */
   .hidden {
@@ -312,38 +335,32 @@ button:hover {
 
 /* Mobile Styles */
 @media only screen and (max-width: 768px) {
-
-header , .mega-menu{
+ .menu-section , .mega-menu {
   display: none;
 }
 
-
+.checkout-form{
+    width: 100%;
+    padding: 7px;
+    /* display: none; */
+  }
 .addressToggle{
   display: none;
+  padding: 0 !important;
 }
 label[for="razorpay"]{
   font-size: 18px;
 }
 
-.checkout-form{
-  width: 100%;
-  padding: 7px;
-  /* display: none; */
-}
-.container{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 0;
-}
+
+
 
 
 
 .user-details-section{
-  display: flex;
-  align-content: center;
-  flex-wrap: wrap;
-  height: 100vh;
+  padding: 10px;
+  width: auto;
+  justify-content: center;
 }
 .form-group {
   margin-bottom: 10px;

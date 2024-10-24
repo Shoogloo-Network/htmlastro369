@@ -770,7 +770,7 @@ hr {
 
 /* Styles for Mobile View */
 @media (max-width: 768px) {
-    .navbarMobile  {
+    .navbarMobile{
         display: none;
         flex-direction: column;
         /* align-items: center; */
