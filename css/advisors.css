@@ -804,11 +804,15 @@ input:checked + .slider:before {
   
   }
   .closePopUp{
-    left: 108px;
+   position: static;
+   
     font-size: 14px !important;
   }
   .chatPopUp h1{
     font-size: 20px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .chatPopUp p{
     font-size: 12px !important;
