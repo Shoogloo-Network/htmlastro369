@@ -220,12 +220,15 @@ a.active-pooja{
 
 
   @media (max-width: 768px) {
+    .buttons-pooja .btn-pooja{
+        width: 164px;
+    }
     .buttons-pooja {
         display: block;
     }
     /* Adjusting the container layout to stack sidebar and main content vertically */
     .container-pooja {
-        flex-direction: column;
+        /* flex-direction: column; */
         max-width: 100%;
     }
 
@@ -241,9 +244,14 @@ a.active-pooja{
     /* Making main content full width */
     .main-content-pooja {
         width: 100%;
-        padding: 15px;
+        padding: 0px;
     }
-
+    .card-pooja p{
+        font-size: 14px !important;
+    }
+    .card-pooja h3{
+        font-size: 14px !important;
+    }
     /* Adjust the cards to fit better on smaller screens */
     .cards-pooja {
         gap: 20px;
@@ -252,6 +260,7 @@ a.active-pooja{
     /* Ensure the cards take full width on smaller screens */
     .card-pooja {
         width: 100%;
+        padding: 2px;
     }
 
     /* Adjust button width for mobile view */
