@@ -734,7 +734,8 @@ h1 {
   
 .card{
   
-  padding: 40px !important;
+  flex: 0 0 calc(50% - 20px); /* 3 items per row, considering gap */
+  box-sizing: border-box; /* Ensure padding and borders are included */
 }
   .bellSection{
     max-width: 100%;
