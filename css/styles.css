@@ -1031,13 +1031,17 @@ input[type="tel"]:focus {
     overflow: hidden;
     text-overflow: ellipsis;
     font-family: Tenor Sans, sans-serif;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 24px;
     letter-spacing: .15px;
     text-transform: capitalize;
 
 }
-
+.astrologer-info-mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
 .astrologer-container-mobile  {
     display: flex;
     flex-direction: column;
