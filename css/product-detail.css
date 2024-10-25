@@ -266,6 +266,7 @@
     .product-container {
         flex-direction: column;
        margin-top: 0;
+       padding: 2px;
     }
 
     .product-gallery {

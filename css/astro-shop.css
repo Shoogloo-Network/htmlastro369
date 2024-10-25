@@ -395,11 +395,12 @@ button.next {
         overflow-x: scroll;
     }
     .mart-filter div:last-child li{
-font-size: 8px;
-padding: 10px 6px;
+font-size: 12px;
+padding: 10px 4px;
     }
     .mart-filter div:last-child {
         gap: 5px;
+     
         
     }
     .mart-filter{
