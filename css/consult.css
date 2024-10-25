@@ -820,7 +820,7 @@ button.next-health {
     }
 
     .consultation-card, .health-concern-card {
-        min-width: 50%;
+        min-width: 100%;
         margin: 0;
     }
     button.prev-health {
