@@ -1067,8 +1067,9 @@ input[type="tel"]:focus {
 @media only screen and (max-width: 600px) {
    
     .bannerSection {
-        height: 400px; /* Adjusted height for smaller screens */
-        margin-bottom: 20px;
+        height:400px; /* Adjusted height for smaller screens */
+        justify-content: start;
+        margin-bottom: 10px;
     }
 
      .cardBannerDiv1, .cardBannerDiv2 {
@@ -1079,12 +1080,13 @@ input[type="tel"]:focus {
     .cardBannerDiv{
         flex-direction: column;
         gap: 20px; 
+        justify-content: start;
       
     }
 
     /* Hero Image Slider */
     .hero-image-slider-container {
-        height: 250px; /* Adjust slider height */
+        height: 30%; /* Adjust slider height */
     }
 
     .image-slider-hero-image {
@@ -1092,7 +1094,7 @@ input[type="tel"]:focus {
     }
 
     .image-slider-dots {
-        bottom: 20px; /* Adjust position of dots */
+       display: none; /* Adjust position of dots */
     }
 
     /* Image height adjustment */
@@ -1104,7 +1106,7 @@ input[type="tel"]:focus {
     .bannerText {
         width: 80%; /* Make text container full width */
         margin-left: 0; /* Center the text */
-        align-items: center;
+       
         text-align: center; /* Center-align text */
     }
 
@@ -1116,9 +1118,7 @@ input[type="tel"]:focus {
         width: 50%; /* Adjust button width */
         font-size: 14px; /* Reduce button text size */
     }
-    .bannerSection {
-        height: 554px; /* Further adjust height */
-    }
+    
     .cardBannerDiv{
         width: 100%;
         padding: 10px;
@@ -1132,8 +1132,7 @@ input[type="tel"]:focus {
     }
     /* Hero Image Slider */
     .hero-image-slider-container {
-        height: 400px; /* Smaller height for very small screens */
-        margin-bottom: 10px;
+       
     }
 
     .hero-image-container > img {
@@ -1143,6 +1142,9 @@ input[type="tel"]:focus {
     .bannerText {
         width: 100%; /* Maximize text area width */
         gap: 2px;
+        align-items: start;
+        padding: 8px;
+        justify-content: flex-start;
     }
 
     .bannerText h1 {
