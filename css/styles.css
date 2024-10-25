@@ -1021,6 +1021,8 @@ input[type="tel"]:focus {
 .availability-text-mobile  {
     color: #616161;
     margin-left: 12px;
+    font-size: 11px;
+    font-weight: bold;
 }
 
 .astrologer-name-mobile  {
@@ -1268,11 +1270,20 @@ input[type="tel"]:focus {
 
 /* For small mobile devices (max-width: 600px) */
 @media only screen and (max-width: 600px) {
+    .astrologer-actions-image-online-mobile{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
     .astrologer-details-mobile{
         display: flex;
     }
      .astrologer-details{
         display: none !important;
+    }
+    .astrologer-actions-online-mobile{
+        display: flex;
+        flex-direction: row !important;
     }
 
     .bannerSection {
