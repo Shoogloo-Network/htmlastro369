@@ -1086,7 +1086,7 @@ input[type="tel"]:focus {
 
     /* Hero Image Slider */
     .hero-image-slider-container {
-        height: 30%; /* Adjust slider height */
+        height: auto; /* Adjust slider height */
     }
 
     .image-slider-hero-image {
@@ -1169,6 +1169,7 @@ input[type="tel"]:focus {
 
     .consultation-cards {
         flex-wrap: wrap;
+        gap: 0;
     }
 
     .card-image-consultation {
