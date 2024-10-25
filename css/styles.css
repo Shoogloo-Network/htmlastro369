@@ -1037,11 +1037,7 @@ input[type="tel"]:focus {
     text-transform: capitalize;
 
 }
-.astrologer-info-mobile{
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
+
 .astrologer-container-mobile  {
     display: flex;
     flex-direction: column;
@@ -1288,6 +1284,10 @@ input[type="tel"]:focus {
     .astrologer-actions-online-mobile{
         display: flex;
         flex-direction: row !important;
+    }
+    .astrologer-name-mobile{
+        
+        font-size: 13px !important;
     }
 
     .bannerSection {
