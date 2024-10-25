@@ -799,8 +799,12 @@ button.next-health {
         gap: 15px; */
     }
 
-    .consult-button, .specialities-button, .specialities-button-health {
+    .consult-button {
         width: 100%;
+    }
+    .specialities-button, .specialities-button-health {
+        width: 135px;
+        font-size: 12px !important;
     }
 
     .features-list {
@@ -816,10 +820,12 @@ button.next-health {
     }
 
     .consultation-card, .health-concern-card {
-        min-width: 100%;
+        min-width: 50%;
         margin: 0;
     }
-
+    button.prev-health {
+        display: none;
+    }
     .how-it-works-content {
        
         gap: 0px;

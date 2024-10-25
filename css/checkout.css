@@ -375,6 +375,7 @@ label[for="razorpay"]{
 }
 .delivery-section{
   /* display: none; */
+  margin-top: 0;
 }
 .mobileBtnAddress{
   display: block;

@@ -372,11 +372,28 @@ button.next {
 
 
 
+/* Style for the selected filter option */
+.active {
+    background-color: #007BFF !important;
+    color: white; /* Optional: makes text more readable */
+}
 
-
+.filter-option-div{
+    display: flex;
+    flex-direction: row !important;
+}
 
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
+    button.prev{
+        display: none;
+    }
+    button.next{
+        display: none;
+    }
+    .card-carousel {
+        overflow-x: scroll;
+    }
     .mart-filter div:last-child li{
 font-size: 8px;
 padding: 10px 6px;

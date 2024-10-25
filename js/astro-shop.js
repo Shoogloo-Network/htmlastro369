@@ -1,5 +1,6 @@
 
-// 
+
+
 // Astro-Product-List
 document.querySelectorAll(".astro-shop-product-list").forEach(function(element,index){
   if(index===0){
@@ -65,6 +66,18 @@ function prevSlide() {
   }
 }
 
+// Select all filter options
+const filterOptions = document.querySelectorAll('.filter-option');
+
+filterOptions.forEach(option => {
+    option.addEventListener('click', function() {
+        // Remove 'active' class from all options
+        filterOptions.forEach(opt => opt.classList.remove('active'));
+        
+        // Add 'active' class to the clicked option
+        option.classList.add('active');
+    });
+});
 
 
 //for clicking on user icon

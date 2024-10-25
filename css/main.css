@@ -885,7 +885,15 @@ hr {
 .user-profile-container.active .login-hover {
     display: block; /* Show when active */
 }
-
+button.prev{
+    display: none;
+}
+button.next{
+    display: none;
+}
+.card-carousel {
+    overflow-x: scroll;
+}
 }
 /* Desktop view (769px and above) */
 @media (min-width: 769px) {
