@@ -708,45 +708,6 @@ input[type="tel"]:focus {
 }
 
 
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-}
-
-.footer-section {
-
-    background-color: #28328c;
-    padding: 20px !important;
-    color: #fff;
-
-
-}
-
-
-.footer-list {
-    list-style: none;
-    line-height: 20px;
-    font-weight: 400;
-    text-decoration: none;
-    padding-bottom: 20px;
-}
-
-.footer-item {
-    padding-bottom: 5px;
-}
-
-.footer-bottom {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.footer-copyright {
-    font-weight: 700;
-    color: #b8bbd9;
-}
 
 .google-banner {
     height: 280px;
