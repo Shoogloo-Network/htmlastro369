@@ -730,7 +730,12 @@ h1 {
     padding: 0;
     margin: 0;
   }
-  
+  .date-time-section{
+    flex-direction: column;
+  }
+  .attributes-card{
+    justify-content: center;
+  }
   
 .card{
   
