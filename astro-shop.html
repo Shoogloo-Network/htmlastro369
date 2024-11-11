@@ -23,6 +23,7 @@
   <body>
    <div class="desktop">
     <header class="container-fullWidth headerRes">
+      
       <nav class="navbar container">
         <a href="index.html" class="anchorLogo"
           ><img
@@ -30,6 +31,8 @@
             alt="Astro369 logo"
             class="logoImage"
         /></a>
+        <!-- Replace the current hamburger icon with this -->
+
         <div class="logo-container">
           <ul>
             <li><a href="advisors.html">All Advisors</a></li>
@@ -138,6 +141,128 @@
         </div>
       </div>
     </header>
+    <header class="container-fullWidth headerResMobile">
+      <div class="logo-container">
+        <div class="menu-container">
+          <div class="menu-container-parent">
+            
+            <div class="security-container">
+             
+              <select name="Security" id="Security" class="txtsize">
+                <option value="" disabled selected hidden>ENG</option>
+                <option value="DataSecurity" selected>ENG</option>
+                <option value="Help">HINDI</option>
+              </select>
+            </div>
+            
+            <div class="user-profile-container">
+              <div class="user-profile" onclick="toggleLoginMenu()">
+                  <i class="fa-solid fa-user user-profile"></i>
+              </div>
+              <div class="login-hover">
+                  <ul>
+                      <li id="login">
+                          <a href="loginSignup.html">Login/Signup</a>
+                      </li>
+                      <hr />
+                      <li ><a href="./advisorProfile.html">Profile</a></li>
+                      <hr />
+                      <li><a href="./my-order.html">My Orders</a></li>
+                      <hr />
+                      <li ><a href="./loginSignup.html">Signout</a></li>
+                  </ul>
+              </div>
+          </div>
+          </div>
+        </div>
+        <div class="headerMobileCombine">
+          <a href="./index.html" class="anchorLogo">
+            <img src="assets/images/astro369logo1.png" alt="Logo" class="logoImage">
+          </a>
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            &#9776; <!-- Hamburger icon (You can use FontAwesome or an image if preferred) -->
+          </div>
+        </div>
+        
+        
+      </div>
+      <nav class="navbar navbarMobile container">
+       
+        <!-- Replace the current hamburger icon with this -->
+
+        <div class="logo-container">
+          <ul>
+           
+            <li class="dropdown">
+              <a href="advisors.html" class="dropbtn">All Advisors <span class="icon dropdown-icon" >&#9660;</span></a>
+              <ul class="dropdown-content">
+                  <li><a href="#">Name 1</a></li>
+                  <li><a href="#">Name 2</a></li>
+                  <li><a href="#">Name 3</a></li>
+                  <li style="border-bottom: none !important;"><a href="#" >Name 4</a></li>
+              </ul>
+          </li>
+            <li><a href="consult.html">Video Consult</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Predictions <span class="icon dropdown-icon" >&#9660;</span></a>
+              <ul class="dropdown-content">
+                  <li><a href="#">Daily Prediction</a></li>
+                  <li><a href="#">Weekly Prediction</a></li>
+                  <li><a href="#">Monthly Prediction</a></li>
+                  <li style="border-bottom: none !important;"><a href="#" >Yearly Prediction</a></li>
+              </ul>
+          </li>
+          
+            <li><a href="astro-shop.html">Mart</a></li>
+            <li><a href="pooja.html">Pooja</a></li>
+          </ul>
+        </div>
+       
+      </nav>
+
+      <hr />
+      <div class="pop-up-register" id="pop-up">
+        <div class="pop-up-register-form-div">
+          <h2>Enter Your Details</h2>
+          <div>
+            <label for="email">Email Id</label>
+            <input
+              type="email"
+              id="email"
+              value="email"
+              placeholder="Enter Your Email Id"
+            />
+            <label for="phone"> Phone Number</label>
+            <input
+              type="phone"
+              id="phone"
+              value="phone"
+              placeholder="+91 6399889123"
+            />
+            <div class="otp-container">
+              <h4>Enter OTP</h4>
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+            </div>
+          </div>
+          <button id="continue-sign-up-btn">Continue</button>
+          <form class="terms-and-resend">
+            <div class="terms-container">
+              <input type="checkbox" id="terms" name="terms" checked />
+              <label for="terms" class="txtsize"
+                >I agree to the <a href="#">terms and conditions</a></label
+              >
+            </div>
+            <div class="resend-otp txtsize"><a>Resend OTP ?</a></div>
+          </form>
+        </div>
+      </div>
+    </header>
+
     <section class="menu-section container">
       <div class="container">
         <div class="mega-menu">
@@ -279,8 +404,9 @@
         </div>
       </div>
     </section>
-    <!-- Menu Section Ends Here -->
 
+    <!-- Menu Section Ends Here -->
+<div class="hspace"></div>
     <!-- 3 Level Drop Down -->
      <section class="astro-shop-product container">
         <div class="astro-shop-product-list">
@@ -340,7 +466,7 @@
     <div>
       <div class="filter-option-div">
         <li class="filter-option ">Sort By</li>
-        <li class="filter-option active">Popularity</li>
+        <li class="filter-option activeFilter">Popularity</li>
         <li class="filter-option">Low to High</li>
         <li class="filter-option">High to Low</li>
         <li class="filter-option">Newest First</li>

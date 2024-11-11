@@ -373,7 +373,7 @@ button.next {
 
 
 /* Style for the selected filter option */
-.active {
+.activeFilter {
     background-color: #007BFF !important;
     color: white; /* Optional: makes text more readable */
 }
