@@ -628,7 +628,7 @@ input:checked + .slider:before {
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 10px;
   z-index: 1000;
 }
 
@@ -645,12 +645,12 @@ input:checked + .slider:before {
 
 .chatPopUp h1 {
 
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .chatPopUp p {
 
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .details_tab ul {
