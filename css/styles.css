@@ -736,6 +736,7 @@ input[type="tel"]:focus {
     display: flex;
     gap: 23px;
     margin: 20px auto;
+    justify-content: center;
 }
 
 .astrologer-image-section {
@@ -1481,3 +1482,6 @@ input[type="tel"]:focus {
                         width: 100%;
                     }
 }
+
+
+.astrologer-details 
