@@ -32,12 +32,12 @@ document.querySelectorAll('.dropbtn').forEach((ele) => {
 });
 
 let currentSlide = 0;
-const totalSlides = 9; // Total number of cards
+const totalSlides = 8; // Total number of cards
 const cardsToShow = 4; // Number of cards to show at a time
 const cardContainer = document.querySelector(".card-container");
 
 function updateSlide() {
-  const offset = -currentSlide * (100 / cardsToShow);
+  const offset = -currentSlide*5 ;
   cardContainer.style.transform = `translateX(${offset}%)`;
 }
 
