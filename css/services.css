@@ -87,7 +87,7 @@
 }
 
 .divStyle {
-    background-image: url(../assets/images/bannerServices.jpg);
+    background-image: url(../assets/images/serviceBanner.png);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -222,5 +222,18 @@
     outline: none;
     justify-content: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
