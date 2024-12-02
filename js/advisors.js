@@ -66,11 +66,11 @@ document.querySelectorAll(".call-button2").forEach(function(element){
 
 // For advisor profile
 
-document.querySelectorAll(".astrologer-image").forEach(function(element) {
-  element.addEventListener("click", function() {
-    window.location.href = "./advisorProfile.html";
-  });
-});
+// document.querySelectorAll(".astrologer-image").forEach(function(element) {
+//   element.addEventListener("click", function() {
+//     window.location.href = "./advisorProfile.html";
+//   });
+// });
 
 function toggleLoginMenu() {
   const userProfileContainer = document.querySelector('.user-profile-container');
