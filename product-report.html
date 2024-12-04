@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astro Shop</title>
+    <link rel="stylesheet" href="css/astro-shop.css" />
+    <link rel="stylesheet" href="css/product-detail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- <link rel="stylesheet" href="css/mobileview.css"/> -->
+    <script
+      src="https://kit.fontawesome.com/c521e77e5d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+   
+   <section class="desktop">
+    <header class="container-fullWidth headerRes">
+      
+      <nav class="navbar container">
+        <a href="index.html" class="anchorLogo"
+          ><img
+            src="assets/images/astro369logo1.png"
+            alt="Astro369 logo"
+            class="logoImage"
+        /></a>
+        <!-- Replace the current hamburger icon with this -->
+
+        <div class="logo-container">
+          <ul>
+            <li><a href="advisors.html">All Advisors</a></li>
+            <li><a href="consult.html">Video Consult</a></li>
+            <li class="mega-hover"><a href="#">Predictions</a></li>
+            <li><a href="astro-shop.html">Mart</a></li>
+            <li><a href="pooja.html">Pooja</a></li>
+          </ul>
+        </div>
+        <div class="menu-container">
+          <div class="menu-container-parent">
+            <!-- <div class="corporates-container">
+              <span class="New">New</span>
+              <div class="corporates-dropdown">
+                <select name="Corporates" id="Corporates" class="txtsize">
+                  <option value="" disabled selected hidden>
+                    For Corporates
+                  </option>
+                  <option value="Health">Health & Wellness Plans</option>
+                  <option value="Insurance">Group Insurance</option>
+                </select>
+              </div>
+            </div> -->
+            <!-- <div class="providers-container">
+              <select name="Providers" id="Providers" class="txtsize">
+                <option value="" disabled selected hidden>
+                  For Providers
+                </option>
+                <option value="Prime">Astro369 Prime</option>
+                <option value="Software">Software For Providers</option>
+                <option value="Practice">List Your Practice For Free</option>
+                <option value="ABDM">ABDM</option>
+              </select>
+            </div> -->
+            <div class="security-container">
+              <!-- <label for="Security">Security & Help</label> -->
+              <select name="Security" id="Security" class="txtsize">
+                <option value="" disabled selected hidden>ENG</option>
+                <option value="DataSecurity" selected>ENG</option>
+                <option value="Help">HINDI</option>
+              </select>
+            </div>
+            <!-- <button class="login-signup-button">Login/Signup</button> -->
+            <div>
+              <div class="user-profile">
+                <i class="fa-solid fa-user user-profile"></i>
+              </div>
+              <div class="login-hover">
+                <ul>
+                  <li id="login">
+                    <a href="loginSignup.html">Login/Signup</a>
+                  </li>
+                  <hr />
+                  <li>Profile</li>
+
+                  <hr />
+                  <li><a href="./my-order.html">My Orders</a></li>
+                  <hr/>
+                  <li>Signout</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <hr />
+      <div class="pop-up-register" id="pop-up">
+        <div class="pop-up-register-form-div">
+          <h2>Enter Your Details</h2>
+          <div>
+            <label for="email">Email Id</label>
+            <input
+              type="email"
+              id="email"
+              value="email"
+              placeholder="Enter Your Email Id"
+            />
+            <label for="phone"> Phone Number</label>
+            <input
+              type="phone"
+              id="phone"
+              value="phone"
+              placeholder="+91 6399889123"
+            />
+            <div class="otp-container">
+              <h4>Enter OTP</h4>
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+            </div>
+          </div>
+          <button id="continue-sign-up-btn">Continue</button>
+          <form class="terms-and-resend">
+            <div class="terms-container">
+              <input type="checkbox" id="terms" name="terms" checked />
+              <label for="terms" class="txtsize"
+                >I agree to the <a href="#">terms and conditions</a></label
+              >
+            </div>
+            <div class="resend-otp txtsize"><a>Resend OTP ?</a></div>
+          </form>
+        </div>
+      </div>
+    </header>
+    <header class="container-fullWidth headerResMobile">
+      <div class="logo-container">
+        <div class="menu-container">
+          <div class="menu-container-parent">
+            
+            <div class="security-container">
+             
+              <select name="Security" id="Security" class="txtsize">
+                <option value="" disabled selected hidden>ENG</option>
+                <option value="DataSecurity" selected>ENG</option>
+                <option value="Help">HINDI</option>
+              </select>
+            </div>
+            
+            <div class="user-profile-container">
+              <div class="user-profile" onclick="toggleLoginMenu()">
+                  <i class="fa-solid fa-user user-profile"></i>
+              </div>
+              <div class="login-hover">
+                  <ul>
+                      <li id="login">
+                          <a href="loginSignup.html">Login/Signup</a>
+                      </li>
+                      <hr />
+                      <li ><a href="./advisorProfile.html">Profile</a></li>
+                      <hr />
+                      <li><a href="./my-order.html">My Orders</a></li>
+                      <hr />
+                      <li ><a href="./loginSignup.html">Signout</a></li>
+                  </ul>
+              </div>
+          </div>
+          </div>
+        </div>
+        <div class="headerMobileCombine">
+          <a href="./index.html" class="anchorLogo">
+            <img src="assets/images/astro369logo1.png" alt="Logo" class="logoImage">
+          </a>
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            &#9776; <!-- Hamburger icon (You can use FontAwesome or an image if preferred) -->
+          </div>
+        </div>
+        
+        
+      </div>
+      <nav class="navbar navbarMobile container">
+       
+        <!-- Replace the current hamburger icon with this -->
+
+        <div class="logo-container">
+          <ul>
+           
+            <li class="dropdown">
+              <a href="advisors.html" class="dropbtn">All Advisors <span class="icon dropdown-icon" >&#9660;</span></a>
+              <ul class="dropdown-content">
+                  <li><a href="#">Name 1</a></li>
+                  <li><a href="#">Name 2</a></li>
+                  <li><a href="#">Name 3</a></li>
+                  <li style="border-bottom: none !important;"><a href="#" >Name 4</a></li>
+              </ul>
+          </li>
+            <li><a href="consult.html">Video Consult</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn">Predictions <span class="icon dropdown-icon" >&#9660;</span></a>
+              <ul class="dropdown-content">
+                  <li><a href="#">Daily Prediction</a></li>
+                  <li><a href="#">Weekly Prediction</a></li>
+                  <li><a href="#">Monthly Prediction</a></li>
+                  <li style="border-bottom: none !important;"><a href="#" >Yearly Prediction</a></li>
+              </ul>
+          </li>
+          
+            <li><a href="astro-shop.html">Mart</a></li>
+            <li><a href="pooja.html">Pooja</a></li>
+          </ul>
+        </div>
+       
+      </nav>
+
+      <hr />
+      <div class="pop-up-register" id="pop-up">
+        <div class="pop-up-register-form-div">
+          <h2>Enter Your Details</h2>
+          <div>
+            <label for="email">Email Id</label>
+            <input
+              type="email"
+              id="email"
+              value="email"
+              placeholder="Enter Your Email Id"
+            />
+            <label for="phone"> Phone Number</label>
+            <input
+              type="phone"
+              id="phone"
+              value="phone"
+              placeholder="+91 6399889123"
+            />
+            <div class="otp-container">
+              <h4>Enter OTP</h4>
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+              <input type="text" maxlength="1" class="otp-input size2" />
+            </div>
+          </div>
+          <button id="continue-sign-up-btn">Continue</button>
+          <form class="terms-and-resend">
+            <div class="terms-container">
+              <input type="checkbox" id="terms" name="terms" checked />
+              <label for="terms" class="txtsize"
+                >I agree to the <a href="#">terms and conditions</a></label
+              >
+            </div>
+            <div class="resend-otp txtsize"><a>Resend OTP ?</a></div>
+          </form>
+        </div>
+      </div>
+    </header>
+
+    <section class="menu-section container">
+      <div class="container">
+        <div class="mega-menu">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="mega-menu-column">
+                <h3>Category 1</h3>
+                <!-- <hr /> -->
+                <!-- <ul>
+                  <li><a href="#">Item 1</a></li>
+                  <li><a href="#">Item 2</a></li>
+                  <li><a href="#">Item 3</a></li>
+                </ul> -->
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="mega-menu-column">
+                <h3>Category 2</h3>
+                <!-- <hr /> -->
+                <!-- <ul>
+                  <li><a href="#">Item 4</a></li>
+                  <li><a href="#">Item 5</a></li>
+                  <li><a href="#">Item 6</a></li>
+                </ul> -->
+
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="mega-menu-column">
+                <h3>Category 3</h3>
+                <!-- <hr /> -->
+                <!-- <ul>
+                  <li><a href="#">Item 7</a></li>
+                  <li><a href="#">Item 8</a></li>
+                  <li><a href="#">Item 9</a></li>
+                </ul> -->
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-md-3">
+              <div class="mega-menu-column">
+                <h3>Category 4</h3>
+                <hr />
+                <ul>
+                  <li><a href="#">Item 10</a></li>
+                  <li><a href="#">Item 11</a></li>
+                  <li><a href="#">Item 12</a></li>
+                </ul>
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+                <div class="submenu-header-div">
+                  <img
+                    src="assets/images/period-problems-v1.jpg"
+                    alt="submenuimage1"
+                    class="submenu-header-image"
+                  />
+                  <div class="submenu-header-right-div">
+                    <h4>Period doubts</h4>
+                    <p>Private online consultations with doctors</p>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Menu Section Ends Here -->
+
+    <section class="container">
+      <!-- Product Container -->
+      <!-- Product Container -->
+      <!-- Product Container -->
+      <div id="timerContainermobile" class="txtsize mobileTimer">
+        <p class="white">Time Remaining : </p><span id="timermobile"></span>
+    </div>
+      <div class="product-container">
+        <!-- Product Image Gallery -->
+        <div class="product-gallery">
+          <!-- Thumbnails -->
+         
+          <!-- Main Image -->
+          <img
+            src="./assets/images/bracelate.jpg"
+            alt="Main Product Image"
+            class="main-image"
+            id="mainProductImage"
+          />
+        </div>
+
+        <!-- Product Details -->
+        <div class="product-details">
+          <div id="timerContainer" class="txtsize desktopTimer">
+            <p class="white">Time Remaining : </p><span id="timer"></span>
+        </div>
+        
+        
+          <div class="product-title size1">Crystal Beads Bracelets Dainty Charm</div>
+
+          <div class="product-rating">
+            <div>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <span class="rating-count">1,234 ratings</span>
+          </div>
+
+          <div class="product-price size1">$49.99 <span class="size2">$99.99</span></div>
+          <div class="product-discount size2">50% Off</div>
+
+          <!-- Offers Section -->
+          <div class="product-offers">
+            <h4 class="size2">Available Offers</h4>
+            <div class="offer-item txtsize">
+              <i class="fas fa-tag"></i> Bank Offer: 10% off on credit cards
+            </div>
+            <div class="offer-item txtsize">
+              <i class="fas fa-tag"></i> Cashback: Get 5% cashback on your next
+              order
+            </div>
+            <div class="offer-item txtsize">
+              <i class="fas fa-tag"></i> Special Price: Extra 15% off on orders
+              above $100
+            </div>
+          </div>
+
+          
+
+          <!-- Add to Cart & Buy Now Buttons -->
+          <div class="product-actions">
+            <!-- <button class="btn btn-cart size2">Add to Cart</button> -->
+            <button class="btn btn-buy btn-cart size1" style="width: 30%; padding: 10px;">Buy Now</button>
+          </div>
+
+
+        </div>
+        
+      </div>
+                <!-- Product Description (Accordion) -->
+<div class="product-description">
+    <h3 class="accordion-header size2">Product Details 
+        <span class="accordion-icon">
+            <i class="fa-solid fa-plus"></i>
+        </span>
+    </h3>
+    <div class="accordion-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut efficitur sapien. Proin condimentum enim quis quam viverra, nec cursus arcu aliquet. Nulla facilisi. Donec vulputate urna non nisi pretium, vel suscipit ipsum convallis.</p>
+    </div>
+</div>
+    </section>
+</section>
+    <script src="js/product-detail.js"></script>
+  </body>
+</html>
