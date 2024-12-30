@@ -1,0 +1,24 @@
+.astrologer-consult-section {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.astrologer-container-consult {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 22px;
+    border-radius: 4px;
+    margin: 20px 0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .14), 0 2px 1px rgba(0, 0, 0, .12), 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.youtubeVideo {
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    border-radius: 20px;
+    /* Adjust the value as needed */
+}
