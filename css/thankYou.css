@@ -1,0 +1,76 @@
+.thankYoupageMainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+  gap: 10px;
+  padding-top: 50px;
+}
+
+.thankYoupageMainContainer > h1{
+    font-size: 32px;
+}
+.thankYouContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+
+.orderSummaryThankYou {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 25px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+   
+}
+
+
+.orderSummaryThankYou h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    border-bottom: 1px solid #3498db;
+    padding-bottom: 10px;
+}
+
+
+
+.thankYouPaidMainDiv{
+    text-align: center;
+   
+}
+
+.thankYouPaid{
+    float: right;
+    /* border: 2px solid #3498db; */
+    width: fit-content;
+  background-color: aquamarine;
+  padding: 5px ;
+  border-radius: 8px;
+  /* margin-bottom: 10px; */
+}
+
+.thankYouPaid>p{
+    color: rgb(24, 51, 24);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+.goToHomePage{
+    text-align: center;
+    width: 15%;
+   margin-left: auto;
+}
+
+
+.order-item-list-thank-you{
+    width: 25%;
+    float: right;
+    font-size: 14px;
+}
