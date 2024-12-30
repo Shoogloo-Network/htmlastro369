@@ -53,12 +53,14 @@
   padding: 5px ;
   border-radius: 8px;
   /* margin-bottom: 10px; */
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .thankYouPaid>p{
     color: rgb(24, 51, 24);
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 
@@ -73,4 +75,18 @@
     width: 25%;
     float: right;
     font-size: 14px;
+}
+
+
+.red{
+    background-color: rgb(255, 32, 32);
+   
+}
+
+.red>p{
+    color: #fff;
+}
+
+.red-color{
+    color: red !important;
 }
