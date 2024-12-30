@@ -14,11 +14,18 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 100%;
+    width: 80%;
+    flex: 1;
+    background-color: #ffffff;
+    padding: 25px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 
-.orderSummaryThankYou {
+/* .orderSummaryThankYou {
     flex: 1;
     background-color: #ffffff;
     padding: 25px;
@@ -27,9 +34,12 @@
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
    
+} */
+
+.flex{
+    display: flex;
+    justify-content: space-between;
 }
-
-
 .orderSummaryThankYou h3 {
     font-size: 16px;
     margin-bottom: 10px;
@@ -41,27 +51,35 @@
 
 
 .thankYouPaidMainDiv{
-    text-align: center;
+    /* text-align: center; */
+
    
+}
+
+.productTitle{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .thankYouPaid{
     float: right;
     /* border: 2px solid #3498db; */
     width: fit-content;
-  background-color: aquamarine;
+  background-color: #14bef0;
   padding: 5px ;
   border-radius: 8px;
-  /* margin-bottom: 10px; */
+  margin-bottom: 10px;
   font-size: 16px;
   font-weight: bold;
-  color: black;
+ 
 }
 
 .thankYouPaid>p{
-    color: rgb(24, 51, 24);
+   
     font-weight: bold;
     font-size: 16px;
+    color: #fff;
 }
 
 
