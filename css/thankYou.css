@@ -55,6 +55,7 @@
   /* margin-bottom: 10px; */
   font-size: 16px;
   font-weight: bold;
+  color: black;
 }
 
 .thankYouPaid>p{
@@ -80,6 +81,7 @@
 
 .red{
     background-color: rgb(255, 32, 32);
+    color: #fff;
    
 }
 
