@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>astro369</title>
+    <meta name="googlebot" content="noindex" />
+    <meta name="googlebot-news" content="noindex" />
+    <meta name="robots" content="noindex,nofollow" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" id="main-stylesheet" />
+    <!-- <link rel="stylesheet" href="css/styles1.css" /> -->
+    <!-- <link rel="stylesheet" href="css/mobileview.css"/> -->
+    <script
+      src="https://kit.fontawesome.com/c521e77e5d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <script src="../Astro369/js/redirect.js"></script> -->
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+  </head>
+  <body>
+    <section class="desktop">
+      <header>
+        <nav class="navbar">
+          <div class="hamburger">&#9776;</div>
+          <a href="index.html" class="anchorLogo"
+            ><img
+              src="assets/images/astro369logo1.png"
+              alt="Astro369 logo"
+              class="logoImage"
+          /></a>
+          <div class="logo-container">
+            <ul>
+              <li><a href="advisors.html">All Advisors</a></li>
+              <li><a href="consult.html">Video Consult</a></li>
+              <li class="mega-hover"><a href="#">Predictions</a></li>
+              <li><a href="astro-shop.html">Mart</a></li>
+              <li><a href="pooja.html">Pooja</a></li>
+            </ul>
+          </div>
+          <div class="menu-container">
+            <div class="menu-container-parent">
+              <div class="corporates-container">
+                <span class="New">New</span>
+                <div class="corporates-dropdown">
+                  <!-- <label for="Corporates">For Corporates</label> -->
+                  <select name="Corporates" id="Corporates">
+                    <option value="" disabled selected hidden>
+                      For Corporates
+                    </option>
+                    <option value="Health">Health & Wellness Plans</option>
+                    <option value="Insurance">Group Insurance</option>
+                  </select>
+                </div>
+              </div>
+              <div class="providers-container">
+                <!-- <label for="Providers">For Providers</label> -->
+                <select name="Providers" id="Providers">
+                  <option value="" disabled selected hidden>
+                    For Providers
+                  </option>
+                  <option value="Prime">Astro369 Prime</option>
+                  <option value="Software">Software For Providers</option>
+                  <option value="Practice">List Your Practice For Free</option>
+                  <option value="ABDM">ABDM</option>
+                </select>
+              </div>
+              <div class="security-container">
+                <!-- <label for="Security">Security & Help</label> -->
+                <select name="Security" id="Security">
+                  <option value="" disabled selected hidden>ENG</option>
+                  <option value="DataSecurity" selected>ENG</option>
+                  <option value="Help">HINDI</option>
+                </select>
+              </div>
+              <!-- <button class="login-signup-button">Login/Signup</button> -->
+              <div>
+                <div class="user-profile">
+                  <i class="fa-solid fa-user user-profile"></i>
+                </div>
+                <div class="login-hover">
+                  <ul>
+                    <li id="login">
+                      <a href="loginSignup.html">Login/Signup</a>
+                    </li>
+                    <hr />
+                    <li>Profile</li>
+
+                    <hr />
+                    <li><a href="./my-order.html">My Orders</a></li>
+                    <hr />
+                    <li>Signout</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <hr />
+        <div class="pop-up-register" id="pop-up">
+          <div class="pop-up-register-form-div">
+            <h2>Enter Your Details</h2>
+            <div>
+              <label for="email">Email Id</label>
+              <input
+                type="email"
+                id="email"
+                value="email"
+                placeholder="Enter Your Email Id"
+              />
+              <label for="phone"> Phone Number</label>
+              <input
+                type="phone"
+                id="phone"
+                value="phone"
+                placeholder="+91 6399889123"
+              />
+              <div class="otp-container">
+                <h4>Enter OTP</h4>
+                <input type="text" maxlength="1" class="otp-input" />
+                <input type="text" maxlength="1" class="otp-input" />
+                <input type="text" maxlength="1" class="otp-input" />
+                <input type="text" maxlength="1" class="otp-input" />
+                <input type="text" maxlength="1" class="otp-input" />
+                <input type="text" maxlength="1" class="otp-input" />
+              </div>
+            </div>
+            <button id="continue-sign-up-btn">Continue</button>
+            <form class="terms-and-resend">
+              <div class="terms-container">
+                <input type="checkbox" id="terms" name="terms" checked />
+                <label for="terms"
+                  >I agree to the <a href="#">terms and conditions</a></label
+                >
+              </div>
+              <div class="resend-otp"><a>Resend OTP ?</a></div>
+            </form>
+          </div>
+        </div>
+      </header>
+
+      <section class="menu-section">
+        <div class="container">
+          <div class="mega-menu">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Category 1</h3>
+                  <!-- <hr /> -->
+                  <!-- <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                  </ul> -->
+                  <div class="submenu-header-div">
+                    <img
+                      src="assets/images/period-problems-v1.jpg"
+                      alt="submenuimage1"
+                      class="submenu-header-image"
+                    />
+                    <div class="submenu-header-right-div">
+                      <h4>Period doubts</h4>
+                      <p>Private online consultations with doctors</p>
+                    </div>
+                  </div>
+                  <div class="submenu-header-div">
+                    <img
+                      src="assets/images/period-problems-v1.jpg"
+                      alt="submenuimage1"
+                      class="submenu-header-image"
+                    />
+                    <div class="submenu-header-right-div">
+                      <h4>Period doubts</h4>
+                      <p>Private online consultations with doctors</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Category 2</h3>
+                  <!-- <hr /> -->
+                  <!-- <ul>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                    <li><a href="#">Item 6</a></li>
+                  </ul> -->
+
+                  <div class="submenu-header-div">
+                    <img
+                      src="assets/images/period-problems-v1.jpg"
+                      alt="submenuimage1"
+                      class="submenu-header-image"
+                    />
+                    <div class="submenu-header-right-div">
+                      <h4>Period doubts</h4>
+                      <p>Private online consultations with doctors</p>
+                    </div>
+                  </div>
+                  <div class="submenu-header-div">
+                    <img
+                      src="assets/images/period-problems-v1.jpg"
+                      alt="submenuimage1"
+                      class="submenu-header-image"
+                    />
+                    <div class="submenu-header-right-div">
+                      <h4>Period doubts</h4>
+                      <p>Private online consultations with doctors</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Category 3</h3>
+                  <!-- <hr /> -->
+                  <!-- <ul>
+                    <li><a href="#">Item 7</a></li>
+                    <li><a href="#">Item 8</a></li>
+                    <li><a href="#">Item 9</a></li>
+                  </ul> -->
+                  <div class="submenu-header-div">
+                    <img
+                      src="assets/images/period-problems-v1.jpg"
+                      alt="submenuimage1"
+                      class="submenu-header-image"
+                    />
+                    <div class="submenu-header-right-div">
+                      <h4>Period doubts</h4>
+                      <p>Private online consultations with doctors</p>
+                    </div>
+                  </div>
+                  <div class="submenu-header-div">
+                    <img
+                      src="assets/images/period-problems-v1.jpg"
+                      alt="submenuimage1"
+                      class="submenu-header-image"
+                    />
+                    <div class="submenu-header-right-div">
+                      <h4>Period doubts</h4>
+                      <p>Private online consultations with doctors</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Category 4</h3>
+                  <!-- <hr /> -->
+                  <!-- <ul>
+                    <li><a href="#">Item 10</a></li>
+                    <li><a href="#">Item 11</a></li>
+                    <li><a href="#">Item 12</a></li>
+                  </ul> -->
+                  <div class="submenu-header-div">
+                    <img
+                      src="assets/images/period-problems-v1.jpg"
+                      alt="submenuimage1"
+                      class="submenu-header-image"
+                    />
+                    <div class="submenu-header-right-div">
+                      <h4>Period doubts</h4>
+                      <p>Private online consultations with doctors</p>
+                    </div>
+                  </div>
+                  <div class="submenu-header-div">
+                    <img
+                      src="assets/images/period-problems-v1.jpg"
+                      alt="submenuimage1"
+                      class="submenu-header-image"
+                    />
+                    <div class="submenu-header-right-div">
+                      <h4>Period doubts</h4>
+                      <p>Private online consultations with doctors</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bannerSection">
+        <!-- <div class="astroBannerDiv">
+          <img src="assets/images/astroBanner.jpg" alt="Astro Banner Image " />
+        </div> -->
+        <div class="cardBannerDiv">
+          <div class="cardBannerDiv1">
+            <div class="card1">
+              <div class="card-image-container">
+                <a href="./prediction-report.html"
+                  ><img
+                    src="assets/images/predictionReport.jpg"
+                    alt="Video Consultant"
+                    class="card-image"
+                /></a>
+              </div>
+              <div class="card-content">
+                <h2 class="card-title">
+                  <a href="./prediction-report.html">Prediction Report</a>
+                </h2>
+                <p class="card-description">Safe and trusted Experts</p>
+              </div>
+            </div>
+            <div class="card1">
+              <div class="card-image-container">
+                <a href="./consult.html">
+                  <img
+                    src="assets/images/videoConsult.jpg"
+                    alt="Video Consultant"
+                    class="card-image"
+                /></a>
+              </div>
+              <div class="card-content">
+                <h2 class="card-title">
+                  <a href="./consult.html">Instant Video Consultation</a>
+                </h2>
+                <p class="card-description">Connect within 60 secs</p>
+              </div>
+            </div>
+          </div>
+          <div class="cardBannerDiv2">
+            <div class="card1">
+              <div class="card-image-container">
+                <a href="./talk-to-astrologer.html"
+                  ><img
+                    src="assets/images/predictionReport.jpg"
+                    alt="Video Consultant"
+                    class="card-image"
+                /></a>
+              </div>
+              <div class="card-content">
+                <h2 class="card-title">
+                  <a href="./talk-to-astrologer.html">Talk to astrologer</a>
+                </h2>
+                <p class="card-description">Safe and trusted Experts</p>
+              </div>
+            </div>
+            <div class="card1">
+              <div class="card-image-container">
+                <a href="./chat-with-astrologer.html"
+                  ><img
+                    src="assets/images/findAstrologer.jpg"
+                    alt="Video Consultant"
+                    class="card-image"
+                /></a>
+              </div>
+              <div class="card-content">
+                <h2 class="card-title">
+                  <a href="./chat-with-astrologer.html">Chat with Astrologer</a>
+                </h2>
+                <p class="card-description">Connect within 60 secs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-slider-container">
+          <div class="image-slider-slides">
+            <div alt="woman scrolling mobile" class="image-slider-hero-image">
+              <div class="bannerText">
+                <p>100% Authentic & Trustworthy Puja Services</p>
+                <h1>Performed by Experienced Pandits</h1>
+                <h1>To Attain Relief From Your Problems!</h1>
+                <a href="./pooja.html"><button>Book Puja now</button></a>
+              </div>
+            </div>
+            <div alt="woman scrolling mobile" class="image-slider-hero-image">
+              <div class="bannerText">
+                <p>100% Authentic & Trustworthy Puja Services</p>
+                <h1>Performed by Experienced Pandits</h1>
+                <h1>To Attain Relief From Your Problems!</h1>
+                <a href="./pooja.html"><button>Book Puja now</button></a>
+              </div>
+            </div>
+
+            <!-- <img src="assets/images/numerology-collage-concept.jpg" alt="woman scrolling mobile" class="image-slider-hero-image">
+                <img src="assets/images/mystical-numerology-scene.jpg" alt="woman scrolling mobile" class="image-slider-hero-image"> -->
+            <!-- <img src="assets/images/numerology-collage-concept.jpg" alt="woman scrolling mobile" class="image-slider-hero-image">
+                <img src="assets/images/homepage-hero-image-web-v1.png" alt="woman scrolling mobile" class="image-slider-hero-image"> -->
+          </div>
+          <div class="image-slider-dots">
+            <span
+              class="image-slider-dot"
+              onclick="imageSliderCurrentSlide(0)"
+            ></span>
+            <span
+              class="image-slider-dot"
+              onclick="imageSliderCurrentSlide(1)"
+            ></span>
+            <!-- <span class="image-slider-dot" onclick="imageSliderCurrentSlide(2)"></span>
+                <span class="image-slider-dot" onclick="imageSliderCurrentSlide(3)"></span> -->
+            <!-- <span class="image-slider-dot" onclick="imageSliderCurrentSlide(4)"></span>
+                <span class="image-slider-dot" onclick="imageSliderCurrentSlide(5)"></span> -->
+          </div>
+        </div>
+      </section>
+      <section class="section-container-top">
+        <!-- <div class="input-container">
+          <div class="location-container">
+            <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+           
+            <input type="text" placeholder="Faridabad" class="location-input" />
+          </div>
+          <div class="search-container">
+            <span class="icon"><i class="fas fa-search"></i></span>
+            
+            <input
+              type="search"
+              placeholder="Search doctors, clinics, hospitals, etc"
+              class="search-input"
+            />
+          </div>
+        </div> -->
+        <!-- <div class="cards-container">
+          <div class="card1">
+            <div class="card-image-container">
+              <img
+                src="assets/images/videoConsult.jpg"
+                alt="Video Consultant"
+                class="card-image"
+              />
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">Instant Video Consultation</h2>
+              <p class="card-description">Connect within 60 secs</p>
+            </div>
+          </div>
+          <div class="card1">
+            <div class="card-image-container">
+              <img
+                src="assets/images/findAstrologer.jpg"
+                alt="Video Consultant"
+                class="card-image"
+              />
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">Find Astrologers Near You</h2>
+              <p class="card-description">Confirmed appointments</p>
+            </div>
+          </div>
+          <div class="card1">
+            <div class="card-image-container">
+              <img
+                src="assets/images/predictionReport.jpg"
+                alt="Video Consultant"
+                class="card-image"
+              />
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">Predition Report</h2>
+              <p class="card-description">Safe and trusted Experts</p>
+            </div>
+          </div>
+
+          <div class="google-card">
+            <div class="google-banner-div">
+              <div class="google-banner"></div>
+            </div>
+            <div class="card-content">
+              <p class="card-description-google">
+                Safe and trusted surgery centers
+              </p>
+            </div>
+          </div>
+        </div> -->
+      </section>
+      <section class="consultation-section">
+        <div class="consultation-container">
+          <div class="consultation-header">
+            <div class="header-content">
+              <h1 class="header-title size1">
+                Consult Top Indian Astrologers online for any health, career,
+                progeny concern
+              </h1>
+              <p class="header-description">
+                Private online consultations with verified experts
+              </p>
+            </div>
+            <button class="view-specialists-button">
+              View All specialists
+            </button>
+          </div>
+          <div class="consultation-cards">
+            <div class="consultation-card">
+              <img
+                src="assets/images/Astro icons 80x80-01.png"
+                alt="pregnancy doubts"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation">Psychic Readings</h2>
+              <p class="card-action-consultation">CONSULT NOW</p>
+            </div>
+            <div class="consultation-card">
+              <img
+                src="assets/images/Astro icons 80x80-02.png"
+                alt="skin issues"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation">Love And Relationships</h2>
+              <p class="card-action-consultation">CONSULT NOW</p>
+            </div>
+            <div class="consultation-card">
+              <img
+                src="assets/images/Astro icons 80x80-03.png"
+                alt="performance issues"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation">Tarot Readings</h2>
+              <p class="card-action-consultation">CONSULT NOW</p>
+            </div>
+            <div class="consultation-card">
+              <img
+                src="assets/images/Astro icons 80x80-04.png"
+                alt="cold and cough"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation">Psychic Mediums</h2>
+              <p class="card-action-consultation">CONSULT NOW</p>
+            </div>
+            <div class="consultation-card">
+              <img
+                src="assets/images/Astro icons 80x80-05.png"
+                alt="child health"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation">Financial Outlook</h2>
+              <p class="card-action-consultation">CONSULT NOW</p>
+            </div>
+            <div class="consultation-card">
+              <img
+                src="assets/images/Astro icons 80x80-06.png"
+                alt="mental health"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation">Life Questions</h2>
+              <p class="card-action-consultation">CONSULT NOW</p>
+            </div>
+            <div class="consultation-card">
+              <img
+                src="assets/images/Astro icons 80x80-07.png"
+                alt="mental health"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation">Spiritual Readings</h2>
+              <p class="card-action-consultation">CONSULT NOW</p>
+            </div>
+            <div class="consultation-card">
+              <img
+                src="assets/images/Astro icons 80x80-08.png"
+                alt="mental health"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation">Astrology Advice</h2>
+              <p class="card-action-consultation">CONSULT NOW</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="appointment-section">
+        <h1 class="size1">Astrology predictions for better future</h1>
+        <p class="txtsize">
+          Find experienced astrologers across all categories
+        </p>
+        <div class="card-carousel">
+          <button class="prev" onclick="prevSlide()">&#10094;</button>
+          <div class="card-container">
+            <a href="./product-detail.html"
+              ><div class="card">
+                <img src="assets/images/sp-dentist@2x.jpg" alt="Image 1" />
+                <h1>Love &amp; Relationships</h1>
+                <p>Relationship Problems? Schedule a advisor consultation</p>
+              </div></a
+            >
+            <a href="./product-detail.html">
+              <div class="card">
+                <img src="assets/images/sp-gynecologist@2x.jpg" alt="Image 1" />
+                <h1>Career Forecasts</h1>
+                <p>
+                  Explore for women’s health, pregnancy and infertility
+                  treatments
+                </p>
+              </div></a
+            >
+            <a href="./product-detail.html">
+              <div class="card">
+                <img src="assets/images/sp-dietitian@2x.jpg" alt="Image 1" />
+                <h1>Money &amp; Finance</h1>
+                <p>
+                  Get guidance on financial success in your business and
+                  personal life.
+                </p>
+              </div></a
+            >
+            <a href="./product-detail.html">
+              <div class="card">
+                <img
+                  src="assets/images/sp-physiotherapist@2x.jpg"
+                  alt="Image 1"
+                />
+                <h1>Health Remedies &amp; Progeny</h1>
+                <p>
+                  Pulled a muscle? Get it treated by a trained physiotherapist
+                </p>
+              </div></a
+            >
+            <a href="./product-detail.html">
+              <div class="card">
+                <img
+                  src="assets/images/sp-general-surgeon@2x.jpg"
+                  alt="Image 1"
+                />
+                <h1>Breakups and Divorce</h1>
+                <p>Need to get operated? Find the right surgeon</p>
+              </div></a
+            >
+            <a href="./product-detail.html">
+              <div class="card">
+                <img src="assets/images/sp-orthopedist@2x.jpg" alt="Image 1" />
+                <h1>Orthopedist</h1>
+                <p>For Bone and Joints issues, spinal injuries and more</p>
+              </div></a
+            >
+            <a href="./product-detail.html">
+              <div class="card">
+                <img
+                  src="assets/images/sp-general-doctor@2x.jpg"
+                  alt="Image 1"
+                />
+                <h1>General physician</h1>
+                <p>Find the right family doctor in your neighborhood</p>
+              </div></a
+            >
+            <a href="./product-detail.html">
+              <div class="card">
+                <img
+                  src="assets/images/sp-general-doctor@2x.jpg"
+                  alt="Image 1"
+                />
+                <h1>Pediatrician</h1>
+                <p>Child Specialists and Doctors for Infant</p>
+              </div></a
+            >
+            <a href="./product-detail.html">
+              <div class="card">
+                <img
+                  src="assets/images/sp-gastroenterologist@2x.jpg"
+                  alt="Image 1"
+                />
+                <h1>Gastroenterologist</h1>
+                <p>
+                  Explore for issues related to digestive system, liver and
+                  pancreas
+                </p>
+              </div></a
+            >
+          </div>
+          <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+      </section>
+      <div class="top-free-apps-section">
+        <h2 class="size1">Top Indian Astrologers<a href="#">&#8250;</a></h2>
+        <div class="apps-grid">
+          <div class="app-card">
+            <div
+              class="app-card-image-div"
+              style="background-color: rgb(111, 226, 111)"
+            >
+              <a href="./advisorProfile.html">
+                <img src="./assets/images/pawan-sharma.png" alt="WhatsApp"
+              /></a>
+            </div>
+
+            <div class="app-info">
+              <h3 class="txtsize">Acharya Pawan</h3>
+              <span class="rating">4.1 &#9733; Social</span>
+            </div>
+            <span class="free-badge">Free</span>
+          </div>
+          <div class="app-card">
+            <div
+              class="app-card-image-div"
+              style="background-color: rgb(235, 120, 200)"
+            >
+              <a href="./advisorProfile.html"
+                ><img src="./assets/images/bhola-datta.png" alt="WhatsApp"
+              /></a>
+            </div>
+            <div class="app-info">
+              <h3 class="txtsize">Astro B.Datta</h3>
+              <span class="rating">4.3 &#9733; Social</span>
+            </div>
+            <span class="free-badge">Free</span>
+          </div>
+          <div class="app-card">
+            <div
+              class="app-card-image-div"
+              style="background-color: rgb(79, 216, 240)"
+            >
+              <a href="./advisorProfile.html">
+                <img
+                  src="./assets/images/vipin-kumar-bhardwaj.png"
+                  alt="WhatsApp"
+              /></a>
+            </div>
+            <div class="app-info">
+              <h3 class="txtsize">Acharya V.Bhardwaj</h3>
+              <span class="rating">3.8 &#9733; Entertainment</span>
+            </div>
+            <span class="free-badge">Free</span>
+          </div>
+          <div class="app-card">
+            <div
+              class="app-card-image-div"
+              style="background-color: rgb(235, 238, 40)"
+            >
+              <a href="./advisorProfile.html"
+                ><img src="./assets/images/pawan-sharma.png" alt="WhatsApp"
+              /></a>
+            </div>
+            <div class="app-info">
+              <h3 class="txtsize">Instagram</h3>
+              <span class="rating">4.1 &#9733; Social</span>
+            </div>
+            <span class="free-badge">Free</span>
+          </div>
+          <div class="app-card">
+            <div
+              class="app-card-image-div"
+              style="background-color: rgb(172, 255, 134)"
+            >
+              <a href="./advisorProfile.html"
+                ><img src="./assets/images/bhola-datta.png" alt="WhatsApp"
+              /></a>
+            </div>
+            <div class="app-info">
+              <h3 class="txtsize">Spotify Music</h3>
+              <span class="rating">3.6 &#9733; Music</span>
+            </div>
+            <span class="free-badge">Free</span>
+          </div>
+          <div class="app-card">
+            <div
+              class="app-card-image-div"
+              style="background-color: rgb(0, 255, 242)"
+            >
+              <a href="./advisorProfile.html">
+                <img
+                  src="./assets/images/vipin-kumar-bhardwaj.png"
+                  alt="WhatsApp"
+              /></a>
+            </div>
+            <div class="app-info">
+              <h3 class="txtsize">Spotify Music</h3>
+              <span class="rating">3.6 &#9733; Music</span>
+            </div>
+            <span class="free-badge">Free</span>
+          </div>
+        </div>
+      </div>
+
+      <section class="appointment-section" style="margin-top: 0">
+        <h1>Ready To Get Started? Talk to Astrologer Online</h1>
+        <p>Connect with one of these advisors</p>
+      </section>
+
+      <section class="astrologer-details">
+        <div class="astrologer-container">
+          <div class="astrologer-image-section">
+            <img
+              src="assets/images/astrologer1.jpg"
+              alt="astrologer-image"
+              class="astrologer-image"
+            />
+            <div class="availability-section">
+              <!-- <div class="availability-dot"></div> -->
+              <img
+                src="assets/images/onlinePhone1.gif"
+                alt="Online"
+                class="onlineImage"
+              />
+              <p class="availability-text">Available</p>
+            </div>
+          </div>
+          <div class="astrologer-info">
+            <h1 class="astrologer-name">Cosmic Advice</h1>
+            <p class="greeting">
+              <span><i class="fa-solid fa-graduation-cap"></i> 35 Years</span>
+            </p>
+            <p class="greeting">Vedic | Career | Empath</p>
+            <p class="greeting">Hindi , English</p>
+          </div>
+          <div class="astrologer-rating">
+            <p class="rating-score">4.7</p>
+            <div class="rating-stars">
+              <span class="star"></span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <p class="rating-count">(1721)</p>
+          </div>
+          <div class="astrologer-details-section">
+            <div class="detail-item">5 minutes for $1</div>
+            <div class="detail-item2">$2.99/min</div>
+          </div>
+          <div class="astrologer-actions">
+            <!-- <button class="call-button">Call</button> -->
+            <div class="call-button">
+              <i class="fa-solid fa-phone"></i>
+              <p>Call</p>
+            </div>
+            <!-- Icon -->
+            <!-- <button class="chat-button">Chat</button> -->
+            <div class="call-button2">
+              <i class="fa-solid fa-message"></i>
+              <p>Chat</p>
+            </div>
+          </div>
+        </div>
+        <div class="astrologer-container">
+          <div class="astrologer-image-section">
+            <img
+              src="assets/images/astrologer1.jpg"
+              alt="astrologer-image"
+              class="astrologer-image"
+            />
+            <div class="availability-section">
+              <!-- <div class="availability-dot"></div> -->
+              <img
+                src="assets/images/onlinePhone1.gif"
+                alt="Online"
+                class="onlineImage"
+              />
+              <p class="availability-text">Available</p>
+            </div>
+          </div>
+          <div class="astrologer-info">
+            <h1 class="astrologer-name">Cosmic Advice</h1>
+            <p class="greeting">
+              <span><i class="fa-solid fa-graduation-cap"></i> 35 Years</span>
+            </p>
+            <p class="greeting">Vedic | Career | Empath</p>
+            <p class="greeting">Hindi , English</p>
+          </div>
+          <div class="astrologer-rating">
+            <p class="rating-score">4.7</p>
+            <div class="rating-stars">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <p class="rating-count">(1721)</p>
+          </div>
+          <div class="astrologer-details-section">
+            <div class="detail-item">5 minutes for $1</div>
+            <div class="detail-item2">$2.99/min</div>
+          </div>
+          <div class="astrologer-actions">
+            <!-- <button class="call-button">Call</button> -->
+            <div class="call-button">
+              <i class="fa-solid fa-phone"></i>
+              <p>Call</p>
+            </div>
+            <!-- Icon -->
+            <!-- <button class="chat-button">Chat</button> -->
+            <div class="call-button2">
+              <i class="fa-solid fa-message"></i>
+              <p>Chat</p>
+            </div>
+          </div>
+        </div>
+        <div class="astrologer-container">
+          <div class="astrologer-image-section">
+            <img
+              src="assets/images/astrologer1.jpg"
+              alt="astrologer-image"
+              class="astrologer-image"
+            />
+            <div class="availability-section">
+              <!-- <div class="availability-dot"></div> -->
+              <img
+                src="assets/images/onlinePhone1.gif"
+                alt="Online"
+                class="onlineImage"
+              />
+              <p class="availability-text">Available</p>
+            </div>
+          </div>
+          <div class="astrologer-info">
+            <h1 class="astrologer-name">Cosmic Advice</h1>
+            <p class="greeting">
+              <span><i class="fa-solid fa-graduation-cap"></i> 35 Years</span>
+            </p>
+            <p class="greeting">Vedic | Career | Empath</p>
+            <p class="greeting">Hindi , English</p>
+          </div>
+          <div class="astrologer-rating">
+            <p class="rating-score">4.7</p>
+            <div class="rating-stars">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <p class="rating-count">(1721)</p>
+          </div>
+          <div class="astrologer-details-section">
+            <div class="detail-item">5 minutes for $1</div>
+            <div class="detail-item2">$2.99/min</div>
+          </div>
+          <div class="astrologer-actions">
+            <!-- <button class="call-button">Call</button> -->
+            <div class="call-button">
+              <i class="fa-solid fa-phone"></i>
+              <p>Call</p>
+            </div>
+            <!-- Icon -->
+            <!-- <button class="chat-button">Chat</button> -->
+            <div class="call-button2">
+              <i class="fa-solid fa-message"></i>
+              <p>Chat</p>
+            </div>
+          </div>
+        </div>
+        <div class="astrologer-container">
+          <div class="astrologer-image-section">
+            <img
+              src="assets/images/astrologer1.jpg"
+              alt="astrologer-image"
+              class="astrologer-image"
+            />
+            <div class="availability-section">
+              <!-- <div class="availability-dot"></div> -->
+              <img
+                src="assets/images/onlinePhone1.gif"
+                alt="Online"
+                class="onlineImage"
+              />
+              <p class="availability-text">Available</p>
+            </div>
+          </div>
+          <div class="astrologer-info">
+            <h1 class="astrologer-name">Cosmic Advice</h1>
+            <p class="greeting">
+              <span><i class="fa-solid fa-graduation-cap"></i> 35 Years</span>
+            </p>
+            <p class="greeting">Vedic | Career | Empath</p>
+            <p class="greeting">Hindi , English</p>
+          </div>
+          <div class="astrologer-rating">
+            <p class="rating-score">4.7</p>
+            <div class="rating-stars">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <p class="rating-count">(1721)</p>
+          </div>
+          <div class="astrologer-details-section">
+            <div class="detail-item">5 minutes for $1</div>
+            <div class="detail-item2">$2.99/min</div>
+          </div>
+          <div class="astrologer-actions">
+            <!-- <button class="call-button">Call</button> -->
+            <div class="call-button">
+              <i class="fa-solid fa-phone"></i>
+              <p>Call</p>
+            </div>
+            <!-- Icon -->
+            <!-- <button class="chat-button">Chat</button> -->
+            <div class="call-button2">
+              <i class="fa-solid fa-message"></i>
+              <p>Chat</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="articles-section">
+        <div class="intro-container">
+          <h1 class="intro-title">Read top articles from health experts</h1>
+          <p class="intro-description">
+            Health articles that keep you informed about good health practices
+            and achieve your goals.
+          </p>
+          <button class="intro-button">See all articles</button>
+        </div>
+        <div class="articles-container">
+          <div class="article-card">
+            <img
+              src="assets/images/coronavirus.jpg"
+              alt="coronavirus"
+              class="article-image"
+            />
+            <h3 class="article-category">CORONAVIRUS</h3>
+            <h1 class="article-title">
+              12 Coronavirus Myths and Facts That You Should Be Aware Of
+            </h1>
+            <p class="article-author">Dr. Diana Borgio</p>
+          </div>
+          <div class="article-card">
+            <img
+              src="assets/images/vitamins.jpg"
+              alt="vitamins"
+              class="article-image"
+            />
+            <h3 class="article-category">VITAMINS AND SUPPLEMENTS</h3>
+            <h1 class="article-title">
+              Eating Right to Build Immunity Against Cold and Viral Infections
+            </h1>
+            <p class="article-author">Dr. Diana Borgio</p>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="testimonial-section">
+        <h1>What our users have to say</h1>
+        <button class="testimonial-prev" onclick="prevTestimonial()">
+          <!-- ❮ -->
+        </button>
+        <div class="testimonial-container">
+          <div class="testimonial-card">
+            <p>
+              "Very good app. Well thought out about
+              booking/rescheduling/canceling an appointment. Also, Doctor's
+              feedback mechanism is good and describes all the basics in a good
+              way"
+            </p>
+            <div class="testimonial-user">
+              <img
+                src="assets/images/user.png"
+                alt="User 1"
+                class="testimonial-image"
+              />
+              <h3>Avinash Kumar</h3>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p>
+              "Very helpful. Far easier than doing same things on computer.
+              Allows quick and easy search with speedy booking. Even maintains
+              history of doctors visited."
+            </p>
+            <div class="testimonial-user">
+              <img
+                src="assets/images/user.png"
+                alt="User 1"
+                class="testimonial-image"
+              />
+              <h3>Amit Sharma</h3>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p>
+              "Very easy to book,maintain history. Hassle free from older
+              versions of booking appointment via telephone.. Thanks Astro369
+              for making it simple."
+            </p>
+            <div class="testimonial-user">
+              <img
+                src="assets/images/user.png"
+                alt="User 1"
+                class="testimonial-image"
+              />
+              <h3>Jyothi Bhatia</h3>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <p>
+              "Very good app. Well thought out about
+              booking/rescheduling/canceling an appointment. Also, Doctor's
+              feedback mechanism is good and describes all the basics in a good
+              way."
+            </p>
+            <div class="testimonial-user">
+              <img
+                src="assets/images/user.png"
+                alt="User 1"
+                class="testimonial-image"
+              />
+              <h3>Avinash Kumar</h3>
+            </div>
+          </div>
+          <!-- Add more testimonial cards as needed -->
+        </div>
+        <div class="testimonial-dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <!-- Add more dots as needed -->
+        </div>
+        <button class="testimonial-next" onclick="nextTestimonial()">
+          <!-- ❯ -->
+        </button>
+      </section>
+      <section></section>
+
+      <section class="download-section">
+        <div class="image-container">
+          <img
+            src="assets/images/footer-img.webp"
+            alt="download"
+            class="download-image"
+          />
+        </div>
+        <div class="content-container">
+          <div class="app-info">
+            <h1 class="app-title">Download the Astro369 app</h1>
+            <p class="app-description">
+              Access video consultation with India’s top doctors on the Astro369
+              app. Connect with doctors online, available 24/7, from the comfort
+              of your home.
+            </p>
+          </div>
+          <div class="download-link">
+            <h4 class="link-title">Get the link to download the app</h4>
+            <div class="phone-input-wrapper">
+              <div class="phone-input-container">
+                <div class="phone-input">
+                  <span class="country-code">+91</span>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    pattern="[0-9]{10}"
+                    required
+                    class="phone-number-input"
+                  />
+                </div>
+              </div>
+              <button class="send-sms-button">Send SMS</button>
+            </div>
+          </div>
+          <div class="store-buttons">
+            <button class="google-play-button">Google Play</button>
+            <button class="app-store-button">App Store</button>
+          </div>
+        </div>
+      </section>
+      <footer class="footer-section">
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3 class="footer-title">Astro369</h3>
+            <ul class="footer-list">
+              <li class="footer-item">About</li>
+              <li class="footer-item">Blog</li>
+              <li class="footer-item">Careers</li>
+              <li class="footer-item">Press</li>
+              <li class="footer-item">Contact Us</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-title">For patients</h3>
+            <ul class="footer-list">
+              <li class="footer-item">Search for doctors</li>
+              <li class="footer-item">Search for clinics</li>
+              <li class="footer-item">Search for hospitals</li>
+              <li class="footer-item">Astro369 Plus</li>
+              <li class="footer-item">Covid Hospital listing</li>
+              <li class="footer-item">Astro369 Care Clinics</li>
+              <li class="footer-item">Read health articles</li>
+              <li class="footer-item">Read about medicines</li>
+              <li class="footer-item">Astro369 drive</li>
+              <li class="footer-item">Health app</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <div class="footer-subcolumn">
+              <h3 class="footer-title">For doctors</h3>
+              <ul class="footer-list">
+                <li class="footer-item">Astro369 Profile</li>
+              </ul>
+            </div>
+            <div class="footer-subcolumn">
+              <h3 class="footer-title">For Clinics</h3>
+              <ul class="footer-list">
+                <li class="footer-item">Ray by Astro369</li>
+                <li class="footer-item">Astro369 Reach</li>
+                <li class="footer-item">Ray Tab</li>
+                <li class="footer-item">Astro369 Pro</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-column">
+            <div class="footer-subcolumn">
+              <h3 class="footer-title">For hospitals</h3>
+              <ul class="footer-list">
+                <li class="footer-item">Insta by Astro369</li>
+                <li class="footer-item">Qikwell by Astro369</li>
+                <li class="footer-item">Astro369 Profile</li>
+                <li class="footer-item">Astro369 Reach</li>
+                <li class="footer-item">Astro369 Drive</li>
+              </ul>
+            </div>
+            <div class="footer-subcolumn">
+              <h3 class="footer-title">For Corporates</h3>
+              <ul class="footer-list">
+                <li class="footer-item">Wellness Plan</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-title">More</h3>
+            <ul class="footer-list">
+              <li class="footer-item">Help</li>
+              <li class="footer-item">Developers</li>
+              <li class="footer-item">Privacy Policy</li>
+              <li class="footer-item">Terms & Conditions</li>
+              <li class="footer-item">PCS T&C</li>
+              <li class="footer-item">Healthcare Directory</li>
+              <li class="footer-item">Astro369 Health Wiki</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-title">Social</h3>
+            <ul class="footer-list">
+              <li class="footer-item">Facebook</li>
+              <li class="footer-item">Twitter</li>
+              <li class="footer-item">LinkedIn</li>
+              <li class="footer-item">YouTube</li>
+              <li class="footer-item">GitHub</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <img
+            src="assets/images/astro369logo1.png"
+            alt="footerLogo"
+            class="footer-logo"
+            style="height: 80px; width: 80px"
+          />
+          <p class="footer-copyright">
+            Copyright © 2017, Astro369. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </section>
+
+    <script src="js/index.js"></script>
+    <script src="js/index1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

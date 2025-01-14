@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consult</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/consult.css" id="main-stylesheet"/>
+    <!-- <link rel="stylesheet" href="css/mobileview.css"/> -->
+    <script
+      src="https://kit.fontawesome.com/c521e77e5d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- <script src="../practo/js/redirect.js"></script> -->
+  </head>
+  <body>
+    <section class="desktop">
+      
+  
+      <header class="container-fullWidth headerRes">
+      
+        <nav class="navbar container">
+          <a href="index.html" class="anchorLogo"
+            ><img
+              src="assets/images/astro369logo1.png"
+              alt="Astro369 logo"
+              class="logoImage"
+          /></a>
+          <!-- Replace the current hamburger icon with this -->
+
+          <div class="logo-container">
+            <ul>
+              <li><a href="advisors.html">All Advisors</a></li>
+              <li><a href="consult.html">Video Consult</a></li>
+              <li class="mega-hover"><a href="#">Predictions</a></li>
+              <li><a href="astro-shop.html">Mart</a></li>
+              <li><a href="pooja.html">Pooja</a></li>
+            </ul>
+          </div>
+          <div class="menu-container">
+            <div class="menu-container-parent">
+              <!-- <div class="corporates-container">
+                <span class="New">New</span>
+                <div class="corporates-dropdown">
+                  <select name="Corporates" id="Corporates" class="txtsize">
+                    <option value="" disabled selected hidden>
+                      For Corporates
+                    </option>
+                    <option value="Health">Health & Wellness Plans</option>
+                    <option value="Insurance">Group Insurance</option>
+                  </select>
+                </div>
+              </div> -->
+              <!-- <div class="providers-container">
+                <select name="Providers" id="Providers" class="txtsize">
+                  <option value="" disabled selected hidden>
+                    For Providers
+                  </option>
+                  <option value="Prime">Astro369 Prime</option>
+                  <option value="Software">Software For Providers</option>
+                  <option value="Practice">List Your Practice For Free</option>
+                  <option value="ABDM">ABDM</option>
+                </select>
+              </div> -->
+              <div class="security-container">
+                <!-- <label for="Security">Security & Help</label> -->
+                <select name="Security" id="Security" class="txtsize">
+                  <option value="" disabled selected hidden>ENG</option>
+                  <option value="DataSecurity" selected>ENG</option>
+                  <option value="Help">HINDI</option>
+                </select>
+              </div>
+              <!-- <button class="login-signup-button">Login/Signup</button> -->
+              <div>
+                <div class="user-profile">
+                  <i class="fa-solid fa-user user-profile"></i>
+                </div>
+                <div class="login-hover">
+                  <ul>
+                    <li id="login">
+                      <a href="loginSignup.html">Login/Signup</a>
+                    </li>
+                    <hr />
+                    <li>Profile</li>
+
+                    <hr />
+                    <li><a href="./my-order.html">My Orders</a></li>
+                    <hr/>
+                    <li>Signout</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <hr />
+        <div class="pop-up-register" id="pop-up">
+          <div class="pop-up-register-form-div">
+            <h2>Enter Your Details</h2>
+            <div>
+              <label for="email">Email Id</label>
+              <input
+                type="email"
+                id="email"
+                value="email"
+                placeholder="Enter Your Email Id"
+              />
+              <label for="phone"> Phone Number</label>
+              <input
+                type="phone"
+                id="phone"
+                value="phone"
+                placeholder="+91 6399889123"
+              />
+              <div class="otp-container">
+                <h4>Enter OTP</h4>
+                <input type="text" maxlength="1" class="otp-input size2" />
+                <input type="text" maxlength="1" class="otp-input size2" />
+                <input type="text" maxlength="1" class="otp-input size2" />
+                <input type="text" maxlength="1" class="otp-input size2" />
+                <input type="text" maxlength="1" class="otp-input size2" />
+                <input type="text" maxlength="1" class="otp-input size2" />
+              </div>
+            </div>
+            <button id="continue-sign-up-btn">Continue</button>
+            <form class="terms-and-resend">
+              <div class="terms-container">
+                <input type="checkbox" id="terms" name="terms" checked />
+                <label for="terms" class="txtsize"
+                  >I agree to the <a href="#">terms and conditions</a></label
+                >
+              </div>
+              <div class="resend-otp txtsize"><a>Resend OTP ?</a></div>
+            </form>
+          </div>
+        </div>
+      </header>
+      <header class="container-fullWidth headerResMobile">
+        <div class="logo-container">
+          <div class="menu-container">
+            <div class="menu-container-parent">
+              
+              <div class="security-container">
+               
+                <select name="Security" id="Security" class="txtsize">
+                  <option value="" disabled selected hidden>ENG</option>
+                  <option value="DataSecurity" selected>ENG</option>
+                  <option value="Help">HINDI</option>
+                </select>
+              </div>
+              
+              <div class="user-profile-container">
+                <div class="user-profile" onclick="toggleLoginMenu()">
+                    <i class="fa-solid fa-user user-profile"></i>
+                </div>
+                <div class="login-hover">
+                    <ul>
+                        <li id="login">
+                            <a href="loginSignup.html">Login/Signup</a>
+                        </li>
+                        <hr />
+                        <li ><a href="./advisorProfile.html">Profile</a></li>
+                        <hr />
+                        <li><a href="./my-order.html">My Orders</a></li>
+                        <hr />
+                        <li ><a href="./loginSignup.html">Signout</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="headerMobileCombine">
+            <a href="./index.html" class="anchorLogo">
+              <img src="assets/images/astro369logo1.png" alt="Logo" class="logoImage">
+            </a>
+            <div class="hamburger-icon" onclick="toggleMenu()">
+              &#9776; <!-- Hamburger icon (You can use FontAwesome or an image if preferred) -->
+            </div>
+          </div>
+          
+          
+        </div>
+        <nav class="navbar navbarMobile container">
+         
+          <!-- Replace the current hamburger icon with this -->
+
+          <div class="logo-container">
+            <ul>
+             
+              <li class="dropdown">
+                <a href="advisors.html" class="dropbtn">All Advisors <span class="icon dropdown-icon" >&#9660;</span></a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Name 1</a></li>
+                    <li><a href="#">Name 2</a></li>
+                    <li><a href="#">Name 3</a></li>
+                    <li style="border-bottom: none !important;"><a href="#" >Name 4</a></li>
+                </ul>
+            </li>
+              <li><a href="consult.html">Video Consult</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Predictions <span class="icon dropdown-icon" >&#9660;</span></a>
+                <ul class="dropdown-content">
+                    <li><a href="#">Daily Prediction</a></li>
+                    <li><a href="#">Weekly Prediction</a></li>
+                    <li><a href="#">Monthly Prediction</a></li>
+                    <li style="border-bottom: none !important;"><a href="#" >Yearly Prediction</a></li>
+                </ul>
+            </li>
+            
+              <li><a href="astro-shop.html">Mart</a></li>
+              <li><a href="pooja.html">Pooja</a></li>
+            </ul>
+          </div>
+         
+        </nav>
+
+        <hr />
+        <div class="pop-up-register" id="pop-up">
+          <div class="pop-up-register-form-div">
+            <h2>Enter Your Details</h2>
+            <div>
+              <label for="email">Email Id</label>
+              <input
+                type="email"
+                id="email"
+                value="email"
+                placeholder="Enter Your Email Id"
+              />
+              <label for="phone"> Phone Number</label>
+              <input
+                type="phone"
+                id="phone"
+                value="phone"
+                placeholder="+91 6399889123"
+              />
+              <div class="otp-container">
+                <h4>Enter OTP</h4>
+                <input type="text" maxlength="1" class="otp-input size2" />
+                <input type="text" maxlength="1" class="otp-input size2" />
+                <input type="text" maxlength="1" class="otp-input size2" />
+                <input type="text" maxlength="1" class="otp-input size2" />
+                <input type="text" maxlength="1" class="otp-input size2" />
+                <input type="text" maxlength="1" class="otp-input size2" />
+              </div>
+            </div>
+            <button id="continue-sign-up-btn">Continue</button>
+            <form class="terms-and-resend">
+              <div class="terms-container">
+                <input type="checkbox" id="terms" name="terms" checked />
+                <label for="terms" class="txtsize"
+                  >I agree to the <a href="#">terms and conditions</a></label
+                >
+              </div>
+              <div class="resend-otp txtsize"><a>Resend OTP ?</a></div>
+            </form>
+          </div>
+        </div>
+      </header>
+
+      <section class="menu-section container">
+        <div class="container">
+          <div class="mega-menu">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Category 1</h3>
+                  <!-- <hr /> -->
+                  <!-- <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                    <li><a href="#">Item 3</a></li>
+                  </ul> -->
+                  <div class="submenu-header-div">
+                    <img
+                      src="assets/images/period-problems-v1.jpg"
+                      alt="submenuimage1"
+                      class="submenu-header-image"
+                    />
+                    <div class="submenu-header-right-div">
+                      <h4>Period doubts</h4>
+                      <p>Private online consultations with doctors</p>
+                    </div>
+                  </div>
+                  <div class="submenu-header-div">
+                    <img
+                      src="assets/images/period-problems-v1.jpg"
+                      alt="submenuimage1"
+                      class="submenu-header-image"
+                    />
+                    <div class="submenu-header-right-div">
+                      <h4>Period doubts</h4>
+                      <p>Private online consultations with doctors</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Category 2</h3>
+                  <!-- <hr /> -->
+                  <!-- <ul>
+                    <li><a href="#">Item 4</a></li>
+                    <li><a href="#">Item 5</a></li>
+                    <li><a href="#">Item 6</a></li>
+                  </ul> -->
+
+                  <div class="submenu-header-div">
+                    <img
+                      src="assets/images/period-problems-v1.jpg"
+                      alt="submenuimage1"
+                      class="submenu-header-image"
+                    />
+                    <div class="submenu-header-right-div">
+                      <h4>Period doubts</h4>
+                      <p>Private online consultations with doctors</p>
+                    </div>
+                  </div>
+                  <div class="submenu-header-div">
+                    <img
+                      src="assets/images/period-problems-v1.jpg"
+                      alt="submenuimage1"
+                      class="submenu-header-image"
+                    />
+                    <div class="submenu-header-right-div">
+                      <h4>Period doubts</h4>
+                      <p>Private online consultations with doctors</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Category 3</h3>
+                  <!-- <hr /> -->
+                  <!-- <ul>
+                    <li><a href="#">Item 7</a></li>
+                    <li><a href="#">Item 8</a></li>
+                    <li><a href="#">Item 9</a></li>
+                  </ul> -->
+                  <div class="submenu-header-div">
+                    <img
+                      src="assets/images/period-problems-v1.jpg"
+                      alt="submenuimage1"
+                      class="submenu-header-image"
+                    />
+                    <div class="submenu-header-right-div">
+                      <h4>Period doubts</h4>
+                      <p>Private online consultations with doctors</p>
+                    </div>
+                  </div>
+                  <div class="submenu-header-div">
+                    <img
+                      src="assets/images/period-problems-v1.jpg"
+                      alt="submenuimage1"
+                      class="submenu-header-image"
+                    />
+                    <div class="submenu-header-right-div">
+                      <h4>Period doubts</h4>
+                      <p>Private online consultations with doctors</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="col-md-3">
+                <div class="mega-menu-column">
+                  <h3>Category 4</h3>
+                  <hr />
+                  <ul>
+                    <li><a href="#">Item 10</a></li>
+                    <li><a href="#">Item 11</a></li>
+                    <li><a href="#">Item 12</a></li>
+                  </ul>
+                  <div class="submenu-header-div">
+                    <img
+                      src="assets/images/period-problems-v1.jpg"
+                      alt="submenuimage1"
+                      class="submenu-header-image"
+                    />
+                    <div class="submenu-header-right-div">
+                      <h4>Period doubts</h4>
+                      <p>Private online consultations with doctors</p>
+                    </div>
+                  </div>
+                  <div class="submenu-header-div">
+                    <img
+                      src="assets/images/period-problems-v1.jpg"
+                      alt="submenuimage1"
+                      class="submenu-header-image"
+                    />
+                    <div class="submenu-header-right-div">
+                      <h4>Period doubts</h4>
+                      <p>Private online consultations with doctors</p>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="banner-section">
+        <div class="banner-section container">
+          <div class="left-banner-content">
+            <div class="banner-content">
+              <h1 class="main-heading size3xl">Bypass the travel chaos &amp; save time!</h1>
+              <h1 class="sub-heading size3xl">Take Online Astrology Consultation</h1>
+              <p class="consultation-info size1">
+                Private consultation + Audio call · Starts at just ₹199
+              </p>
+              <div class="doctor-availability">
+                <div class="doctor-image">
+                  <span class="each-image"
+                    ><img src="assets/images/thumbnail1.jpg" alt="doctor1"
+                  /></span>
+                  <span class="each-image"
+                    ><img src="assets/images/thumbnail1.jpg" alt="doctor1" /></span
+                  ><span class="each-image"
+                    ><img src="assets/images/thumbnail1.jpg" alt="doctor1"
+                  /></span>
+                </div>
+                <p class="doctor-count size2">+126 Advisors are online</p>
+                <span class="pulse"></span>
+              </div>
+            </div>
+    
+            <button class="consult-button size2">Consult Now</button>
+            <div class="features-list">
+              <div class="feature-item">
+                <i class="fa-solid fa-medal"></i>
+                <p class="feature-text txtsize">Verified Experts</p>
+              </div>
+              <div class="feature-item">
+                <i class="fa-solid fa-file-prescription"></i>
+                <p class="feature-text txtsize">Hand Written Horoscopes</p>
+              </div>
+              <div class="feature-item">
+                <i class="fa-solid fa-message"></i>
+                <p class="feature-text txtsize">Free Followup</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-image-slider-container">
+            <div class="image-slider-slides">
+                <img src="assets/images/homepage-hero-image-web-v1.png" alt="woman scrolling mobile" class="image-slider-hero-image">
+                <img src="assets/images/homepage-hero-image-web-v1.png" alt="woman scrolling mobile" class="image-slider-hero-image">
+                <img src="assets/images/homepage-hero-image-web-v1.png" alt="woman scrolling mobile" class="image-slider-hero-image">
+                <img src="assets/images/homepage-hero-image-web-v1.png" alt="woman scrolling mobile" class="image-slider-hero-image">
+                <img src="assets/images/homepage-hero-image-web-v1.png" alt="woman scrolling mobile" class="image-slider-hero-image">
+                <img src="assets/images/homepage-hero-image-web-v1.png" alt="woman scrolling mobile" class="image-slider-hero-image">
+            </div>
+            <div class="image-slider-dots">
+                <span class="image-slider-dot" onclick="imageSliderCurrentSlide(0)"></span>
+                <span class="image-slider-dot" onclick="imageSliderCurrentSlide(1)"></span>
+                <span class="image-slider-dot" onclick="imageSliderCurrentSlide(2)"></span>
+                <span class="image-slider-dot" onclick="imageSliderCurrentSlide(3)"></span>
+                <span class="image-slider-dot" onclick="imageSliderCurrentSlide(4)"></span>
+                <span class="image-slider-dot" onclick="imageSliderCurrentSlide(5)"></span>
+            </div>
+        </div>
+        </div>
+       
+  
+       
+        </div>
+      </section>
+      <div class="hspace"></div>
+      <section class="specialities-section container">
+        <div class="specialities-header">
+          <div class="specialities-info">
+            <h1 class="specialities-title size1">25+ Specialities</h1>
+            <p class="specialities-description size2">
+              Consult with top doctors specialities
+            </p>
+          </div>
+          <button class="specialities-button txtsize">See all Specialities</button>
+        </div>
+        <div class="card-carousel">
+          <button class="prev" onclick="prevSlide()">&#10094;</button>
+          <div class="card-container">
+            <div class="consultation-card">
+              <img
+                src="assets/images/irregular-painful+period.webp"
+                alt="pregnancy doubts"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation-heading">Sexology</h2>
+              <p class="card-title-consultation">₹499</p>
+              <p class="card-action-consultation">
+                CONSULT NOW
+                <span class="arrow-icon"
+                  ><i class="fa-solid fa-circle-right"></i
+                ></span>
+              </p>
+            </div>
+            <div class="consultation-card">
+              <img
+                src="assets/images/Acne.webp"
+                alt="skin issues"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation-heading">General physician</h2>
+              <p class="card-title-consultation">₹399</p>
+              <p class="card-action-consultation">
+                CONSULT NOW
+                <span class="arrow-icon"
+                  ><i class="fa-solid fa-circle-right"></i
+                ></span>
+              </p>
+            </div>
+            <div class="consultation-card">
+              <img
+                src="assets/images/top-speciality-sexology.svg"
+                alt="performance issues"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation-heading">Dermatology</h2>
+              <p class="card-title-consultation">₹499</p>
+              <p class="card-action-consultation">
+                CONSULT NOW
+                <span class="arrow-icon"
+                  ><i class="fa-solid fa-circle-right"></i
+                ></span>
+              </p>
+            </div>
+            <div class="consultation-card">
+              <img
+                src="assets/images/coughing.webp"
+                alt="cold and cough"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation-heading">Psychiatry</h2>
+              <p class="card-title-consultation">₹499</p>
+              <p class="card-action-consultation">
+                CONSULT NOW
+                <span class="arrow-icon"
+                  ><i class="fa-solid fa-circle-right"></i
+                ></span>
+              </p>
+            </div>
+            <div class="consultation-card">
+              <img
+                src="assets/images/top-speciality-pediatric.svg"
+                alt="child health"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation-heading">
+                Stomach and digestion
+              </h2>
+              <p class="card-title-consultation">₹399</p>
+              <p class="card-action-consultation">
+                CONSULT NOW
+                <span class="arrow-icon"
+                  ><i class="fa-solid fa-circle-right"></i
+                ></span>
+              </p>
+            </div>
+            <div class="consultation-card">
+              <img
+                src="assets/images/12-mental-wellness.webp"
+                alt="mental health"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation-heading">Pediatrics</h2>
+              <p class="card-title-consultation">₹499</p>
+              <p class="card-action-consultation">
+                CONSULT NOW
+                <span class="arrow-icon"
+                  ><i class="fa-solid fa-circle-right"></i
+                ></span>
+              </p>
+            </div>
+            <div class="consultation-card">
+              <img
+                src="assets/images/12-mental-wellness.webp"
+                alt="mental health"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation-heading">Urology</h2>
+              <p class="card-title-consultation">₹499</p>
+              <p class="card-action-consultation">
+                CONSULT NOW
+                <span class="arrow-icon"
+                  ><i class="fa-solid fa-circle-right"></i
+                ></span>
+              </p>
+            </div>
+            <div class="consultation-card">
+              <img
+                src="assets/images/12-mental-wellness.webp"
+                alt="mental health"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation-heading">
+                Depression or anxiety
+              </h2>
+              <p class="card-title-consultation">₹499</p>
+              <p class="card-action-consultation">
+                CONSULT NOW
+                <span class="arrow-icon"
+                  ><i class="fa-solid fa-circle-right"></i
+                ></span>
+              </p>
+            </div>
+            <div class="consultation-card">
+              <img
+                src="assets/images/12-mental-wellness.webp"
+                alt="mental health"
+                class="card-image-consultation"
+              />
+              <h2 class="card-title-consultation-heading">
+                Depression or anxiety
+              </h2>
+              <p class="card-title-consultation">₹499</p>
+              <p class="card-action-consultation">
+                CONSULT NOW
+                <span class="arrow-icon"
+                  ><i class="fa-solid fa-circle-right"></i
+                ></span>
+              </p>
+            </div>
+          </div>
+          <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+      </section>
+      <div class="hspace"></div>
+      <section class="specialities-section-health container">
+        <div class="specialities-header-health">
+          <div class="specialities-info-health">
+            <h1 class="specialities-title-health size1">Common Health Concerns</h1>
+            <p class="specialities-description-health size2">
+              Consult a doctor online for any health 
+            </p>
+          </div>
+          <button class="specialities-button-health txtsize">See all Symptoms</button>
+        </div>
+        <div class="card-carousel-health">
+          <button class="prev-health" onclick="prevSlideHealth()">
+            &#10094;
+          </button>
+          <div class="card-container-health">
+            <!-- consultation-card -->
+            <div class="health-concern-card">
+              <!-- card-image-consultation1 -->
+              <img
+                src="assets/images/period-problems-v1.jpg"
+                alt="period Problems"
+                class="card-image-health-concern"
+              />
+              <!-- card-title-consultation -->
+              <!-- card-title-consultation-heading-health -->
+              <h2 class="card-title-consultation-heading-health">
+                Period Problems?
+              </h2>
+  
+              <!-- card-action-consultation -->
+              <!-- card-action-health-concern -->
+              <p class="card-title-consultation">₹499</p>
+              <p class="card-action-consultation">
+                CONSULT NOW
+                <span class="arrow-icon"
+                  ><i class="fa-solid fa-circle-right"></i
+                ></span>
+              </p>
+              <!-- <p class="card-action-health-concern">₹499</p> -->
+            </div>
+            <div class="health-concern-card">
+              <img
+                src="assets/images/performance-issues-bed-v1.jpg"
+                alt="performance issues"
+                class="card-image-health-concern"
+              />
+              <h2 class="card-title-consultation-heading-health">
+                Performance issues in bed?
+              </h2>
+              <p class="card-title-consultation">₹499</p>
+              <p class="card-action-consultation">
+                CONSULT NOW
+                <span class="arrow-icon"
+                  ><i class="fa-solid fa-circle-right"></i
+                ></span>
+              </p>
+            </div>
+            <div class="health-concern-card">
+              <img
+                src="assets/images/skin-problems-v1.jpg"
+                alt="skin Problems"
+                class="card-image-health-concern"
+              />
+              <h2 class="card-title-consultation-heading-health">
+                Skin Problems?
+              </h2>
+              <p class="card-title-consultation">₹499</p>
+              <p class="card-action-consultation">
+                CONSULT NOW
+                <span class="arrow-icon"
+                  ><i class="fa-solid fa-circle-right"></i
+                ></span>
+              </p>
+            </div>
+            <div class="health-concern-card">
+              <img
+                src="assets/images/depression-anxiety-v1.jpg"
+                alt="Depression"
+                class="card-image-health-concern"
+              />
+              <h2 class="card-title-consultation-heading-health">
+                Depression or anxiety
+              </h2>
+              <p class="card-title-consultation">₹499</p>
+              <p class="card-action-consultation">
+                CONSULT NOW
+                <span class="arrow-icon"
+                  ><i class="fa-solid fa-circle-right"></i
+                ></span>
+              </p>
+            </div>
+            <div class="health-concern-card">
+              <img
+                src="assets/images/lose-weight-v1.jpg"
+                alt="Loose Weight"
+                class="card-image-health-concern"
+              />
+              <h2 class="card-title-consultation-heading-health">
+                Want to loose weight?
+              </h2>
+              <p class="card-title-consultation">₹499</p>
+              <p class="card-action-consultation">
+                CONSULT NOW
+                <span class="arrow-icon"
+                  ><i class="fa-solid fa-circle-right"></i
+                ></span>
+              </p>
+            </div>
+            <div class="health-concern-card">
+              <img
+                src="assets/images/stomach-issues-v1.jpg"
+                alt="stomach-issues"
+                class="card-image-health-concern"
+              />
+              <h2 class="card-title-consultation-heading-health">
+                Stomach issues
+              </h2>
+              <p class="card-title-consultation">₹499</p>
+              <p class="card-action-consultation">
+                CONSULT NOW
+                <span class="arrow-icon"
+                  ><i class="fa-solid fa-circle-right"></i
+                ></span>
+              </p>
+            </div>
+            <div class="health-concern-card">
+              <img
+                src="assets/images/vaginal-infections-v1.jpg"
+                alt="vaginal-infections"
+                class="card-image-health-concern"
+              />
+              <h2 class="card-title-consultation-heading-health">
+                Vaginal infections?
+              </h2>
+              <p class="card-title-consultation">₹499</p>
+              <p class="card-action-consultation">
+                CONSULT NOW
+                <span class="arrow-icon"
+                  ><i class="fa-solid fa-circle-right"></i
+                ></span>
+              </p>
+            </div>
+            <div class="health-concern-card">
+              <img
+                src="assets/images/sick-kid-v1.jpg"
+                alt="sick kid"
+                class="card-image-health-concern"
+              />
+              <h2 class="card-title-consultation-heading-health">Sick Kid?</h2>
+              <p class="card-title-consultation">₹499</p>
+              <p class="card-action-consultation">
+                CONSULT NOW
+                <span class="arrow-icon"
+                  ><i class="fa-solid fa-circle-right"></i
+                ></span>
+              </p>
+            </div>
+            <div class="health-concern-card">
+              <img
+                src="assets/images/12-mental-wellness.webp"
+                alt="mental health"
+                class="card-image-health-concern"
+              />
+              <h2 class="card-title-consultation-heading-health">
+                Depression or anxiety
+              </h2>
+              <p class="card-title-consultation">₹499</p>
+              <p class="card-action-consultation">
+                CONSULT NOW
+                <span class="arrow-icon"
+                  ><i class="fa-solid fa-circle-right"></i
+                ></span>
+              </p>
+            </div>
+          </div>
+          <button class="next" onclick="nextSlideHealth()">&#10095;</button>
+        </div>
+      </section>
+      <div class="hspace"></div>
+      <section class="offers-section container">
+        <div class="offers-header">
+          <h1 class="offers-title size1">Offers</h1>
+        </div>
+        <div class="offers-content">
+          <div class="offer-item-1"></div>
+          <div class="offer-item-2"></div>
+        </div>
+      </section>
+      <div class="hspace"></div>
+      <!-- <section>
+        <h1>Our Doctors</h1>
+        <div></div>
+      </section> -->
+  
+      <section class="how-it-works-section container">
+        <h1 class="how-it-works-title size1">How it works</h1>
+        <hr class="how-it-works-divider" />
+        <div class="how-it-works-content">
+          <div class="how-it-works-icon-section">
+            <div class="how-it-works-step-1">
+              <i class="fa-solid fa-hand-pointer how-it-works-icon-1"></i>
+            </div>
+            <p class="how-it-works-para">Select a speciality or symptom</p>
+          </div>
+          <div class="how-it-works-icon-section">
+            <div class="how-it-works-step-2">
+              <i class="fa-solid fa-message how-it-works-icon-2"></i>
+            </div>
+            <p class="how-it-works-para">Audio/ video call with a verified doctor</p>
+          </div>
+          <div class="how-it-works-icon-section">
+            <div class="how-it-works-step-3">
+              <i class="fa-solid fa-file-prescription how-it-works-icon-3"></i>
+            </div>
+            <p class="how-it-works-para">Get a digital prescription & a free follow-up</p>
+          </div>
+        </div>
+      </section>
+      <div class="hspace"></div>
+    
+    </section>
+   
+   
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/consult.js"></script>
+</body>
+</html>

@@ -1,0 +1,378 @@
+/* Checkout Container */
+.checkout-container {
+    margin-top: 20px;
+}
+
+/* Left Column: Checkout Form */
+.checkout-form {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 25px;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 50vw;
+    padding-bottom: 34px;
+}
+
+.checkout-form h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    border-bottom: 1px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.delivery-section h3{
+    /* font-size: 16px; */
+}
+.delivery-section{
+    margin-top: 20px;
+}
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #34495e;
+}
+
+.form-group input,
+.form-group select {
+    /* width: 100%; */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Right Column: Order Summary */
+.order-summary {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 25px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 72px;
+    right: 50px;
+    width: 40%;
+}
+
+.order-summary h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    border-bottom: 1px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.order-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.order-item-description {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.total-price {
+    font-weight: bold;
+    font-size: 16px;
+    color: #e74c3c; /* Red for total price */
+    margin-top: 10px;
+}
+
+.savings {
+    color: #e74c3c; /* Red color for savings */
+}
+
+/* Payment Section */
+.payment-section {
+    margin-top: 144px;
+    font-size: 14px;
+}
+
+.payment-section h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+.payment-section p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+   
+}
+
+.payment-method input {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Button */
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #2980b9;
+    /* transform: translateY(-2px); */
+}
+
+
+
+.payment-section p{
+  margin-top: 2px;
+}
+.payment-section h3{
+  margin-bottom: 5px;
+}
+.form-group:not(.notFormGroup){
+/* width: auto; */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.notFormGroup input{
+    width: 100% ;
+}
+
+
+.order-item-image{
+    display: flex;
+    gap: 10px;
+    /* align-items: center; */
+}
+
+.order-item-list{
+    width: 62%;
+    float: right;
+    font-size: 14px;
+}
+
+.discount{
+    font-size: 12px;
+}
+
+
+.razorpayImg{
+    margin-left: 10px;
+    /* padding-right: 5px; */
+}
+
+
+.two-col-name{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 30px;
+}
+
+#first-name,#last-name{
+    width: 170%;
+}
+
+#phone,#gender{
+    width: 170%;
+}
+
+
+.three-col{
+    display: flex;
+    gap: 48px;
+    justify-content: stretch;
+}
+
+
+
+
+
+.price-span{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.checkbox-margin{
+    margin-bottom: 0 !important;
+    font-weight: 400 !important;
+    font-size: 12px;
+   
+}
+
+
+#login-email{
+    margin-bottom: 3px;
+}
+
+
+
+.two-col {
+    display: flex !important; /* Use flexbox to allow items to be flexible */
+    justify-content: space-between !important; /* Space between the two columns */
+}
+
+.two-col .form-group {
+    width: 50% !important; /* Set each form group inside .two-col to 50% width */
+}
+
+.delivery-section .form-group:not(.two-col .form-group) {
+    width: 100% !important; /* Set other form groups to 100% width */
+}
+
+.delivery-section input {
+    width: 100% !important; /* Ensure inputs are full width */
+    box-sizing: border-box !important; /* Include padding/border in width */
+}
+
+.hidden {
+  display: none ;
+ 
+}
+
+.mobileBtnContact{
+  display: none;
+}
+.mobileBtnAddress{
+  display: none;
+}
+.gendercheckout{
+    display: flex;
+                      align-items: center;
+                      margin-top: 6px;
+                      border: 1px solid #ccc;
+                      padding: 9px;
+                      border-radius: 5px;
+}
+.malecheckout{
+    width: 15% !important;
+}
+.femalecheckout{
+    margin-left: 15px; width: 15% !important
+}
+.telephonecheckout{
+    display: flex; align-items: center
+}
+.countrycodecheckout{
+    padding: 12px;
+	border-right: none;
+	background-color: #f1f1f1;
+	border: 1px solid #ccc;
+	border-right: none;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;                        
+}
+.phcheckout{
+	border: 1px solid #ccc !important;
+	border-left: none !important;
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .countrycodecheckout{
+        font-size: 14px;
+    }
+    .checkout-container {
+        flex-direction: column;
+    }
+    
+   
+}
+@media (min-width: 769px) { /* Adjust the width as needed */
+  .hidden {
+      display: block; /* Show sections on desktop */
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+ .menu-section , .mega-menu {
+  display: none;
+}
+
+.checkout-form{
+    width: 100%;
+    padding: 7px;
+    /* display: none; */
+  }
+.addressToggle{
+  display: none;
+  padding: 0 !important;
+}
+label[for="razorpay"]{
+  font-size: 18px;
+}
+
+
+.user-details-section{
+  padding: 10px;
+  width: auto;
+  justify-content: center;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+
+.contact-section{
+  /* display: block; */
+}
+.mobileBtnContact{
+  display: block;
+}
+.delivery-section{
+  /* display: none; */
+  margin-top: 0;
+}
+.mobileBtnAddress{
+  display: block;
+  }
+
+	.order-summary{
+		/* display: block; */
+		width: 100%;
+		position: static;
+		padding: 8px;
+	}
+	.two-col-name{
+	}
+}
